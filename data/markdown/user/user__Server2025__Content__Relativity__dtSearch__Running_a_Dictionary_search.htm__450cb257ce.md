@@ -1,0 +1,216 @@
+---
+title: "Running a Dictionary search"
+url: https://help.relativity.com/Server2025/Content/Relativity/dtSearch/Running_a_Dictionary_search.htm
+collection: user
+fetched_at: 2026-06-22T06:07:38+00:00
+sha256: 094e9f68ea46393943ab54d6412795eb9d451f1bc386db75ca884b21beeacd9d
+---
+
+Running a Dictionary search Skip To Main Content Account Settings Logout
+
+- placeholder
+
+Account Settings Logout
+
+relativitynd5u5rpx
+
+
+https://help.relativity.com/Server2025/Content/CoveoSearch.htm
+
+
+Coveo Search Page
+
+>>
+
+Version: RelativityOne Server 2025 Server 2024
+
+☰
+
+# Running a Dictionary search
+
+When you run a dtSearch, you can use Dictionary Search to query the index for a term and find the total occurrences and number of documents in which it occurs. The Dictionary Search dialog displays the results, including the following columns:
+
+- Keyword - the word contained in the index. If you use fuzziness or stemming in your search, this column displays any variations of the term.
+
+- Total Words - the number of times the word appears in the dtSearch index.
+
+- Total Documents - the number of documents in the index that contain the word.
+
+A dictionary search returns only the first 2,000 items in the result set. If your search returns more than that, a message displays to indicate that only 2,000 items were returned.
+
+## Running a Dictionary search in the search panel
+
+To run a dictionary search in the search panel:
+
+- Navigate to the search panel .
+
+- Click Add Condition .
+
+- Select (Index Search) from the Add Condition dropdown.
+
+The (Index Search) pop-up opens.
+
+- Select the name of your dtSearch index from the Index dropdown.
+
+- Click Dictionary .
+
+The Dictionary Search pop-up opens.
+
+- Enter a search term in the textbox. You can enter variations of a search term as well as the wildcard (*), stemming (~), or fuzzy searching (%) operators.
+
+- (Optional) Set one of the following search operators:
+
+- Fuzziness Level - Select a value from one to ten to set the degree of variation in the terms returned. A larger number returns terms with more variation. This option is independent of the fuzziness (%) character that you can enter in the textbox on the Dictionary Search dialog. See Fuzzy searching .
+
+- Enable Stemming - Select to return grammatical variations of a word. For example, a search on "apply" returns "applying", "applies" and "applied." This option is independent of the stemming (~) character that you can enter in the textbox on the Dictionary Search dialog. See Stemming .
+
+- Click Search to display a list of keywords and the associated totals.
+
+- Perform any of the following tasks with your search results:
+
+- Copy to Clipboard - Select the checkboxes for the terms that you want to copy, and click Copy to Clipboard . On the Documents tab, right-click in the Search Terms box, and click Paste . The terms will added to the textbox separated by the OR operator.
+
+- Sort - Click a column header to sort in descending or ascending order.
+
+- Reset Columns Sizes - Displays columns with their default widths.
+
+- Export to Excel - Click to download an Excel spreadsheet containing the keywords and totals from the dictionary search.
+
+- Show Filters/Clear All - See Filters .
+
+## Running a Dictionary search in the Search Browser
+
+To run a dictionary search in the Search browser:
+
+- Click to access the Search browser from the Document list.
+
+- Click Create New Search .
+
+- Enter required fields.
+
+- Click Add Condition .
+
+- Select (Index Search) from the Add Condition dropdown. The (Index Search) pop-up opens.
+
+- Select the name of your dtSearch index from the Index dropdown.
+
+- Click Dictionary . The Dictionary Search pop-up opens.
+
+- Enter a search term in the textbox. You can enter variations of a search term as well as the wildcard (*), stemming (~), or fuzzy searching (%) operators.
+
+- (Optional) Set one of the following search operators:
+
+- Fuzziness Level - Select a value from one to ten to set the degree of variation in the terms returned. A larger number returns terms with more variation. This option is independent of the fuzziness (%) character that you can enter in the textbox on the Dictionary Search dialog. See Fuzzy searching .
+
+- Enable Stemming - Select to return grammatical variations of a word. For example, a search on "apply" will return "applying", "applies" and "applied." This option is independent of the stemming (~) character that you can enter in the textbox on the Dictionary Search dialog. See Stemming .
+
+- Click Search to display a list of keywords and the associated totals.
+
+- Perform any of the following tasks with your search results:
+
+- Copy to Clipboard - Select the checkboxes for the terms that you want to copy, and click Copy to Clipboard . On the Documents tab, right-click in the Search Terms box, and click Paste . The terms are added to the textbox separated by the OR operator.
+
+- Sort - Click a column header to sort in descending or ascending order.
+
+- Reset Columns Sizes - Displays columns with their default widths.
+
+- Export to Excel - Click to download an Excel spreadsheet containing the keywords and totals from the dictionary search.
+
+- Show Filters/Clear All - See Filters .
+
+On this page
+
+- Running a Dictionary search
+
+- Running a Dictionary search in the search panel
+
+- Running a Dictionary search in the Search Browser
+
+
+Why was this not helpful?
+
+Check one that applies.
+
+I could not find the information I was looking for.
+
+The information was incorrect.
+
+The instructions are confusing or unclear.
+
+The instructions did not work.
+
+Thank you for your feedback.
+
+Want to tell us more?
+
+
+Great!
+
+Thanks for taking the time to provide feedback.
+
+
+- Install Relativity
+
+- Pre-Installation
+
+- Licensing
+
+- Authentication
+
+- Post-Installation verification test
+
+- More >
+
+- Upgrade
+
+- Upgrade considerations
+
+- Relativity upgrade
+
+- More
+
+- Infrastructure
+
+- Servers
+
+- Agents
+
+- Resource pools
+
+- Resource files
+
+- More >
+
+- Capabilities
+
+- Analytics
+
+- Processing
+
+- More >
+
+- Resources
+
+- Relativity A-Z
+
+- PDF Downloads
+
+- Getting started
+
+- Documentation archives
+
+- Version support policy
+
+- Relativity Learning
+
+- Contact us
+
+- 1-312-263-1177
+
+- 231 South LaSalle Street 20th Floor Chicago, IL 60604
+
+- © Relativity
+
+- Privacy and Cookies
+
+- Terms of Use

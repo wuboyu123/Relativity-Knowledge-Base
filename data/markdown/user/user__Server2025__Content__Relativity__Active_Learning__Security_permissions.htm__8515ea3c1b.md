@@ -1,0 +1,236 @@
+---
+title: "Security permissions"
+url: https://help.relativity.com/Server2025/Content/Relativity/Active_Learning/Security_permissions.htm
+collection: user
+fetched_at: 2026-06-22T06:08:06+00:00
+sha256: 8d88cbfdf01e0550aa460f7abc86ffab43350c842a7c64378515fd939ae19a94
+---
+
+Security permissions Skip To Main Content Account Settings Logout
+
+- placeholder
+
+Account Settings Logout
+
+relativitynd5u5rpx
+
+
+https://help.relativity.com/Server2025/Content/CoveoSearch.htm
+
+
+Coveo Search Page
+
+>>
+
+Version: RelativityOne Server 2025 Server 2024
+
+☰
+
+# Security permissions
+
+This page contains information on the security permissions required for creating and interacting with an Active Learning project. For more information on setting permissions, see Workspace security .
+
+## Creating an Active Learning project
+
+To create an Active Learning project, you need the following permissions:
+
+Object Security Tab Visibility
+
+- Active Learning Project - View, Edit, Add
+
+- Active Learning Review - View, Edit, Add,
+
+- Active Learning Reviewer - View, Edit, Add
+
+- Analytics Categorization Result - View, Add
+
+- Analytics Categorization Set - View, Edit, Add
+
+- Analytics Categorization Set Build History - View
+
+- Analytics Index - View, Edit
+
+- Field - View, Edit, Add
+
+- Object Rule - View, Add
+
+- View - View, Add, Edit Security
+
+- Workspace - Edit Security
+
+- Active Learning Projects
+
+## Viewing and editing an Active Learning project
+
+To view and edit an Active Learning project, you need the following permissions:
+
+It's not possible to have "view-only" Active Learning permissions. If you have permission to view but not edit an Active Learning project, you aren't able to view the project.
+
+Object Security Tab Visibility
+
+- Active Learning Project - View, Edit
+
+- Active Learning Review - View, Edit, Add
+
+- Active Learning Reviewer - View, Edit
+
+- Analytics Categorization Set - View, Edit
+
+- Analytics Categorization Set Build History - View
+
+- Analytics Index - View
+
+- Active Learning Projects
+
+## Deleting an Active Learning project
+
+In order to delete an Active Learning project, you need either workspace admin or system admin permissions. This will allow you to delete the view created by the project.
+
+## Reviewer permissions
+
+The reviewer group accessing the Active Learning project must have the following permissions:
+
+Object Security Tab Visibility Other Settings
+
+- Active Learning Reviewer - View
+
+- Document - View, Edit
+
+- Documents
+
+- Browsers - None OR Folders and/or Field Tree and/or Clusters
+
+The users in this group are not automatically added to the Active Learning project. You must grant each individual access to the Review queue.
+
+Other considerations for setting group permissions:
+
+- If the Browsers permission is set only to Advanced & Saved Searches, reviewers can't access the view for the review queues.
+
+- The review group must have access to all documents in the Active Learning project. If documents are not accessible (for example, documents stored in a secured folder) they are not served to reviewers in the queue.
+
+- You can add or remove users from the group at any time.
+
+- If you add a new reviewer to a group that is already tied to an Active Learning project, it may take some time for the change to synchronize with the project. If you still cannot grant the reviewer access after 24 hours, contact Product Support .
+
+### Resolving reviewer permissions warnings
+
+If the reviewer group accessing an Active Learning project does not have the required permissions to review the documents in that project, a warning will appear in the notifications area in the top-right corner of the Active Learning Project Home tab. To view the warning, click the notification icon.
+
+The permissions warnings can be resolved as follows:
+
+Permissions Warning Message Solution
+
+User Group "Group Name" does not have Reviewer Object view permission.
+
+Grant the user group View permissions on the Active Learning Reviewer Object. See Assigning object-level permissions .
+
+User Group "Group Name" does not have Document Object edit permission. Grant the user group Edit permissions on the Document Object. See Assigning object-level permissions .
+
+User Group "Group Name" may not have Document item level security or other security permissions.
+
+Grant the user group Edit permissions to any documents within the Active Learning project which are individually secured or held in private folders.
+
+To adjust access to individual documents or folders, see Relativity object security .
+
+On this page
+
+- Security permissions
+
+- Creating an Active Learning project
+
+- Viewing and editing an Active Learning project
+
+- Deleting an Active Learning project
+
+- Reviewer permissions
+
+- Resolving reviewer permissions warnings
+
+
+Why was this not helpful?
+
+Check one that applies.
+
+I could not find the information I was looking for.
+
+The information was incorrect.
+
+The instructions are confusing or unclear.
+
+The instructions did not work.
+
+Thank you for your feedback.
+
+Want to tell us more?
+
+
+Great!
+
+Thanks for taking the time to provide feedback.
+
+
+- Install Relativity
+
+- Pre-Installation
+
+- Licensing
+
+- Authentication
+
+- Post-Installation verification test
+
+- More >
+
+- Upgrade
+
+- Upgrade considerations
+
+- Relativity upgrade
+
+- More
+
+- Infrastructure
+
+- Servers
+
+- Agents
+
+- Resource pools
+
+- Resource files
+
+- More >
+
+- Capabilities
+
+- Analytics
+
+- Processing
+
+- More >
+
+- Resources
+
+- Relativity A-Z
+
+- PDF Downloads
+
+- Getting started
+
+- Documentation archives
+
+- Version support policy
+
+- Relativity Learning
+
+- Contact us
+
+- 1-312-263-1177
+
+- 231 South LaSalle Street 20th Floor Chicago, IL 60604
+
+- © Relativity
+
+- Privacy and Cookies
+
+- Terms of Use

@@ -1,0 +1,272 @@
+---
+title: "Review statistics"
+url: https://help.relativity.com/Server2025/Content/Relativity/Active_Learning/Review_Statistics.htm
+collection: user
+fetched_at: 2026-06-22T06:08:19+00:00
+sha256: bd7a610ce18e392309fb3bd7d6b11b834f50ccf3b09dc58fe19631565fa6f2e2
+---
+
+Review statistics Skip To Main Content Account Settings Logout
+
+- placeholder
+
+Account Settings Logout
+
+relativitynd5u5rpx
+
+
+https://help.relativity.com/Server2025/Content/CoveoSearch.htm
+
+
+Coveo Search Page
+
+>>
+
+Version: RelativityOne Server 2025 Server 2024
+
+☰
+
+# Review statistics
+
+The Review Statistics tab contains project statistics for each queue as well as a model update history.
+
+## Review Summary
+
+The Review Summary section contains four tabs:
+
+- Prioritized Review
+
+- Coverage Review
+
+- Project Validation
+
+- Manually-Selected
+
+### Prioritized Review
+
+The Prioritized Review tab shows the effectiveness of the Prioritized Review queue’s ability to locate relevant documents by reporting the review field breakdown and relevance rate each 200 documents. For every 200 documents that are coded (excluding additional reviewed by family), a new row appears in the Prioritized Review table. The first row in the table provides a summary for the entire project.
+
+The Prioritized Review table contains the following columns:
+
+- Prioritized Review - the set of documents the statistics apply to (excludes additional reviewed by family). The sum of the count of Coded [Positive Choice] , Coded [Negative Choice] , and Skipped documents should equal 200.
+
+- # of Reviewers - the number of unique reviewers who reviewed documents in the Prioritized Review queue during this interval.
+
+- Coded [Positive Choice] - the number of documents coded with the positive designation on the review field (excludes additional reviewed by family).
+
+- Coded [Negative Choice] - the number of documents coded with the negative designation on the review field (excludes additional reviewed by family).
+
+- Coded Neutral - the number of documents coded with a neutral designation on the review field (excludes additional reviewed by family).
+
+- Skipped - the number of documents that were saved or had Save and Next selected with no coding decision supplied on the review field (excludes additional reviewed by family).
+
+- Index Health - the number of index health documents reviewed in the Prioritized Review queue. These documents are excluded from the relevance rate calculation.
+
+- Highest Ranked - the number of highly ranked documents reviewed in the Prioritized Review queue.
+
+- Highest Ranked Coded [Positive Choice] - the number of highly ranked documents that were coded with the positive designation in the Prioritized Review queue.
+
+- Relevance Rate - the percentage of documents that were chosen for being highly ranked that were then confirmed as relevant by reviewers' coding decisions. You can calculate the relevance rate manually using the following formula: Highest Ranked Coded [Positive Choice] / Highest Ranked.
+
+- Additional Reviewed by Family - the number of family documents reviewed in the Prioritized Review queue.
+
+- Additional Review by Family Coded [Positive Choice] - the number of family documents coded with the positive designation in the Prioritized Review queue.
+
+### Coverage Review
+
+The Coverage Review tab shows the progress of the Coverage Review by reporting the review field breakdown every 200 documents. For every 200 documents that are coded, a new row appears in the Coverage Review table. The first row in the table provides a summary for the entire project.
+
+The Coverage Review table contains the following columns:
+
+- Coverage Review - the set of documents the statistics apply to.
+
+- # of Reviewers - the number of unique reviewers who reviewed documents in the Coverage Review queue during this interval..
+
+- Coded [Positive Choice] - the number of documents coded with the positive designation on the review field.
+
+- Coded [Negative Choice] - the number of documents coded with the negative designation on the review field.
+
+- Coded Neutral - the number of documents coded with a neutral designation on the review field.
+
+- Skipped - the number of documents that were saved or had Save and Next selected with no coding decision supplied on the review field.
+
+### Project Validation
+
+Use the Project Validation tab to monitor validation testing. A new row is created when Project Validation starts and is populated with the available information about the validation. As documents are coded, the counts and calculations update upon page refresh. If Project Validation is stopped before completion, statistics are calculated based on what has been coded so far.
+
+The Project Validation tab contains the following columns:
+
+- Validation - each review is called Elusion with Recall or Elusion Test plus a numeral. For example, the first Elusion with Recall is "Elusion with Recall 1," and the second is "Elusion with Recall 2."
+
+- Start Date - the UTC date and time when Project Validation was started.
+
+- Rank Cutoff - the numeric cutoff for positive prediction, fixed before project validation begins.
+
+- Discard Pile Size - the number of documents below the rank cutoff that are not coded when Project Validation was started.
+
+- Elusion Sample Size - the number of documents sampled for elusion rate. This number is computed when Project Validation is started.
+
+- Elusion Coded [Positive Choice] - the number of sampled documents from below the cutoff which were coded positive during project validation.
+
+- Elusion Coded [Negative Choice] - the number of sampled documents from below the cutoff which were coded negative during project validation.
+
+- Elusion Documents Skipped/Coded Neutral - the number of sampled documents from below the cutoff that were either saved with no coding decision on the review field, or saved with a neutral coding decision.
+
+For best results, we strongly recommend coding every document in the Project Validation queue as positive or negative. Avoid skipping documents or coding them as neutral. For more information, see How Project Validation handles skipped and neutral documents .
+
+- Pending Document Count - the number of documents whose coding has changed since the last model build (prior to Project Validation starting). This includes documents coded in Project Validation, and documents coded through other means. For instance, if a reviewer manually codes documents after Project Validation is underway, these will be counted as Pending.
+
+- Elusion Rate (Range) - the error rate of the discard pile. This is calculated as the percentage of sampled, previously uncoded documents from below the cutoff which are coded positive during Project Validation. The range applies this sampled rate to the entire discard pile, using the confidence level provided by the user and the margin of error calculated from sample size.
+
+- Confidence Level for Elusion - user input or calculated when setting up Project Validation.
+
+- Elusion Margin of Error - margin of error calculated based on the elusion sample size, the discard pile size, and the elusion rate on the validation sample.
+
+- Estimated Eluded Documents (Range) - the projected number of eluded documents. This estimates the number of relevant documents you would miss if you produced all documents marked relevant, as well as those with ranks at or above the cutoff.
+
+- Recall Rate (Range at CL80%) - the percentage of truly positive documents which were found by the Active Learning process. A document has been "found" if it was previously coded positive, or if it is uncoded with a rank at or above the cutoff. Recall is calculated on the sample, then estimated for the total population with a confidence level (CL) of 80%.
+
+- Precision Rate (Range) - the percentage of found documents which are truly positive. A document has been “found” if it was previously coded positive, or if it is uncoded with a rank at or above the cutoff. Documents which were predicted positive but coded negative during validation will count against precision. Precision is calculated on the sample, then estimated for the total population with a confidence level (CL) of 80%.
+
+- Precision Margin of Error (CL80%) - the margin of error for precision as estimated from the sample size, the equivalent portion of the whole project, and the observed precision rate on the validation sample.
+
+- Richness Rate (Range) - the percentage of documents which are relevant (positive choice). This is calculated by dividing the number of positive-coded documents in the sample by the total number of documents in the sample. The range predicts the richness for the whole project, subject to a 95% confidence level.
+
+- Richness Margin of Error (CL95%) - the margin of error for richness as estimated from the sample size, the whole project size, and the observed richness rate on the sample.
+
+- Estimated Total Relevant Documents - the estimated number of relevant documents in the whole project. This is calculated by projecting the richness rate across the whole project.
+
+- Total Documents in Project - the number of documents in the project at the time of project validation.
+
+### Manually-Selected
+
+The Manually-selected Documents chart displays the number of document coding decisions made outside of the Active Learning queue grouped by date.
+
+The Manually-Selected tab contains the following columns:
+
+- Manually-selected Documents - the number of documents coded outside of the Active Learning queue.
+
+- Coded [Positive Choice] - the number of these documents coded with the positive designation on the review field.
+
+- Coded [Negative Choice] - the number of these documents coded with the negative designation on the review field.
+
+- Coded Neutral - the number of these documents coded with a neutral designation on the review field.
+
+- Date submitted (UTC) - the date in UTC that the statistics were submitted.
+
+## Model Updates
+
+The Model Updates section contains a history of Active Learning model builds. A new row is added each time the model builds, and the statistics are based off of the <Positive Choice> Cutoff set in the Project Settings . If you update the <Positive Choice> Cutoff at any point, the statistics will update accordingly.
+
+- Build Date - a timestamp indicating when the model build completed, displayed in local time.
+
+- Above or At Cutoff - the number of documents above or at the <Positive Choice> Cutoff.
+
+- Below Cutoff - the number of documents below the <Positive Choice> Cutoff.
+
+The subsequent columns indicate the number of documents in each relevance rank range.
+
+On this page
+
+- Review statistics
+
+- Review Summary
+
+- Prioritized Review
+
+- Coverage Review
+
+- Project Validation
+
+- Manually-Selected
+
+- Model Updates
+
+
+Why was this not helpful?
+
+Check one that applies.
+
+I could not find the information I was looking for.
+
+The information was incorrect.
+
+The instructions are confusing or unclear.
+
+The instructions did not work.
+
+Thank you for your feedback.
+
+Want to tell us more?
+
+
+Great!
+
+Thanks for taking the time to provide feedback.
+
+
+- Install Relativity
+
+- Pre-Installation
+
+- Licensing
+
+- Authentication
+
+- Post-Installation verification test
+
+- More >
+
+- Upgrade
+
+- Upgrade considerations
+
+- Relativity upgrade
+
+- More
+
+- Infrastructure
+
+- Servers
+
+- Agents
+
+- Resource pools
+
+- Resource files
+
+- More >
+
+- Capabilities
+
+- Analytics
+
+- Processing
+
+- More >
+
+- Resources
+
+- Relativity A-Z
+
+- PDF Downloads
+
+- Getting started
+
+- Documentation archives
+
+- Version support policy
+
+- Relativity Learning
+
+- Contact us
+
+- 1-312-263-1177
+
+- 231 South LaSalle Street 20th Floor Chicago, IL 60604
+
+- © Relativity
+
+- Privacy and Cookies
+
+- Terms of Use

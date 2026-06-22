@@ -1,0 +1,816 @@
+---
+title: "Reports"
+url: https://help.relativity.com/Server2025/Content/Relativity/Processing/Processing_reports.htm
+collection: user
+fetched_at: 2026-06-22T06:05:57+00:00
+sha256: 1d34a874a5f34a411bcff099dbae375c56cc3204ed5c3274950236d32c4fc091
+---
+
+Reports Skip To Main Content Account Settings Logout
+
+- placeholder
+
+Account Settings Logout
+
+relativitynd5u5rpx
+
+
+https://help.relativity.com/Server2025/Content/CoveoSearch.htm
+
+
+Coveo Search Page
+
+>>
+
+Version: RelativityOne Server 2025 Server 2024
+
+☰
+
+# Reports
+
+In the Reports tab, you can generate reports in Relativity to understand the progress and results of processing jobs. You can't run reports on processing sets that have been canceled. When you generate a processing report, this information is recorded in the History tab.
+
+Read if you're studying for the Processing Specialist exam The content on this site is based on the most recent monthly version of Relativity, which contains functionality that has been added since the release of the version on which Relativity's exams are based. As a result, some of the content on this site may differ significantly from questions you encounter in a practice quiz and on the exam itself. If you encounter any content on this site that contradicts your study materials, please refer to the What's New and/or the Release Notes for details on all new functionality.
+
+This topic contains several references to progressive filtration. For context, consider the following explanation: A count based on absolute filtration counts the total number of files each filter eliminates as if it were the only filter applied to the entire data set. A count based on progressive filtration counts the total number of files each filter actually eliminates by accounting for all previously applied filters. For example, a file type filter eliminates 3000 PDF files from a data set, but a previously applied date range filter also eliminated 5000 PDF files. A count based on absolute filtration would report the file type filter as eliminating 8000 PDF files because the count is based on the total number of files each filter eliminates as if it were the only filter applied to the entire data set. However, a count based on progressive filtration counts the total number of files each filter actually eliminates by accounting for all previously applied filters. In the previous example, a progressive filtration count only reports 3000 PDF files eliminated by the file type filter, because the other 5000 PDF documents were progressively eliminated by the date range filter.
+
+## Generating a processing report
+
+- Navigate to the Processing tab.
+
+- Click the Reports sub-tab. You can also access the Reports tab by clicking the View All Reports link on your processing set console.
+
+- From the Select Report section, select the report type you want to generate. When you select a report type, the processing set list to the right is updated to reflect only those sets that are applicable to that report type. For example, if you haven't yet discovered the files in your set, that set won't show up when you select either of the Discovered Files reports. Canceled processing sets aren't available when you're running reports.
+
+- From the Select Processing Set section, select the set on which you want to report.
+
+- Click Generate Report .
+
+- At the top of the report display, you have options to print or save the report. To save, select a file type at the top of the report.
+
+If you export a report that contains Unicode characters as a PDF, and the web server you’re logged in to does not have the font Arial Unicode MS Regular installed (regardless of whether the server the workspace resides on has this font installed), you see blocks in the generated PDF file. To resolve this issue, you can purchase and install the font separately, or you can install Microsoft Office to the web server, which installs the font automatically.
+
+You can generate a new report at any time by clicking New Report at top right of the collapsed report generation window.
+
+If you choose to print a processing report through your browser, that report won't be displayed correctly, in that it will be incomplete. Therefore, it's recommended that you always use Relativity's print button to print reports and not print through the browser.
+
+## Data Migration
+
+This report provides information on how data was migrated into Relativity, including details about excluded files and a summary of the number of starting files, published documents, and documents included in the workspace for each custodian associated with the selected processing sets. You can run this report on published processing sets.
+
+### Excluded Files
+
+This table lists all files excluded during data migration by custodian and provides the following information:
+
+- Custodian - the name of the custodian associated with excluded files.
+
+- DeNIST - the number of NIST files excluded.
+
+- Containers - the number of container files excluded.
+
+- Duplicates - the number of duplicate files excluded.
+
+- Publishing Errors - the number of files excluded due to errors during publication.
+
+- Total Excluded Files - each custodian's total number of excluded files.
+
+### Summary Statistics: Data Migration
+
+This table provides a summary of the files excluded during data migration by custodian and contains the following information:
+
+- Custodian - the name of each custodian associated with the migrated files.
+
+- Starting Files - each custodian's initial number of discovered files in the processing set. This includes files that may have been denisted.
+
+- Excluded Files - each custodian's total number of excluded files.
+
+- Published Documents - each custodian's total number of published documents.
+
+- Documents in Workspace - each custodian's total number of documents in the workspace.
+
+Differences between Published Documents and Documents in Workspace counts could indicate that documents were deleted after publishing.
+
+### Processing Sets
+
+This section lists all processing sets included in this report. Each processing set listed is accompanied by the following information:
+
+- Custodian - the custodians attached to the data sources used by the processing set.
+
+- Source path - the location specified in the Source path field on the data sources used by the processing set.
+
+## Master Document Replacement Summary
+
+This report provides a summary of documents deleted and resulting replacements during deduplication recalculation during the Post-Publish Delete process. You can run this report on processing sets.
+
+### Deleted Master Documents
+
+This table lists all files deleted during the discovery process by control number and provides the following information:
+
+- Control Number - the identifier of the deleted document.
+
+- File ID - the number value associated with the deleted file in the database.
+
+- Custodian - the name of each custodian associated with the deleted file.
+
+- Published Control Number - the identifier of the document published as a result of deduplication recalculation.
+
+- Published Custodian - the custodian associated with the replacement document published as a result of deduplication recalculation.
+
+### Replacements Master Documents
+
+This table lists all files deleted during discovery by control number and provides the following information:
+
+- Control Number - the identifier of the replacement document published as a result of deduplication recalculation.
+
+- File ID - the number value associated with the replacement file in the database.
+
+- Custodian - the name of each custodian associated with the replacement document published as a result of deduplication recalculation.
+
+- Deleted Control Number - the identifier of the deleted document.
+
+- Deleted Custodian - the custodian associa ted with the deleted document.
+
+## Discovered Files by Custodian
+
+This report provides information on the file types discovered during processing for the custodians associated with the selected processing sets. This report identifies the total processable and unprocessable file types discovered and categorizes the totals by custodian. You can run this report on discovered or published processing sets.
+
+### Discovered Files by Custodian
+
+This table provides a summary of all files discovered per custodian and contains the following information:
+
+- Custodian - the name of the custodian whose files were discovered.
+
+- Discovered Files - the number of each custodian's discovered files.
+
+### File Types Discovered - Processable
+
+This table provides a summary of the processable discovered files per file extension and contains the following information:
+
+- File Extension - all file extensions discovered.
+
+- Discovered Files - the number of files discovered with that file extension.
+
+### File Types Discovered - Processable(By Custodian)
+
+This table provides a summary of the processable discovered file counts per file extension by custodian and contains the following information:
+
+- Custodian - the name of the custodian whose processable files were discovered.
+
+- File Extension - all file extensions of each custodian's processable discovered files.
+
+- Discovered Files - the number of each custodian's processable discovered files by file extension.
+
+### File Types Discovered - Unprocessable
+
+This table provides a summary of the discovered file counts per file extension and contains the following information:
+
+- File Extension - all unprocessable discovered file extensions.
+
+- Discovered Files - the number of unprocessable files discovered with that file extension.
+
+### File Types Discovered - Unprocessable (by Custodian)
+
+This table provides a summary of the processable discovered file counts per file extension by custodian and contains the following information:
+
+- Custodian - the name of the custodian whose unprocessable files were discovered.
+
+- File Extension - all file extensions of each custodian's unprocessable files.
+
+- Discovered Files - the number of each custodian's unprocessable discovered files by file extension.
+
+### Processing Sets
+
+This section lists all processing sets included in this report. Each processing set listed is accompanied by the following information:
+
+- Custodian - the custodians attached to the data sources used by the processing set.
+
+- Source path - the location specified in the Source path field on the data sources used by the processing set.
+
+## Discovered Files by File Type
+
+This report provides information on the file types discovered during processing for the custodians associated with the selected processing sets. This report identifies the total processable and unprocessable file types discovered and categorizes the totals by file type. You can run this report on discovered or published processing sets. See Supported file types for processing for a list of file types and extensions supported by Relativity for processing.
+
+### Discovered Files by Custodian
+
+This table provides a summary of all files discovered per custodian and contains the following information:
+
+- Custodian - the name of the custodian whose files were discovered.
+
+- Discovered Files - the number of each custodian's discovered files.
+
+### File Types Discovered - Processable
+
+This table provides a summary of the files discovered per file extension and contains the following information:
+
+- File Extension - all file extensions discovered.
+
+- Discovered Files - each file extension's number of files discovered.
+
+### File Types Discovered - Processable (By File Type)
+
+This table provides a summary of the discovered file counts per file type and contains the following information:
+
+- File Extension - the file extension of all discovered files.
+
+- Custodian - the custodians of each file extension's discovered files.
+
+- Discovered Files - the number of each file extension's discovered files by custodian.
+
+### File Types Discovered - Unprocessable
+
+This table provides a summary of the files discovered per file extension and contains the following information:
+
+- File Extension - all file extensions discovered.
+
+- Discovered Files - each file extension's number of files discovered.
+
+### File Types Discovered - Unprocessable (By File Type)
+
+This table provides a summary of unprocessable discovered file counts per file type and contains the following information:
+
+- File Extension - the file extension of all unprocessable discovered files.
+
+- Custodian - the custodians of each file extension's unprocessable discovered files.
+
+- Discovered Files - the number of each file extension's unprocessable discovered files by custodian.
+
+### Processing Sets
+
+This section lists all processing sets included in this report. Each processing set listed is accompanied by the following information:
+
+- Custodian - the custodians attached to the data sources used by the processing set.
+
+- Source path - the location specified in the Source path field on the data sources used by the processing set.
+
+## Document Exception
+
+This report provides details on the document level errors encountered during processing, broken down by those that occurred during the discovery process and those that occurred during the publishing process. You can run this report on discovered or published processing sets.
+
+### Document Level Errors - Discovery
+
+This table lists all document level errors that occurred during discovery and contains the following information:
+
+- Error Message - all error messages encountered during discovery.
+
+- Total - the total number of errors encountered during discovery.
+
+- Total Distinct Documents with Discovery Errors - the total number of documents that encountered errors during discovery. Because any single document can have multiple errors, this count might be lower than the total number of errors.
+
+- Count - the number of instances the corresponding error occurred during discovery.
+
+### Document Level Errors - Publishing
+
+This table lists all document level errors that occurred during publish and contains the following information:
+
+- Error Message - all error messages encountered during publishing.
+
+- Total - the total number of errors encountered during publishing.
+
+- Total Distinct Documents with Publishing Errors - the total number of documents that encountered errors during publishing. Because any single document can have multiple errors, this count might be lower than the total number of errors.
+
+- Count - the number of instances the corresponding error occurred during publishing.
+
+### Processing Sets
+
+This section lists all processing sets included in this report. Each processing set listed is accompanied by the following information:
+
+- Custodian - the custodians attached to the data sources used by the processing set.
+
+- Source path - the location specified in the Source path field on the data sources used by the processing set.
+
+## File Size Summary
+
+This report provides information on file sizes for pre-processed, processed, and published data sets. Run this report after publishing a processing set.
+
+### Pre-Processed File Size
+
+This table lists the pre-processed file size for all loose and compressed file sizes in the source location.
+
+### Processed File Size
+
+This table lists the processed file size once Discovery is complete.
+
+It includes:
+
+- all loose and uncompressed files
+
+- duplicate files
+
+It excludes:
+
+- container files
+
+- DeNISTed files
+
+### Published File Size
+
+This table lists the published file size for review.
+
+It includes:
+
+- all loose and uncompressed files
+
+It excludes:
+
+- container files
+
+- DeNISTed files
+
+- duplicate files
+
+## Inventory Details
+
+This report provides detailed information on date range included, file size limitations, and deNIST settings. The report lists the number of files excluded by each filter applied. All excluded file counts reflect progressive filtration. See Reports for more information. You can run this report on inventoried processing sets.
+
+### Inventory Filter Settings
+
+This table provides a summary of the filter settings specified in the Inventory tab and contains the following information:
+
+- DeNIST Files Excluded - whether or not NIST files were excluded from the processing set after inventory.
+
+- Date Range Excluded - the span of time set by the date range filter after inventory.
+
+- File Size Range Excluded - the file size limitations set by the file size filter.
+
+- Inventory Errors - the number of errors encountered during the inventory process.
+
+- Files With Unknown Dates - the number of files with invalid dates.
+
+### Excluded by File Type Filter | Excluded File Count
+
+This table lists all file types filtered out of the document list and the number of files per type that were excluded.
+
+### Excluded by Location Filter | Excluded File Count
+
+This table lists all file locations filtered out of the document list and the number of files per location that were excluded.
+
+### Excluded by Sender Domain Filter | Excluded File Count
+
+This table lists all sender domains filtered out of the document list and the number of files per domain that were excluded.
+
+### Processing Sets
+
+This section lists all processing sets included in this report. Each processing set listed is accompanied by the following information:
+
+- Custodian - the custodians attached to the data sources used by the processing set.
+
+- Source path - the location specified in the Source path field on the data sources used by the processing set.
+
+## Inventory Details by Custodian
+
+This report provides detailed information on date range included, file size selection, and deNIST settings. The report lists the files and counts for each filter applied and also breaks down these counts by custodian. All excluded file counts reflect progressive filtration. You can run this report on inventoried processing sets.
+
+### Inventory Filter Settings
+
+This table provides a summary of the filter settings specified in the Inventory tab and contains the following information:
+
+- DeNIST Files Excluded - whether or not NIST files were excluded from the processing set after inventory.
+
+- Date Range Selected - the span of time set by the date range filter after inventory.
+
+- File Size Range Selected - the file size limitations set by the file size filter.
+
+- Inventory Errors - the number of errors encountered during the inventory process.
+
+- Files With Unknown Dates - the number of files with invalid dates.
+
+This report contains the same tables as the Inventory Details Report, but it also includes the following:
+
+### Custodian | Excluded by File Type Filter | Excluded File Count
+
+This table lists the file types filtered out of the document list per custodian and the number of files per type that were excluded.
+
+### Custodian | Excluded by File Location Filter | Excluded File Count
+
+This table lists all file locations filtered out of the document list per custodian and the number of files per location that were excluded.
+
+### Custodian | Excluded by Sender Domain | Excluded File Count
+
+This table lists all sender domains filtered out of the document list per custodian and the number of files per domain that were excluded.
+
+### Processing Sets
+
+This section lists all processing sets included in this report. Each processing set listed is accompanied by the following information:
+
+- Custodian - the custodians attached to the data sources used by the processing set.
+
+- Source path - the location specified in the Source path field on the data sources used by the processing set.
+
+## Inventory Exclusion Results
+
+This report provides detailed information on date range excluded, file size limitations, and deNIST inventory settings. This report also provides counts of files excluded by applied filters and categorizes the results by file type, sender domain, and file location. All excluded file counts are absolute. See Reports for more information. You can run this report on inventoried processing sets.
+
+### Inventory Filter Settings
+
+This table provides a summary of the filter settings specified in the Inventory tab and contains the following information:
+
+- DeNIST Files Excluded - whether or not NIST files were excluded from the processing set after inventory.
+
+- Date Range(s) Selected - the span of time set by the date range filter after inventory.
+
+- File Size Range(s) Selected - the file size limitations set by the file size filter.
+
+- Total Files Excluded - the number of files excluded by all applied filters.
+
+### File Type | Excluded File Count
+
+This table lists all file types that were filtered out and the number of files per type that were excluded.
+
+### Location | Excluded File Count
+
+This table lists all file locations that were filtered out and the number of files per location that were excluded.
+
+### Sender Domain | Excluded File Count
+
+This table lists all sender domains that were filtered out and the number of files per domain that were excluded.
+
+### Processing Sets
+
+This section lists all processing sets included in this report. Each processing set listed is accompanied by the following information:
+
+- Custodian - the custodians attached to the data sources used by the processing set.
+
+- Source path - the location specified in the Source path field on the data sources used by the processing set.
+
+## Inventory Exclusion Results by Custodian
+
+Provides detailed information on date range excluded, file size limitations, and deNIST inventory settings. This report also provides counts of files excluded by applied filters and categorizes the results by file type, sender domain, file location, and custodian. All excluded file counts are absolute. You can run this report on inventoried processing sets.
+
+This report contains the same tables as the Inventory Exclusion Results report, but it also includes the following:
+
+### Custodian | Excluded by File Type Filter | Excluded File Count
+
+This table lists the file types filtered out of the document list per custodian and the number of files per type that were excluded.
+
+### Custodian | Excluded by File Location Filter | Excluded File Count
+
+This table lists all file locations filtered out of the document list per custodian and the number of files per location that were excluded.
+
+### Custodian | Excluded by Sender Domain | Excluded File Count
+
+This table lists all sender domains filtered out of the document list per custodian and the number of files per domain that were excluded.
+
+### Processing Sets
+
+This section lists all processing sets included in this report. Each processing set listed is accompanied by the following information:
+
+- Custodian - the custodians attached to the data sources used by the processing set.
+
+- Source path - the location specified in the Source path field on the data sources used by the processing set.
+
+## Inventory Summary
+
+This report provides filtering summaries for each filter type including applied order, file count excluded, percentage of files excluded, total documents remaining, and total percentage of files remaining. All excluded file counts reflect progressive filtration. See Reports for more information.
+
+Final inventory results include file count after filtering, file size after filtering, total number of excluded files, and total percentage of files excluded. You can run this report on inventoried processing sets. Note that, because inventory affects only parent files, this report accounts for parent files only and therefore not necessarily all files in a processing set.
+
+### Initial Inventory Results
+
+This table provides a general summary of the inventoried processing set before filtration and contains the following information:
+
+- Processing Set - the name of the inventoried processing set.
+
+- Status - whether or not errors occurred during inventory.
+
+- File Count - the number of files in the unfiltered processing set.
+
+- File Size (unit of measurement) - the size of the unfiltered processing set.
+
+### Filtering Summary
+
+This table provides a general summary of all filters applied to the inventoried processing set and contains the following information:
+
+- Applied Order - the order that the filters were applied.
+
+- Filter Type - the filter type applied.
+
+- File Count Excluded by Filter - the number of files excluded by the filter.
+
+- % of Files Excluded by Filter - the percentage of the initial processing set excluded after filter is applied.
+
+- Total Remaining File Count - the number of files remaining after filter is applied.
+
+- Total % of Files Remaining - the percentage of the initial processing set remaining after filter is applied.
+
+### Final Inventory Results
+
+This table provides summary totals on inventory filtration and contains the following information:
+
+- File Count After Filtering - the number of files left after all filters are applied to the processing set.
+
+- File Size After Filtering (unit of measurement) - reports the size of the filtered processing set.
+
+- Total Excluded Files - the number of files excluded after all filters are applied.
+
+- Total % of Files Excluded - the percentage of the initial inventoried processing set excluded after all filters are applied.
+
+### Processing Sets
+
+This section lists all processing sets included in this report. Each processing set listed is accompanied by the following information:
+
+- Custodian - the custodians attached to the data sources used by the processing set.
+
+- Source path - the location specified in the Source path field on the data sources used by the processing set.
+
+## Job Exception
+
+This report provides details on the job level errors encountered during processing. You can run this report on discovered or published processing sets.
+
+### Job Level Errors
+
+This table provides a summary of all errors encountered during processing and contains the following information:
+
+- Error Message - the error message.
+
+- Phase of Processing - the phase of processing in which the error occurred (inventory, discovery, or publish).
+
+- Count - the number of instances each error occurred.
+
+### Processing Sets
+
+This section lists all processing sets included in this report. Each processing set listed is accompanied by the following information:
+
+- Custodian - the custodians attached to the data sources used by the processing set.
+
+- Source path - the location specified in the Source path field on the data sources used by the processing set.
+
+## Text Extraction
+
+This report provides information, broken down by custodian and file type, on the number and percentage of published files that contain and don’t contain extracted text and the total number of files published into Relativity. This also provides details on error messages encountered during processing. You can run this report on published processing sets. This report includes both OCR and extracted text.
+
+The Text Extraction report reads information from Data Grid if the Extracted Text field is enabled for Data Grid. For more information, see Fields .
+
+### Text Extraction by Custodian
+
+This table provides a summary of text extraction by custodian and contains the following information:
+
+- Custodian - the name of the custodian.
+
+- With Text - the number of files for that custodian with extracted text.
+
+- Without Text - the number of files for that custodian without extracted text.
+
+- Percentage without Text - the percentage of documents for that custodian with no extracted text.
+
+- Total Published Files - the number of published files of that custodian.
+
+### Text Extraction by File Type
+
+This table provides a summary of text extraction by file type and contains the following information:
+
+- File Extension - the file type extension.
+
+- With Text - the number of files of that file type with extracted text.
+
+- Without Text - the number of files of that file type with no extracted text.
+
+- Percentage without Text - the percentage of files of that file type without extracted text.
+
+- Total Published Files - the number of published files of that file type.
+
+### Breakdown by Error Message
+
+This table provides a summary of the number of files that received each error and contains the following information:
+
+- Error Message - the error message.
+
+- File Count - the number of files that encountered that error.
+
+The File Count value will never decrease, even if you resolve errors and retry documents. This is because Relativity gets this value directly from the Errors table in the database, which doesn't communicate error status, only that errors that are present. In other words, even an error that is resolved is still present in the Errors table in the database and therefore will display as being present in the Text Extraction report.
+
+- Percentage - the percentage of documents that encountered that error.
+
+If you publish processing sets without mapping the File Extension processing field, the Text Extraction report won't accurately report document counts by file type.
+
+### Processing Sets
+
+This section lists all processing sets included in this report. Each processing set listed is accompanied by the following information:
+
+- Custodian - the custodians attached to the data sources used by the processing set.
+
+- Source path - the location specified in the Source path field on the data sources used by the processing set.
+
+On this page
+
+- Reports
+
+- Generating a processing report
+
+- Data Migration
+
+- Excluded Files
+
+- Summary Statistics: Data Migration
+
+- Processing Sets
+
+- Master Document Replacement Summary
+
+- Deleted Master Documents
+
+- Replacements Master Documents
+
+- Discovered Files by Custodian
+
+- Discovered Files by Custodian
+
+- File Types Discovered - Processable
+
+- File Types Discovered - Processable(By Custodian)
+
+- File Types Discovered - Unprocessable
+
+- File Types Discovered - Unprocessable (by Custodian)
+
+- Processing Sets
+
+- Discovered Files by File Type
+
+- Discovered Files by Custodian
+
+- File Types Discovered - Processable
+
+- File Types Discovered - Processable (By File Type)
+
+- File Types Discovered - Unprocessable
+
+- File Types Discovered - Unprocessable (By File Type)
+
+- Processing Sets
+
+- Document Exception
+
+- Document Level Errors - Discovery
+
+- Document Level Errors - Publishing
+
+- Processing Sets
+
+- File Size Summary
+
+- Pre-Processed File Size
+
+- Processed File Size
+
+- Published File Size
+
+- Inventory Details
+
+- Inventory Filter Settings
+
+- Excluded by File Type Filter | Excluded File Count
+
+- Excluded by Location Filter | Excluded File Count
+
+- Excluded by Sender Domain Filter | Excluded File Count
+
+- Processing Sets
+
+- Inventory Details by Custodian
+
+- Inventory Filter Settings
+
+- Custodian | Excluded by File Type Filter | Excluded File Count
+
+- Custodian | Excluded by File Location Filter | Excluded File Count
+
+- Custodian | Excluded by Sender Domain | Excluded File Count
+
+- Processing Sets
+
+- Inventory Exclusion Results
+
+- Inventory Filter Settings
+
+- File Type | Excluded File Count
+
+- Location | Excluded File Count
+
+- Sender Domain | Excluded File Count
+
+- Processing Sets
+
+- Inventory Exclusion Results by Custodian
+
+- Custodian | Excluded by File Type Filter | Excluded File Count
+
+- Custodian | Excluded by File Location Filter | Excluded File Count
+
+- Custodian | Excluded by Sender Domain | Excluded File Count
+
+- Processing Sets
+
+- Inventory Summary
+
+- Initial Inventory Results
+
+- Filtering Summary
+
+- Final Inventory Results
+
+- Processing Sets
+
+- Job Exception
+
+- Job Level Errors
+
+- Processing Sets
+
+- Text Extraction
+
+- Text Extraction by Custodian
+
+- Text Extraction by File Type
+
+- Breakdown by Error Message
+
+- Processing Sets
+
+
+Why was this not helpful?
+
+Check one that applies.
+
+I could not find the information I was looking for.
+
+The information was incorrect.
+
+The instructions are confusing or unclear.
+
+The instructions did not work.
+
+Thank you for your feedback.
+
+Want to tell us more?
+
+
+Great!
+
+Thanks for taking the time to provide feedback.
+
+
+- Install Relativity
+
+- Pre-Installation
+
+- Licensing
+
+- Authentication
+
+- Post-Installation verification test
+
+- More >
+
+- Upgrade
+
+- Upgrade considerations
+
+- Relativity upgrade
+
+- More
+
+- Infrastructure
+
+- Servers
+
+- Agents
+
+- Resource pools
+
+- Resource files
+
+- More >
+
+- Capabilities
+
+- Analytics
+
+- Processing
+
+- More >
+
+- Resources
+
+- Relativity A-Z
+
+- PDF Downloads
+
+- Getting started
+
+- Documentation archives
+
+- Version support policy
+
+- Relativity Learning
+
+- Contact us
+
+- 1-312-263-1177
+
+- 231 South LaSalle Street 20th Floor Chicago, IL 60604
+
+- © Relativity
+
+- Privacy and Cookies
+
+- Terms of Use

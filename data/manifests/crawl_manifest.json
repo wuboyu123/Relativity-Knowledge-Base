@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-06-22T06:33:30+00:00",
+  "sources": [
+    {
+      "collection": "user",
+      "seed": "https://help.relativity.com/Server2025/Content/Relativity/Data_Grid/Monitoring_Data_Grid.htm",
+      "allowed_prefix": "https://help.relativity.com/Server2025/Content/"
+    },
+    {
+      "collection": "developer",
+      "seed": "https://platform.relativity.com/Server2025/Content/Relativity_Platform/index.htm",
+      "allowed_prefix": "https://platform.relativity.com/Server2025/Content/"
+    }
+  ],
+  "args": {
+    "max_pages": 0,
+    "delay": 0.15,
+    "timeout": 30,
+    "resume": false
+  },
+  "stats": {
+    "fetched": 1210,
+    "errors": 3,
+    "queued": 0,
+    "skipped_existing": 0
+  }
+}

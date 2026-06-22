@@ -1,0 +1,170 @@
+---
+title: "Relativity Integration Points"
+url: https://help.relativity.com/Server2025/Content/Relativity/Integration_Points/Integration_Points.htm
+collection: user
+fetched_at: 2026-06-22T06:03:07+00:00
+sha256: b2a03c6415b92683fcad01a0346d9d589c2cb5dcb10989179b539c2e06b80ab6
+---
+
+Relativity Integration Points Skip To Main Content Account Settings Logout
+
+- placeholder
+
+Account Settings Logout
+
+relativitynd5u5rpx
+
+
+https://help.relativity.com/Server2025/Content/CoveoSearch.htm
+
+
+Coveo Search Page
+
+>>
+
+Version: RelativityOne Server 2025 Server 2024
+
+☰
+
+# Integration Points
+
+Integration Points offers a solution to configure integrations from third party systems to Relativity objects and from Relativity instance-to-instance with Integration Points Sync. For more information, see Promoting data between workspaces through Integration Points .
+
+Interested developers can create a separate ADS application to pull data from a third party system source provider. Integration Points ingests that application to handle the scheduling, setup, field mapping, and actual import into Relativity. By using the Integration Points platform, developers can reduce the amount of time needed to create these custom integrations while end users receive a consistent and easy setup approach.
+
+In addition to supporting developer-built custom integrations, Integration Points also provides a built-in integration to Lightweight Directory Access Protocol (LDAP) enabled HR servers such as Microsoft Active Directory. Built on the Integration Points platform, the LDAP integration can filter and schedule imports from Active Directory data into a Relativity workspace. For example, the workstations, employee names, data shares, etc.
+
+Since the Integration Points doesn't offer Full Name field calculation for Custodian/Entity object, the field is not available as an option for mapping. If you need to update the Entity object, please use the LDAP provider, which allows new records to be added with a field other than Full Name as the identifier. Alternatively, you may consider using Relativity Desktop Client for Custodians/Entities updates.\
+
+See these related pages:
+
+- Installing Integration Points
+
+- Integration point profiles
+
+- Importing data through an integration point
+
+- Exporting data through an integration point
+
+-
+
+Promoting data between workspaces through Integration Points
+
+- Monitoring job history and errors
+
+- Viewing destination workspaces
+
+You can locate an application's version number by navigating to Applications & Scripts > Application Library tab. You must be a system admin to access this tab.
+
+## Using Integration Points scenarios
+
+Read an Integration Points developer scenario
+
+Using Integration Points as a developer
+
+You’re the lead developer of an organization responsible for building Relativity customizations. One of your clients started tracking all of their litigation-related information outside of Relativity in a new product called Whazootie. They mention to you that they would love to have this same information available in their Relativity workspaces to tie their document review to specific case information.
+
+You use Whazootie's APIs to build a simple Relativity application to connect to a Whazootie website without building any import or setup steps. You give the application to your client along with Integration Points for them to install in a workspace. They can use all the security, scheduling, setup, and import options available in Integration Points along with the Whazootie connection to set up multiple imports that bring Whazootie data into their Relativity workspace.
+
+Read an Integration Points end user scenario
+
+Using Integration Points as an end user
+
+You’re the litigation support professional responsible for setting up workflows and templates to help manage your company’s legal hold procedure using Relativity Legal Hold . You want to ensure that all custodian information is kept up-to-date so that holds always go to the correct email address and that the litigation team is aware of custodians who have changed departments or left the company. Unfortunately, all of the custodian information is scattered across multiple company HR servers containing unnecessary computer and network data.
+
+To solve this problem, you use the Integration Points setup wizard to configure new integrations to each HR server, mapping items to specific Relativity fields. You work with your team to configure a filter in each setup so that only the appropriate employees are brought in as Custodians and schedule the import to occur automatically each night during off-hours. As a result, your custodian address book is always up-to-date, ensuring that proper litigation workflows are followed with every custodian.
+
+On this page
+
+- Integration Points
+
+- Using Integration Points scenarios
+
+
+Why was this not helpful?
+
+Check one that applies.
+
+I could not find the information I was looking for.
+
+The information was incorrect.
+
+The instructions are confusing or unclear.
+
+The instructions did not work.
+
+Thank you for your feedback.
+
+Want to tell us more?
+
+
+Great!
+
+Thanks for taking the time to provide feedback.
+
+
+- Install Relativity
+
+- Pre-Installation
+
+- Licensing
+
+- Authentication
+
+- Post-Installation verification test
+
+- More >
+
+- Upgrade
+
+- Upgrade considerations
+
+- Relativity upgrade
+
+- More
+
+- Infrastructure
+
+- Servers
+
+- Agents
+
+- Resource pools
+
+- Resource files
+
+- More >
+
+- Capabilities
+
+- Analytics
+
+- Processing
+
+- More >
+
+- Resources
+
+- Relativity A-Z
+
+- PDF Downloads
+
+- Getting started
+
+- Documentation archives
+
+- Version support policy
+
+- Relativity Learning
+
+- Contact us
+
+- 1-312-263-1177
+
+- 231 South LaSalle Street 20th Floor Chicago, IL 60604
+
+- © Relativity
+
+- Privacy and Cookies
+
+- Terms of Use

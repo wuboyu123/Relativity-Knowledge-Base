@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+
+# Keep raw crawled HTML local by default. Markdown and JSONL are committed.
+data/raw_html/

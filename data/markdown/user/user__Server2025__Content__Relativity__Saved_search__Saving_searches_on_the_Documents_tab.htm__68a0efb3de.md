@@ -1,0 +1,156 @@
+---
+title: "Saving searches on the Documents tab"
+url: https://help.relativity.com/Server2025/Content/Relativity/Saved_search/Saving_searches_on_the_Documents_tab.htm
+collection: user
+fetched_at: 2026-06-22T06:07:50+00:00
+sha256: ff9d157c66db643d15765edd910d5497ed22dda1b9f9dfd932a817ba0d9bfd87
+---
+
+Saving searches on the Documents tab Skip To Main Content Account Settings Logout
+
+- placeholder
+
+Account Settings Logout
+
+relativitynd5u5rpx
+
+
+https://help.relativity.com/Server2025/Content/CoveoSearch.htm
+
+
+Coveo Search Page
+
+>>
+
+Version: RelativityOne Server 2025 Server 2024
+
+☰
+
+# Saving searches on the Documents tab
+
+On the Documents tab, you can click Save Search at the bottom of the screen near the mass operations. This creates a new search using the criteria that you've already set on the search panel . You can save conditional searches, keyword searches, dtSearches, or Analytics searches. Relativity also retrieves any settings that you selected for a view, sort order, or other features that control how your results appear.
+
+To use Save Search , you must have add permissions for Search , and access to the Saved Searches Browser . See Setting workspace permissions .
+
+To create a saved search on the Documents tab:
+
+- Navigate to the Documents tab.
+
+- (Optional) In the Browser menu, select the Folders , Field Tree , or Clusters option.
+
+The item list for the selected browser displays.
+
+- Filter on the documents in the list or select a keyword or other search option. To set search criteria, see the specific instructions for running keyword searches, dtSearches, Analytics, or filters. Your search results appear in the item list on the Documents tab.
+
+Any folder, tag, or cluster selected in the browser is included as a condition when the search is saved. The current columns, column filters, and sort order save along with any conditions set for your view (including your selection in the Related Documents drop-down menu).
+
+- Click .
+
+The search builder window appears.
+
+- Select or enter the following required information:
+
+- Name - Enter a title for the search. The title appears in the saved searches browser.
+
+- Owner - Select Public to make the search available to all users or choose a specific user from the list. Click Me to select your name from the list, making the search private. (Users must have the appropriate privileges to view searches.) See Controlling the visibility of saved searches .
+
+- Search Folder - Click the Ellipsis button to launch a pop-up window where you can save the new search to a specific folder on the saved searches browser. Highlight the folder where you want to save the search, and then click OK to select it.
+
+- Add to or modify the search criteria as needed. See Creating or editing a saved search .
+
+- Click Save .
+
+After you save your search, it appears in the saved searches browser. You can modify the search using the same options available for saved searches. See Creating or editing a saved search . Click to display the saved search browser. To update the search, follow the same steps as those used to edit a saved search. Right-click on the search in the saved searches browser, and then click Edit . The saved search form pre-populates with information used in your search.
+
+On this page
+
+- Saving searches on the Documents tab
+
+
+Why was this not helpful?
+
+Check one that applies.
+
+I could not find the information I was looking for.
+
+The information was incorrect.
+
+The instructions are confusing or unclear.
+
+The instructions did not work.
+
+Thank you for your feedback.
+
+Want to tell us more?
+
+
+Great!
+
+Thanks for taking the time to provide feedback.
+
+
+- Install Relativity
+
+- Pre-Installation
+
+- Licensing
+
+- Authentication
+
+- Post-Installation verification test
+
+- More >
+
+- Upgrade
+
+- Upgrade considerations
+
+- Relativity upgrade
+
+- More
+
+- Infrastructure
+
+- Servers
+
+- Agents
+
+- Resource pools
+
+- Resource files
+
+- More >
+
+- Capabilities
+
+- Analytics
+
+- Processing
+
+- More >
+
+- Resources
+
+- Relativity A-Z
+
+- PDF Downloads
+
+- Getting started
+
+- Documentation archives
+
+- Version support policy
+
+- Relativity Learning
+
+- Contact us
+
+- 1-312-263-1177
+
+- 231 South LaSalle Street 20th Floor Chicago, IL 60604
+
+- © Relativity
+
+- Privacy and Cookies
+
+- Terms of Use

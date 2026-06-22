@@ -1,0 +1,206 @@
+---
+title: "Alias object"
+url: https://help.relativity.com/Server2025/Content/Relativity/Analytics/Alias_object.htm
+collection: user
+fetched_at: 2026-06-22T06:05:10+00:00
+sha256: e1b65a3bb009a72123ea59006bf12771141624c133dcba05e9960e95fd257c30
+---
+
+Alias object Skip To Main Content Account Settings Logout
+
+- placeholder
+
+Account Settings Logout
+
+relativitynd5u5rpx
+
+
+https://help.relativity.com/Server2025/Content/CoveoSearch.htm
+
+
+Coveo Search Page
+
+>>
+
+Version: RelativityOne Server 2025 Server 2024
+
+☰
+
+# Alias object
+
+The “aliases” for an author are other textual representations of the author that are equated as the same entity. For example, John Doe sends an email using the email address john.doe@example.com. He may have another email address, such as john.doe@gmail.com. Based on these email addresses, the Analytics engine finds they are related and can make an alias list that would include "John Doe" and "Doe, John" and "john.doe@gmail.com" and "john.doe@example.com."
+
+Aliases are identified during the name normalization operation in Analytics. For more information, see Name normalization . You can also manually create an alias.
+
+## Creating and editing an alias
+
+To create an alias, complete the following:
+
+The Aliases tab only appears if you have Analytics installed.
+
+- From the Aliases tab, click New Alias .
+
+- Complete the following fields:
+
+- Name - the name of the alias.
+
+Do not edit the Name value for aliases created by the name normalization operation as it can negatively impact future runs and results.
+
+- Type - the type can be one of the following:
+
+- Proper Name - an alias that contains all letters.
+
+- Jane Smith
+
+- Email Address - a standard email addresses with no spaces or characters.
+
+- jane.smith@relativity.com
+
+- Extended Email Address - an email address with other content or characters.
+
+- Jane Smith [Jane.Smith@relativity.com]
+
+- Exchange - X500 and X400 formats.
+
+- Smith, Jane </O=RELATIVITY/OU=NA/CN=RECIPIENTS/CN=JSMITH>
+
+- Phone Number - an alias that contains only numbers and characters.
+
+- 123-456-7890
+
+- Undefined - an alias that doesn't fall into any of the categories above.
+
+- Jane Smith/RELATIVITY@relativityXgat
+
+- Domain (optional) - the full domain of the alias (everything after the @ sign).
+
+- us.relativity.com
+
+- Primary Domain (optional) - the domain of the organization.
+
+- relativity.com
+
+- Click Save .
+
+## Assign to Entity
+
+The Assign to Entity mass operation is a mass operation on the Aliases tab. This operation lets you select and re-assign an alias to a different entity. An entity must exist for you to merge into it; you can't create a new entity on-the-fly.
+
+You can only use the Assign to Entity mass operation if you have Analytics installed.
+
+To assign aliases to entities:
+
+- From the Aliases list, select the checkbox(es) next to the alias(es) that you want to assign to an entity.
+
+No more than 500 aliases can be included in the Assign to Entity operation.
+
+- From the actions menu at the bottom, select Assign to Entity from the second drop-down.
+
+The Assign to Entity form appears.
+
+- Select the Entity you want to assign the alias(es) to, and then click Assign to Entity .
+
+## Deleting an alias
+
+You can use the Mass delete operation to delete aliases. You can delete all aliases or up to 50 selected aliases at one time using the mass operation. For more information, see Mass delete .
+
+When you delete an alias, the alias and the entity associated with the alias are removed from all name normalization document fields.
+
+On this page
+
+- Alias object
+
+- Creating and editing an alias
+
+- Assign to Entity
+
+- Deleting an alias
+
+
+Why was this not helpful?
+
+Check one that applies.
+
+I could not find the information I was looking for.
+
+The information was incorrect.
+
+The instructions are confusing or unclear.
+
+The instructions did not work.
+
+Thank you for your feedback.
+
+Want to tell us more?
+
+
+Great!
+
+Thanks for taking the time to provide feedback.
+
+
+- Install Relativity
+
+- Pre-Installation
+
+- Licensing
+
+- Authentication
+
+- Post-Installation verification test
+
+- More >
+
+- Upgrade
+
+- Upgrade considerations
+
+- Relativity upgrade
+
+- More
+
+- Infrastructure
+
+- Servers
+
+- Agents
+
+- Resource pools
+
+- Resource files
+
+- More >
+
+- Capabilities
+
+- Analytics
+
+- Processing
+
+- More >
+
+- Resources
+
+- Relativity A-Z
+
+- PDF Downloads
+
+- Getting started
+
+- Documentation archives
+
+- Version support policy
+
+- Relativity Learning
+
+- Contact us
+
+- 1-312-263-1177
+
+- 231 South LaSalle Street 20th Floor Chicago, IL 60604
+
+- © Relativity
+
+- Privacy and Cookies
+
+- Terms of Use

@@ -1,0 +1,325 @@
+---
+title: "Windows Service Configuration"
+url: https://help.relativity.com/Server2025/Content/Environment_Watch/Windows_Service_Configuration.htm
+collection: user
+fetched_at: 2026-06-22T06:11:43+00:00
+sha256: 954ef7c1723e1e2cbe2d7fbaf24cd16741a4443fa598a159dac8c5731a30901b
+---
+
+Windows Service Configuration Skip To Main Content Account Settings Logout
+
+- placeholder
+
+Account Settings Logout
+
+relativitynd5u5rpx
+
+
+https://help.relativity.com/Server2025/Content/CoveoSearch.htm
+
+
+Coveo Search Page
+
+>>
+
+Version: RelativityOne Server 2025 Server 2024
+
+☰
+
+# Windows Service Configuration
+
+This section describes how to configure Windows service monitoring using the environmentWatchConfiguration JSON configuration file.
+
+## Overview
+
+This configuration monitors the status of specified Windows services to ensure they are running as expected. Some Windows services are monitored by default depending on the installed products, even if they are not explicitly configured in the custom JSON configuration file.
+
+The table below lists the service names that are monitored by default depending on the installed products.
+
+### Default Services
+
+Service Name Description
+
+apm-server Elastic Stack APM Server
+
+elasticsearch Elastic Stack Elasticsearch Service
+
+W3SVC Internet Information Services (IIS)
+
+QueueManager Invariant Queue Manager
+
+RabbitMQ RabbitMQ Message Broker
+
+kCura EDDS Agent Manager Relativity Agent Manager
+
+Relativity Analytics Engine Relativity Analytics Engine (CAAT)
+
+Relativity Secret Store Relativity Secret Store
+
+kCura Service Host Manager Relativity Service Host Manager
+
+kCura EDDS Web Processing Manager Relativity Web Processing Manager
+
+### Properties Table
+
+The following table lists the properties used to configure Windows services monitoring in the custom JSON configuration file.
+
+Property Type Description
+
+enabled boolean Enables or disables monitoring for Windows services.
+
+include array List of Windows service names (not display names) to monitor (for example, "WinDefend").
+
+To identify the correct service name:
+
+- Navigate to the Services application on the host.
+
+- Right-click the desired service and select Properties .
+
+- Copy the Service name value (not the display name).
+
+## Configure Windows Services
+
+Windows services can be monitored at the " hosts ", " instance ", or " installedProducts " level. For services to monitor, locate " windowsServices " under the desired section and update the configuration as shown below.
+
+- enabled : Set to true to enable Windows services monitoring.
+
+- include : List the service names to monitor.
+
+Example
+
+Copy
+
+```text
+{
+
+  "environmentWatchConfiguration": {
+
+    "monitoring": {
+
+      "instance": {
+
+        "sources": {
+
+          "certificates": {},
+
+          "windowsServices": {
+
+            "enabled": false,
+
+            "include": []
+
+          }
+
+        },
+
+        "otelCollectorYamlFiles": []
+
+      },
+
+      "installedProducts": [
+
+        {
+
+          "productName": "Agent",
+
+          "sources": {
+
+            "certificates": {
+
+              "enabled": true,
+
+              "include": []
+
+            },
+
+            "windowsServices": {
+
+              "enabled": true,
+
+              "include": [
+
+                "Spooler"
+
+              ]
+
+            }
+
+          },
+
+          "otelCollectorYamlFiles": []
+
+        }
+
+      ],
+
+      "hosts": [
+
+        {
+
+          "hostName": "emttest",
+
+          "sources": {
+
+            "certificates": {
+
+              "enabled": false,
+
+              "include": []
+
+            },
+
+            "sqlServers": {
+
+              "enabled": false,
+
+              "include": []
+
+            },
+
+            "windowsServices": {
+
+              "enabled": true,
+
+              "include": [
+
+                "W3SVC"
+
+              ]
+
+            }
+
+          },
+
+          "otelCollectorYamlFiles": []
+
+        }
+
+      ]
+
+    },
+
+    "alertNotificationHandlers": {}
+
+  }
+
+}
+
+```
+
+If the Windows service specified in the custom JSON configuration file cannot be found on the host, an alert will be triggered indicating that the service is stopped or missing. For troubleshooting guidance, refer Troubleshooting section.
+
+### Verification in Kibana
+
+- Navigate to Kibana Dashboard.
+
+- Ensure that the Windows services defined in the custom JSON configuration file appear on the Kibana Windows services dashboard. The example below demonstrates how a Windows service specified in the custom JSON configuration file is successfully monitored and displayed on the Windows services dashboard.
+
+## Troubleshooting
+
+Refer to the Troubleshooting Guide to resolve any custom JSON windows services configuration issues.
+
+On this page
+
+- Windows Service Configuration
+
+- Overview
+
+- Default Services
+
+- Properties Table
+
+- Configure Windows Services
+
+- Verification in Kibana
+
+- Troubleshooting
+
+
+Why was this not helpful?
+
+Check one that applies.
+
+I could not find the information I was looking for.
+
+The information was incorrect.
+
+The instructions are confusing or unclear.
+
+The instructions did not work.
+
+Thank you for your feedback.
+
+Want to tell us more?
+
+
+Great!
+
+Thanks for taking the time to provide feedback.
+
+
+- Install Relativity
+
+- Pre-Installation
+
+- Licensing
+
+- Authentication
+
+- Post-Installation verification test
+
+- More >
+
+- Upgrade
+
+- Upgrade considerations
+
+- Relativity upgrade
+
+- More
+
+- Infrastructure
+
+- Servers
+
+- Agents
+
+- Resource pools
+
+- Resource files
+
+- More >
+
+- Capabilities
+
+- Analytics
+
+- Processing
+
+- More >
+
+- Resources
+
+- Relativity A-Z
+
+- PDF Downloads
+
+- Getting started
+
+- Documentation archives
+
+- Version support policy
+
+- Relativity Learning
+
+- Contact us
+
+- 1-312-263-1177
+
+- 231 South LaSalle Street 20th Floor Chicago, IL 60604
+
+- © Relativity
+
+- Privacy and Cookies
+
+- Terms of Use

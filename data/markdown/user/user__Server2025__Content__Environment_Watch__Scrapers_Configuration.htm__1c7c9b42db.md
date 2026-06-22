@@ -1,0 +1,557 @@
+---
+title: "Scrapers Configuration"
+url: https://help.relativity.com/Server2025/Content/Environment_Watch/Scrapers_Configuration.htm
+collection: user
+fetched_at: 2026-06-22T06:11:49+00:00
+sha256: 0a86ac470fd40d187ef8df8f01e985a543ef1be2e578c955996b61af509bf213
+---
+
+Scrapers Configuration Skip To Main Content Account Settings Logout
+
+- placeholder
+
+Account Settings Logout
+
+relativitynd5u5rpx
+
+
+https://help.relativity.com/Server2025/Content/CoveoSearch.htm
+
+
+Coveo Search Page
+
+>>
+
+Version: RelativityOne Server 2025 Server 2024
+
+☰
+
+# Scrapers Configuration
+
+This section describes how to configure scraper intervals and parameters using the environmentWatchConfiguration JSON configuration file.
+
+## Overview
+
+Scrapers are background tasks that collect metrics from various sources and report them to OpenTelemetry collectors. Each scraper runs at a configurable interval and monitors specific aspects of the environment. By default, all scrapers use predefined interval values, but these can be customized using the JSON configuration file.
+
+The scrapers section in the configuration allows users to override the default interval for each scraper, and in some cases, configure additional parameters specific to each scraper type.
+
+## Scrapers Section
+
+The scrapers configuration is defined under the monitoring section in the JSON configuration file.
+
+### Properties Table
+
+Property Type Description
+
+name string The name of the scraper. Must match the exact scraper class name.
+
+parameters object Key-value pairs of parameters for the scraper (e.g., intervalSeconds ).
+
+### Common Parameters
+
+Parameter Type Description
+
+intervalSeconds string The interval (in seconds) at which the scraper runs. Value must be a string.
+
+## Available Scrapers
+
+The following table lists all available scrapers, their default intervals, descriptions, and KQL queries for verification:
+
+Scraper Name Default Interval (seconds) Description KQL Query
+
+HeartbeatOtelMetricScraper 30 Monitors the heartbeat and uptime of the Environment Watch service. transaction.name : "HeartbeatOtelMetricScraper.ScrapeMetricsAsync"
+
+ResourceServerNetworkFileShareOtelMetricScraper 120 Monitors accessibility of resource server file shares. relsvr.resourceserver_networkshare.accessible : *
+
+SqlDistributedHealthOtelMetricScraper 300 Monitors health and connectivity of distributed SQL servers. relsvr.sqlserver_distributed.running : *
+
+SqlPrimaryBcpShareOtelMetricScraper 120 Monitors accessibility of the primary SQL BCP file share. relsvr.sqlbcp_networkshare.accessible : *
+
+SqlPrimaryHealthOtelMetricScraper 60 Monitors health and connectivity of the primary SQL server. relsvr.sqlserver_primary.running : *
+
+WindowsServiceOtelMetricScraper 60 Monitors the status of Windows services. host.os.service.running : *
+
+X509CertificateOtelMetricScraper 3600 Monitors the presence and validity of X.509 certificates. relsvr.x509_certificate : *
+
+OAuth2ClientOtelMetricScraper 180 Monitors OAuth2 client authentication health. transaction.name : "OAuth2ClientOtelMetricScraper.ScrapeMetricsAsync"
+
+KibanaAlertOtelMetricScraper 180 Monitors Kibana alerts and sends notifications. relsvr.alert : *
+
+AntiVirusOtelMetricScraper 300 Monitors antivirus status on the host. relsvr.antivirus : *
+
+## Scraper-Specific Parameters
+
+### X509CertificateOtelMetricScraper
+
+In addition to intervalSeconds , the X509 certificate scraper supports the following parameter:
+
+Parameter Type Default Description
+
+expirationWarningDays string 30 Number of days before certificate expiration to trigger a warning alert.
+
+Example:
+
+Copy
+
+```text
+{
+
+  "name": "X509CertificateOtelMetricScraper",
+
+  "parameters": {
+
+    "intervalSeconds": "3600",
+
+    "expirationWarningDays": "30"
+
+  }
+
+}
+
+```
+
+## Configure Scrapers
+
+To configure scrapers, add or update the scrapers array under the monitoring section in the custom JSON configuration file.
+
+Example Configuration:
+
+Copy
+
+```text
+{
+
+  "environmentWatchConfiguration": {
+
+    "monitoring": {
+
+      "instance": {
+
+        "sources": {
+
+          "certificates": {},
+
+          "windowsServices": {
+
+            "enabled": false,
+
+            "include": []
+
+          }
+
+        },
+
+        "otelCollectorYamlFiles": []
+
+      },
+
+      "installedProducts": [],
+
+      "hosts": [],
+
+      "scrapers": [
+
+        {
+
+          "name": "HeartbeatOtelMetricScraper",
+
+          "parameters": {
+
+            "intervalSeconds": "30"
+
+          }
+
+        },
+
+        {
+
+          "name": "ResourceServerNetworkFileShareOtelMetricScraper",
+
+          "parameters": {
+
+            "intervalSeconds": "120"
+
+          }
+
+        },
+
+        {
+
+          "name": "SqlDistributedHealthOtelMetricScraper",
+
+          "parameters": {
+
+            "intervalSeconds": "300"
+
+          }
+
+        },
+
+        {
+
+          "name": "SqlPrimaryBcpShareOtelMetricScraper",
+
+          "parameters": {
+
+            "intervalSeconds": "120"
+
+          }
+
+        },
+
+        {
+
+          "name": "SqlPrimaryHealthOtelMetricScraper",
+
+          "parameters": {
+
+            "intervalSeconds": "60"
+
+          }
+
+        },
+
+        {
+
+          "name": "WindowsServiceOtelMetricScraper",
+
+          "parameters": {
+
+            "intervalSeconds": "60"
+
+          }
+
+        },
+
+        {
+
+          "name": "X509CertificateOtelMetricScraper",
+
+          "parameters": {
+
+            "intervalSeconds": "3600",
+
+            "expirationWarningDays": "30"
+
+          }
+
+        },
+
+        {
+
+          "name": "OAuth2ClientOtelMetricScraper",
+
+          "parameters": {
+
+            "intervalSeconds": "180"
+
+          }
+
+        },
+
+        {
+
+          "name": "KibanaAlertOtelMetricScraper",
+
+          "parameters": {
+
+            "intervalSeconds": "180"
+
+          }
+
+        },
+
+        {
+
+          "name": "AntiVirusOtelMetricScraper",
+
+          "parameters": {
+
+            "intervalSeconds": "300"
+
+          }
+
+        }
+
+      ]
+
+    },
+
+    "alertNotificationHandlers": {}
+
+  }
+
+}
+
+```
+
+## Customizing Scraper Intervals
+
+To customize a scraper's interval:
+
+- Identify the scraper name from the Available Scrapers table.
+
+- Add or update the scraper entry in the scrapers array.
+
+- Set the intervalSeconds parameter to the desired value (as a string).
+
+Example 1 : Increase the heartbeat scraper interval to 60 seconds:
+
+Copy
+
+```text
+{
+
+  "name": "HeartbeatOtelMetricScraper",
+
+  "parameters": {
+
+    "intervalSeconds": "60"
+
+  }
+
+}
+
+```
+
+Example 2 : Reduce the certificate scraper interval to 30 minutes (1800 seconds) and set expiration warning to 45 days:
+
+Copy
+
+```text
+{
+
+  "name": "X509CertificateOtelMetricScraper",
+
+  "parameters": {
+
+    "intervalSeconds": "1800",
+
+    "expirationWarningDays": "45"
+
+  }
+
+}
+
+```
+
+Example 3 : Increase the SQL distributed health check interval to 10 minutes (600 seconds):
+
+Copy
+
+```text
+{
+
+  "name": "SqlDistributedHealthOtelMetricScraper",
+
+  "parameters": {
+
+    "intervalSeconds": "600"
+
+  }
+
+}
+
+```
+
+## Default Behavior
+
+If a scraper is not explicitly configured in the scrapers array, it will use its default interval. The configuration supports partial overrides—only scrapers that need customization need to be included in the scrapers array.
+
+Scraper configurations are cached for performance. After updating the environment-watch-configuration.json file, the Environment Watch Windows service will automatically read the updated configuration within the cache expiration period (default: 15 minutes).
+
+## Restart the Environment Watch Windows Service
+
+After updating the environment-watch-configuration.json file with scraper configuration changes, save the file. The Environment Watch service will automatically detect and apply the changes. For immediate application, restart the Environment Watch Windows service.
+
+## Verification in Kibana
+
+To verify that scrapers are running at the configured intervals, use Kibana Discover with the APM data view:
+
+- Navigate to Kibana > Discover .
+
+- Select the APM data view from the data view dropdown.
+
+- Use the KQL query from the Available Scrapers table to filter results for the specific scraper.
+
+- Verify that metrics are being reported at the configured intervals by checking the timestamps.
+
+Example Verification Steps:
+
+### Verifying HeartbeatOtelMetricScraper
+
+- In Discover, select the APM data view.
+
+- Enter the KQL query: transaction.name : "HeartbeatOtelMetricScraper.ScrapeMetricsAsync"
+
+- Adjust the time range as needed.
+
+- Verify that spans are appearing at the configured interval (default: 30 seconds).
+
+### Verifying X509CertificateOtelMetricScraper
+
+- In Discover, select the APM data view.
+
+- Enter the KQL query: relsvr.x509_certificate : *
+
+- Verify that metrics are appearing at the configured interval (default: 3600 seconds).
+
+- Check the expiration_warning_days attribute to confirm the configured threshold.
+
+### Verifying WindowsServiceOtelMetricScraper
+
+- In Discover, select the APM data view.
+
+- Enter the KQL query: host.os.service.running : *
+
+- Verify that Windows service metrics are being reported at the configured interval.
+
+## Troubleshooting
+
+### Scraper Not Running at Expected Interval
+
+- Verify the scraper name matches exactly as listed in the Available Scrapers table (case-sensitive).
+
+- Ensure the intervalSeconds value is provided as a string (e.g., "60" , not 60 ).
+
+- Check the Environment Watch service logs for any configuration parsing errors.
+
+### Certificate Expiration Warnings Not Appearing
+
+- Verify the expirationWarningDays parameter is set correctly.
+
+- Ensure certificates are within the warning threshold.
+
+- Check that the certificate scraper is enabled and running.
+
+Refer to the Troubleshooting Guide to resolve any custom JSON scraper configuration issues.
+
+On this page
+
+- Scrapers Configuration
+
+- Overview
+
+- Scrapers Section
+
+- Properties Table
+
+- Common Parameters
+
+- Available Scrapers
+
+- Scraper-Specific Parameters
+
+- X509CertificateOtelMetricScraper
+
+- Configure Scrapers
+
+- Customizing Scraper Intervals
+
+- Default Behavior
+
+- Restart the Environment Watch Windows Service
+
+- Verification in Kibana
+
+- Verifying HeartbeatOtelMetricScraper
+
+- Verifying X509CertificateOtelMetricScraper
+
+- Verifying WindowsServiceOtelMetricScraper
+
+- Troubleshooting
+
+- Scraper Not Running at Expected Interval
+
+- Certificate Expiration Warnings Not Appearing
+
+
+Why was this not helpful?
+
+Check one that applies.
+
+I could not find the information I was looking for.
+
+The information was incorrect.
+
+The instructions are confusing or unclear.
+
+The instructions did not work.
+
+Thank you for your feedback.
+
+Want to tell us more?
+
+
+Great!
+
+Thanks for taking the time to provide feedback.
+
+
+- Install Relativity
+
+- Pre-Installation
+
+- Licensing
+
+- Authentication
+
+- Post-Installation verification test
+
+- More >
+
+- Upgrade
+
+- Upgrade considerations
+
+- Relativity upgrade
+
+- More
+
+- Infrastructure
+
+- Servers
+
+- Agents
+
+- Resource pools
+
+- Resource files
+
+- More >
+
+- Capabilities
+
+- Analytics
+
+- Processing
+
+- More >
+
+- Resources
+
+- Relativity A-Z
+
+- PDF Downloads
+
+- Getting started
+
+- Documentation archives
+
+- Version support policy
+
+- Relativity Learning
+
+- Contact us
+
+- 1-312-263-1177
+
+- 231 South LaSalle Street 20th Floor Chicago, IL 60604
+
+- © Relativity
+
+- Privacy and Cookies
+
+- Terms of Use

@@ -1,0 +1,216 @@
+---
+title: "Analytics profiles"
+url: https://help.relativity.com/Server2025/Content/Relativity/Analytics/Analytics_profiles_tab.htm
+collection: user
+fetched_at: 2026-06-22T06:05:00+00:00
+sha256: be38af58fe9073e8c95816f7189b8ebca3db2a08ea420ada1c485bd6d3cb65d2
+---
+
+Analytics profiles Skip To Main Content Account Settings Logout
+
+- placeholder
+
+Account Settings Logout
+
+relativitynd5u5rpx
+
+
+https://help.relativity.com/Server2025/Content/CoveoSearch.htm
+
+
+Coveo Search Page
+
+>>
+
+Version: RelativityOne Server 2025 Server 2024
+
+☰
+
+# Analytics profiles
+
+Analytics profiles apply to email threading and name normalization structured analytics sets. Before creating a structured analytics set for email threading or name normalization, you must create an Analytics profile to map applicable email field settings. Analytics profiles are reusable and transferable, which means you don't have to create a new profile for every new structured analytics set you create.
+
+The Analytics application must be installed in the workspace in order to set the fields on an Analytics profile.
+
+See these related pages:
+
+- Structured analytics set tab
+
+Read an Analytics profiles scenario
+
+## Creating or editing an Analytics profile
+
+To create a new profile or edit an existing profile, perform the following steps:
+
+- From the Indexing & Analytics tab, select Analytics Profiles . A list of existing Analytics profiles displays.
+
+- To create a new profile, click New Analytics Profile . The Analytics Profile Layout appears.
+
+- Complete or edit the fields on the layout. See Fields . Fields in orange are required.
+
+- Click Save to save the profile and make it available for selection.
+
+### Fields
+
+The Analytics Profile layout contains the following fields:
+
+#### Analytics Profile Information
+
+- Name - the name of the Analytics profile.
+
+#### Email Field Mappings
+
+Running email threading or name normalization in a Structured Analytics set requires an Analytics profile with mapped email field settings.
+
+Map workspace fields that store metadata appropriate for the following email fields:
+
+##### Email header fields
+
+- Email from field – sender’s email address. Acceptable field types are Fixed-length text and Long text.
+
+- Email to field – recipients’ email addresses. Acceptable field types are Fixed-length text and Long text.
+
+- Email cc field – carbon copied (Cc) recipients’ email addresses. Acceptable field types are Fixed-length text and Long text.
+
+- Email bcc field – blind carbon copied (Bcc) recipients' email addresses. Acceptable field types are Fixed-length text and Long text.
+
+- Email subject field – email subject line. Acceptable field types are Fixed-length text and Long text.
+
+- Email date sent field – email sent date. The only acceptable field type is date. For accurate results, this field should contain both the date and time.
+
+##### Email metadata fields
+
+- Parent Document ID field (required) – document identifier of an attachment’s parent email. Acceptable field types are fixed-length, long text, and whole number. This field should be set on all attachments. If left blank, the attachments won’t have an Email Thread Group or an Email Threading ID and won't be threaded with their parent email. For attachments within attachments, the Parent Document ID may be set to the "grandparent" email (the top-level document ID) or the direct parent email, which has its own Parent Document ID set to the top-level parent. The field does not need to be set on emails. For parent emails, the field can be blank or set to its own Document Identifier.
+
+If you do not have the parent document ID data, you can run the Populate Parent ID to Child script to populate this field. For more information on running this script, see Relativity Script Library .
+
+Example 1 of expected format :
+
+Document EN11 is the parent email. Notice that the Parent Document ID field is unset on EN11 in this example. This yields valid results. Document EN12 is an attachment. The Parent Document ID must match exactly with the Document Identifier of the parent email. In this case, the Document Identifier is the Control Number field. The Parent Document ID of the attachment (EN12) is correctly set to EN11.
+
+Example 2 of expected format :
+
+Document EN11 is the parent email. Notice that the Parent Document ID field is set to itself on EN11 in this example. This will still yield valid results. The Parent Document ID of the attachment (EN12) is correctly set to EN11.
+
+Example of setting that will generate poor quality results :
+
+The Parent Doc ID is set to the document’s Artifact ID. Because the Parent Document ID of EN12 does not match with the Control Number for EN11, it will not be threaded with its parent email. Additionally, setting Parent Document ID field for EN11 to a value other than its own Document Identifier will cause incorrect results.
+
+- Attachment name field – file name of the document attachment. This only needs to be populated for child documents and not the parent email. This field is used to display an attachment’s file name and icon in the Email Threading Display visualization field. If you used Processing, you may use either the File Name or Unified Title. Acceptable field types are Fixed-length text and Long text.
+
+Example of expected format :
+
+In this example, the File Name field is used on the Analytics Profile for the Attachment Name. Notice that for the parent email, EN11, the File Name field is blank. This field is not used for the parent email, whether or not the field is set. A value in the Attachment Name field for a parent email will have no effect on the email threading results as this field is ignored on parent emails. For the attachment, EN12, the field is set to its file name and extension. The Email Threading Display field will be properly filled on EN12.
+
+- Conversation ID field – Microsoft Conversation index number generated by Microsoft Exchange. This field is an index to the conversation thread of a message which Microsoft uses to order email messages and replies. If provided, email threading uses the Conversation ID to group together emails even when their extracted text differs. The Conversation ID is not typically recommended, as inaccurate Conversation ID data can harm email threading results (and even when it works correctly, it can join together very different email conversations). It is recommended to run email threading without mapping this field. For more information, see Email threading and the Conversation ID field . Acceptable field types are Fixed-length, Long text, and Whole Number.
+
+#### Message ID Email Metadata
+
+This section of the Analytics Profile layout is collapsed by default. To expand it, click the blue triangle next to the section name.
+
+For more information, see Email threading and the Gmail metadata fields .
+
+- Message ID field - unique identifier for an email message, generated when the message is sent. The acceptable field type is Fixed-length.
+
+- In Reply To field - Message ID of the email to which the current message is replying. Acceptable field types are Fixed-length and Long text.
+
+- Message References field - list of Message IDs for every email in the reply chain, in order from oldest to most recent. The Message References field will be blank for some emails, and it is not required. However, we recommend mapping it when possible. The acceptable field type is Long text.
+
+The Message ID Email Metadata fields cannot be mapped on the same Analytics profile as the Conversation ID field. If you want to thread emails using both, create two separate sets of Analytics profiles and structured analytics sets.
+
+On this page
+
+- Analytics profiles
+
+- Creating or editing an Analytics profile
+
+- Fields
+
+
+Why was this not helpful?
+
+Check one that applies.
+
+I could not find the information I was looking for.
+
+The information was incorrect.
+
+The instructions are confusing or unclear.
+
+The instructions did not work.
+
+Thank you for your feedback.
+
+Want to tell us more?
+
+
+Great!
+
+Thanks for taking the time to provide feedback.
+
+
+- Install Relativity
+
+- Pre-Installation
+
+- Licensing
+
+- Authentication
+
+- Post-Installation verification test
+
+- More >
+
+- Upgrade
+
+- Upgrade considerations
+
+- Relativity upgrade
+
+- More
+
+- Infrastructure
+
+- Servers
+
+- Agents
+
+- Resource pools
+
+- Resource files
+
+- More >
+
+- Capabilities
+
+- Analytics
+
+- Processing
+
+- More >
+
+- Resources
+
+- Relativity A-Z
+
+- PDF Downloads
+
+- Getting started
+
+- Documentation archives
+
+- Version support policy
+
+- Relativity Learning
+
+- Contact us
+
+- 1-312-263-1177
+
+- 231 South LaSalle Street 20th Floor Chicago, IL 60604
+
+- © Relativity
+
+- Privacy and Cookies
+
+- Terms of Use

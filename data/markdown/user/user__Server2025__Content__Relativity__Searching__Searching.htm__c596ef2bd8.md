@@ -1,0 +1,164 @@
+---
+title: "Searching overview"
+url: https://help.relativity.com/Server2025/Content/Relativity/Searching/Searching.htm
+collection: user
+fetched_at: 2026-06-22T06:02:26+00:00
+sha256: 062edaab5e17f9c45d1ffa9a4da6c81684ab2068ad1c49ef4b4b640a4fb30501
+---
+
+Searching overview Skip To Main Content Account Settings Logout
+
+- placeholder
+
+Account Settings Logout
+
+relativitynd5u5rpx
+
+
+https://help.relativity.com/Server2025/Content/CoveoSearch.htm
+
+
+Coveo Search Page
+
+>>
+
+Version: RelativityOne Server 2025 Server 2024
+
+☰
+
+# Searching
+
+Relativity includes flexible search features designed to facilitate the document review process. These features support a range of searching needs from filtering on fields and simple keyword searches to the development of complex queries. The following list summarizes the searching features available in Relativity.
+
+##### Filters
+
+You can use filters to limit the documents or items that appear in item lists on Relativity tabs and pop-ups. When you enable the filters for an item list, you can set criteria on single or multiple fields so that only matching documents or items appear in the view. Filters query across the searchable set of documents in the active view to return your results. Relativity supports multiple filter types so that you can choose the best format for different field types. See Filters .
+
+##### Keyword searches
+
+You can run keyword searches from the Documents tab and from Dynamic Object tabs. With these searches, you can leverage the basic functionality for querying the SQL full-text index populated with data from extracted text fields. The keyword search engine supports the use of Boolean operators and wildcards. See Keyword search .
+
+##### Saved searches
+
+Saved searches give you the functionality to define and store queries for repeated use. With flexible settings, you can create a saved search based on any Relativity search engine, assign security permissions to it, and define specific columns to display your search results. Saved searches support the development of complex queries that you build using a form with search condition options. These queries run dynamically to ensure that updated results appear when you access a saved search. See Saved searches .
+
+##### dtSearches
+
+dtSearch is available on the Documents tab. You can use the advanced searching functionality to run queries with proximity, stemming, and fuzziness operators, along with basic features such as Boolean operators and wildcards. System administrators can create a dtSearch index for a specific subset of documents in a workspace, and then assign security to it. They must manually update indexes when you modify the document search sets used to create them. See dtSearch .
+
+##### Analytics
+
+Supporting conceptual searching, Analytics includes documents in a result set when they contain similar ideas or conceptual relationships, rather than matching specific search terms or conditions. You can create searches with Analytics that categorize your documents based on the concepts contained in a sample document set. Instead of categorizing documents, you can also perform clustering, which uses specific algorithms, system-defined rules, to identify conceptually related documents. See Concept searching .
+
+##### Regular expressions
+
+Regular Expressions (RegEx) is a form of advanced searching that looks for specific patterns, as opposed to certain terms and phrases. With RegEx you can use pattern matching to search for particular strings of characters rather than constructing multiple, literal search queries. You can use RegEx with a dtSearch index using dtSearch syntax options to construct complex queries. See Searching with regular expressions .
+
+##### Additional features
+
+Relativity provides additional features that makes searching easy to use from the Documents tab. Use the search bar to run a keyword search query, or click the drop-down list to select another search index you created.
+
+With the search condition option, you can build queries using the same condition options available for saved searches. You can click Save as Search on the Documents tab to create saved searches based on the criteria defined for keyword searches, dtSearches, Analytics, or the search conditions option. See Search conditions .
+
+You can also use the search bar to view recent searches . Click in the search bar to see up to 10 of the most recent searches from any index in descending order, with the most recently run search first.
+
+Select any search from the list to run that search. To clear the list, click Clear Recent Searches .
+
+For more information about searching, see the following:
+
+- Searching quick reference
+
+- Searching workflows
+
+On this page
+
+- Searching
+
+
+Why was this not helpful?
+
+Check one that applies.
+
+I could not find the information I was looking for.
+
+The information was incorrect.
+
+The instructions are confusing or unclear.
+
+The instructions did not work.
+
+Thank you for your feedback.
+
+Want to tell us more?
+
+
+Great!
+
+Thanks for taking the time to provide feedback.
+
+
+- Install Relativity
+
+- Pre-Installation
+
+- Licensing
+
+- Authentication
+
+- Post-Installation verification test
+
+- More >
+
+- Upgrade
+
+- Upgrade considerations
+
+- Relativity upgrade
+
+- More
+
+- Infrastructure
+
+- Servers
+
+- Agents
+
+- Resource pools
+
+- Resource files
+
+- More >
+
+- Capabilities
+
+- Analytics
+
+- Processing
+
+- More >
+
+- Resources
+
+- Relativity A-Z
+
+- PDF Downloads
+
+- Getting started
+
+- Documentation archives
+
+- Version support policy
+
+- Relativity Learning
+
+- Contact us
+
+- 1-312-263-1177
+
+- 231 South LaSalle Street 20th Floor Chicago, IL 60604
+
+- © Relativity
+
+- Privacy and Cookies
+
+- Terms of Use
