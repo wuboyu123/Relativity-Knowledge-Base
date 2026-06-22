@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:52+00:00
 sha256: a7a4dd2734da0f5ae5f004d393305978d8d41d92ec5878c97648323b087f26cd
 ---
 
-Debug Relativity Forms Event Handlers Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Debug Relativity Forms Event Handlers
 
 # Debug Relativity Forms Event Handlers
 
@@ -69,13 +51,9 @@ var DEBUG_OBJECT_STR = window.sessionStorage.getItem(DEBUG_NS);
 
 var DEBUG_OBJECT_OBJ = !DEBUG_OBJECT_STR ? {} : JSON.parse(DEBUG_OBJECT_STR);
 
-
-
 // manipulate the halt redirection property
 
 DEBUG_OBJECT_OBJ["haltRedirectionOnApplicationError"] = true;
-
-
 
 // set the session storage object to have manipulated properties
 
@@ -94,44 +72,3 @@ Copy
 ```
 
 For example, adding the above comment at the start or end of the script file will in some browsers make it appear as the source file 'MyEventHandlerFile.js' in the debugger. This allows breakpoints to be set in the script.
-
-On this page
-
-- Debug Relativity Forms Event Handlers
-
-- RelativityFormsDebugObject
-
-- Adding Breakpoints To Event Handler Code
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:25:03+00:00
 sha256: 78f02d018257e0e372c11640b96dbd22bdfad9ee219f77e95e0619ae69304dd5
 ---
 
-Lesson 7 - Use Relativity Forms to enhance the UI Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Lesson 7 - Use Relativity Forms to enhance the UI
 
 # Lesson 7 - Use Relativity Forms to enhance the UI
 
@@ -140,10 +122,6 @@ using System;
 
 using kCura.EventHandler;
 
-
-
-
-
 namespace HelloWikipedia.PageInteractionEventHandlers
 
 {
@@ -163,10 +141,6 @@ namespace HelloWikipedia.PageInteractionEventHandlers
             return new kCura.EventHandler.Response();
 
         }
-
-
-
-
 
         public override string[] ScriptFileNames => new string[] { "articleCategory.js" };
 
@@ -205,11 +179,7 @@ You can add this file through Visual Studio Code or Windows Explorer.
 
     var eventHandlers = {};
 
-
-
     console.log("Hello From Article Category.js");
-
-
 
     return eventHandlers;
 
@@ -404,11 +374,7 @@ See the following code that you need to insert on a newline after the previous s
 
     var eventHandlers = {};
 
-
-
     console.log("Hello From Article Category.js");
-
-
 
     vars.GUIDS = {
 
@@ -451,8 +417,6 @@ See the following code that you need to insert on a newline after the previous s
         }
 
     };
-
-
 
     return eventHandlers;
 
@@ -1096,13 +1060,9 @@ npm test
 12
 PS S:\SourceCode\platform\ads\Source\WikipediaForms> npm test
 
-
-
 > hellowikipedia-forms@1.0.0 test S:\SourceCode\platform\ads\Source\WikipediaForms
 
 > karma start --experimental-modules
-
-
 
 03 09 2020 14:19:14.872:INFO [karma-server]: Karma v5.2.0 server started at http://localhost:9876/
 
@@ -1132,64 +1092,3 @@ You can find additional examples of how to use Relativity Forms to modify the UI
 - relativity-forms-workshop-fest-2019 workshop solutions - a GitHub repository with the solution for each exercise.
 
 - relativity-forms-workshop-fest-2019 field manipulation exercise - a GitHub repository containing the relativityFormsConversion.js file.
-
-On this page
-
-- Lesson 7 - Use Relativity Forms to enhance the UI
-
-- Step 1 - Pre-work
-
-- Step 2 - Set up the project folders and create an event handler in Visual Studio
-
-- Step 3 - Create a JavaScript file for an event handler
-
-- Step 4 - Associate the event handler with an object type
-
-- Step 5 - Add functionality to the JavaScript event handler
-
-- Step 6 - Test your JavaScript
-
-- Configure your development machine
-
-- Configure your project
-
-- Add files for unit testing
-
-- Add a unit test
-
-- Run the unit test
-
-- Step 7 - Additional activities with Relativity Forms
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

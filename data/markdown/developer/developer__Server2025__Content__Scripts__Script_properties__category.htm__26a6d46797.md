@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:32:22+00:00
 sha256: f4489f842cb4194dc842b347ad9da3be0c4a501fe0617841ab0e929c1bc0b88d
 ---
 
-category Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+category
 
 # category
 
@@ -90,8 +72,6 @@ Copy
 
      <name>Category Example</name>
 
-
-
      <description></description>
 
      <category>test</category>
@@ -99,8 +79,6 @@ Copy
      <input></input>
 
      <version></version>
-
-
 
      <action returns="table">
 
@@ -114,50 +92,3 @@ Copy
 
 </script>
 ```
-
-On this page
-
-- category
-
--
-
-- Hierarchy
-
-- Syntax
-
-- Default categories
-
-- Example
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:26:41+00:00
 sha256: b577bf06a1849dc703c90dc07af35c57b7874c4e41b40b022773750abf7f736f
 ---
 
-Logging Configuration APIs Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Logging Configuration APIs
 
 # Logging Configuration APIs
 
@@ -873,66 +855,3 @@ public async Task CreateLogentriesSink(Relativity.Services.ServiceProxy.ServiceF
 
 }
 ```
-
-On this page
-
-- Logging Configuration APIs
-
-- Fundamentals for logging configuration services
-
-- Guidelines for using logging configuration services
-
-- Logging Configuration Manager
-
-- Retrieve configurations
-
-- Create or update a configuration
-
-- Delete a configuration
-
-- Logging Rule Manager
-
-- Retrieve rules
-
-- Create or update a rule
-
-- Delete a rule
-
-- Logging Sink Manager
-
-- Retrieve sinks
-
-- Create sinks
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

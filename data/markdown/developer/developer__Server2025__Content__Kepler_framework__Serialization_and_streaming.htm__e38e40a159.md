@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:11+00:00
 sha256: 32a0a28a2d284ab0d23c67d3942aa5e70c473b1930436f52229440a42978e3a0
 ---
 
-Serialization and streaming Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Serialization and streaming
 
 # Serialization and streaming
 
@@ -582,56 +564,3 @@ MyObject() { public IKeplerStream Stream { get; set; } }
 - The default value in Relativity.REST is currently set to 1GB. This has been tested increasing the maximum transfer to 2GB. The current version of IIS appears to cap this setting at 2GB.
 
 - The maximum download size is 100GB.
-
-On this page
-
-- Serialization and streaming
-
-- Serialization
-
-- Custom serializers
-
-- Custom deserializer
-
-- Streaming
-
-- Constructors for KeplerStream class
-
-- Properties on KeplerStream class
-
-- Method on KeplerStream class
-
-- Special considerations for streaming
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

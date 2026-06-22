@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:24:01+00:00
 sha256: a1bda30387a4cdfcd5cc64df1978f02b42ef68c4ed9f1c7362106638a26c6f70
 ---
 
-Document Viewer Services (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Document Viewer Services (.NET)
 
 # Document Viewer Services (.NET)
 
@@ -140,8 +122,6 @@ public async Task<ViewerContentKey> GetViewerContentKeyAsync(int workspaceId, Li
 
     ViewerContentKey viewerContentKey = null;
 
-
-
     using (IDocumentViewerServiceManager proxy = helper.GetServicesManager().CreateProxy<IDocumentViewerServiceManager>(ExecutionIdentity.CurrentUser))
 
     {
@@ -162,8 +142,6 @@ public async Task<ViewerContentKey> GetViewerContentKeyAsync(int workspaceId, Li
 
         request.Options = options;
 
-
-
         try
 
         {
@@ -181,8 +159,6 @@ public async Task<ViewerContentKey> GetViewerContentKeyAsync(int workspaceId, Li
         }
 
     }
-
-
 
     return viewerContentKey;
 
@@ -251,8 +227,6 @@ public async Task GetViewerContentKeyAsync(int workspaceId, List<int> documentId
         request.Priority = PriorityLevel.ConvertAhead;
 
         request.Options = options;
-
-
 
         try
 
@@ -335,8 +309,6 @@ public async Task GetViewerContentKeyAsync(int workspaceId, string massOpTableDo
 
         request.Options = options;
 
-
-
         try
 
         {
@@ -416,8 +388,6 @@ public async Task<ViewerContentKey> GetViewerContentKeyAsync(int workspaceId, Li
 
     ViewerContentKey viewerContentKey = null;
 
-
-
     using (IDocumentViewerServiceManager proxy = helper.GetServicesManager().CreateProxy<IDocumentViewerServiceManager>(ExecutionIdentity.CurrentUser))
 
     {
@@ -440,8 +410,6 @@ public async Task<ViewerContentKey> GetViewerContentKeyAsync(int workspaceId, Li
 
         request.Options = options;
 
-
-
         try
 
         {
@@ -460,56 +428,9 @@ public async Task<ViewerContentKey> GetViewerContentKeyAsync(int workspaceId, Li
 
     }
 
-
-
     return viewerContentKey;
 
     }
 
 }
 ```
-
-On this page
-
-- Document Viewer Services (.NET)
-
-- Fundamentals for the Document Viewer Services API
-
-- Best practices for the conversion requests
-
-- Convert documents
-
-- Convert files contained in File fields on RDOs
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

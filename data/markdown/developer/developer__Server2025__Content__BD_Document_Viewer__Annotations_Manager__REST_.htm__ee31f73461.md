@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:22:36+00:00
 sha256: 6086d2e5d66f8bb3f31ad3807fcbca9e01cd4d27502aec6adf82111525ab22c9
 ---
 
-Annotations Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Annotations Manager (REST)
 
 # Annotations Manager (REST)
 
@@ -113,13 +95,9 @@ public async Task<string> GetAnnotations(int workspaceId, int documentId, int ma
 
         string url = $"/Relativity.rest/api/relativity-documentViewer/v2/workspaces/{workspaceId}/annotations/{documentId}/{markupsetId}";
 
-
-
         HttpResponseMessage response = await client.GetAsync(url);
 
         response.EnsureSuccessStatusCode();
-
-
 
         string content = await response.Content.ReadAsStringAsync();
 
@@ -671,52 +649,3 @@ View a sample JSON request to delete annotations Copy
 ```
 
 When the annotations are successfully deleted, the response returns the status code of 200.
-
-On this page
-
-- Annotations Manager (REST)
-
-- Guidelines for using the Annotations Manager service
-
-- URLs
-
-- Client code sample
-
-- Create or update annotations
-
-- Retrieve annotations on a document
-
-- Delete annotations from a document
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

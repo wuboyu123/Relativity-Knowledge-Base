@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:29:33+00:00
 sha256: 37d64c8974da1a4cecdfc5ec6f46a007e87f0de0d1b0754fa9627d276bf304ce
 ---
 
-Logging Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Logging
 
 # Logging
 
@@ -138,48 +120,3 @@ You may need to perform the following tasks related to logging:
 - Define logging rules – when troubleshooting Relativity, additional logging rules are usually required. See Troubleshoot Relativity using logging .
 
 - Change the default sink or define more sinks – you may also need to change where logs are written to. See Sinks .
-
-On this page
-
-- Logging
-
-- When to use logging
-
-- Where the logs are stored
-
-- Reading a log entry
-
-- Next steps
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

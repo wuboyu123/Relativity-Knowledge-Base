@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:27:32+00:00
 sha256: c0deb7a2a1b55adc1d1be1ba9185c7c0e50eaa0cb67310a635d14c70c056f3bc
 ---
 
-Processing Job Manager Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Processing Job Manager
 
 # Processing Job Manager
 
@@ -151,48 +133,3 @@ using (IProcessingJobManager proxy = _servicesMgr.CreateProxy<IProcessingJobMana
 
 }
 ```
-
-On this page
-
-- Processing Job Manager
-
-- Inventory jobs
-
-- Discovery jobs
-
-- Publishing jobs
-
-- Cancel jobs
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

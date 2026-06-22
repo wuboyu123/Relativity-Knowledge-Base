@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:29:15+00:00
 sha256: d945fb0abe1b4f02e567ee07e6314477afbb7a3b852b98cb6ddd880abf7490c3
 ---
 
-Database schema updates Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Database schema updates
 
 # Database schema updates
 
@@ -393,42 +375,3 @@ Technical notes
 - Sandbox Testing. Client or its vendors shall thoroughly test for continuing compatibility and shall resolve any resulting compatibility issues (preferably including a high quality automated program). If Client or its vendor discovers any errors or issues with RelativityOne or the SQL BD Schema update provided herein, Client should promptly send an email with relevant details to Relativity Support . Relativity provides a Sandbox Test Environment for integration and functional testing and validation of code, Relativity Custom Applications, extensions, and integrations created by Client or its vendors (“Sandbox Test Purpose”). The Sandbox Test Purpose does not include performance testing or any development work beyond testing. Note that: (a) the Sandbox is a scaled-down, limited version of Client’s RelativityOne Instance; (b) for avoidance of doubt, RelativityOne Availability SLA provisions are not applicable for the Sandbox, which may need to be “turned on” and will be available only while in use by Client.
 
 - Other Client-Related Problems. Relativity is not responsible for RelativityOne issues, errors, loss or corruption of Client Data, or events or problems degrading or interrupting RelativityOne Availability, caused by Client’s personnel, its other enabled users, its third party vendors or their products or services in improperly using SQL Access (“Client-Related Problems”). Any lack of Availability arising from any Client-Related Problems shall be Excused Downtime and shall not count for purposes of determining service credits. However, in such event, Relativity will assist Client by providing a “Data Restore” procedure. In addition, upon Client’s request, Relativity will use reasonable efforts to provide Client and Client’s third party vendors with temporary limited direct access (“Limited Direct Access”) to applicable resources in the RelativityOne infrastructure to the extent necessary to troubleshoot issues with any of their Relativity Custom Applications which are publicly listed on Relativity’s website, provided: (a) Client and/or Client’s third party vendors have already made reasonable efforts to resolve the issue; (b) RelativityOne infrastructure Limited Direct Access will be supervised by Relativity Support and will not involve any access to PaaS resources; and (c) RelativityOne infrastructure Limited Direct Access otherwise complies with the terms of a standard operating and security procedure which Relativity may develop from time to time for handling such requests. Any support that Relativity provides in seeking to help resolve a Client-Related Problem shall not be covered by Relativity support obligations and Client may be required to pay Relativity’s then applicable standard hourly rates.
-
-On this page
-
-- Database schema updates
-
-- Database schema updates table
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

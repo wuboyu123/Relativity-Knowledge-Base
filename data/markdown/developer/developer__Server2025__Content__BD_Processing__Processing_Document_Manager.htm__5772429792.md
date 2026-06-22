@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:27:28+00:00
 sha256: 4e1368460b10169c49054e00232fa4c3b79f9c544b33ba30ec3f83877f50c5da
 ---
 
-Processing Document Manager Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Processing Document Manager
 
 # Processing Document Manager
 
@@ -309,52 +291,3 @@ using (IProcessingDocumentManager proxy = _servicesMgr.CreateProxy<IProcessingDo
 
 }
 ```
-
-On this page
-
-- Processing Document Manager
-
-- Retrieve metadata fields and values for a document
-
-- Retrieve error history for a document
-
-- Retry deleting documents
-
-- Retry document errors
-
-- Publish documents
-
-- Retrieve count of publishable documents
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:26:14+00:00
 sha256: 6039f7998311270b6d44e459e420a258484f79734bbaf2b7903e4489c4f55446
 ---
 
-Field Mapping Manager Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Field Mapping Manager
 
 # Field Mapping Manager
 
@@ -740,68 +722,3 @@ using (IFieldMappingManager proxy = _servicesMgr.CreateProxy<IFieldMappingManage
 
 }
 ```
-
-On this page
-
-- Field Mapping Manager
-
-- Field mapping fundamentals
-
-- Common field mapping workflow
-
-- Code samples for the Field Mapping service
-
-- Check field mapping availability
-
-- Retrieve mapped Relativity fields
-
-- Retrieve the contents of the Catalog Field table
-
-- Retrieve Invariant fields available for mapping
-
-- Retrieve Invariant fields available for mapping (paginated)
-
-- Retrieve metadata fields
-
-- Retrieve non-metadata fields
-
-- Retrieve field given source name
-
-- Retrieve an external field mapping
-
-- Update an external field mapping
-
-- Retrieve GUIDs for automapped fields
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

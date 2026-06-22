@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:32:01+00:00
 sha256: a230d4456740a09240b6eeca154d3a79fc7942a66a2ae3fbabcaad84928af648
 ---
 
-convenienceAPI object Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+convenienceAPI object
 
 # convenienceAPI object
 
@@ -327,23 +309,17 @@ function populateCustomActionBar(containers) {
 
       const pager = actionBar.generateDefault.objectPager();
 
-
-
       containers.centerSlotElement.appendChild(button);
 
       containers.rightSlotElement.appendChild(pager);
 
  }
 
-
-
  function populateDefaultActionBar() {
 
       convenienceApi.actionBar.createDefaultActionBar();
 
  }
-
-
 
  function createActionBar() {
 
@@ -356,8 +332,6 @@ function populateCustomActionBar(containers) {
       // given object type that exists in your workspace.
 
       const ARTIFACT_ID_THAT_NEEDS_CUSTOM_ACTION_BAR = 1050081;
-
-
 
       return actionBar.destroy().then(function() {
 
@@ -378,8 +352,6 @@ function populateCustomActionBar(containers) {
       });
 
  }
-
-
 
  const eventHandlers = {};
 
@@ -431,8 +403,6 @@ eventHandlers[eventNames.CREATE_ACTION_BAR] = function() {
 
       const actionBar = convenienceApi.actionBar;
 
-
-
       const button = actionBar.generate.button({
 
           innerText:  "Test button" ,
@@ -440,8 +410,6 @@ eventHandlers[eventNames.CREATE_ACTION_BAR] = function() {
           onclick: function(e) { console.log( "Button clicked!" ); }
 
       });
-
-
 
       actionBar.containersPromise.then(function(containers) {
 
@@ -582,8 +550,6 @@ eventHandlers[eventNames.CREATE_ACTION_BAR] = function() {
 
       const buttons = actionBar.generateDefault.actionButtons();
 
-
-
       actionBar.containersPromise.then(function(containers) {
 
           // optional, adds spacing between buttons
@@ -599,7 +565,6 @@ eventHandlers[eventNames.CREATE_ACTION_BAR] = function() {
       });
 
  };
-
 
 ```
 
@@ -657,8 +622,6 @@ eventHandlers[eventNames.CREATE_ACTION_BAR] = function() {
           popupControlApi,
 
           formSettings.ObjectTypeName);
-
-
 
       actionBar.containersPromise.then(function(containers) {
 
@@ -725,8 +688,6 @@ eventHandlers[eventNames.CREATE_ACTION_BAR] = function() {
       const actionBar = convenienceApi.actionBar;
 
       const layoutDropdown = actionBar.generateDefault.layoutDropdown();
-
-
 
       actionBar.containersPromise.then(function(containers) {
 
@@ -927,21 +888,15 @@ function generateDefaultConsoleContent() {
 
       });
 
-
-
       const section = consoleApi.generate.section({}, [
 
           button
 
       ]);
 
-
-
       return section;
 
  }
-
-
 
  function generateCustomConsoleContent() {
 
@@ -953,13 +908,9 @@ function generateDefaultConsoleContent() {
 
       });
 
-
-
       return title;
 
  }
-
-
 
  function createConsole() {
 
@@ -970,8 +921,6 @@ function generateDefaultConsoleContent() {
       const LAYOUT_ID_THAT_NEEDS_CUSTOM_CONSOLE = 1043519;
 
       let consoleContent;
-
-
 
       // Determine the content that should be added to the console
 
@@ -987,8 +936,6 @@ function generateDefaultConsoleContent() {
 
       }
 
-
-
       return consoleApi.destroy().then(function() {
 
           return consoleApi.containersPromise;
@@ -1000,8 +947,6 @@ function generateDefaultConsoleContent() {
       });
 
  }
-
-
 
  const eventHandlers = {};
 
@@ -1048,8 +993,6 @@ Copy
 11
 const consoleApi = convenienceApi.console;
 
-
-
 const button = consoleApi.generate.button({
 
     innerText:  "Do Something",
@@ -1059,8 +1002,6 @@ const button = consoleApi.generate.button({
     onclick: function(e) { console.log( "Button clicked!" ); }
 
 });
-
-
 
 consoleApi.containersPromise.then(function(containers) {
 
@@ -1104,8 +1045,6 @@ Copy
 10
 const consoleApi = convenienceApi.console;
 
-
-
  const buttonAsLink = consoleApi.generate.buttonStyledAsLink({
 
       innerText:  "Test button" ,
@@ -1113,8 +1052,6 @@ const consoleApi = convenienceApi.console;
       onclick: function(e) { console.log( "Button clicked!" ); }
 
  });
-
-
 
  consoleApi.containersPromise.then(function(containers) {
 
@@ -1175,10 +1112,6 @@ Copy
 15
 const consoleApi = convenienceApi.console;
 
-
-
-
-
  const button = consoleApi.generate.button({
 
       innerText:  "Test button" ,
@@ -1187,15 +1120,11 @@ const consoleApi = convenienceApi.console;
 
  });
 
-
-
  const section = consoleApi.generate.section({}, [
 
       button
 
  ]);
-
-
 
  consoleApi.containersPromise.then(function(containers) {
 
@@ -1242,23 +1171,17 @@ Copy
 13
 const consoleApi = convenienceApi.console;
 
-
-
  const sectionTitle = consoleApi.generate.sectionTitle({
 
       innerText:  "Test section title"
 
  });
 
-
-
  const section = consoleApi.generate.section({}, [
 
       sectionTitle
 
  ]);
-
-
 
  consoleApi.containersPromise.then(function(containers) {
 
@@ -1313,15 +1236,11 @@ Copy
 9
 const consoleApi = convenienceApi.console;
 
-
-
  const title = consoleApi.generate.title({
 
       innerText:  "Test section title"
 
  });
-
-
 
  consoleApi.containersPromise.then(function(containers) {
 
@@ -1552,8 +1471,6 @@ var myDateTimeFormatter = convenienceApi.dateTime.getFormatter({
 
  });
 
-
-
 var formattedDateTimeString = myDateTime.format(unformattedDateTimeString);
 
 console.log(formattedDateTimeString); // "4/27/2009, 1:44:50 PM CDT"
@@ -1735,8 +1652,6 @@ var relativityObject1 = {
 
 };
 
-
-
 var relativityObject2 = {
 
     ArtifactID: 10011,
@@ -1745,29 +1660,17 @@ var relativityObject2 = {
 
 };
 
-
-
 convenienceApi.fieldHelper.setValue( singleChoiceOrObjectFieldId, relativityObject1||null );
-
-
 
 convenienceApi.fieldHelper.setValue( TrueOrFalseFieldId, true);
 
-
-
 convenienceApi.fieldHelper.setValue( textFieldId, "string" );
-
-
 
 // To clear out the value of a mutli choice.object field, set the value to an empty array
 
 convenienceApi.fieldHelper.setValue( multiChoiceOrMultiObjectFieldId, [relativityObject1, relativityObject2] );
 
-
-
 convenienceApi.fieldHelper.setValue( numberFieldId, 1000 );
-
-
 
 convenienceApi.fieldHelper.setValue( dateField, "1999-02-01T10:05:00" );
 ```
@@ -2003,8 +1906,6 @@ var data = [
 ];
 
 convenienceApi.fieldHelper.addAdditionalData(nonUserIdentifier, { options: data, limitForUIExceeded: false });
-
-
 
 // for User fields
 
@@ -2433,8 +2334,6 @@ const option = {
 
 const customItemListDataProvider = convenienceApi.itemListDataProviderFactory.create("object", option);
 
-
-
 // Override the query method to define a custom data source for the list
 
 customItemListDataProvider.query = function customQuery(request){
@@ -2459,8 +2358,6 @@ customItemListDataProvider.query = function customQuery(request){
 
 };
 
-
-
 // Define the modal for a list picker that references our custom item list data provider
 
 const listPickerModalModel = {
@@ -2470,8 +2367,6 @@ const listPickerModalModel = {
      itemListDataProvider: customItemListDataProvider
 
 };
-
-
 
 // Open the modal
 
@@ -2532,8 +2427,6 @@ Copy
         var itemListHelper = convenienceApi.itemListHelper;
 
         var ITEM_LIST_COMMAND_COLUMN_TYPE = convenienceApi.constants.ITEM_LIST_COMMAND_COLUMN_TYPE;
-
-
 
         itemListHelper.setCommandColumnType(ASSOCIATED_DOCUMENTS_LIST_NAME, ITEM_LIST_COMMAND_COLUMN_TYPE.SINGLE_SELECTION);
 
@@ -2752,8 +2645,6 @@ Copy
 
  var numberFormatter = convenienceApi.i18n.nf(numberOptions, convenienceApi.i18n.getLocale());
 
-
-
  // Format
 
  var localizedNumber = numberFormatter.format(123456.123);
@@ -2815,8 +2706,6 @@ Copy
  };
 
  var dateFormatter = convenienceApi.i18n.df(dateOptions, convenienceApi.i18n.getLocale());
-
-
 
  // Format
 
@@ -3030,13 +2919,9 @@ Copy
 
     cancelText: String?, // defaults to 'Cancel'
 
-
-
     cancelAction: Function?,
 
     acceptAction: Function?,
-
-
 
     focusEls: {
 
@@ -3147,15 +3032,11 @@ Copy
 
     cancelText: String?, // Defaults to 'Cancel'.
 
-
-
     value: Number,
 
     state: String? // One of the following: "failed", "indeterminate", or null.
 
     cancelAction: Function?,
-
-
 
     focusEls: {
 
@@ -3221,8 +3102,6 @@ var model = {
 
 };
 
-
-
 var fakeAfterModalOpeningHandler = function fakeAfterModalOpeningHandler() {
 
      // This sets the progress value to 100 after 1 second.
@@ -3234,8 +3113,6 @@ var fakeAfterModalOpeningHandler = function fakeAfterModalOpeningHandler() {
      }, 1000);
 
 };
-
-
 
 convenienceApi.modalService.openProgressModal(model, fakeAfterModalOpeningHandler);
 ```
@@ -3282,8 +3159,6 @@ Copy
 
     title: String,
 
-
-
     isLoading: Boolean, // True if loading layout should be displayed.
 
     errors: List<String>, // Errors list to be displayed in default error container.
@@ -3300,13 +3175,9 @@ Copy
 
     actions: List<Object>  // { disabled: Boolean, click: Function, text: String }
 
-
-
     cancelAction: Function?,
 
     acceptAction: Function?,
-
-
 
     focusEls: {
 
@@ -3418,8 +3289,6 @@ Copy
 
 var contentContainer = document.createElement("div");
 
-
-
 // Create custom modal model. Initially, display it in loading state.
 
 var model = {
@@ -3431,8 +3300,6 @@ var model = {
      contentElement: contentContainer
 
 };
-
-
 
 convenienceApi.modalService.openCustomModal(model).then(function (closeResult) {
 
@@ -3450,8 +3317,6 @@ convenienceApi.modalService.openCustomModal(model).then(function (closeResult) {
 
 });
 
-
-
 // This section could be an async data load for custom modal content.
 
 setTimeout(function () {
@@ -3463,8 +3328,6 @@ setTimeout(function () {
      // Populate DOM content.
 
      contentContainer.innerText = "Loaded content";
-
-
 
      // Define actions for the custom modal.
 
@@ -3641,19 +3504,13 @@ Copy
 
     objectTypeName: String,
 
-
-
     actions: List<Object> // { position: "left"|"right", disabled: Boolean, click: Function, text: String }
-
-
 
     dependencyListPromise: Promise<List<DependencyObject>>?,
 
     cancelAction: Function?,
 
     acceptAction: Function?,
-
-
 
     focusEls: {
 
@@ -3771,49 +3628,33 @@ View properties Copy
 
     label: String,
 
-
-
     // A key by which the multi-list picker component stores settings of its inner Item Lists in session storage.
 
     persistenceKey: String,
-
-
 
     // A key by which the multi-list picker component stores widths of columns of its inner Item Lists in session storage.
 
     columnsPersistenceKey: String,
 
-
-
     // The name of the property used by a multi-list picker component to uniquely identify data items in the list.
 
     rowKeyName: String,
-
-
 
     // An array of values that are currently selected in the multi-list picker component. These values must correspond to values of property in data items denoted by "rowKeyName".
 
     selectedValues: Array<Number>,
 
-
-
     // An object used by the multi-list picker component to retrieve its data. For more information, see the following section.
 
     itemListDataProvider: Object<ItemListDataProvider>,
-
-
 
     // An object used by the multi-list picker component to retrieve and save settings of its inner Item Lists. For more information, see the following section.
 
     itemListSettingPersistenceService: Object<ItemListSettingPersistenceService>,
 
-
-
     // A workspace identifier mainly used for data retrieval.
 
     workspaceId: Number,
-
-
 
     // An identifier for the type of objects being selected.
 
@@ -4111,8 +3952,6 @@ var mockData = [
 
 ];
 
-
-
 // Create item list data provider instance.
 
 var itemListDataProvider = {
@@ -4203,8 +4042,6 @@ var itemListDataProvider = {
 
                     wrapped: true,
 
-
-
                     filter: null,
 
                     filterable: false,
@@ -4226,8 +4063,6 @@ var itemListDataProvider = {
                     sortTitle: null,
 
                     containerClass: null,
-
-
 
                     prepareForGrid: noop,
 
@@ -4283,8 +4118,6 @@ var itemListDataProvider = {
 
                     wrapped: true,
 
-
-
                     filter: null,
 
                     filterable: false,
@@ -4307,8 +4140,6 @@ var itemListDataProvider = {
 
                     containerClass: null,
 
-
-
                     prepareForGrid: noop,
 
                     generateFilterElement: noop
@@ -4328,8 +4159,6 @@ var itemListDataProvider = {
      query: function (request, columns) {
 
           var filteredData = mockData.slice();
-
-
 
           if (request.idsToExclude !== void 0) {
 
@@ -4359,8 +4188,6 @@ var itemListDataProvider = {
 
           }
 
-
-
           if (request.idsToInclude !== void 0) {
 
                // include certain values in result
@@ -4389,8 +4216,6 @@ var itemListDataProvider = {
 
           }
 
-
-
           return convenienceApi.promiseFactory.resolve({
 
                "Results": filteredData,
@@ -4412,10 +4237,6 @@ var itemListDataProvider = {
      }
 
 };
-
-
-
-
 
 // Create item list setting persistence service.
 
@@ -4451,8 +4272,6 @@ var itemListSettingPersistenceService = {
 
           var columnWidths = this.getItemListColumnWidths(columnWidthsKey);
 
-
-
           if (!state) {
 
                state = {
@@ -4474,8 +4293,6 @@ var itemListSettingPersistenceService = {
                };
 
           }
-
-
 
           state.columnWidths = columnWidths;
 
@@ -4533,8 +4350,6 @@ var itemListSettingPersistenceService = {
 
 };
 
-
-
 var model = {
 
      label:  "MLP sample",
@@ -4556,8 +4371,6 @@ var model = {
      objectTypeId: 0
 
 };
-
-
 
 // could put this in an onclick event for a button, for example
 
@@ -4631,49 +4444,33 @@ View properties Copy
 
     label: String,
 
-
-
     // A key by which the single list picker component stores settings of its Item List in session storage.
 
     persistenceKey: String,
-
-
 
     // A key by which the single list picker component stores widths of columns of its Item List in session storage.
 
     columnsPersistenceKey: String,
 
-
-
     // The name of the property used by single list picker component to uniquely identify data items in the list.
 
     rowKeyName: String,
-
-
 
     // A value that is currently selected in the single list picker component. The value must correspond to value of property in data item denoted by "rowKeyName".
 
     selectedValue: Number,
 
-
-
     // An object which is used by the single list picker component to retrieve its data.
 
     itemListDataProvider: Object<ItemListDataProvider>,
-
-
 
     // An object used by the single list picker component to retrieve and save settings of its Item List.
 
     itemListSettingPersistenceService: Object<ItemListSettingPersistenceService>,
 
-
-
     // A workspace identifier mainly used for data retrieval.
 
     workspaceId: Number,
-
-
 
     // An identifier for the type of objects being selected.
 
@@ -4738,8 +4535,6 @@ var itemListDataProvider = // ...
 
 var itemListSettingPersistenceService = // ...
 
-
-
 var model = {
 
      label:  "SLP sample",
@@ -4761,8 +4556,6 @@ var model = {
      objectTypeId: 0
 
 };
-
-
 
 convenienceApi.modalService.openSingleListPickerModal(model).then(function (action) {
 
@@ -5010,8 +4803,6 @@ Copy
 7
 var promise = convenienceApi.promiseFactory.reject( "rejection" );
 
-
-
  promise.then(function(resolvesTo) {
 
       console.log(resolvesTo);     // Never called.
@@ -5046,8 +4837,6 @@ Copy
 4
 5
 var promise = convenienceApi.promiseFactory.resolve( "resolution" );
-
-
 
  promise.then(function(resolvesTo) {
 
@@ -5980,8 +5769,6 @@ exampleTypeEventHandlers[eventNames.PAGE_INTERACTION] = function() {
 
       const reviewQueueBrowser = convenienceApi.reviewQueueBrowser;
 
-
-
       reviewQueueBrowser.navigate.first().then(
 
           function() { console.log("navigated to the first index") },
@@ -6023,8 +5810,6 @@ Copy
 exampleTypeEventHandlers[eventNames.PAGE_INTERACTION] = function() {
 
       const reviewQueueBrowser = convenienceApi.reviewQueueBrowser;
-
-
 
       reviewQueueBrowser.navigate.previous().then(
 
@@ -6068,8 +5853,6 @@ exampleTypeEventHandlers[eventNames.PAGE_INTERACTION] = function() {
 
       const reviewQueueBrowser = convenienceApi.reviewQueueBrowser;
 
-
-
       reviewQueueBrowser.navigate.next().then(
 
           function() { console.log("navigated to " + reviewQueueBrowser.currentQueueIndex) },
@@ -6111,8 +5894,6 @@ Copy
 exampleTypeEventHandlers[eventNames.PAGE_INTERACTION] = function() {
 
       const reviewQueueBrowser = convenienceApi.reviewQueueBrowser;
-
-
 
       reviewQueueBrowser.navigate.last().then(
 
@@ -6157,8 +5938,6 @@ Copy
 exampleTypeEventHandlers[eventNames.PAGE_INTERACTION] = function() {
 
       const reviewQueueBrowser = convenienceApi.reviewQueueBrowser;
-
-
 
       reviewQueueBrowser.navigate.byIndex(2).then(
 
@@ -6338,8 +6117,6 @@ var someArray = [
 
  ];
 
-
-
  var arr = convenienceApi.utilities.keyValueArrayToJsonArrayTransformer(someArray,  "Order" );
 
  console.log(arr);
@@ -6461,8 +6238,6 @@ Copy
 
    */
 
-
-
  function validateSaveHandler(response, validationArray) {
 
     /*
@@ -6514,15 +6289,9 @@ Copy
 
    */
 
-
-
 function validateSaveHandler(response, validationArray) {
 
     var multipleMessages = [ "First error" ,  "Second error" ,  "Third error" ];
-
-
-
-
 
    var  errorSummary = convenienceApi.validation.getFailedSummaryObject(multipleMessages);  // Create a validation object for displaying the given error message below the action bar.
 
@@ -6690,8 +6459,6 @@ function validateSaveHandler(response, validationArray) {
 
     // When localized to ES, summaryMessage = "No puede Salvar."
 
-
-
     var errorSummary = convenienceApi.validation.getFailedSummaryObject(summaryMessage); // Create a validation object for displaying the default save error message in the current localization
 
     validationArray.push(errorSummary); // Append it to the validationArray for the application to display.
@@ -6700,144 +6467,3 @@ function validateSaveHandler(response, validationArray) {
 
 }
 ```
-
-On this page
-
-- convenienceAPI object
-
-- Summary of APIs for convenienceApi object
-
-- actionBar
-
-- Properties
-
-- Methods
-
-- additionalData
-
-- Methods
-
-- applicationPaths
-
-- console
-
-- Properties
-
-- Methods
-
-- constants
-
-- Properties
-
-- dateTime
-
-- Methods
-
-- fieldHelper
-
-- Parameters
-
-- Methods
-
-- formSettings
-
-- Properties
-
-- ItemListDataProviderFactory
-
-- Methods
-
-- itemListHelper
-
-- Methods
-
-- Constants
-
-- i18n
-
-- Methods
-
-- layout
-
-- Methods
-
-- logFactory
-
-- Methods
-
-- modalService
-
-- Methods
-
-- permission
-
-- popupService
-
-- Methods
-
-- previewSecurity
-
-- Methods
-
-- promiseFactory
-
-- Methods
-
-- relativityFormsPopup
-
-- Methods
-
-- relativityHttpClient
-
-- Methods
-
-- reviewQueueBrowser
-
-- Properties
-
-- Methods
-
-- user
-
-- Methods
-
-- utilities
-
-- Methods
-
-- validation
-
-- Methods
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

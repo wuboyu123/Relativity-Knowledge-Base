@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:30:59+00:00
 sha256: e5e76ebbad765bf44293719ba140a384601cddc79cd925ba467753a0c8a97a68
 ---
 
-Basic concepts for agents Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Basic concepts for agents
 
 # Basic concepts for agents
 
@@ -147,58 +129,3 @@ Log warnings and errors Log level <= 5
 Log all messages Log level <= 10
 
 Currently, errors and warnings are raised as level 1, so they are always logged. If you want to implement an agent that raises only messages as opposed to errors and warning, then you need pass the logging level of 10 as a parameter to the RaiseMessage() method. For example, implement this code as RaiseMessage(“MESSAGE”, 10). For more information, see Agents on the Relativity Documentation site.
-
-On this page
-
-- Basic concepts for agents
-
-- Common implementation tasks for agents
-
-- Establish a database connection from an agent
-
-- Connect to the Services API with the client-side proxy
-
-- Upload agents to Relativity
-
-- Add an assembly containing an agent
-
-- Agents run on scheduled intervals
-
-- Agent types versus instances
-
-- Logging for agent events
-
-- Logging levels
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

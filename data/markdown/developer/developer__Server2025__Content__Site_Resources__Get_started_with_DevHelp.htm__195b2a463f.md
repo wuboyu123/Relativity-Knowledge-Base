@@ -6,23 +6,7 @@ fetched_at: 2026-06-22T06:28:46+00:00
 sha256: 250adc300e53293121324cd804a0443626e8796e5535c8e965a31537e5785763
 ---
 
-Get started with the Relativity DevHelp Community Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Get started with the Relativity DevHelp Community
 
 # Get started with the Relativity DevHelp Community
 
@@ -117,54 +101,3 @@ Currently you can edit only the topics you created. You do not have the permissi
 ## Community guidelines
 
 At Relativity , we strive for the highest standards of professionalism and public conduct. Our developer community is a welcoming and friendly environment that promotes sharing knowledge and productive discussions. When posting, be respectful, considerate, and keep the conversation relevant to the topic. For general community guidelines, see https://devhelp.relativity.com/faq .
-
-On this page
-
-- Get started with the Relativity DevHelp Community
-
-- Relativity Community user account
-
-- Using the Relativity DevHelp Community
-
-- Logging into Relativity DevHelp Community
-
-- Posting a Topic
-
-- Replying to a Topic
-
-- Editing a Topic
-
-- Community guidelines
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

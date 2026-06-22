@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:22:13+00:00
 sha256: aa06fdd7ee66f30dab8c7c22bafe894dcbe7d8dc0e4dc48841263251dff53bd3
 ---
 
-Tutorials for extending Relativity Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Tutorials for extending Relativity
 
 # Tutorials for extending Relativity
 
@@ -53,40 +35,3 @@ In this series of lessons you will use the Application Deployment System (ADS) t
 - Use Relativity APIs to obtain context information about an application.
 
 - Work with Relativity extensibility points, including event handlers, agents, custom pages, and the Kepler framework for creating custom services
-
-On this page
-
-- Tutorials for extending Relativity
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

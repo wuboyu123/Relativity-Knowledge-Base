@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:28:49+00:00
 sha256: e50cb4c6d163486c945eda16205616e795cbe3c110554e73cc1d8f555e81b377
 ---
 
-Publish to Relativity tool Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Publish to Relativity tool
 
 # Publish to Relativity tool
 
@@ -144,58 +126,3 @@ Follow these steps to publish custom pages and resource files:
 - If you have added new custom pages or resource files to the configuration, click Save Config File to ensure your updates are included. You don't need to add your custom pages to a zipped file before deployment. Instead, choose the publish folder containing your custom pages.
 
 - Click Publish to upload your files to Relativity. Your application now contains the custom pages and resource files that you published.
-
-On this page
-
-- Publish to Relativity tool
-
-- Before you begin
-
-- Add a new configuration
-
-- Application settings fields
-
-- Connection settings fields
-
-- Test application and connection settings
-
-- Add a custom page
-
-- Custom Page fields
-
-- Add a resource file
-
-- Publish custom pages and resource files
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

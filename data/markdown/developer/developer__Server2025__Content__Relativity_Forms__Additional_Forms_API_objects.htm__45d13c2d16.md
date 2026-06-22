@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:32:06+00:00
 sha256: 31c38a3baa206a40dc47d7f833f1bc8adfdf81749c88bd42d72ddd37750c3c43
 ---
 
-Additional Forms API objects Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Additional Forms API objects
 
 # Additional Forms API objects
 
@@ -359,15 +341,11 @@ Copy
 
     var eventHandlers = {};
 
-
-
     eventHandlers[eventNames.PAGE_LOAD_COMPLETE] = function() {
 
         console.log("main PAGE_LOAD_COMPLETE called");
 
         var popupMode = "openView";
-
-
 
           // the popup eventHandlerFactory function, passed as a parameter for relativityFormsPopup
 
@@ -385,8 +363,6 @@ Copy
 
         };
 
-
-
         var openArgs = {
 
             workspaceId: this.workspaceId,
@@ -401,13 +377,9 @@ Copy
 
         };
 
-
-
         convenienceApi.relativityFormsPopup[popupMode](openArgs);
 
     };
-
-
 
     return eventHandlers;
 
@@ -748,8 +720,6 @@ var cellContent = {
 
 }
 
-
-
 // BooleanValues
 
 // input item list data: [{ "col_A": true }, { "col_A": false }]
@@ -774,8 +744,6 @@ var cellContent = {
 
 }
 
-
-
 // Custom
 
 // input item list data: [{ "firstName": "Salt", "lastName": "Pepper" }]
@@ -798,8 +766,6 @@ var cellContent = {
 
                 console.log(dataItem);    // { "firstName": "Salt", "lastName": "Pepper" }
 
-
-
                 var spanElement = document.createElement("span");
 
                 spanElement.textContent = content + " " + dataItem["lastName"];
@@ -811,8 +777,6 @@ var cellContent = {
     }]
 
 }
-
-
 
 // DateTime
 
@@ -838,8 +802,6 @@ var cellContent = {
 
 }
 
-
-
 // HtmlText
 
 // input item list data: [{ "col_A": "<i>Italic Text</i>" }]
@@ -859,8 +821,6 @@ var cellContent = {
     ]
 
 }
-
-
 
 // Image
 
@@ -888,8 +848,6 @@ var cellContent = {
 
 }
 
-
-
 // SingleValue
 
 // input item list data: [{ "col_A": { "Inner Key": "Inner Value" }]
@@ -913,8 +871,6 @@ var cellContent = {
     ]
 
 }
-
-
 
 // MultipleValue
 
@@ -943,8 +899,6 @@ var cellContent = {
     ]
 
 }
-
-
 
 // TruncatedText
 
@@ -1020,10 +974,6 @@ Copy
 8
 9
 var toolbarHeaderContentElement = document.getElementById("header");
-
-
-
-
 
 var headerContent = {
 
@@ -2027,10 +1977,6 @@ var itemListReloadHandler = function() {
 
 };
 
-
-
-
-
 var itemListDataProvider = {
 
      // ...
@@ -2089,8 +2035,6 @@ var itemListDataProvider = {
 
             wrapped: true,
 
-
-
             filter: Null,
 
             filterable: false,
@@ -2104,8 +2048,6 @@ var itemListDataProvider = {
             sortDirection: Null,
 
           };
-
-
 
           return convenienceApi.promiseFactory.resolve([
 
@@ -2139,8 +2081,6 @@ var itemListReloadHandler = function(value) {
      console.log("itemListReloadHandler called with value: " + JSON.stringify(value));
 
 };
-
-
 
 itemListDataProvider.getColumns(itemListReloadHandler).then(function(itemListColumn) {
 
@@ -2278,10 +2218,6 @@ var itemListDataProvider = {
                }
 
           ];
-
-
-
-
 
           return convenienceApi.promiseFactory.resolve({
 
@@ -2775,8 +2711,6 @@ itemListState = {
 
      columnWidths:     Number
 
-
-
 }
 
 */
@@ -3056,8 +2990,6 @@ var itemListState = {
      startIndex:     Number
 
 };
-
-
 
 itemListSettingPersistenceService.setItemListState(itemListKey, itemListState);
 ```
@@ -3671,15 +3603,11 @@ Copy
 
     var eventHandlers = {};
 
-
-
     eventHandlers[eventNames.PAGE_LOAD_COMPLETE] = function() {
 
        this.exitDialog.activate("Unsaved Data!!! Continue?");
 
     };
-
-
 
     return eventHandlers;
 
@@ -3727,8 +3655,6 @@ Copy
 
     var eventHandlers = {};
 
-
-
     eventHandlers[eventNames.PAGE_LOAD_COMPLETE] = function() {
 
        var continue = this.exitDialog.trigger("Error Occurred. Do you wish to continue??");
@@ -3744,8 +3670,6 @@ Copy
        }
 
     };
-
-
 
     return eventHandlers;
 
@@ -3787,100 +3711,3 @@ currencySymbol
 String
 
 The symbol that will be shown next to currency values. For example, '$' or ' €'
-
-On this page
-
-- Additional Forms API objects
-
-- Summary of additional Forms API objects and functions
-
-- Filter
-
-- eventNames object
-
-- popupControlApi object
-
-- Popup eventHandlerFactory function
-
-- ColumnDefinition class
-
-- ItemListColumn Properties
-
-- CellContent class
-
-- CellContentAlignment enumeration
-
-- HeaderContent class
-
-- IColumnIndicator interface
-
-- FieldMetadata class
-
-- Field Type ID enumeration
-
-- Field Value
-
-- Filter Types enumeration
-
-- QueryRequest class
-
-- Filter class
-
-- Condition class
-
-- Sort class
-
-- QueryResponse class
-
-- itemListDataProvider object
-
-- itemListSettingPersistenceService object
-
-- ItemListMetadata object
-
-- Item List State class
-
-- Item List Types enumeration
-
-- Date Formats
-
-- Relativity object
-
-- ReadData object
-
-- ExitDialog class
-
-- RuntimeConfig class
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

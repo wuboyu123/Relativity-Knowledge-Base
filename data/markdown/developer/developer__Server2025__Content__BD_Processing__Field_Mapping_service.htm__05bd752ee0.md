@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:26:17+00:00
 sha256: 2bd40f0a90b9eb7ed9a8d8cf4fec7ca1c090a7b6d786e2ad3b53a0214457280a
 ---
 
-Field Mapping Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Field Mapping Manager (REST)
 
 # Field Mapping Manager (REST)
 
@@ -1461,64 +1443,3 @@ Copy
 1
 /Relativity.Rest/API/relativity-processing/v1/workspaces/{your workspace id}/field-mappings/catalog-fields
 ```
-
-On this page
-
-- Field Mapping Manager (REST)
-
-- Client code sample
-
-- Check field mapping availability
-
-- Retrieve mapped Relativity fields
-
-- Retrieve Invariant fields available for mapping
-
-- Retrieve an external field mapping
-
-- Update an external field mapping
-
-- Retrieve GUIDs for automapped fields
-
-- Get Invariant fields available for mapping with pagination
-
-- Retrieve metadata fields
-
-- Retrieve non-metadata fields
-
-- Retrieve field given source name
-
-- Retrieve the contents of the Catalog Field table
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

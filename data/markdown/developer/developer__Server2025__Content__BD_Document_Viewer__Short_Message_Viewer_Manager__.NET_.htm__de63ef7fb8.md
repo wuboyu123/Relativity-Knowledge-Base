@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:22:24+00:00
 sha256: ec1a8c74fe4a7f6b827b8778b8dcbb188773d949ddb248861ff8e2f98d33cdf2
 ---
 
-Short Message Viewer Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Short Message Viewer Manager (.NET)
 
 # Short Message Viewer Manager (.NET)
 
@@ -343,60 +325,3 @@ public Task SliceRSMF(int workspaceID, int documentID, SliceRequest sliceRequest
 
 }
 ```
-
-On this page
-
-- Short Message Viewer Manager (.NET)
-
-- Fundamentals for the Short Message Viewer Manager API
-
-- Methods
-
-- Classes
-
-- Retrieve the JSON for a short message
-
-- Retrieve attachment information for a short message
-
-- Retrieve entity information for a participant in a short message document
-
-- Validate the RSMF for a file or document
-
-- Validate the RSMF for a file
-
-- Validate the RSMF for a document
-
-- Use slicing to create a new document with short message events
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

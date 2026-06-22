@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:51+00:00
 sha256: a6d3221b6170aebceff9dd1c5d9f82e5633ebce987a3c1a07d3471d9e3211f9f
 ---
 
-Implementing Relativity Forms event handlers Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Implementing Relativity Forms event handlers
 
 # Implementing Relativity Forms event handlers
 
@@ -298,50 +280,3 @@ Pre Save event handler
 Post Save event handler
 
 The Object Manager API executes these handlers during its saves, (before and after the object is saved, respectively) and by default, Relativity Forms uses Object Manager API for its saves. So by default, Relativity Forms will respect the existence of these Event Handlers. They fire on the server, after the submit pipeline finishes its validation (on submit) . If a handler is implemented for the submit pipeline's replaceSave , and something other than the Object Manager API is used for the save, these object type event handlers will not be executed.
-
-On this page
-
-- Implementing Relativity Forms event handlers
-
-- Guidelines for page interaction event handlers
-
-- Customizing Relativity Forms pages with the Relativity Forms API
-
-- Identifying the URL for a file
-
-- Updating custom event handler script files
-
-- Considerations
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

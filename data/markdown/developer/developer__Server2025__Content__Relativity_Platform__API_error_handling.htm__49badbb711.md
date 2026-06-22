@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:23:59+00:00
 sha256: 5feb9698ef53122206f8c83395495fe3e8c1db2c2ea6717b745fd22b212c9b36
 ---
 
-Relativity API error handling Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Relativity API error handling
 
 # API error handling
 
@@ -178,50 +160,3 @@ catch (ServiceException ex) { ... }
 
 if (typeof(ex) == ValidationException) { ... }
 ```
-
-On this page
-
-- API error handling
-
-- Errors in RESTful services
-
-- Handling errors
-
-- Error handling in .NET
-
-- Error code changes over time
-
-- Best practices for error handling
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

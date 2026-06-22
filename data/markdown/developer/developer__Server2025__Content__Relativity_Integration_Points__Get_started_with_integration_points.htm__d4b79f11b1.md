@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:23:55+00:00
 sha256: 377a9d85958d53a3d0f9eb58d0b2219ad9cbf8e2fc26b92f0425862db2f58231
 ---
 
-Relativity Integration Points Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Relativity Integration Points
 
 # Relativity Integration Points
 
@@ -135,50 +117,3 @@ After downloading the Integration Points SDK, extract its contents to a folder o
 - The JSON Loader application demonstrates how to load JSON into RDOs. See Build an advanced integration point .
 
 For information about adding these files to a project, see Best practices for integration point development and Set up your Visual Studio solution .
-
-On this page
-
-- Relativity Integration Points
-
-- Understand the Relativity Integration Points framework
-
-- Basic concepts for integration point development
-
-- Workflow for importing data
-
-- Relativity Integration Points API
-
-- Integration Points SDK files
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,23 +6,7 @@ fetched_at: 2026-06-22T06:33:23+00:00
 sha256: 52ba5cbde38d64aabfc44766e3d0d930ccbb7478bbc64eadaa963a3e5e657f28
 ---
 
-Basic Tutorials Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Basic Tutorials
 
 # Basic tutorials
 
@@ -37,40 +21,3 @@ These simple tutorials will help you get started with building applications and 
 - Build your first agent - create a simple agent that raises the message: Hello World! The current time is: <time> .
 
 If you are ready to move on to more advanced tutorials, see the Advanced Tutorials guide.
-
-On this page
-
-- Basic tutorials
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:28:54+00:00
 sha256: 554f081f3eb298e5af105ea6e7a8cbbeaa1c96eab2ad29f6665eccd7f6471fcd
 ---
 
-Post Install event handlers Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Post Install event handlers
 
 # Post Install event handlers
 
@@ -285,44 +267,3 @@ END
 
 }
 ```
-
-On this page
-
-- Post Install event handlers
-
-- Guidelines for Post Install event handlers
-
-- Code sample for a Post Install event handler
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

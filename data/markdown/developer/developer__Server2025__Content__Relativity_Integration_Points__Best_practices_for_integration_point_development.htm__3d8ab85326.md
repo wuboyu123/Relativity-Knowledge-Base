@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:30:08+00:00
 sha256: 7942101950f678fbc188e59e8f860561c1cfab35f2614fbfa05247bc39db25c6
 ---
 
-Best Practices Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Best Practices
 
 # Best practices for integration point development
 
@@ -408,8 +390,6 @@ function createSecuredConfiguration(model) {
 10
 message.subscribe('submit', function () {
 
-
-
     var localModel = JSON.stringify(ko.toJS(pageModel));
 
     this.publish("saveState", localModel); //Save the model in case of error.
@@ -437,8 +417,6 @@ message.subscribe('submit', function () {
 9
 var viewModel = function (model) {
 
-
-
     var self = this;
 
     //…
@@ -449,74 +427,5 @@ var viewModel = function (model) {
 
     this.password = ko.observable(securedConfiguration.password);
 
-
-
 };
 ```
-
-On this page
-
-- Best practices for integration point development
-
-- Use separate projects for custom page and provider code
-
-- Reference the required Relativity libraries in your projects
-
-- Create a custom application in Relativity
-
-- Use GUIDs in your source code
-
-- Subscribe to required JavaScript events
-
-- Reference required JavaScript files in the view
-
-- Include event handlers for your provider
-
-- Display source provider settings selected by users
-
-- Define a method for returning key-value pairs
-
-- Set the ViewDataUrl property
-
-- Use methods for batching in your provider code
-
-- Upload .dll files to Relativity in the correct order
-
-- Use unique identifiers and display names in your data
-
-- Verify your IIS configuration
-
-- Use secured configurations for sensitive information
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

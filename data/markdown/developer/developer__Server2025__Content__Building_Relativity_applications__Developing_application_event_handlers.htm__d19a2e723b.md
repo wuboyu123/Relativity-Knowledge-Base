@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:34+00:00
 sha256: ba6cf8524e9cf8a9e724fb970c4eb8c655c38d94e9c893c311543ffe0e8ffe65
 ---
 
-Develop application event handlers Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Develop application event handlers
 
 # Develop application event handlers
 
@@ -43,40 +25,3 @@ Pre Workspace Delete event handler Executes as the last step in the process used
 Pre Uninstall event handler Executes immediately after an agent starts running an uninstall job. This event handler performs cleanup tasks associated with removing an application from workspaces or from your Relativity environment, such as deleting choices, fields, objects, and other items.
 
 Pre Install event handler Executes during the installation of an application. You can use Pre Install event handlers to create database tables or perform other tasks that you must complete before fully deploying an application.
-
-On this page
-
-- Develop application event handlers
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

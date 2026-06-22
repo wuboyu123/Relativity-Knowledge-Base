@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:26:51+00:00
 sha256: cc45c6fe78d15536eb8c45b1bd992852cf148108cf6933ed58f583c7e104bd56
 ---
 
-Notifications (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Notifications (.NET)
 
 # Notifications (.NET)
 
@@ -89,8 +71,6 @@ using Relativity.Notifications.V1; // requires Relativity.Notifications.SDK nuge
 
 using Relativity.Notifications.V1.Models; // requires Relativity.Notifications.SDK nuget package
 
-
-
 async SendEmailAsync(EmailNotificationRequest request)
 
 {
@@ -104,8 +84,6 @@ async SendEmailAsync(EmailNotificationRequest request)
     }
 
 }
-
-
 
 // Note that you might need to cast the following:
 
@@ -129,8 +107,6 @@ public class EmailNotificationResponse
 
 }
 
-
-
 public class EmailNotificationStatus
 
 {
@@ -143,42 +119,3 @@ public class EmailNotificationStatus
 
 }
 ```
-
-On this page
-
-- Notifications (.NET)
-
-- Code Samples
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

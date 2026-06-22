@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:32:38+00:00
 sha256: b473b5e519e701378832c6bfa8c879b101e61d8fd44c409f82f68d2c6e9942a9
 ---
 
-search Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+search
 
 # search
 
@@ -186,8 +168,6 @@ Copy
 
                 <action returns="table" timeout="1200"><![CDATA[
 
-
-
                 --Check for temp table existance
 
                 IF NOT OBJECT_ID('EDDSDBO.RelativityTempTable') IS NULL
@@ -197,8 +177,6 @@ Copy
                                                 DROP TABLE EDDSDBO.RelativityTempTable
 
                                 END
-
-
 
                 --Create temp table
 
@@ -236,8 +214,6 @@ Copy
 
                 INNER JOIN EDDSDBO.Document DD ON RT.DocumentArtifactID = DD.ArtifactID
 
-
-
                 --Update the Fixed Length Field in the temp table for Control Numbers between certain values
 
                 UPDATE D
@@ -249,8 +225,6 @@ Copy
                 INNER JOIN EDDSDBO.RelativityTempTable RTT ON D.ArtifactID = RTT.DocumentArtifactID
 
                 SELECT 'Fields Updated...'
-
-
 
                 --Drop temp table
 
@@ -282,52 +256,3 @@ When run, a drop-down menu contains a list of all saved searches in the system.
 - Updates the selected character field in the EDDSDBO.Document table to the specified string value based on a joint with the temp table.
 
 - Drops the temp table and displays a confirmation message to the end user.
-
-On this page
-
-- search
-
--
-
-- Hierarchy
-
-- Syntax
-
-- Attributes
-
-- Input
-
-- Example
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

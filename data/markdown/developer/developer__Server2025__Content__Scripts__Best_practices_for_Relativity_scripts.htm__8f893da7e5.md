@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:32:16+00:00
 sha256: 49c4cc9b2e0b900d934549986a652a7da108eacf5ed5feddb20fe5b4a9cfd09c
 ---
 
-Best practices for Relativity scripts Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Best practices for Relativity scripts
 
 # Best practices for Relativity scripts
 
@@ -69,48 +51,3 @@ If you have a Relativity test instance, deploy the latest version and test your 
 Relativity Support is available to assist with any questions, comments, or concerns.
 
 If you are writing scripts, we recommend that you attend infrastructure training to learn more about Relativity architecture. For more information, see Relativity Infrastructure Training .
-
-On this page
-
-- Best practices for Relativity scripts
-
-- Verify your security permissions
-
-- Avoid errors and performance issues
-
-- Upgrade scripts for database schema changes
-
-- Contact Support when necessary
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

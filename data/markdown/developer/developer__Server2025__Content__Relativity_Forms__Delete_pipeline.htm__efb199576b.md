@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:59+00:00
 sha256: 89960337887eb304711d602c8a271f5a4abdbe779d464203ddde935813ad8f8b
 ---
 
-Delete pipeline Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Delete pipeline
 
 # Delete pipeline
 
@@ -130,13 +112,9 @@ Copy
 
      var eventHandlers = {};
 
-
-
      eventHandlers[eventNames.REPLACE_READ_DELETE_DEPENDENCY_LIST] = function(workspaceId, artifactTypeId, artifactIds) {
 
          console.log("Inside REPLACE_READ_DELETE_DEPENDENCY_LIST event handler");
-
-
 
          return [{
 
@@ -165,8 +143,6 @@ Copy
         }];
 
      };
-
-
 
      return eventHandlers;
 
@@ -513,54 +489,3 @@ Copy
 
 }
 ```
-
-On this page
-
-- Delete pipeline
-
-- Delete pipeline workflow
-
-- Delete pipeline event handlers
-
-- Ambient variables
-
-- replaceReadDeleteDependencyList
-
-- preDelete
-
-- replaceDelete
-
-- postDelete
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

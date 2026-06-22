@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:29:56+00:00
 sha256: 120d5f0bd18396f45f1d021395ceab6404b0273f64061d4fffd2f12c9f23e535
 ---
 
-Import API best practices Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Import API best practices
 
 # Best practices for the Import API
 
@@ -190,78 +172,3 @@ Relativity doesn't automatically deploy Import API specific assemblies and depen
 ## Path lengths
 
 The Import API doesn't support long paths. For information about path support on Windows operating systems, see Maximum Path Length Limitation on the Microsoft website.
-
-On this page
-
-- Best practices for the Import API
-
-- Use the Name field for Dynamic Objects
-
-- Use required identifiers in OverwriteMode
-
-- Specify a field as an identifier for document imports
-
-- Use the kCuraMarkerFilename field when copying files
-
-- Set NativeFilePathSourceFieldName when copying native files
-
-- Use a unique identifier when importing child records
-
-- Set appropriate fields when importing extracted text
-
-- Follow guidelines when importing extracted text with images or productions
-
-- Improve performance by using Import API settings
-
-- Skip Outside In file identification
-
-- Skip file size checking
-
-- Disable checks on extracted text files
-
-- Map objects by ArtifactID
-
-- Use a single Import API instance per workspace
-
-- Determine optimum batch size for your environment
-
-- Avoid index fragmentation
-
-- Miscellaneous ways to improve performance
-
-- Deploy Import API specific assemblies
-
-- Path lengths
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

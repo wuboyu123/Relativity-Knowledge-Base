@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:32:31+00:00
 sha256: 2017bfe9eb606dc0c1a29a183e65c3254f5bf2158acfd5dc723811eaa58ad296
 ---
 
-field Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+field
 
 # field
 
@@ -222,8 +204,6 @@ Copy
 
     <action returns="table" timeout="indefinite"><![CDATA[
 
-
-
     --do not allow user to select artifact id to overwrite
 
     IF '#FIELD_PROPAGATE#' = '[ArtifactID]'
@@ -276,72 +256,15 @@ Copy
 
         WHERE K.ArtifactID != D.ArtifactID
 
-
-
         SELECT D.ArtifactID, D.#ITEM_ID#, D.#GROUP_ID#, D.#FIELD_PROPAGATE#
 
         FROM Document D (NOLOCK) INNER JOIN #SASPopulateParentIdTable K ON D.#GROUP_ID# = K.GroupIdentifier
 
         ORDER BY D.#GROUP_ID#, D.#ITEM_ID#
 
-
-
     END
-
-
 
 ]]></action>
 
 </script>
 ```
-
-On this page
-
-- field
-
--
-
-- Hierarchy
-
-- Syntax
-
-- Attributes
-
-- Children
-
-- Remarks
-
-- Example
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:22:47+00:00
 sha256: ec75a57bd45e62122e0b72824a71a61f2647d21aa7f751650ce3fa1107b06333
 ---
 
-Mass Operation Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Mass Operation Manager (.NET)
 
 # Mass Operation Manager (.NET)
 
@@ -166,8 +148,6 @@ public async Task CreateCustomPageMassOpAsync()
 
             };
 
-
-
             int massOpID = await massOperationManager.CreateAsync(workspaceID, request);
 
         }
@@ -243,8 +223,6 @@ public async Task CreateEventHandlerMassOpAsync()
             List<MassOperationEventHandlerResponse> availableEventHandlers = await massOperationManager.GetAvailableEventHandlersAsync(workspaceID);
 
             MassOperationEventHandlerResponse eventHandler = availableEventHandlers.Find(eh => eh.ClassName.Contains("MyCustomEventHandler"));
-
-
 
             EventHandlerMassOperationRequest request = new EventHandlerMassOperationRequest()
 
@@ -826,62 +804,3 @@ public static async Task GetAvailableLayoutsAsync()
 
 }
 ```
-
-On this page
-
-- Mass Operation Manager (.NET)
-
-- Fundamentals for managing mass operations
-
-- Methods
-
-- Classes
-
-- Guidelines for managing mass operations
-
-- Create a mass operation
-
-- Read a mass operation
-
-- Update a mass operation
-
-- Delete a mass operation
-
-- Retrieve available object types for a mass operation
-
-- Retrieve available event handlers for a mass operation
-
-- Retrieve available layouts for a mass operation
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

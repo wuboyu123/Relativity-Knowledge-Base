@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:23:29+00:00
 sha256: 066c23e3c14fcd79f02145ce498977441fd989809c6487dc207c504b990b2b55
 ---
 
-Matter Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Matter Manager (REST)
 
 # Matter Manager (REST)
 
@@ -754,58 +736,3 @@ Copy
 The body of the request is empty.
 
 When the matter is successfully deleted, the response returns the status code of 200.
-
-On this page
-
-- Matter Manager (REST)
-
-- Guidelines for the Matter Manager service
-
-- URLs
-
-- Postman sample file
-
-- Retrieve a list of available clients
-
-- Retrieve a list of matter statuses
-
-- Create a matter
-
-- Retrieve metadata for a matter
-
-- Update a matter
-
-- Delete a matter
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

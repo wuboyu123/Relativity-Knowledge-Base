@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:30:25+00:00
 sha256: 316f8df53653931037bea96d3da8c05c0aec4711240beb9caf645a3083417f09
 ---
 
-Pivot Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Pivot Manager (REST)
 
 # Pivot Manager (REST)
 
@@ -777,8 +759,6 @@ Copy
 
           ArtifactTypeID: 10,
 
-
-
           //Group data by using the “Email From” field, which has a view field identifier value of “1000566”.
 
           GroupBy: {
@@ -787,8 +767,6 @@ Copy
 
           },
 
-
-
           //Pivot data by using the “Designation” field, which has a view field identifier value of “1000555”.
 
           PivotOn: {
@@ -796,8 +774,6 @@ Copy
                ViewFieldID: 1000555
 
           },
-
-
 
           //Limit the results to a specific number of columns and rows.
 
@@ -6361,64 +6337,3 @@ Copy
 ```
 
 When you create a custom query, you can use any of those identifiers to specify the field that you want to use to pivot data.
-
-On this page
-
-- Pivot Manager (REST)
-
-- Pivot fundamentals
-
-- Fields
-
-- HTTP headers and status codes
-
-- Create a Pivot profile
-
-- Read a Pivot profile
-
-- Update a Pivot profile
-
-- Execute a custom Pivot query
-
-- Export a Pivot query
-
-- Sample JSON response
-
-- Helper operations
-
-- getGroupByFieldsForDocuments
-
-- getPivotOnFieldsForDocuments
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

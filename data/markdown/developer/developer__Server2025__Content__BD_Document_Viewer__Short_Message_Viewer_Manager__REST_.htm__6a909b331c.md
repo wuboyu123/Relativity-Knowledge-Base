@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:22:38+00:00
 sha256: 509a9aef4ed693598ea57f725546369fd5fa3b3ab282056cf3c2e18df756027b
 ---
 
-Short Message Viewer Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Short Message Viewer Manager (REST)
 
 # Short Message Viewer Manager (REST)
 
@@ -510,15 +492,11 @@ fileinput.onchange = event => {
 
 };
 
-
-
 const metaData = {
 
     fileName: currentFile.name
 
 };
-
-
 
 const formData = new FormData();
 
@@ -526,11 +504,7 @@ formData.append("file", currentFile);
 
 formData.append("", new Blob([JSON.stringify(metaData)], { type: "application/json" }));
 
-
-
 const xhr = new XMLHttpRequest();
-
-
 
 xhr.onreadystatechange = () => {
 
@@ -541,8 +515,6 @@ xhr.onreadystatechange = () => {
     }
 
 }
-
-
 
 xhr.open('post', url);
 
@@ -723,56 +695,3 @@ View a sample JSON response Copy
 
 }
 ```
-
-On this page
-
-- Short Message Viewer Manager (REST)
-
-- Guidelines for using the Short Message Viewer Manager service
-
-- URLs
-
-- Retrieve the JSON for a short message
-
-- Retrieve attachment information for a short message
-
-- Retrieve entity information for a participant in a short message document
-
-- Validate the RSMF for a file or document
-
-- Validate the RSMF for a file
-
-- Validate the RSMF for a document
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

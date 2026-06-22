@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:23:01+00:00
 sha256: f439e5f16f978c808c836e80da45de795939067d80a79927189c9fbdba4c9653
 ---
 
-Tab Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Tab Manager (.NET)
 
 # Tab Manager (.NET)
 
@@ -126,11 +108,7 @@ View code sample Copy
 5
 List<TabViewOrder> tabViewOrder = tabManager.GetViewOrderListAsync(WorkspaceID).GetAwaiter().GetResult();
 
-
-
 List<ParentTabResponse> allParentTabs = tabManager.GetEligibleParentTabsAsync(WorkspaceID).GetAwaiter().GetResult();
-
-
 
 TabResponse entitiesTabResponse = tabManager.ReadAsync(WorkspaceID, entitiesTabArtifactID).GetAwaiter().GetResult();
 ```
@@ -153,8 +131,6 @@ View code sample Copy
 9
 10
 int systemArtifactID = artifactHelper.RetrieveSystemArtifactId();
-
-
 
 return new TabRequest()
 
@@ -210,19 +186,13 @@ View code sample Copy
 28
 TabResponse entitiesTabResponse = tabManager.ReadAsync(WorkspaceID, entitiesTabArtifactID).GetAwaiter().GetResult();
 
-
-
 TabRequest entitiesTabRequest = TranslateTabResponseToTabRequest(entitiesTabResponse);
-
-
 
 private TabRequest TranslateTabResponseToTabRequest(TabResponse tabResponse)
 
 {
 
     TabRequest tabRequest = null;
-
-
 
     if (tabResponse != null)
 
@@ -257,8 +227,6 @@ private TabRequest TranslateTabResponseToTabRequest(TabResponse tabResponse)
         };
 
     }
-
-
 
     return tabRequest;
 
@@ -410,8 +378,6 @@ public bool Create(IHelper helper)
 
     bool success = false;
 
-
-
     using (ITabManager proxy = helper.GetServicesManager().CreateProxy<ITabManager>(ExecutionIdentity.System))
 
     {
@@ -438,8 +404,6 @@ public bool Create(IHelper helper)
 
             };
 
-
-
             TabResponse response = proxy.CreateAsync(SampleWorkspace_ID, request).GetAwaiter().GetResult();
 
             _logger.LogDebug("{TabID} - {TabName}", response.ObjectIdentifier.ArtifactID, response.ObjectIdentifier.Name);
@@ -457,8 +421,6 @@ public bool Create(IHelper helper)
         }
 
     }
-
-
 
     return success;
 
@@ -501,8 +463,6 @@ public bool Read(IHelper helper)
 
     bool success = false;
 
-
-
     using (ITabManager proxy = helper.GetServicesManager().CreateProxy<ITabManager>(ExecutionIdentity.System))
 
     {
@@ -530,8 +490,6 @@ public bool Read(IHelper helper)
         }
 
     }
-
-
 
     return success;
 
@@ -585,8 +543,6 @@ public bool Update(IHelper helper)
 
     bool success = false;
 
-
-
     using (ITabManager proxy = helper.GetServicesManager().CreateProxy<ITabManager>(ExecutionIdentity.System))
 
     {
@@ -615,8 +571,6 @@ public bool Update(IHelper helper)
 
             };
 
-
-
             proxy.UpdateAsync(SampleWorkspace_ID, request).GetAwaiter().GetResult();
 
             success = true;
@@ -633,11 +587,7 @@ public bool Update(IHelper helper)
 
         }
 
-
-
     }
-
-
 
     return success;
 
@@ -681,8 +631,6 @@ public bool Delete(IHelper helper)
 
     bool success = false;
 
-
-
     using (ITabManager proxy = helper.GetServicesManager().CreateProxy<ITabManager>(ExecutionIdentity.System))
 
     {
@@ -708,8 +656,6 @@ public bool Delete(IHelper helper)
         }
 
     }
-
-
 
     return success;
 
@@ -758,8 +704,6 @@ public bool GetAvailableObjectTypes(IHelper helper)
 
     bool success = false;
 
-
-
     using (ITabManager proxy = helper.GetServicesManager().CreateProxy<ITabManager>(ExecutionIdentity.System))
 
     {
@@ -772,8 +716,6 @@ public bool GetAvailableObjectTypes(IHelper helper)
 
             _logger.LogDebug("All available object types for workspace {WorkspaceID}", SampleWorkspace_ID);
 
-
-
             foreach (DisplayableObjectTypeIdentifier identifier in response)
 
             {
@@ -781,8 +723,6 @@ public bool GetAvailableObjectTypes(IHelper helper)
                 _logger.LogDebug("{Name} - {ArtifactTypeID} - {ArtifactID}", identifier.Name, identifier.ArtifactTypeID, identifier.ArtifactID);
 
             }
-
-
 
             success = true;
 
@@ -799,8 +739,6 @@ public bool GetAvailableObjectTypes(IHelper helper)
         }
 
     }
-
-
 
     return success;
 
@@ -849,8 +787,6 @@ public bool GetAvailableParents(IHelper helper)
 
     bool success = false;
 
-
-
     using (ITabManager proxy = helper.GetServicesManager().CreateProxy<ITabManager>(ExecutionIdentity.System))
 
     {
@@ -863,8 +799,6 @@ public bool GetAvailableParents(IHelper helper)
 
             _logger.LogDebug("All available parent tabs for workspace {WorkspaceID}", SampleWorkspace_ID);
 
-
-
             foreach (ParentTabResponse tab in response)
 
             {
@@ -872,8 +806,6 @@ public bool GetAvailableParents(IHelper helper)
                 _logger.LogDebug("{Name} - {ArtifactID}", tab.ObjectIdentifier.Name, tab.ObjectIdentifier.ArtifactID);
 
             }
-
-
 
             success = true;
 
@@ -890,8 +822,6 @@ public bool GetAvailableParents(IHelper helper)
         }
 
     }
-
-
 
     return success;
 
@@ -949,8 +879,6 @@ public bool GetMeta(IHelper helper)
 
     bool success = false;
 
-
-
     using (ITabManager proxy = helper.GetServicesManager().CreateProxy<ITabManager>(ExecutionIdentity.System))
 
     {
@@ -963,8 +891,6 @@ public bool GetMeta(IHelper helper)
 
             _logger.LogDebug("Tab Meta for workspace {WorkspaceID}", SampleWorkspace_ID);
 
-
-
             foreach (String unsupportedMeta in response.Unsupported)
 
             {
@@ -973,8 +899,6 @@ public bool GetMeta(IHelper helper)
 
             }
 
-
-
             foreach (String readOnlyMeta in response.ReadOnly)
 
             {
@@ -982,8 +906,6 @@ public bool GetMeta(IHelper helper)
                 _logger.LogDebug("ReadOnly - {ReadOnlyMeta}", readOnlyMeta);
 
             }
-
-
 
             success = true;
 
@@ -1000,8 +922,6 @@ public bool GetMeta(IHelper helper)
         }
 
     }
-
-
 
     return success;
 
@@ -1050,8 +970,6 @@ public bool GetViewOrderList(IHelper helper)
 
     bool success = false;
 
-
-
     using (ITabManager proxy = helper.GetServicesManager().CreateProxy<ITabManager>(ExecutionIdentity.System))
 
     {
@@ -1064,8 +982,6 @@ public bool GetViewOrderList(IHelper helper)
 
             _logger.LogDebug("List of all tabs and their view order for workspace {WorkspaceID}", SampleWorkspace_ID);
 
-
-
             foreach (TabViewOrder viewOrder in response)
 
             {
@@ -1073,8 +989,6 @@ public bool GetViewOrderList(IHelper helper)
                 _logger.LogDebug("{Name} - {ArtifactID} - {Order}", viewOrder.ObjectIdentifier.Name, viewOrder.ObjectIdentifier.ArtifactID, viewOrder.Order);
 
             }
-
-
 
             success = true;
 
@@ -1091,8 +1005,6 @@ public bool GetViewOrderList(IHelper helper)
         }
 
     }
-
-
 
     return success;
 
@@ -1140,8 +1052,6 @@ public bool GetAllNavigationTabs(IHelper helper)
 
     bool success = false;
 
-
-
     using (ITabManager proxy = helper.GetServicesManager().CreateProxy<ITabManager>(ExecutionIdentity.System))
 
     {
@@ -1152,8 +1062,6 @@ public bool GetAllNavigationTabs(IHelper helper)
 
             List<NavigationTabResponse> response = proxy.GetAllNavigationTabsAsync(SampleWorkspace_ID).GetAwaiter().GetResult();
 
-
-
             foreach (NavigationTabResponse navigationTabResponse in response)
 
             {
@@ -1161,8 +1069,6 @@ public bool GetAllNavigationTabs(IHelper helper)
                 _logger.LogDebug("{Name} - {Order} - {URL}", navigationTabResponse.ObjectIdentifier.Name, navigationTabResponse.Order, navigationTabResponse.Url);
 
             }
-
-
 
             success = true;
 
@@ -1180,80 +1086,7 @@ public bool GetAllNavigationTabs(IHelper helper)
 
     }
 
-
-
     return success;
 
 }
 ```
-
-On this page
-
-- Tab Manager (.NET)
-
-- Fundamentals for managing tabs
-
-- Guidelines for using the Tab Manager service
-
-- Access the Tab Manager service
-
-- Admin-level context
-
-- Retrieve a value from a Task object
-
-- Set ParentID property
-
-- Use of response data from read operations
-
-- IconIdentifier property
-
-- Create a tab
-
-- Retrieve tab metadata
-
-- Update a tab
-
-- Delete a tab
-
-- Retrieve object types for a tab
-
-- Retrieve eligible parent tabs
-
-- Retrieve workspace-level metadata for admin and system tabs
-
-- Retrieve tab orders
-
-- Retrieve all tabs for navigation
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

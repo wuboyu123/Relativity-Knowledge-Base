@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:04+00:00
 sha256: 544661de96a58def7df7e135bdcde2cadf2f45eaf986adf99f420d82a5ec45d1
 ---
 
-Troubleshoot agents Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Troubleshoot agents
 
 # Troubleshoot agents
 
@@ -75,44 +57,3 @@ Use the following steps to resolve these errors:
 - On the detail view, click Edit and then Save .
 
 - On the Agents tab, click Restart Disabled Agents .
-
-On this page
-
-- Troubleshoot agents
-
-- Remotely debug agents
-
-- Check event logs for errors
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

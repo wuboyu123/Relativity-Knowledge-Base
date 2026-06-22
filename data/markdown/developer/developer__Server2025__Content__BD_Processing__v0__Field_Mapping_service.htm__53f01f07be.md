@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:30:33+00:00
 sha256: 4d7236cc3699c174b695d2957bb289e92974f0f58124b047452eeea827c69a99
 ---
 
-Field Mapping (REST v0) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Field Mapping (REST v0)
 
 # Field Mapping (REST v0)
 
@@ -104,11 +86,7 @@ public async Task<MappableSourceField[]> GetMappableFields()
 
     {
 
-
-
         httpClient.BaseAddress = new Uri("http://localhost/relativity.rest/api/Relativity.Services.FieldMapping.IFieldMapping/");
-
-
 
         //Set the required headers.
 
@@ -116,17 +94,11 @@ public async Task<MappableSourceField[]> GetMappableFields()
 
         httpClient.DefaultRequestHeaders.Add("Authorization", "Basic c2FtcGxlYWRtaW5AcmVsYXRpdml0eS5yZXN0OlMwbTNwQHNzdzByZA==");
 
-
-
         string url = " GetInvariantFieldsAsync ";
-
-
 
         int workspaceArtifactId = 1234567;
 
         bool catalogFieldsOnly = true;
-
-
 
         var payload = @"{
 
@@ -135,8 +107,6 @@ public async Task<MappableSourceField[]> GetMappableFields()
                     catalogFieldsOnly:{1}
 
 }";
-
-
 
         result = await httpClient.PostAsJsonAsync(url, string.Format(workspaceArtifactId, catalogFieldsOnly);
 
@@ -1347,56 +1317,3 @@ Copy
 ```
 
 You don't need to provide any information in the body of the request. The response returns the status code of 200.
-
-On this page
-
-- Field Mapping (REST v0)
-
-- Client code sample
-
-- Check field mapping availability
-
-- Retrieve mapped Relativity fields
-
-- Retrieve Invariant fields available for mapping
-
-- Retrieve an external field mapping
-
-- Update an external field mapping
-
-- Retrieve GUIDs for automapped fields
-
-- Clear cached data
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

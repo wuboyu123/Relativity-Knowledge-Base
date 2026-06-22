@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:23+00:00
 sha256: 26e587902f99f949f1c84b5523434e6df5cedf75be8ba0be5fd09278d0021585
 ---
 
-Troubleshoot custom pages Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Troubleshoot custom pages
 
 # Troubleshoot custom pages
 
@@ -251,62 +233,3 @@ SELECT [DeployedPath]
 
   Where AppGuid = '<YourApplicationGUID>
 ```
-
-On this page
-
-- Troubleshoot custom pages
-
-- Remotely debug custom pages
-
-- Custom page installation errors
-
-- Custom pages not deployed
-
-- Readiness check is falling
-
-- ApplicationServer table out-of-date
-
-- Mismatched versions of .dll files
-
-- Can't access custom page
-
-- Can't upload custom pages published through Visual Studio 2015 and higher
-
-- Find a custom page's physical deployment
-
-- Files system / IIS
-
-- SQL
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

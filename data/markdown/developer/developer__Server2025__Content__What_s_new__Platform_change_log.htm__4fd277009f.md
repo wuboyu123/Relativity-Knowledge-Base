@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:21:49+00:00
 sha256: 205d8a574ba2c482765a3ac6f093864697b617fbd1e17373e457fe3db534aa76
 ---
 
-Platform change log Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Platform change log
 
 # Platform change log
 
@@ -485,42 +467,3 @@ For more information, see Matter Manager API .
 2019-01-05 10.0.161.8 Enhancement Document Viewer Services API The Document Viewer Services API now supports converting files contained in File fields on a Relativity Dynamic Objects (RDOs) for display in the standalone viewer. The GetViewerContentKeyOptions class includes the new FileId property, which provides the identifier for an RDO with an associated File field. During File field conversion, the DocumentIds property on the GetViewerContentKeyRequest class contains only the FieldArtifactId for the File field. The GetViewerContentKeyAsync endpoint also supports this functionality through REST. For more information, see Document Viewer Services (.NET) and Document Viewer Services (REST) .
 
 For changes prior to 2019-01-01, please refer to the Platform change log (Archive)
-
-On this page
-
-- Platform change log
-
-- Released Changes
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

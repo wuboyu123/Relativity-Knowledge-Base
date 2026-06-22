@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:24:08+00:00
 sha256: 71ce4dcd2e675a15ec6bcf62d468cf66098e43a94efc4da46bfa2750cb2dd7fe
 ---
 
-Library Application (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Library Application (.NET)
 
 # Library Application (.NET)
 
@@ -63,8 +45,6 @@ Create a proxy using CreateProxy() Copy
 6
 7
 Client.SamplesLibrary.Helper.IHelper helper;
-
-
 
 // Create a proxy
 
@@ -402,8 +382,6 @@ public async Task ReadAll(ILibraryApplicationManager libraryApplicationManager)
 
         List<LibraryApplicationResponse> response = await libraryApplicationManager.ReadAllAsync(ADMIN_WORKSPACE_ID);
 
-
-
         string info = string.Format($"{response.Count} Library Applications were successfully read.");
 
         Console.WriteLine(info);
@@ -450,8 +428,6 @@ public async Task ReadAll(ILibraryApplicationManager libraryApplicationManager, 
     {
 
         List<LibraryApplicationResponse> response = await libraryApplicationManager.ReadAllAsync(ADMIN_WORKSPACE_ID, includeMetadata, includeActions);
-
-
 
         string info = string.Format($"{response.Count} Library Applications were successfully read.");
 
@@ -516,8 +492,6 @@ public async Task ReadApplicationContents(ILibraryApplicationManager libraryAppl
         string info = string.Format($"Library Application with ArtifactID {artifactID} successfully retrieved as RAP file.");
 
         Console.WriteLine(info);
-
-
 
         // Save the returned file stream to disk at provided file path.
 
@@ -592,8 +566,6 @@ public async Task ReadApplicationContents(ILibraryApplicationManager libraryAppl
         string info = string.Format($"Library Application with Application Guid {applicationGuid} successfully retrieved as RAP file.");
 
         Console.WriteLine(info);
-
-
 
         // Save the returned file stream to disk at provided file path.
 
@@ -688,8 +660,6 @@ public async Task Update(ILibraryApplicationManager libraryApplicationManager, s
 
             };
 
-
-
             UpdateLibraryApplicationResponse response = await libraryApplicationManager.UpdateAsync(ADMIN_WORKSPACE_ID, new KeplerStream(stream), request);
 
             string info = string.Format($"The file located at {rapFilePath} is uploading to the application library.");
@@ -759,8 +729,6 @@ public async Task Update(ILibraryApplicationManager libraryApplicationManager, G
             CreateIfMissing = true
 
         };
-
-
 
         UpdateLibraryApplicationResponse response = await libraryApplicationManager.UpdateAsync(ADMIN_WORKSPACE_ID, packageGuid, request);
 
@@ -1386,8 +1354,6 @@ public async Task<Guid> UploadPackage(ILibraryApplicationManager libraryApplicat
 
     }
 
-
-
     return packageGuid;
 
 }
@@ -1641,78 +1607,3 @@ InvalidOperationException "Unknown value for InstallOutcome ..." If the system i
 NotFoundException "The object does not exist or you do not have permission to access it." As the exception message states, one or more of the objects requested (i.e. a specified workspace, a specified application, a specified application installation ID, a specified validation result ID, etc.) does not exist.
 
 PermissionDeniedException "One or more of the objects requested do not exist or you do not have permission to access them." As the exception message states, either the objects requested (i.e. a specified workspace, a specified application, a specified application installation ID, a specified validation result ID, etc.) do not exist, or the user does not have sufficient permissions to perform the action. The most basic permissions that all users must have include the ViewAdminRepository
-
-On this page
-
-- Library Application (.NET)
-
-- Guidelines for the Library Application API
-
-- Admin-level context
-
-- Permissions
-
-- Sample use cases
-
-- Endpoints
-
-- CreateAsync
-
-- ReadAsync
-
-- ReadAllAsync
-
-- ReadApplicationContentsAsync
-
-- UpdateAsync
-
-- DeleteAsync
-
-- GetLibraryInstallStatusAsync
-
-- RetryLibraryInstallAsync
-
-- CancelLibraryInstallAsync
-
-- UploadPackageAsync
-
-- DownloadPackageAsync
-
-- DeletePackageAsync
-
-- GetApplicationHostingStatusAsync
-
-- Workflow-Based code samples
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:27:15+00:00
 sha256: dd3f349923a8d5ffd1610f65b92d1514a753d2547ccc2de735c7adc07b923683
 ---
 
-Permission Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Permission Manager (.NET)
 
 # Permission Manager (.NET)
 
@@ -1114,8 +1096,6 @@ To add and remove groups to admin permissions:
 5
 List<GroupRef> groupRefs = new List<GroupRef>() {new GroupRef(groupID.Value)};
 
-
-
 // Add a group.
 
 adminSelector.EnabledGroups = groupRefs;
@@ -1378,8 +1358,6 @@ To add and remove groups to item permissions:
 5
 List<GroupRef> groupRefs = new List<GroupRef>() {new GroupRef(groupID.Value)};
 
-
-
 // Add a group.
 
 adminSelector.EnabledGroups = groupRefs;
@@ -1514,15 +1492,11 @@ Copy
 7
 ItemLevelSecurity itemLevelSecurity = await proxy.GetItemLevelSecurityAsync(this.SampleWorkspace_ID, this.SampleRDO_ID);
 
-
-
 int id = itemLevelSecurity.ArtifactID;
 
 bool enabled = itemLevelSecurity.Enabled;
 
 DateTime lastModified = itemLevelSecurity.LastModified;
-
-
 
 string info = string.Format("{0} : {1} - {2}", id, enabled, lastModified);
 ```
@@ -1642,11 +1616,7 @@ Copy
 5
 ItemLevelSecurity itemLevelSecurity = await proxy.GetItemLevelSecurityAsync(this.SampleWorkspace_ID, this.SampleRDO_ID);
 
-
-
 itemLevelSecurity.Enabled = !itemLevelSecurity.Enabled;
-
-
 
 await proxy.SetItemLevelSecurityAsync(this.SampleWorkspace_ID, itemLevelSecurity);
 ```
@@ -2700,102 +2670,3 @@ public static async Task GetItemGroupUsers(IPermissionManager mgr, int workspace
 
 }
 ```
-
-On this page
-
-- Permission Manager (.NET)
-
-- Permissions fundamentals
-
-- Typical use cases
-
-- Modify permissions for a group
-
-- Apply item level security for specific objects
-
-- Get Permissions for logged in user
-
-- Work with individual permissions
-
-- Permission objects
-
-- Query permissions
-
-- Read a permission
-
-- Read the current user and group permission values
-
-- Set permission values
-
-- Custom permissions
-
-- Create a permission
-
-- Read a permission
-
-- Update a permission
-
-- Delete a permission
-
-- Add and remove groups to permissions
-
-- Admin groups
-
-- Workspace groups
-
-- Item groups
-
-- Enable item-level security
-
-- Get item-level security
-
-- Set item-level security
-
-- Set group permissions
-
-- Admin group permissions
-
-- Workspace group permissions
-
-- Item group permissions
-
-- User lookup in groups
-
-- Get admin group users
-
-- Get workspace group users
-
-- Get item group users
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

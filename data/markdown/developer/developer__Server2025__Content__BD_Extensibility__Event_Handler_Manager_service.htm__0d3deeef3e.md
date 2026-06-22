@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:26:05+00:00
 sha256: 4056ae11d0eb8563ea88c2bab27ca263ff5185beb1ef52c88418b2267f976b48
 ---
 
-Event Handler Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Event Handler Manager (REST)
 
 # Event Handler Manager (REST)
 
@@ -138,8 +120,6 @@ public async Task<int?> Create()
         result = JsonConvert.DeserializeObject<int>(content);
 
     }
-
-
 
     return result;
 
@@ -493,52 +473,3 @@ View a JSON sample listing available event handlers Copy
 
 ]
 ```
-
-On this page
-
-- Event Handler Manager (REST)
-
-- Postman sample files
-
-- Client code sample
-
-- Attach an event handler to an object type
-
-- Detach an event handler from an object type
-
-- Retrieve event handlers attached to an object type
-
-- Retrieve available event handlers for an object type
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

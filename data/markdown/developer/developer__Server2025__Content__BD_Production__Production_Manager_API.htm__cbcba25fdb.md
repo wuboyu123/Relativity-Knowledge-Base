@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:23:47+00:00
 sha256: 4d557ad88a31389e79a29c71d896847c18784f2dc6d5b0055ac211b62e36f417
 ---
 
-Production Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Production Manager (.NET)
 
 # Production Manager (.NET)
 
@@ -225,19 +207,13 @@ public partial class Example
 
         var userPassword = "abc123456!";            // User's password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userName, userPassword);
 
         ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -271,8 +247,6 @@ public partial class Example
 
                     },
 
-
-
                     Numbering = new PageLevelNumbering
 
                     {
@@ -286,8 +260,6 @@ public partial class Example
                         NumberOfDigitsForDocumentNumbering = 5
 
                     },
-
-
 
                     Footers = new ProductionFooters
 
@@ -304,8 +276,6 @@ public partial class Example
                         }
 
                     },
-
-
 
                     SortOrder = new List<Sort>()
 
@@ -337,21 +307,15 @@ public partial class Example
 
                 },
 
-
-
                     Keywords = "PageLevel, Complete Setting",
 
                     Notes = "Page level numbering production"
 
                 };
 
-
-
                 // Save the production into the specified workspace
 
                 int productionId = await productionManager.CreateSingleAsync(workspaceId, production);
-
-
 
                 Console.WriteLine("The created production Id is {0}", productionId);
 
@@ -444,25 +408,17 @@ public partial class Example
 
         int productionId = 11111;            // Production's ArtifactID
 
-
-
         var userEmail = "user@test.com";  // User's login
 
         var password = "abc123456!";     // User's password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
         ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -473,8 +429,6 @@ public partial class Example
             {
 
                 Production production = await productionManager.ReadSingleAsync(workspaceId, productionId);
-
-
 
                 var productionStatus = production.ProductionMetadata.Status;
 
@@ -569,25 +523,17 @@ public partial class Example
 
         int productionId = 11111;         // Production's ArtifactID
 
-
-
         var userEmail = "user@test.com";  // User's login
 
         var password = "abc123456!";     // User's password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
         ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -735,25 +681,17 @@ public partial class Example
 
         int productionId = 11111; // Production's ArtifactID
 
-
-
         var userEmail = "user@test.com"; // User's login
 
         var password = "abc123456!"; // User's password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
         ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -765,11 +703,7 @@ public partial class Example
 
                 ProductionJobResult result = await productionManager.StageProductionAsync(workspaceId, productionId);
 
-
-
                 bool wasJobCreated = result.WasJobCreated;
-
-
 
                 if (!wasJobCreated)
 
@@ -809,8 +743,6 @@ public partial class Example
 
     }
 
-
-
     public async Task StageAndRunProduction_Example()
 
     {
@@ -819,27 +751,17 @@ public partial class Example
 
         int productionId = 11111; // Production's ArtifactID
 
-
-
         var userEmail = "user@test.com"; // User's login
 
         var password = "abc123456!"; // User's password
 
-
-
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
         ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -853,11 +775,7 @@ public partial class Example
 
                 ProductionJobResult result = await productionManager.StageProductionAsync(workspaceId, productionId, true);
 
-
-
                 bool wasJobCreated = result.WasJobCreated;
-
-
 
                 if (!wasJobCreated)
 
@@ -972,25 +890,17 @@ public partial class Example
 
         int productionId = 11111;            // Production's ArtifactID
 
-
-
         var userEmail = "user@test.com";  // User's login
 
         var password = "abc123456!";     // User's password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
         ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -1002,13 +912,9 @@ public partial class Example
 
                 ProductionJobResult result = await productionManager.RunProductionAsync(workspaceId, productionId, false);
 
-
-
                 bool wasJobCreated = result.WasJobCreated;
 
                 int productionJobId = result.JobID;
-
-
 
                 if (!wasJobCreated)
 
@@ -1020,19 +926,13 @@ public partial class Example
 
                     Console.WriteLine(result.Messages);
 
-
-
                     // Okay, so maybe you've looked at the errors and found some document conflicts
 
                     // and you want to override it anyway.
 
-
-
                     bool overrideConfilcts = true;
 
                     bool suppressWarnings = true;
-
-
 
                     result = await productionManager.RunProductionAsync(workspaceId, productionJobId, suppressWarnings, overrideConfilcts);
 
@@ -1140,11 +1040,7 @@ public partial class Example
 
         var password = "abc123456!"; // User password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
@@ -1155,8 +1051,6 @@ public partial class Example
             usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -1170,13 +1064,9 @@ public partial class Example
 
                 List<int> productionIds = new List<int> { 100, 200 };
 
-
-
                 List<ProductionJobResult> result =
 
                     await productionManager.MassStageAndRunAsync(workspaceId, productionIds);
-
-
 
                 // Do something, like display results
 
@@ -1300,25 +1190,17 @@ public partial class Example
 
         int productionId = 11111;         // Production's ArtifactID
 
-
-
         var userEmail = "user@test.com";  // User's login
 
         var password = "abc123456!";     // User's password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
         ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -1332,13 +1214,9 @@ public partial class Example
 
                 // Now you have made your fix and decide to rerun it again
 
-
-
                 //TODO: Uncomment when we create endpoint for Production create.
 
                 Production prod = await productionManager.ReadSingleAsync(workspaceId, productionId);
-
-
 
                 if (prod.ProductionMetadata.Status == ProductionStatus.Error)
 
@@ -1440,13 +1318,7 @@ public async Task GetProductionDefaultFieldValues_Example()
 
     var password = "abc123456!"; // User password
 
-
-
-
-
     var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
     var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
@@ -1458,8 +1330,6 @@ public async Task GetProductionDefaultFieldValues_Example()
 
     ServiceFactory serviceFactory = new ServiceFactory(settings);
 
-
-
     using (var productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
     {
@@ -1470,8 +1340,6 @@ public async Task GetProductionDefaultFieldValues_Example()
 
             ProductionDefaultFieldValues values = await productionManager.GetProductionDefaultFieldValues(workspaceId);
 
-
-
             Console.WriteLine("Found default choice Artifact ID for BrandingFont field: {0}.", values.BrandingFont.DefaultValue.ID);
 
             Console.WriteLine("Found default choice name for BrandingFont field: {0}.", values.BrandingFont.DefaultValue.Name);
@@ -1479,8 +1347,6 @@ public async Task GetProductionDefaultFieldValues_Example()
             Console.WriteLine("Found BrandingFont field GUID: {0}.", values.BrandingFont.Guid);
 
             Console.WriteLine("Found BrandingFont field Artifact ID: {0}.", values.BrandingFont.ID);
-
-
 
             Console.WriteLine("Found default value for BrandingFontSize field: {0}.", values.BrandingFontSize.DefaultValue);
 
@@ -1578,25 +1444,17 @@ public class SetProductionRestrictions
 
             int searchId = 456;                 // Saved search to be used as production restriction
 
-
-
             var userEmail = "user@test.com";    // User's login
 
             var password = "abc123456!";        // User's password
 
-
-
             var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
             var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
             ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
             ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
             using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -1702,25 +1560,17 @@ public class GetProductionRestrictions
 
             int workspaceId = 12345;            // Workspace production restriction exist in
 
-
-
             var userEmail = "user@test.com";    // User's login
 
             var password = "abc123456!";        // User's password
 
-
-
             var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
             var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
             ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
             ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
             using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -1731,8 +1581,6 @@ public class GetProductionRestrictions
                 {
 
                     int savedSearchId = await productionManager.GetProductionRestrictionAsync(workspaceId);
-
-
 
                     if (savedSearchId > 0)
 
@@ -1852,25 +1700,17 @@ public partial class Example
 
         int maxNumberOfBrandingErrors = 10; // Returns the max number of branding errors if there are any.
 
-
-
         var userEmail = "user@test.com";  // User's login
 
         var password = "abc123456!";     // User's password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
         ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -1900,8 +1740,6 @@ public partial class Example
 
                 Console.WriteLine("There are {0} branding errors. They are", productionJobStatusResult.NumberOfBrandingErrors);
 
-
-
                 foreach (var brandingError in productionJobStatusResult.BrandingErrors)
 
                 {
@@ -1911,8 +1749,6 @@ public partial class Example
                 }
 
             }
-
-
 
             catch (ValidationException e)
 
@@ -1995,25 +1831,17 @@ public async Task GetProgress_Example()
 
     int productionId = 11111;            // Production's ArtifactID
 
-
-
     var userEmail = "user@test.com";  // User's login
 
     var password = "abc123456!";     // User's password
 
-
-
     var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
     var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
     ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
     ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
     using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -2025,13 +1853,9 @@ public async Task GetProgress_Example()
 
             ProductionProgress productionProgress = await productionManager.ProgressAsync(workspaceId, productionId);
 
-
-
             var productionStatus = productionProgress.Status;
 
             var totalDocuments = productionProgress.TotalDocuments;
-
-
 
             // Do something, like display the metadata of the production
 
@@ -2127,25 +1951,17 @@ public partial class Example
 
         int productionId = 11111;         // Production's ArtifactID
 
-
-
         var userEmail = "user@test.com";  // User's login
 
         var password = "abc123456!";     // User's password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
         ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -2170,8 +1986,6 @@ public partial class Example
                 }
 
             }
-
-
 
             catch (ValidationException e)
 
@@ -2325,25 +2139,17 @@ public partial class Example
 
         int documentId2 = 33333;          // ArtifactID of another document in the Production
 
-
-
         var userEmail = "user@test.com";  // User's login
 
         var password = "abc123456!";      // User's password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
         ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -2363,11 +2169,7 @@ public partial class Example
 
             };
 
-
-
                 ImageFilesResult result = await productionManager.GetProductionImagesAsync(workspaceId, productionId, documents);
-
-
 
                 foreach (ImageFile imageFile in result.ImageFiles)
 
@@ -2411,8 +2213,6 @@ public partial class Example
 
     }
 
-
-
     public async Task GetProductionImagesWithPagination_Example()
 
     {
@@ -2421,27 +2221,17 @@ public partial class Example
 
         int productionId = 11111;         // Production's ArtifactID
 
-
-
         var userEmail = "user@test.com";  // User's login
 
         var password = "abc123456!";      // User's password
 
-
-
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
         ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -2457,17 +2247,11 @@ public partial class Example
 
                 string token = "1e51ae24-bbcb-4b61-aafb-1f91859d9891"; // Token associated with this call to page through the images.
 
-
-
                 PagedImageFilesResult result = await productionManager.GetProductionImagesAsync(workspaceId, productionId, token, top, skip);
-
-
 
                 Console.WriteLine($"This is the count of the entire result set: {result.TotalResultSet}.");
 
                 Console.WriteLine($"This is the count of the result set on the current page: {result.ResultCount}.");
-
-
 
                 foreach (ImageFile imageFile in result.ImageFiles)
 
@@ -2571,29 +2355,19 @@ public partial class Example
 
     {
 
-
-
         int workspaceId = 12345;            // Workspace Production(s) exist in
-
-
 
         var userEmail = "user@test.com";  // User's login
 
         var password = "abc123456!";     // User's password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
         ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -2608,8 +2382,6 @@ public partial class Example
                 // List can be iterated over to inspect productions, see which are ready to be produced, etc.
 
                 var productionList = await productionManager.GetAllAsync(workspaceId);
-
-
 
                 foreach (var production in productionList)
 
@@ -2774,25 +2546,17 @@ public async Task GetProducedProductionsFromDocumentIds_Example()
 
     int documentId3 = 789;           // Document3's ArtifactID
 
-
-
     var userEmail = "user@test.com";  // User's login
 
     var password = "abc123456!";     // User's password
 
-
-
     var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
     var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
     ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
     ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
     using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -2814,13 +2578,9 @@ public async Task GetProducedProductionsFromDocumentIds_Example()
 
             };
 
-
-
             //This list contains every produced production that contains at least one of the above documents.
 
             List<Services.Interfaces.V1.DTOs.ProductionSlim> producedProductions = await productionManager.GetProducedProductionsFromDocumentsAsync(workspaceId, documentIds);
-
-
 
             foreach (Services.Interfaces.V1.DTOs.ProductionSlim producedProduction in producedProductions)
 
@@ -2864,8 +2624,6 @@ public async Task GetProducedProductionsFromDocumentIds_Example()
 
 }
 
-
-
 public async Task GetProducedProductionsFromDocumentIds_ExcludeNonReproducible_Example()
 
 {
@@ -2878,25 +2636,17 @@ public async Task GetProducedProductionsFromDocumentIds_ExcludeNonReproducible_E
 
     int documentId3 = 789;           // Document3's ArtifactID
 
-
-
     var userEmail = "user@test.com";  // User's login
 
     var password = "abc123456!";     // User's password
 
-
-
     var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
     var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
     ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
     ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
     using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -2918,13 +2668,9 @@ public async Task GetProducedProductionsFromDocumentIds_ExcludeNonReproducible_E
 
             };
 
-
-
             //This list contains every produced production that contains at least one of the above documents, and can be re-produced.
 
             List<Services.Interfaces.V1.DTOs.ProductionSlim> producedProductions = await productionManager.GetProducedProductionsFromDocumentsAsync(workspaceId, documentIds, true);
-
-
 
             foreach (Services.Interfaces.V1.DTOs.ProductionSlim producedProduction in producedProductions)
 
@@ -3077,25 +2823,17 @@ public async Task GetProducedProductionsFromMassOpDatabaseToken_Example()
 
         string databaseToken = "D6F3A251-2B5F-483E-B245-E9E7D5FC9560"; // Database Token retrieved from mass operation.
 
-
-
         var userEmail = "user@test.com";  // User's login
 
         var password = "abc123456!";     // User's password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
         ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -3108,8 +2846,6 @@ public async Task GetProducedProductionsFromMassOpDatabaseToken_Example()
                 //This list contains every produced production that contains at least one of the above documents.
 
                 List<Services.Interfaces.V1.DTOs.ProductionSlim> producedProductions = await productionManager.GetProducedProductionsFromDocumentsAsync(workspaceId, databaseToken);
-
-
 
                 foreach (Services.Interfaces.V1.DTOs.ProductionSlim producedProduction in producedProductions)
 
@@ -3153,8 +2889,6 @@ public async Task GetProducedProductionsFromMassOpDatabaseToken_Example()
 
     }
 
-
-
     /// <summary>
 
     /// Use this example if you are interested in creating a custom mass operation on the document object involving produced productions.
@@ -3177,25 +2911,17 @@ public async Task GetProducedProductionsFromMassOpDatabaseToken_Example()
 
         string databaseToken = "D6F3A251-2B5F-483E-B245-E9E7D5FC9560"; // Database Token retrieved from mass operation.
 
-
-
         var userEmail = "user@test.com";  // User's login
 
         var password = "abc123456!";     // User's password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
         ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -3208,8 +2934,6 @@ public async Task GetProducedProductionsFromMassOpDatabaseToken_Example()
                 //This list contains every produced production that contains at least of the above documents, and can be re-produced.
 
                 List<Services.Interfaces.V1.DTOs.ProductionSlim> producedProductions = await productionManager.GetProducedProductionsFromDocumentsAsync(workspaceId, databaseToken, true);
-
-
 
                 foreach (Services.Interfaces.V1.DTOs.ProductionSlim producedProduction in producedProductions)
 
@@ -3311,25 +3035,17 @@ public partial class Example
 
         int productionId = 11111;         // Production's ArtifactID
 
-
-
         var userEmail = "user@test.com";  // User's login
 
         var password = "abc123456!";      // User's password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
         ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -3449,25 +3165,17 @@ public async Task ProductionRunCheckAsync_Example()
 
     int productionId = 11111;            // Production's ArtifactID
 
-
-
     var userEmail = "user@test.com";  // User's login
 
     var password = "abc123456!";     // User's password
 
-
-
     var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
     var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
     ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
     ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
     using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -3481,8 +3189,6 @@ public async Task ProductionRunCheckAsync_Example()
 
                 await productionManager.ProductionRunCheckAsync(workspaceId, productionId);
 
-
-
             // Do something, like display check errors
 
             Console.WriteLine(runCheckResult.CanContinue
@@ -3490,8 +3196,6 @@ public async Task ProductionRunCheckAsync_Example()
                 ? "This production can continue to run"
 
                 : "This production is not able to run with errors");
-
-
 
             if (runCheckResult.ProductionErrors.Count > 0)
 
@@ -3509,8 +3213,6 @@ public async Task ProductionRunCheckAsync_Example()
 
             }
 
-
-
             if (runCheckResult.PlaceholderErrors.Count > 0)
 
             {
@@ -3526,8 +3228,6 @@ public async Task ProductionRunCheckAsync_Example()
                 }
 
             }
-
-
 
             Console.WriteLine($"The production continue message is {runCheckResult.ContinueMessage}");
 
@@ -3983,25 +3683,17 @@ public async Task DeleteDocumentConflictsAsync_Example()
 
     int productionId = 11111;            // Production's ArtifactID
 
-
-
     var userEmail = "user@test.com";  // User's login
 
     var password = "abc123456!";     // User's password
 
-
-
     var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
     var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
     ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
     ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
     using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -4106,17 +3798,11 @@ public async Task GetProductionsEligibleForReproductionAsync_Example()
 
     int reproductionType = 0; // Reproduction type (reproduce document = 0, replace document With placeholder = 1, replace placeholder with document = 2)
 
-
-
     var userEmail = "user@test.com"; // User login
 
     var password = "abc123456!"; // User password
 
-
-
     var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
     var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
@@ -4128,8 +3814,6 @@ public async Task GetProductionsEligibleForReproductionAsync_Example()
 
     ServiceFactory serviceFactory = new ServiceFactory(settings);
 
-
-
     using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
     {
@@ -4139,8 +3823,6 @@ public async Task GetProductionsEligibleForReproductionAsync_Example()
         {
 
             IEnumerable<ReproductionCandidate> reproductionCandidates = await productionManager.GetProductionsEligibleForReproductionAsync(workspaceId, databaseToken, reproductionType);
-
-
 
             // Do something, like display information about the eligible reproductions.
 
@@ -4244,17 +3926,11 @@ public async Task GetReproductions_Example()
 
     int productionID = 11111; // Production ArtifactID
 
-
-
     var userEmail = "user@test.com"; // User login
 
     var password = "abc123456!"; // User password
 
-
-
     var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
     var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
@@ -4265,8 +3941,6 @@ public async Task GetReproductions_Example()
         usernamePasswordCredentials);
 
     ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
     using (IProductionManager productionManager =
 
@@ -4279,8 +3953,6 @@ public async Task GetReproductions_Example()
         {
 
             IEnumerable<ReproductionRef> reproductions = await productionManager.GetReproductionsAsync(workspaceID, productionID);
-
-
 
             foreach (ReproductionRef reproduction in reproductions)
 
@@ -4391,17 +4063,11 @@ public async Task MassStageAndRunProductionsAsync_Example()
 
     int reproductionJobId = 2; // Reproduction job that points to created productions
 
-
-
     var userEmail = "user@test.com"; // User login
 
     var password = "abc123456!"; // User password
 
-
-
     var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
     var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
@@ -4413,8 +4079,6 @@ public async Task MassStageAndRunProductionsAsync_Example()
 
     ServiceFactory serviceFactory = new ServiceFactory(settings);
 
-
-
     using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
     {
@@ -4424,8 +4088,6 @@ public async Task MassStageAndRunProductionsAsync_Example()
         {
 
             IEnumerable<ProductionJobResult> jobResults = await productionManager.MassStageAndRunProductionsAsync(workspaceId, reproductionJobId);
-
-
 
             // Do something, like check if all reproductions were successful and display relevant information.
 
@@ -4438,8 +4100,6 @@ public async Task MassStageAndRunProductionsAsync_Example()
                 wasSuccess &= result.WasJobCreated;
 
             }
-
-
 
             if (wasSuccess)
 
@@ -4460,8 +4120,6 @@ public async Task MassStageAndRunProductionsAsync_Example()
                     string.Join(", ", jobResults.Select(x => x.Errors).ToList()));
 
             }
-
-
 
             Console.WriteLine("Reproduction finished with the following warnings: {0}",
 
@@ -4572,11 +4230,7 @@ public partial class Example
 
         var password = "abc123456!"; // User password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
@@ -4587,8 +4241,6 @@ public partial class Example
             usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionManager productionManager = serviceFactory.CreateProxy<IProductionManager>())
 
@@ -4602,13 +4254,9 @@ public partial class Example
 
                 int reproductionJobId = 456;
 
-
-
                 MassCancelResult result =
 
                     await productionManager.CancelReproductionJobAsync(workspaceId, reproductionJobId);
-
-
 
                 // Do something, like display results
 
@@ -4678,104 +4326,3 @@ public partial class Example
 
 }
 ```
-
-On this page
-
-- Production Manager (.NET)
-
-- Fundamentals for the Production Manager API
-
-- Production sets and jobs
-
-- Create a production set
-
-- Retrieve a production set
-
-- Delete a production set
-
-- Stage a production
-
-- Run a production job
-
-- Stage and run multiple productions
-
-- Re-run a production
-
-- Default fields and restrictions for productions
-
-- Retrieve default field values for a production
-
-- Set production restrictions on a workspace
-
-- Retrieve the ID of a save search used for production restrictions
-
-- Production job status, progress, and other information
-
-- Retrieve the job status of a production
-
-- Retrieve progress details for a production
-
-- Retrieve production status details
-
-- Retrieve results for produced image files
-
-- Retrieve all productions in a workspace
-
-- Retrieve produced productions for documents
-
-- Retrieve a token for paging through images
-
-- Production errors and document conflicts
-
-- Retrieve conflicts, errors, and other production information
-
-- Retrieve staging errors for a production
-
-- Retrieve branding errors for a production
-
-- Retrieve documents conflicting with production restrictions
-
-- Remove documents conflicting with production restrictions
-
-- Re-production jobs
-
-- Retrieve productions eligible for re-production
-
-- Retrieve re-productions for a specific production
-
-- Stage and run a re-production job
-
-- Cancel jobs for a re-production
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

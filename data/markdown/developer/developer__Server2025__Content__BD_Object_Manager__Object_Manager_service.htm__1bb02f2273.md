@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:24:13+00:00
 sha256: c1dd482d40bdb9d7182bdf9a2036a08e477e1092a142b3f855436041b4ae9b33
 ---
 
-Object Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Object Manager (REST)
 
 # Object Manager (REST)
 
@@ -170,8 +152,6 @@ public async Task<UpdateResult> UpdateExample()
 
         client.BaseAddress = new Uri("https://localhost/Relativity.Rest/api/Relativity.ObjectManager/{versionNumber}/");
 
-
-
         var workspaceId = 1016847;
 
         var objectArtifactID = 1039331;
@@ -180,11 +160,7 @@ public async Task<UpdateResult> UpdateExample()
 
         var valueToUpdate = "New Value";
 
-
-
         string inputJSON = $"{{\"request\":{{\"Object\":{\"{artifactId\":{objectArtifactID}}},\"FieldValues\":[{{\"Field\":{{\"ArtifactID\":{fieldArtifactID}}},\"Value\":\"{valueToUpdate}\"}}]}}}}}}";
-
-
 
         var url = $"workspace/{workspaceId}/object/update";
 
@@ -3371,8 +3347,6 @@ public async Task<List<Relativity.Shared.{versionNumber}.Models.Dependency>> Get
 
     List<Relativity.Shared.{versionNumber}.Models.Dependency> result = null;
 
-
-
     int workspaceArtifactId = 1234567;
 
     List<Relativity.ObjectManager.{versionNumber}.Models.RelativityObjectRef> objectsToCheck = new List<Relativity.ObjectManager.{versionNumber}.Models.RelativityObjectRef>
@@ -3387,15 +3361,11 @@ public async Task<List<Relativity.Shared.{versionNumber}.Models.Dependency>> Get
 
     };
 
-
-
     using (HttpClient httpClient = new HttpClient())
 
     {
 
         httpClient.BaseAddress = new Uri($"https://localhost/Relativity.Rest/api/Relativity.ObjectManager/{versionNumber}/workspace/{workspaceArtifactId}/object/");
-
-
 
         // Set the required headers.
 
@@ -3403,11 +3373,7 @@ public async Task<List<Relativity.Shared.{versionNumber}.Models.Dependency>> Get
 
         httpClient.DefaultRequestHeaders.Add("Authorization", "Basic c2FtcGxlYWRtaW5AcmVsYXRpdml0eS5yZXN0OlMwbTNwQHNzdzByZA==");
 
-
-
         string url = "dependencylist";
-
-
 
         var dependencyListRequest = new Relativity.ObjectManager.{versionNumber}.Models.DependencyListByObjectIdentifiersRequest { Objects = objectsToCheck };
 
@@ -3415,13 +3381,9 @@ public async Task<List<Relativity.Shared.{versionNumber}.Models.Dependency>> Get
 
         string payload = $"{{ \"request\" : {serializedRequest} }}";
 
-
-
         result = await httpClient.PostAsJsonAsync(url, payload);
 
     }
-
-
 
     return result;
 
@@ -5115,74 +5077,3 @@ View a sample JSON request Copy
 ```
 
 The response is a text stream of the content from a specific field. For unicode-enabled fields, the stream is encoded as UTF-16.
-
-On this page
-
-- Object Manager (REST)
-
-- Guidelines for the Object Manager service
-
-- Postman sample file
-
-- Client code sample
-
-- Create an RDO
-
-- Mass create RDOs
-
-- Retrieve field values for a Document object or RDO
-
-- Update fields on a Document object or RDO
-
-- Update a long text field using an input stream
-
-- Mass update Document objects or RDOs
-
-- Retrieve a list of object dependencies
-
-- Delete a Document object or RDO
-
-- Mass delete Document objects or RDOs
-
-- Query for Relativity objects
-
-- Export API
-
-- Set up an export job
-
-- Retrieve objects
-
-- Stream text
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

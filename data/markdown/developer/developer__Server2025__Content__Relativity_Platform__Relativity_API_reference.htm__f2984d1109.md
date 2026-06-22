@@ -6,13 +6,7 @@ fetched_at: 2026-06-22T06:24:38+00:00
 sha256: 25afa15772338e01ae8d06ee3b4f085c4a4ebd817c12dbd6ba4b67bd408cb12e
 ---
 
-Relativity API reference Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-Version: RelativityOne Server 2024 Server 2023
+Relativity API reference
 
 # Class library reference
 
@@ -1213,17 +1207,3 @@ Custom / Kepler APIs Use the Kepler hosting library to deploy your own REST APIs
 - Nuget Package (Kepler.Client.SDK)
 
 - Version History
-
-
-
-For more information on using the Feedback form, see Using this site .
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

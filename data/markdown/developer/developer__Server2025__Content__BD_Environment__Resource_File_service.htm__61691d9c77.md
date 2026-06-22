@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:27:56+00:00
 sha256: ae77a8a5a8eeb885f7fbd5adf0f775f844b25e4e3e69b327e3954fc437031769
 ---
 
-Resource File (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Resource File (REST)
 
 # Resource File (REST)
 
@@ -118,8 +100,6 @@ public async Task<ResourceFileResponse> ReadResourceFile(int resourceFileID)
 
         client.BaseAddress = new Uri("https://localhost/");
 
-
-
         string url = $"/Relativity.REST/API/relativity-environment/v1/workspaces/-1/resource-files/{resourceFileArtifactId}/";
 
         System.Net.Http.HttpResponseMessage httpResponse = await client.GetAsync(url);
@@ -131,8 +111,6 @@ public async Task<ResourceFileResponse> ReadResourceFile(int resourceFileID)
         response = JsonConvert.DeserializeObject<LibraryApplicationResponse>(content);
 
     }
-
-
 
     return response;
 
@@ -1796,62 +1774,3 @@ View JSON for a sample response Copy
 
 }
 ```
-
-On this page
-
-- Resource File (REST)
-
-- Guidelines for the Resource File service
-
-- URLs
-
-- Client code sample
-
-- Create a resource file
-
-- Read a resouce file
-
-- Update a resource file
-
-- Delete a resource file
-
-- Download the contents of a resource file
-
-- Upload the contents of a resource file
-
-- Create or update a resource file
-
-- Retrieve available applications
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

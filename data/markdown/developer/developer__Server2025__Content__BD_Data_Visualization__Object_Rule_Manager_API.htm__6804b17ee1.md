@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:22:50+00:00
 sha256: 472d62984c171fb6851ab5a32a78e45373a69db298ed31cfac1174da677363a2
 ---
 
-Object Rule Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Object Rule Manager (.NET)
 
 # Object Rule Manager (.NET)
 
@@ -294,8 +276,6 @@ public static async Task CreateSublistButtonVisibilityRule_Async(")"{
 
     int applicationId = 1035699;
 
-
-
     SubListButtonVisibilityRuleRequest request = new SubListButtonVisibilityRuleRequest{
 
       "Name =""Test Object Rule Request",
@@ -361,8 +341,6 @@ public static async Task CreateSublistButtonVisibilityRule_Async(")"{
       }
 
    };
-
-
 
     using (Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager objectRuleManager = serviceFactory.CreateProxy<Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager>()){
 
@@ -448,8 +426,6 @@ public static async Task CreateChoiceBehavior_Async(")"{
 
     int applicationId = 1035699;
 
-
-
     ChoiceBehaviorRuleRequest request = new ChoiceBehaviorRuleRequest{
 
       "Name =""Test Choice Behavior Rule",
@@ -489,8 +465,6 @@ public static async Task CreateChoiceBehavior_Async(")"{
       }
 
    };
-
-
 
     using (Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager objectRuleManager = serviceFactory.CreateProxy<Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager>()){
 
@@ -592,8 +566,6 @@ public static async Task CreateDefaultLayout_Async(")"{
 
     int applicationId = 1035699;
 
-
-
     DefaultLayoutRuleRequest request = new DefaultLayoutRuleRequest{
 
       "Name =""Test Object Rule Request",
@@ -653,8 +625,6 @@ public static async Task CreateDefaultLayout_Async(")"{
       }
 
    };
-
-
 
     using (Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager objectRuleManager = serviceFactory.CreateProxy<Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager>()){
 
@@ -725,8 +695,6 @@ public static async Task Read_Async()
     int workspaceId = 1018486;
 
     int objectRuleArtifactId = 1039509;
-
-
 
     using (Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager objectRuleManager = serviceFactory.CreateProxy<Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager>())
 
@@ -1255,8 +1223,6 @@ public static async Task UpdateSubListButtonVisibility_Async(")"{
 
     int objectRuleId = 1383730;
 
-
-
     SubListButtonVisibilityRuleRequest request = new SubListButtonVisibilityRuleRequest{
 
       "Name =""Test Object Rule Request",
@@ -1316,8 +1282,6 @@ public static async Task UpdateSubListButtonVisibility_Async(")"{
       }
 
    };
-
-
 
     using (Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager objectRuleManager = serviceFactory.CreateProxy<Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager>()){
 
@@ -1400,8 +1364,6 @@ public static async Task UpdateChoiceBehavior_Async()
 
     int objectRuleId = 1383730;
 
-
-
     ChoiceBehaviorRuleRequest request = new ChoiceBehaviorRuleRequest
 
     {
@@ -1433,8 +1395,6 @@ public static async Task UpdateChoiceBehavior_Async()
         }
 
     };
-
-
 
     using (Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager objectRuleManager = serviceFactory.CreateProxy<Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager>())
 
@@ -1534,8 +1494,6 @@ public static async Task UpdateLayoutBehavior_Async()
 
     int objectRuleId = 1383730;
 
-
-
     DefaultLayoutRuleRequest request = new DefaultLayoutRuleRequest
 
     {
@@ -1585,8 +1543,6 @@ public static async Task UpdateLayoutBehavior_Async()
         }
 
     };
-
-
 
     using (Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager objectRuleManager = serviceFactory.CreateProxy<Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager>())
 
@@ -1644,8 +1600,6 @@ public static async Task Delete_Async()
     int workspaceId = 1018486;
 
     int objectRuleId = 1039509;
-
-
 
     using (Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager objectRuleManager = serviceFactory.CreateProxy<Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager>())
 
@@ -1712,11 +1666,7 @@ public static async Task Delete_Async()
 
     int objectRuleId3 = 1039630;
 
-
-
     List<ObjectIdentifiers> objectRulesToDelete = new List<ObjectIdentifiers> = [ objectRuleId1, objectRuleId2, objectRuleId3];
-
-
 
     using (Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager objectRuleManager = serviceFactory.CreateProxy<Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager>())
 
@@ -1799,8 +1749,6 @@ public static async Task GetAvailableAssociatedObjects_Async()
     int workspaceId = 1018486;
 
     int objectTypeId = 1039509;
-
-
 
     using (Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager objectRuleManager = serviceFactory.CreateProxy<Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager>())
 
@@ -1888,11 +1836,7 @@ public static async Task GetAvailableAssociatedObjects_Async()
 
     int objectTypeArtifactId = 1039509;
 
-
-
     DisplayableObjectTypeIdentifier DisplayableObjectTypeIdentifier = new DisplayableObjectTypeIdentifier { ArtifactID = objectTypeArtifactId };
-
-
 
     using (Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager objectRuleManager = serviceFactory.CreateProxy<Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager>())
 
@@ -1974,8 +1918,6 @@ public static async Task GetAvailableSingleChoiceFields_Async(")"{
 
     int objectTypeId = 1039509;
 
-
-
     using (Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager objectRuleManager = serviceFactory.CreateProxy<Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager>()){
 
       "try"{
@@ -2052,11 +1994,7 @@ Copy
 
     int objectTypeArtifactId = 1039509;
 
-
-
     DisplayableObjectTypeIdentifier objectTypeId = new DisplayableObjectTypeIdentifier { ArtifactID = objectTypeArtifactId };
-
-
 
     using (Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager objectRuleManager = serviceFactory.CreateProxy<Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager>())
 
@@ -2141,8 +2079,6 @@ public static async Task GetAvailableChoiceFields_Async()
 
     int objectTypeId = 1039509;
 
-
-
     using (Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager objectRuleManager = serviceFactory.CreateProxy<Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager>())
 
     {
@@ -2226,11 +2162,7 @@ public static async Task GetAvailableChoiceFields_Async()
 
     int objectTypeArtifactId = 1039509;
 
-
-
     DisplayableObjectTypeIdentifier objectTypeId = new DisplayableObjectTypeIdentifier { ArtifactID = objectTypeArtifactId };
-
-
 
     using (Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager objectRuleManager = serviceFactory.CreateProxy<Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager>())
 
@@ -2312,8 +2244,6 @@ public static async Task GetAvailableChoices_Async()
     int workspaceId = 1018486;
 
     int fieldId = 1039509;
-
-
 
     using (Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager objectRuleManager = serviceFactory.CreateProxy<Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager>())
 
@@ -2398,8 +2328,6 @@ public static async Task GetAvailableLayouts_Async()
 
     int objectTypeId = 1039509;
 
-
-
     using (Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager objectRuleManager = serviceFactory.CreateProxy<Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager>())
 
     {
@@ -2483,11 +2411,7 @@ public static async Task GetAvailableLayouts_Async()
 
     int objectTypeArtifactId = 1039509;
 
-
-
     DisplayableObjectTypeIdentifier objectTypeId = new DisplayableObjectTypeIdentifier { ArtifactID = objectTypeArtifactId };
-
-
 
     using (Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager objectRuleManager = serviceFactory.CreateProxy<Relativity.DataVisualization.{versionNumber}.ObjectRules.IObjectRuleManager>())
 
@@ -2523,56 +2447,3 @@ public static async Task GetAvailableLayouts_Async()
 
 }
 ```
-
-On this page
-
-- Object Rule Manager (.NET)
-
-- Fundamentals for managing object rules
-
-- Guidelines for the Object Rule Manager API
-
-- Create an object rule
-
-- Read an object rule
-
-- Update an object rule
-
-- Delete an object rule
-
-- Delete multiple object rules
-
-- Retrieve choices, choice fields, layouts, or associated objects
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

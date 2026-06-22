@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:26+00:00
 sha256: f53cfc674dcfe40e3ea58bed50fe4845020567f378e5579e056b9f63e9394163
 ---
 
-Best practices for event handlers Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Best practices for event handlers
 
 We recommend that you set the RunTarget attribute on all custom Post Install event handlers as a new best practice.
 
@@ -216,52 +198,3 @@ Don't add long running code to Pre Save, Post Save, or Pre Load event handlers. 
 - Lesson 4 - Validate object changes
 
 - Lesson 5 - Build a cron job
-
-On this page
-
-- Best practices for event handlers
-
-- Use event handler coding conventions
-
-- Use helper classes to create the client-side proxy
-
-- Reference GUIDs
-
-- Avoid using Choices with the same name
-
-- Set the RunTarget attribute on event handlers
-
-- Convert long running event handlers to agents
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

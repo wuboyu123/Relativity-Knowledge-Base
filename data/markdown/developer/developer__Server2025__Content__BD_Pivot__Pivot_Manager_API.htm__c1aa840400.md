@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:30:23+00:00
 sha256: f44a5d12580f9cf28f0c24a437672e436e206220b85a4b94a09a120becc7d1da
 ---
 
-Pivot Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Pivot Manager (.NET)
 
 # Pivot Manager (.NET)
 
@@ -543,8 +525,6 @@ public System.Data.DataTable ExecutePivotProfileAsync(int workspaceId, Relativit
 
      }
 
-
-
      if (!string.IsNullOrEmpty(errorMessage))
 
      {
@@ -806,8 +786,6 @@ PivotOn – The Artifact identifier, name, or GUID of the field to use for pivot
 
      };
 
-
-
      //Define a progress indicator that reports the status of the query.
 
      System.Progress<string> progressReporter = new Progress<string>(PivotExecutionProgress);
@@ -863,8 +841,6 @@ PivotOn – The Artifact identifier, name, or GUID of the field to use for pivot
           errorMessage = executionError.ToString();
 
      }
-
-
 
      if (!string.IsNullOrEmpty(errorMessage))
 
@@ -1183,60 +1159,3 @@ public async Task<bool> ExecuteExportAsync(IHelper helper)
 
 }
 ```
-
-On this page
-
-- Pivot Manager (.NET)
-
-- Pivot fundamentals
-
-- Create a PivotManager object
-
-- Create a Pivot profile
-
-- Update a Pivot profile
-
-- Run a query based on a Pivot profile
-
-- Execute a custom Pivot query
-
-- Display query progress
-
-- Cancel a query
-
-- Work with query results
-
-- Export a Pivot query
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

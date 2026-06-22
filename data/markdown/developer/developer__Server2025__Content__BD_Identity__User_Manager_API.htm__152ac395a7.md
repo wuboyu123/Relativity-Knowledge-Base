@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:28:27+00:00
 sha256: 1e6df541b89ae54da181ea04b9ccb86bbd5e51fbbed91f33aebd26b557728491
 ---
 
-User Manager API Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+User Manager API
 
 # User Manager (.NET)
 
@@ -208,8 +190,6 @@ public async Task CreateUserAsync()
 
     int userTypeID = 1;
 
-
-
     UserRequest request = new UserRequest
 
     {
@@ -263,8 +243,6 @@ public async Task CreateUserAsync()
         Type = new ObjectIdentifier { ArtifactID = userTypeID }
 
     };
-
-
 
     using (Relativity.Identity.{versionNumber}.Services.IUserManager userManager = serviceFactory.CreateProxy<Relativity.Identity.{versionNumber}.Services.IUserManager>())
 
@@ -327,8 +305,6 @@ public async Task ReadUserAsync()
 {
 
     int userArtifactID = 1;
-
-
 
     using (Relativity.Identity.{versionNumber}.Services.IUserManager userManager = serviceFactory.CreateProxy<Relativity.Identity.{versionNumber}.Services.IUserManager>())
 
@@ -455,8 +431,6 @@ public async Task UpdateUserAsync()
 {
 
     int userArtifactID = 1;
-
-
 
     using (Relativity.Identity.{versionNumber}.Services.IUserManager userManager = serviceFactory.CreateProxy<Relativity.Identity.{versionNumber}.Services.IUserManager>())
 
@@ -597,8 +571,6 @@ public async Task DeleteUserAsync()
 {
 
     int userArtifactID = 1;
-
-
 
     using (Relativity.Identity.{versionNumber}.Services.IUserManager userManager = serviceFactory.CreateProxy<Relativity.Identity.{versionNumber}.Services.IUserManager>())
 
@@ -831,8 +803,6 @@ public async Task RetrieveUsersBy()
 
             int length = 25;
 
-
-
             QueryRequest query = new QueryRequest
 
             {
@@ -841,11 +811,7 @@ public async Task RetrieveUsersBy()
 
             };
 
-
-
             UserInfoQueryResultSet response = await userManager.RetrieveUsersBy(workspaceID, query, start, length);
-
-
 
             if (response.ResultCount > 0)
 
@@ -877,64 +843,3 @@ public async Task RetrieveUsersBy()
 
 }
 ```
-
-On this page
-
-- User Manager (.NET)
-
-- Fundamentals for the User Manager API
-
-- Guidelines for the User Manager API
-
-- Create a user
-
-- Retrieve metadata for a user
-
-- Retrieve settings for the current user
-
-- Update properties for a user
-
-- Update settings for the current user
-
-- Delete a user
-
-- Helper methods for querying on users
-
-- Retrieve all available types for users
-
-- Retrieve all users for a workspace
-
-- Query for users in a workspace
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

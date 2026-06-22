@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:22:03+00:00
 sha256: 8a6554138083169e56459106cac6b1fc45da30d065e54065811d030cbed8353f
 ---
 
-Introduction to Relativity APIs Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Introduction to Relativity APIs
 
 # Introduction to Relativity APIs
 
@@ -93,58 +75,3 @@ The largest challenge facing Relativity’s APIs is the need to provide the same
 #### Expanding consistency
 
 Relativity’s API standards are evolving instep with its API Governance to ensure APIs converge on a unified set of API standards.
-
-On this page
-
-- Introduction to Relativity APIs
-
-- Conventions & Standards
-
-- API documentation
-
-- Extending Relativity vs. Integrating with Relativity
-
-- Extensibility maturity journey
-
-- A PaaS beginning
-
-- Adopting SaaS
-
-- Direct data access focused APIs
-
-- SaaS evolution
-
-- Known challenges
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

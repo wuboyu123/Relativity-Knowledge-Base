@@ -23,6 +23,12 @@ python .\scripts\crawl_relativity.py --delay 0.5
 python .\scripts\crawl_relativity.py --resume
 ```
 
+To rebuild Markdown and JSONL from existing local raw HTML after changing cleanup rules:
+
+```powershell
+python .\scripts\rebuild_from_raw.py
+```
+
 ## Output Layout
 
 - `data/raw_html/` - source HTML, kept for audit/re-processing.

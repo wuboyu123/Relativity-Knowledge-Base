@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:30:19+00:00
 sha256: 1a20cb4e33a6e03f14592f51e8cb68dfb3448792b48e2b23a8f4b1ce053450d8
 ---
 
-Keyword Search Manager (.NET) for saved searches Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Keyword Search Manager (.NET) for saved searches
 
 # Keyword Search Manager (.NET) for saved searches
 
@@ -1267,66 +1249,3 @@ The code samples on this page illustrate how to use the kCura.Kepler.Exceptions.
 ### ValidationException
 
 kCura.Kepler.Exceptions.ValidationException is thrown when invalid input (for example, a query condition) cannot be serialized or deserialized.
-
-On this page
-
-- Keyword Search Manager (.NET) for saved searches
-
-- KeywordSearch properties
-
-- Create a KeywordSearch
-
-- Read KeywordSearch
-
-- Update KeywordSearch
-
-- Delete KeywordSearch
-
-- Query KeywordSearches
-
-- Helper methods
-
-- Email a link to KeywordSearch
-
-- Move KeywordSearch
-
-- Copy KeywordSearch
-
-- Exception handling
-
-- ServiceException
-
-- ValidationException
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

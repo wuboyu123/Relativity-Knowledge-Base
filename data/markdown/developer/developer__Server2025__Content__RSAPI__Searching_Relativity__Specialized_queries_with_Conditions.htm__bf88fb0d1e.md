@@ -6,23 +6,7 @@ fetched_at: 2026-06-22T06:33:27+00:00
 sha256: c455f8f30f28c0333006d278930afb5f8d1ca90fb030bdb8f3e437c98b2982d9
 ---
 
-Specialized queries with Conditions Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Specialized queries with Conditions
 
 As part of the Relativity Services API (RSAPI) Deprecation, content on this page referring to the RSAPI and the Patient Tracker application is in the process of being deprecated and will no longer be supported. For more information and alternative APIs, see RSAPI deprecation process .
 
@@ -240,25 +224,15 @@ Copy
 
 //STEP 1: Create a Query to describe the search you want to run.
 
-
-
      Query q = new Query();
 
-
-
 //STEP 2: Set the ArtifactTypeName to tell Relativity the type of item you want to search for.
-
-
 
      q.ArtifactTypeID = 7;
 
      q.ArtifactTypeName = "Choice";
 
-
-
 //STEP 3: Create a Fields list to indicate which fields you want returned.
-
-
 
      q.Fields.Add(new Field("Name"));
 
@@ -285,8 +259,6 @@ Copy
 9
 10
 ///STEP 1: Create a Query to describe the search you want to run.
-
-
 
      Query<Field> q = new Query<Field>();
 
@@ -333,8 +305,6 @@ Copy
 
 //Create a TextCondition to specify the search criteria.
 
-
-
      TextCondition criteria1 = new TextCondition();
 
      criteria1.Field = "Control Number";
@@ -357,11 +327,7 @@ Copy
 
      composite.Condition2 = criteria2;
 
-
-
 //Set the composite criteria as the Query's Condition.
-
-
 
      q.Condition = composite;
 ```
@@ -383,50 +349,3 @@ CompositeCondition compositeCondition = new CompositeCondition(designationCondit
 
 QueryResult queryResult = proxy.Repositories.Document.Query(query);
 ```
-
-On this page
-
-- Specialized queries with Conditions
-
-- Query for Groups and Users
-
-- Query for Admin Choices by Choice Type
-
-- Sample code
-
-- Query for Fields associated with an Object Type
-
-- Query with complex compound conditional expressions
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

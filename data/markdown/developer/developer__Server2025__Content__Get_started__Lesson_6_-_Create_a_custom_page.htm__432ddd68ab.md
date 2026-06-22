@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:25:00+00:00
 sha256: 7da138f773c139bad1f01589440e3d88b97d6989b382fde6646b5f0b4f349ebf
 ---
 
-Lesson 6 - Create a custom page Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Lesson 6 - Create a custom page
 
 # Lesson 6 - Create a custom page
 
@@ -91,23 +73,17 @@ As you build your custom page, add the source files for it to this directory.
 
 <html>
 
-
-
 <head>
 
     <title>HelloWikipedia Categories</title>
 
 </head>
 
-
-
 <body>
 
     <div id="hw-container">Hello World!</div>
 
 </body>
-
-
 
 </html>
 ```
@@ -229,8 +205,6 @@ function startApplication() {
 
 }
 
-
-
 startApplication();
 ```
 
@@ -338,8 +312,6 @@ Copy
 
 <html>
 
-
-
 <head>
 
     <title>HelloWikipedia Categories</title>
@@ -348,19 +320,13 @@ Copy
 
 </head>
 
-
-
 <body>
-
-
 
     <div id="hw-container">
 
         <div id="hw-search-container">
 
             <span id="hw-search-label">Search Wikipedia for article categories</span>
-
-
 
             <div id="hw-search">
 
@@ -372,21 +338,13 @@ Copy
 
         </div>
 
-
-
         <div id="hw-results-container"></div>
 
     </div>
 
-
-
     <script type="module" src="./scripts/main.js"></script>
 
-
-
 </body>
-
-
 
 </html>
 ```
@@ -635,8 +593,6 @@ export class ApiFetchClient {
 
     }
 
-
-
     async get(apiEndpoint) {
 
         const response = await this.globalObjectService.getWindow().fetch(this._getFullApiPath(apiEndpoint));
@@ -647,8 +603,6 @@ export class ApiFetchClient {
 
     }
 
-
-
     async post(apiEndpoint, body) {
 
         const response = await this.globalObjectService.getWindow().fetch(this._getFullApiPath(apiEndpoint), this._getPostRequestInit(body));
@@ -658,8 +612,6 @@ export class ApiFetchClient {
         return await response.json();
 
     }
-
-
 
     _getPostRequestInit(payload) {
 
@@ -681,8 +633,6 @@ export class ApiFetchClient {
 
     }
 
-
-
     _validateResponse(response) {
 
         if (!response.ok) {
@@ -692,8 +642,6 @@ export class ApiFetchClient {
         }
 
     }
-
-
 
     _getFullApiPath(apiEndpoint) {
 
@@ -727,15 +675,11 @@ Copy
 10
 export class WikiCategorySearchService {
 
-
-
     constructor(fetchClient) {
 
         this.fetchClient = fetchClient;
 
     }
-
-
 
     async search(categoryName) {
 
@@ -1074,15 +1018,11 @@ export class GlobalObjectService {
 31
 export class ElementFactory {
 
-
-
     constructor(globalObjectService) {
 
         this.globalObjectService = globalObjectService;
 
     }
-
-
 
     createDiv(className) {
 
@@ -1094,8 +1034,6 @@ export class ElementFactory {
 
     }
 
-
-
     createSpan(className) {
 
         const span = this._createElement('span');
@@ -1105,8 +1043,6 @@ export class ElementFactory {
         return span;
 
     }
-
-
 
     createButton(buttonText, className) {
 
@@ -1121,8 +1057,6 @@ export class ElementFactory {
         return button;
 
     }
-
-
 
     _createElement(tagName) {
 
@@ -1185,8 +1119,6 @@ Add the following code to the categoryResultElementFactory.js file: Copy
 35
 export class CategoryResultElementFactory {
 
-
-
     constructor(elementFactory, createCategory) {
 
         this.elementFactory = elementFactory;
@@ -1195,23 +1127,15 @@ export class CategoryResultElementFactory {
 
     }
 
-
-
     createHtmlElement(category) {
 
         const row = this.elementFactory.createDiv('hw-category-row');
-
-
 
         const categoryName = this.elementFactory.createSpan('hw-category-cell');
 
         categoryName.innerText = category.name;
 
-
-
         row.appendChild(categoryName);
-
-
 
         if (!category.exists) {
 
@@ -1225,13 +1149,9 @@ export class CategoryResultElementFactory {
 
         }
 
-
-
         return row;
 
     }
-
-
 
     _createButton(buttonText, categoryName) {
 
@@ -1317,8 +1237,6 @@ Add the following code to the searchResultsPresenter.js file: Copy
 48
 export class SearchResultsPresenter {
 
-
-
     constructor(
 
         categoryService,
@@ -1339,13 +1257,9 @@ export class SearchResultsPresenter {
 
     }
 
-
-
     async showSearchResults(categories) {
 
         const existingCategories = await this.categoryService.getCategories();
-
-
 
         const categoriesToRender = categories.map(category => {
 
@@ -1361,13 +1275,9 @@ export class SearchResultsPresenter {
 
         });
 
-
-
         this._renderCategories(categoriesToRender);
 
     }
-
-
 
     _renderCategories(categories) {
 
@@ -1377,11 +1287,7 @@ export class SearchResultsPresenter {
 
         resultsDiv.innerHTML = '';
 
-
-
         this._addResultsTitle(resultsDiv);
-
-
 
         categories.forEach(category => {
 
@@ -1392,8 +1298,6 @@ export class SearchResultsPresenter {
         });
 
     }
-
-
 
     _addResultsTitle(resultsDiv) {
 
@@ -1431,8 +1335,6 @@ Add the following code to the searchHandler.js file: Copy
 12
 export class SearchHandler {
 
-
-
     constructor(categorySearchService, resultsPresenter) {
 
         this.categorySearchService = categorySearchService;
@@ -1440,8 +1342,6 @@ export class SearchHandler {
         this.resultsPresenter = resultsPresenter;
 
     }
-
-
 
     async executeSearch(categoryPrefix) {
 
@@ -1545,17 +1445,11 @@ import { ElementFactory } from './elementFactory.js';
 
 import { GlobalObjectService } from './services/globalObjectService.js';
 
-
-
 let _searchHandler;
-
-
 
 function startApplication() {
 
     console.info('HelloWikipedia Categories application started');
-
-
 
     const searchButton = _getSearchButton();
 
@@ -1563,13 +1457,9 @@ function startApplication() {
 
     searchButton.setAttribute('disabled', '');
 
-
-
     _getSearchInput().addEventListener('input', _onSearchTextChanged);
 
 }
-
-
 
 function _getSearchHandler() {
 
@@ -1578,8 +1468,6 @@ function _getSearchHandler() {
         return _searchHandler;
 
     }
-
-
 
     const globalObjectService = new GlobalObjectService();
 
@@ -1597,13 +1485,9 @@ function _getSearchHandler() {
 
     _searchHandler = new SearchHandler(categorySearchService, resultsPresenter);
 
-
-
     return _searchHandler;
 
 }
-
-
 
 function _onSearchButtonClicked() {
 
@@ -1613,13 +1497,9 @@ function _onSearchButtonClicked() {
 
 }
 
-
-
 function _onSearchTextChanged() {
 
     const searchButton = _getSearchButton();
-
-
 
     if (_getSearchInput().value) {
 
@@ -1633,23 +1513,17 @@ function _onSearchTextChanged() {
 
 }
 
-
-
 function _getSearchButton() {
 
     return document.getElementById('hw-category-search-button');
 
 }
 
-
-
 function _getSearchInput() {
 
     return document.getElementById('hw-search-input');
 
 }
-
-
 
 startApplication();
 ```
@@ -1689,13 +1563,9 @@ These commands initialize npm and install Jasmine in the project: Copy
 
 npm init -y
 
-
-
 // Then run following command to install jasmine package. This command adds jasmine dependency to package.json.
 
 npm install jasmine --save-dev
-
-
 
 // Then run following command to initialize jasmine. This command adds jasmine configuration file.
 
@@ -2616,27 +2486,19 @@ npm install webpack webpack-cli --save-dev
 
 <html>
 
-
-
 <head>
 
     <title>HelloWikipedia Categories</title>
 
 </head>
 
-
-
 <body>
-
-
 
     <div id="hw-container">
 
         <div id="hw-search-container">
 
             <span id="hw-search-label">Search Wikipedia for article categories</span>
-
-
 
             <div id="hw-search">
 
@@ -2648,21 +2510,13 @@ npm install webpack webpack-cli --save-dev
 
         </div>
 
-
-
         <div id="hw-results-container"></div>
 
     </div>
 
-
-
     <script src="bundle.js"></script>
 
-
-
 </body>
-
-
 
 </html>
 ```
@@ -2712,8 +2566,6 @@ import '../styles/style.css';
 21
 22
 const path = require('path');
-
-
 
 module.exports = {
 
@@ -2866,8 +2718,6 @@ npm install babel-loader core-js whatwg-fetch --save-dev
 32
 const path = require('path');
 
-
-
 module.exports = {
 
     entry: [
@@ -2936,54 +2786,3 @@ module.exports = {
 When deploying your bundled custom page, you only need to add the contents in the dist directory to the HelloWikipedia.CustomPage.zip file. No other files or directories are required.
 
 - Verify that your custom page runs properly in all supported browsers.
-
-On this page
-
-- Lesson 6 - Create a custom page
-
-- Step 1 - Create a simple custom page
-
-- Step 2 - Deploy a custom page in Relativity
-
-- Step 3 - Add client-side JavaScript to a custom page
-
-- Step 4 - Debug your custom page
-
-- Step 5 - Implement functionality for your custom page
-
-- Step 6 - Add tests for your custom page logic
-
-- Step 7 - Make your custom page production ready
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:30:53+00:00
 sha256: 1bbb7c9d90fae05280b23138e28cac6af5c6b2651b80a694903ab28e3b77e078
 ---
 
-Best practices for building applications Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Best practices for building applications
 
 # Best practices for building applications
 
@@ -78,8 +60,6 @@ using System.Collections.Generic;
 using System.Linq;
 
 using System.Text;
-
-
 
 namespace Relativity.Samples.Core
 
@@ -444,70 +424,3 @@ Applications most not include assemblies in their RAP files for assemblies that 
 - System.Threading.Tasks.Dataflow.dll
 
 - SystemWrapper.dll
-
-On this page
-
-- Best practices for building applications
-
-- Set up a dedicated environment for application development
-
-- Use GUIDs to reference object types
-
-- Use GUIDs when developing event handlers
-
-- Set the RunTarget attribute on event handlers
-
-- Use Relativity API Helpers for establishing Services API connections
-
-- Use the Relativity UI to edit applications
-
-- Don't downgrade application versions
-
-- Keep applications locked unless you're editing them
-
-- Maintain application validation requirements
-
-- Implement your own application components
-
-- Add an About page
-
-- Open and close connections
-
-- Batch data
-
-- Test various file types
-
-- Do not include assemblies in RAP files for assemblies provided by Relativity
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

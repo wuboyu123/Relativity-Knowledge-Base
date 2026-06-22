@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:23:35+00:00
 sha256: cb1c95bb899cae0dc2837c188385b40d8eacadce65a5337bac0bf31ee7d5ae8f
 ---
 
-Notifications Manager (MotD) - (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Notifications Manager (MotD) - (REST)
 
 # Notifications Manager (MotD) - (REST)
 
@@ -115,8 +97,6 @@ HttpClient httpClient = new HttpClient();
 
 httpClient.BaseAddress = new Uri("http://localhost/");
 
-
-
 //Set the required headers.
 
 httpClient.DefaultRequestHeaders.Add("X-CSRF-Header", "-");
@@ -124,8 +104,6 @@ httpClient.DefaultRequestHeaders.Add("X-CSRF-Header", "-");
 httpClient.DefaultRequestHeaders.Add("Authorization",
 
     "Basic c2FtcGxlYWRtaW5AcmVsYXRpdml0eS5yZXN0OlMwbTNwQHNzdzByZA==");
-
-
 
 //Call Read.
 
@@ -136,8 +114,6 @@ HttpResponseMessage response = await httpClient.GetAsync(url);
 string result = await response.Content.ReadAsStringAsync();
 
 bool success = HttpStatusCode.OK == response.StatusCode;
-
-
 
 //Parse the result with Json.NET.
 
@@ -314,58 +290,3 @@ false
 ```
 
 For more information about formatting the MotD, see the MOTDTextOnly instance setting in the Instance settings' descriptions page on the Relativity Documentation site.
-
-On this page
-
-- Notifications Manager (MotD) - (REST)
-
-- Guidelines for the Notifications Manager service
-
-- URLs
-
-- Postman sample file
-
-- Client code sample
-
-- Read a MotD
-
-- Update a MotD
-
-- Dismiss a MotD
-
-- Check for the dismissal of a MotD
-
-- Check for text or HTML format of a MotD
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

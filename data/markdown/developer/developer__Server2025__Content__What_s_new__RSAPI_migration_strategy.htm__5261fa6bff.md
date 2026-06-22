@@ -6,23 +6,7 @@ fetched_at: 2026-06-22T06:33:08+00:00
 sha256: fda564feb07b5f70a518d4e80981d24d7cc13f2a93d8bb8d36694a171418ba4f
 ---
 
-RSAPI migration strategy Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+RSAPI migration strategy
 
 # RSAPI migration strategy
 
@@ -642,58 +626,3 @@ namespace Services_API_Samples
 
 }
 ```
-
-On this page
-
-- RSAPI migration strategy
-
-- Migration strategy and API usage
-
-- Transition from RSAPI repositories to the Services APIs interfaces
-
-- Contract differences between RSAPI and the Services APIs interfaces
-
-- Establish a proxy
-
-- Use the Object Manager service for CRUDQ operations
-
-- Query methods
-
-- Mass update methods
-
-- Mass create method
-
-- Sample code for operations on the Object Manager service
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

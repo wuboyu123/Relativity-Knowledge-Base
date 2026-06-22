@@ -6,23 +6,7 @@ fetched_at: 2026-06-22T06:22:32+00:00
 sha256: bc99f5e7ccb0f886f8097241723e1d095c126134e8b4f5f5b281588f6d115b2d
 ---
 
-Structured Analytics Job Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Structured Analytics Job Manager (REST)
 
 # Structured Analytics Job Manager (REST)
 
@@ -193,8 +177,6 @@ public bool ExecuteRunAsync(int workspaceId, int sasArtifactId, bool analyzeAllD
     request.Headers.Add("X-CSRF-Header", "-");
 
     request.Headers.Add("X-Kepler-Version", "2.0");
-
-
 
     //Initialize the parameters for the structured analytics set.
 
@@ -909,72 +891,3 @@ Copy
 
 }
 ```
-
-On this page
-
-- Structured Analytics Job Manager (REST)
-
-- Guidelines for the Structured Analytics Job Manager service
-
-- URLs
-
-- Custom code
-
-- Postman sample file
-
-- Client code sample
-
-- Generate result fields before running an analysis
-
-- Retrieve valid operations for a structured analytics set
-
-- Run an analysis of a structured analytics set
-
-- Cancel an analysis
-
-- Check the status of an analysis
-
-- Retry errors in an analysis
-
-- Retrieve analysis errors for a structured analytics set
-
-- Retrieve document errors for an analysis
-
-- Work with legacy document fields
-
-- Copy results to legacy document fields
-
-- Cancel a job for copying content to legacy fields
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

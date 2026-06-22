@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:22:39+00:00
 sha256: 69482667362267bfedf18d26f485ca514d785413344042a589779db48183333e
 ---
 
-Audit (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Audit (.NET)
 
 # Audit (.NET)
 
@@ -656,8 +638,6 @@ using (var reviewerStats = proxy.GetClient<IReviewerStatisticsService>())
 
     };
 
-
-
     DocumentActionCountResponse actionCounts = await reviewerStats.GetDocumentActionCountsAsync(workspaceId, request);
 
 }
@@ -760,8 +740,6 @@ using (var reviewerStats = proxy.GetClient<IReviewerStatisticsService>())
 
     };
 
-
-
     ReviewedDocumentSizeResponse documentSize = await reviewerStats.GetTotalReviewedDocumentSizesAsync(workspaceId, request);
 
 }
@@ -808,8 +786,6 @@ using (var reviewerStats = proxy.GetClient<IReviewerStatisticsService>())
         TimeZone = "America/Chicago",
 
     };
-
-
 
     DocumentActionPerHourOfDayResponse documentActionPerHourOfDayResponse = await reviewerStats.GetDocumentActionsPerHourOfDayAsync(workspaceId, request);
 
@@ -862,8 +838,6 @@ using (var reviewerStats = proxy.GetClient<IReviewerStatisticsService>())
         TimeZone = "America/Chicago",
 
     };
-
-
 
     ReviewedFieldChoicesPerUserResponse reviewerChoice = await reviewerStats.GetReviewerChoicesAsync(workspaceId, request);
 
@@ -921,8 +895,6 @@ using (var reviewerStats = proxy.GetClient<IReviewerStatisticsService>())
         AdditionalActions = "Mass Edits"
 
     };
-
-
 
     IEnumerable<ReviewersStats> reviewerMetrics = await reviewerStats.GetReviewerStatsAsync(workspaceId, request);
 
@@ -1654,100 +1626,3 @@ using (var auditObjectManager = proxy.GetClient<IAuditObjectManagerUIService>())
 
 }
 ```
-
-On this page
-
-- Audit (.NET)
-
-- Fundamentals for Audit APIs
-
-- Audit Metrics API
-
-- Audit Revert API
-
-- Audit Pivot API
-
-- Reviewer Statistics API
-
-- Audit Query API
-
-- Audit Object Manager UI API
-
-- Guidelines for the Audit APIs
-
-- Operations supported by the Audit APIs
-
-- Admin-level context
-
-- Query conditions
-
-- Audit Metrics API
-
-- Retrieve the total number and size of audits
-
-- Audit Revert API
-
-- Validate a revert operation for an audit
-
-- Revert an audit
-
-- Mass revert a list of audits
-
-- Query with Pivot on audit data
-
-- Reviewer Statistics API
-
-- Retrieve action counts for updated documents
-
-- Retrieve the usage time per reviewer
-
-- Retrieve extracted text size of reviewed documents
-
-- Retrieve an aggregate of user actions by hour
-
-- Retrieve choices reviewed by users
-
-- Retrieve a summary report of reviewer statistics
-
-- Audit Query API
-
-- Query for an audit record
-
-- Audit Object Manager UI API
-
-- Query on audit fields
-
-- Query on audit fields and return a smaller payload
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:29:25+00:00
 sha256: 52953d2452389768c81b93d6013065a6305b3d028706515cd8b5b80af2bb3dc5
 ---
 
-Deleting object dependencies Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Deleting object dependencies
 
 # Deleting object dependencies
 
@@ -89,50 +71,3 @@ When you create a categorization set, Relativity generates a Category Set Result
 ### Search terms reports example
 
 Relativity generates a Search Terms Results field when you create a search terms report. You can use terms from the search terms report to create a persistent highlight set. If you force delete the search terms report, Relativity also deletes the Search Terms Results field, and the viewer no longer displays persistent highlights based on the search terms report. In this case, the persistent highlight set still references the Search Terms Results field, but it doesn't contain any results.
-
-On this page
-
-- Deleting object dependencies
-
-- Force deleting object dependencies
-
-- Displaying and interpreting the dependencies report
-
-- Considering the fields of force deleted objects
-
-- Analytics categorization set example
-
-- Search terms reports example
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:29:59+00:00
 sha256: ca60089e7cc0699cd39ca8a6a31290be10778b32ca25f15a9a3219d01d3e916c
 ---
 
-ImportBulkArtifactJob class Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+ImportBulkArtifactJob class
 
 # ImportBulkArtifactJob class
 
@@ -61,44 +43,3 @@ After field mapping completes, the OnMessage events pass the messages Progress I
 You can map instances of single- or multiple-object fields by name or ArtifactID. When multiple instances of an object share the same name, you can uniquely identify them by mapping them with their ArtifactIDs. For example, you can assign unique ArtifactIDs to custodians who have the same name.
 
 To map a field, assign the ArtifactID for the field to the Settings.ObjectFieldIdListContainsArtifactId property of a ImportBulkArtifactJob instance. A document is flagged with an error when an instance of a single- or multiple-object field is linked to an ArtifactID that doesn't exist in the workspace. This document is not imported into the workspace.
-
-On this page
-
-- ImportBulkArtifactJob class
-
-- Map fields
-
-- Map single- or multiple-object fields by ArtifactID
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

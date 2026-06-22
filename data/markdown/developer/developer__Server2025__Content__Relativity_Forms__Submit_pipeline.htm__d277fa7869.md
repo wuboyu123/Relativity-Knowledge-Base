@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:57+00:00
 sha256: b03a89ac672eb41267f2e99cc5b1130715c2e628dc24ec087ea6a08087563159
 ---
 
-Submit pipeline Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Submit pipeline
 
 # Submit pipeline
 
@@ -129,8 +111,6 @@ Copy
 
      };
 
-
-
      return eventHandlers;
 
 }(eventNames, convenienceApi));
@@ -231,15 +211,11 @@ Copy
 
      var eventHandlers = {};
 
-
-
      eventHandlers[eventNames.VALIDATION] = function() {
 
          console.log( "Inside VALIDATION event handler" );
 
     };
-
-
 
      return eventHandlers;
 
@@ -353,15 +329,11 @@ function validationHandler(modelData, payload, currentValidationState) {
 
       var isValid = (someIntegerFieldValue % 2 === 0);
 
-
-
       if (!isValid) {
 
           var errorMessage =  "Integer field value " + someIntegerFieldValue.toString() +  " must be even." ;
 
           var validationError = convenienceApi.validation.getFailedFieldObject(someIntegerFieldId, errorMessage);
-
-
 
           // This validation error created by the event handler is applied
 
@@ -412,15 +384,11 @@ Copy
 
      var eventHandlers = {};
 
-
-
      eventHandlers[eventNames.REPLACE_SAVE] = function(objectInstanceData, objectVersionToken) {
 
          console.log( "Inside REPLACE_SAVE event handler" );
 
     };
-
-
 
      return eventHandlers;
 
@@ -486,19 +454,13 @@ Copy
 
     var eventHandlers = {};
 
-
-
     eventHandlers[eventNames.REPLACE_SAVE] = function(objectInstanceData, objectVersionToken) {
 
         console.log( "Inside REPLACE_SAVE event handler" );
 
-
-
         // Transform objectInstanceData into a form expected by some API
 
         var transformedObjectInstanceData = transformObjectInstanceData(objectInstanceData);
-
-
 
         // Make the API call and send objectInstanceData as the payload
 
@@ -514,15 +476,11 @@ Copy
 
         }
 
-
-
         // Return a promise that resolves on a successful save and rejects on an unsuccessful save
 
         return returnPromise;
 
     };
-
-
 
     return eventHandlers;
 
@@ -560,20 +518,15 @@ Copy
 
      var eventHandlers = {};
 
-
-
      eventHandlers[eventNames.VALIDATE_SAVE] = function() {
 
           console.log( "Inside VALIDATE_SAVE event handler" );
 
      };
 
-
-
      return eventHandlers;
 
 }(eventNames, convenienceApi));
-
 
 ```
 
@@ -638,8 +591,6 @@ Copy
 23
 function validateSaveHandler(response, validationArray) {
 
-
-
       /*
 
        * Response from the save request contains this error:
@@ -680,7 +631,6 @@ function validateSaveHandler(response, validationArray) {
 
  }
 
-
 ```
 
 #### Example Error Message Output
@@ -709,15 +659,11 @@ Copy
 
      var eventHandlers = {};
 
-
-
      eventHandlers[eventNames.POST_SAVE] = function() {
 
           console.log("Inside POST_SAVE event handler");
 
      };
-
-
 
      return eventHandlers;
 
@@ -767,19 +713,11 @@ Copy
 
      var eventHandlers = {};
 
-
-
-
-
      eventHandlers[eventNames.PAGE_UNLOAD] = function() {
 
           console.log("Inside PAGE_UNLOAD event handler");
 
      };
-
-
-
-
 
      return eventHandlers;
 
@@ -812,10 +750,6 @@ function pageUnloadHandler = function() {
 
      // redirect a user to a custom page after saving
 
-
-
-
-
      if (window.confirm("Would you like to go directly to the CUSTOM_PAGE?")) {
 
           location.href = "/Relativity/CustomPages/CUSTOM_PAGE_GUID/CUSTOM_PAGE_PATH";
@@ -824,90 +758,3 @@ function pageUnloadHandler = function() {
 
 }
 ```
-
-On this page
-
-- Submit pipeline
-
-- Submit pipeline workflow
-
-- Submit pipeline event handlers
-
-- Ambient variables
-
-- preSave
-
-- Syntax
-
-- Parameters
-
-- validation (on submit)
-
-- Syntax
-
-- Parameters
-
-- Validation example
-
-- replaceSave
-
-- Syntax
-
-- Parameters
-
-- Example
-
-- validateSave
-
-- Syntax
-
-- Parameters
-
-- Example
-
-- postSave
-
-- Syntax
-
-- Parameters
-
-- pageUnload
-
-- Syntax
-
-- Parameters
-
-- Example
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

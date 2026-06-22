@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:27:49+00:00
 sha256: 980335473041d3f634bcfe4312b769aa070f757098674f9e27aef3e43f6204d8
 ---
 
-Production Queue Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Production Queue Manager (REST)
 
 # Production Queue Manager (REST)
 
@@ -829,56 +811,3 @@ Copy
 
 }
 ```
-
-On this page
-
-- Production Queue Manager (REST)
-
-- Guidelines for productions in REST
-
-- URLs
-
-- Cancel a production job
-
-- Cancel production jobs by mass operation token
-
-- Cancel production jobs by ID
-
-- Set the priority on production jobs
-
-- Retry production jobs by mass operation token
-
-- Retry production jobs by ID
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

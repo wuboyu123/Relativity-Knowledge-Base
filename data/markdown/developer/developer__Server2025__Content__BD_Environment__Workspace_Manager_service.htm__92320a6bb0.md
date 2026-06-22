@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:22:56+00:00
 sha256: 23f4c2ba54fbe7c2a09515d3308d28fe83b06794a5364fc4c3439daba7bb6ae2
 ---
 
-Workspace Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Workspace Manager (REST)
 
 # Workspace Manager (REST)
 
@@ -265,8 +247,6 @@ private HttpClient GetHttpClient()
 
     HttpClient httpClient = new HttpClient();
 
-
-
     httpClient.BaseAddress = new Uri("https://localhost/");
 
     httpClient.DefaultRequestHeaders.Add("X-CSRF-Header", "-");
@@ -275,17 +255,11 @@ private HttpClient GetHttpClient()
 
         Convert.ToBase64String(Encoding.GetEncoding("ISO-8859-1").GetBytes("test@test.com:SomePassword")));
 
-
-
     return httpClient;
 
 }
 
-
-
 private string BASE_URL = "Relativity.REST/api/Relativity.Workspaces/workspace";
-
-
 
 private async Task<List<int>> GetArtifactIDList(HttpClient httpClient, string url)
 
@@ -295,11 +269,7 @@ private async Task<List<int>> GetArtifactIDList(HttpClient httpClient, string ur
 
     string resultString = await response.Content.ReadAsStringAsync();
 
-
-
     var artifactIDs = new List<int>();
-
-
 
     dynamic objects = JArray.Parse(resultString) as JArray;
 
@@ -313,13 +283,9 @@ private async Task<List<int>> GetArtifactIDList(HttpClient httpClient, string ur
 
     }
 
-
-
     return artifactIDs;
 
 }
-
-
 
 private async Task<List<int>> QueryArtifactIDList(HttpClient httpClient, string url)
 
@@ -351,19 +317,13 @@ private async Task<List<int>> QueryArtifactIDList(HttpClient httpClient, string 
 
     };
 
-
-
     StringContent payload = new StringContent(JsonConvert.SerializeObject(queryRequest), Encoding.UTF8, "application/json");
 
     HttpResponseMessage response = await httpClient.PostAsync(url, payload);
 
     string resultString = await response.Content.ReadAsStringAsync();
 
-
-
     var artifactIDs = new List<int>();
-
-
 
     dynamic result = JObject.Parse(resultString) as JObject;
 
@@ -377,13 +337,9 @@ private async Task<List<int>> QueryArtifactIDList(HttpClient httpClient, string 
 
     }
 
-
-
     return artifactIDs;
 
 }
-
-
 
 public async Task<List<int>> GetEligibleStatuses(HttpClient httpClient)
 
@@ -393,8 +349,6 @@ public async Task<List<int>> GetEligibleStatuses(HttpClient httpClient)
 
 }
 
-
-
 public async Task<List<int>> GetEligibleResourcePools(HttpClient httpClient)
 
 {
@@ -402,8 +356,6 @@ public async Task<List<int>> GetEligibleResourcePools(HttpClient httpClient)
     return await GetArtifactIDList(httpClient, $"{BASE_URL}/eligible-resource-pools");
 
 }
-
-
 
 public async Task<List<int>> GetEligibleFileRepositories(HttpClient httpClient, int resourcePoolID)
 
@@ -413,8 +365,6 @@ public async Task<List<int>> GetEligibleFileRepositories(HttpClient httpClient, 
 
 }
 
-
-
 public async Task<List<int>> GetEligibleCacheLocations(HttpClient httpClient, int resourcePoolID)
 
 {
@@ -422,8 +372,6 @@ public async Task<List<int>> GetEligibleCacheLocations(HttpClient httpClient, in
     return await GetArtifactIDList(httpClient, $"{BASE_URL}/eligible-resource-pools/{resourcePoolID}/eligible-cache-locations");
 
 }
-
-
 
 public async Task<List<int>> GetEligibleSqlServers(HttpClient httpClient, int resourcePoolID)
 
@@ -433,8 +381,6 @@ public async Task<List<int>> GetEligibleSqlServers(HttpClient httpClient, int re
 
 }
 
-
-
 public async Task<List<int>> GetEligibleAzureCredentials(HttpClient httpClient, int resourcePoolID)
 
 {
@@ -442,8 +388,6 @@ public async Task<List<int>> GetEligibleAzureCredentials(HttpClient httpClient, 
     return await GetArtifactIDList(httpClient, $"{BASE_URL}/eligible-resource-pools/{resourcePoolID}/eligible-azure-credentials");
 
 }
-
-
 
 public async Task<List<int>> GetEligibleAzureFileSystemCredentials(HttpClient httpClient, int resourcePoolID)
 
@@ -453,8 +397,6 @@ public async Task<List<int>> GetEligibleAzureFileSystemCredentials(HttpClient ht
 
 }
 
-
-
 public async Task<List<int>> QueryEligibleMatters(HttpClient httpClient)
 
 {
@@ -463,8 +405,6 @@ public async Task<List<int>> QueryEligibleMatters(HttpClient httpClient)
 
 }
 
-
-
 public async Task<List<int>> QueryEligibleTemplates(HttpClient httpClient)
 
 {
@@ -472,8 +412,6 @@ public async Task<List<int>> QueryEligibleTemplates(HttpClient httpClient)
     return await QueryArtifactIDList(httpClient, $"{BASE_URL}/query-eligible-templates");
 
 }
-
-
 
 public async Task<int> GetDefaultSqlFullTextLanguage(HttpClient httpClient)
 
@@ -491,8 +429,6 @@ public async Task<int> GetDefaultSqlFullTextLanguage(HttpClient httpClient)
 
 }
 
-
-
 public async Task<string> GetDefaultDownloadHandlerUrl(HttpClient httpClient)
 
 {
@@ -505,15 +441,11 @@ public async Task<string> GetDefaultDownloadHandlerUrl(HttpClient httpClient)
 
 }
 
-
-
 public async Task<int> CreateWorkspace(string name)
 
 {
 
     HttpClient httpClient = GetHttpClient();
-
-
 
     int statusID = (await GetEligibleStatuses(httpClient)).First();
 
@@ -532,8 +464,6 @@ public async Task<int> CreateWorkspace(string name)
     int sqlFullTextLanguage = await GetDefautlSqlFullTextLanguage(httpClient);
 
     int templateID = (await QueryEligibleTemplates(httpClient)).First();
-
-
 
     var payloadObject = new
 
@@ -573,15 +503,11 @@ public async Task<int> CreateWorkspace(string name)
 
     };
 
-
-
     StringContent payload = new StringContent(JsonConvert.SerializeObject(payloadObject), Encoding.UTF8, "application/json");
 
     HttpResponseMessage response = await httpClient.PostAsync($"{BASE_URL}/", payload);
 
     string resultString = await response.Content.ReadAsStringAsync();
-
-
 
     dynamic result = JObject.Parse(resultString) as JObject;
 
@@ -4485,98 +4411,3 @@ View a sample JSON response Copy
 
 ]
 ```
-
-On this page
-
-- Workspace Manager (REST)
-
-- Guidelines for the Workspace Manager service
-
-- URLs
-
-- Client code sample
-
-- Create a workspace
-
-- Create operation helper methods
-
-- Retrieve unsupported fields for a create operation
-
-- Retry failed create event handlers
-
-- Retrieve a workspace
-
-- Update a workspace
-
-- Delete a workspace
-
-- Retrieve workspace statistics
-
-- Retrieve workspaces associated with a group
-
-- Resource information helper methods
-
-- Retrieve matters
-
-- Retrieve clients
-
-- Retrieve workspaces for use as templates
-
-- Retrieve resource pools
-
-- Retrieve SQL Servers
-
-- Retrieve file repository servers
-
-- Retrieve cache location servers
-
-- Retrieve the URL for the default download handler
-
-- Advanced settings helper methods
-
-- Retrieve available statuses for a workspace
-
-- Retrieve full text languages for SQL Server
-
-- Retrieve groups for workspace membership
-
-- Retrieve saved searches for production restrictions
-
-- Azure credentials helper methods
-
-- Retrieve Azure credentials
-
-- Retrieve Azure file system credentials
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

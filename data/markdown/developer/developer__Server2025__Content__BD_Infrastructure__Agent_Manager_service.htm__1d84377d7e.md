@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:24:30+00:00
 sha256: 55de5327857e3a4071cddb6d893fb5ba27ad289d621d4793a0a18df30bf3831c
 ---
 
-Agent Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Agent Manager (REST)
 
 # Agent Manager (REST)
 
@@ -1485,72 +1467,3 @@ The following examples illustrate possible JSON responses for validation checks:
 ```
 
 For more information, see the AgentInstanceLimit enumeration in the Relativity.Services.Interfaces.Agent.Models namespace in the Class library reference .
-
-On this page
-
-- Agent Manager (REST)
-
-- Postman sample file
-
-- Client code sample
-
-- Retrieve a list of agent types
-
-- Retrieve a list of agent servers
-
-- Retrieve servers compatible with a specific agent type
-
-- Create an agent
-
-- Retrieve metadata for an agent
-
-- Update the properties of an agent
-
-- Delete an agent
-
-- Delete an agent
-
-- Forcefully delete an agent
-
-- Validate a create, update, or delete operation
-
-- Validate a create operation
-
-- Validate an update operation
-
-- Validate a delete operation
-
-- Failed validation responses
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

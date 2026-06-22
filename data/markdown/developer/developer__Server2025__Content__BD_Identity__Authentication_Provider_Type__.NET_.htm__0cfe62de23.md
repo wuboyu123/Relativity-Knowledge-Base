@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:25:33+00:00
 sha256: 463cb8f685964c49bb0f75cbf2b457423ec3525270d5e9bf51ccc6e1fc2758fb
 ---
 
-Authentication provider type (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Authentication provider type (.NET)
 
 # Authentication provider type (.NET)
 
@@ -112,50 +94,3 @@ using (Relativity.Identity. {versionNumber}.Services.IAuthProviderTypeManager au
 
 }
 ```
-
-On this page
-
-- Authentication provider type (.NET)
-
-- Fundamentals for the Authentication Provider Type API
-
-- Methods
-
-- Classes
-
-- Guidelines for the Authentication Provider Type API
-
-- Code sample
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:23:49+00:00
 sha256: d8227e4e17c3110948b02bcd64c76f8ae2096999e686c1e2e7a4369cfc8aec37
 ---
 
-Application Install (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Application Install (REST)
 
 # Application Install (REST)
 
@@ -87,11 +69,7 @@ public async Task<InstallApplicationResponse> InstallApplicationIntoWorkspace(in
 
         client.BaseAddress = new Uri("https://localhost/");
 
-
-
         string inputJSON = $"{{ \"request\": {{\"WorkspaceIDs\": [{workspaceID}], \"UnlockApplications\": true}} }}";
-
-
 
         string url = $"/Relativity.REST/API/Relativity.LibraryApplications/workspace/-1/libraryapplications/{applicationID}/install/";
 
@@ -104,8 +82,6 @@ public async Task<InstallApplicationResponse> InstallApplicationIntoWorkspace(in
         response = JsonConvert.DeserializeObject<InstallApplicationResponse>(content);
 
     }
-
-
 
     return response;
 
@@ -4135,68 +4111,3 @@ JSON Response Copy
 
 }
 ```
-
-On this page
-
-- Application Install (REST)
-
-- Client code sample
-
-- Field descriptions for JSON requests
-
-- Install an application library to specific workspaces
-
-- Install an application library to all workspaces
-
-- Retrieve the installation status of an application
-
-- Retrieve the number of workspaces with an outdated application
-
-- Cancel pending application installations
-
-- Retrieve installation details for an application
-
-- Generate an installation report
-
-- Cancel pending application installations
-
-- Retrieve installation status by workspace
-
-- Query for application installations by identifier
-
-- Validate new artifact names
-
-- Query for application installations with additional fields
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

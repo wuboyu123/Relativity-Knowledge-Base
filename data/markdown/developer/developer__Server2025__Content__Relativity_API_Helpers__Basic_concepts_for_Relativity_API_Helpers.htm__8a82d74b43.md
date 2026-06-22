@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:45+00:00
 sha256: 1fc7668d25e7cb0c4833eb4a12d0d79720bd45c71ee1bc3ed21de5567b54f7af
 ---
 
-Basic concepts for Relativity API Helpers Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Basic concepts for Relativity API Helpers
 
 # Basic concepts for Relativity API Helpers
 
@@ -518,8 +500,6 @@ Copy
 
 ISecretStore secretStore = this.Helper.GetSecretStore();
 
-
-
 //Get the ISecretStore interface from a custom page helper
 
 ISecretStore secretStore = Relativity.CustomPages.ConnectionHelper.Helper().GetSecretStore();
@@ -705,8 +685,6 @@ Copy
 
 InstanceSettingsBundle instanceSettingsBundle = this.Helper.GetInstanceSettingBundle();
 
-
-
 //Get the interface interface from a custom page helper
 
 InstanceSettingsBundle instanceSettingsBundle = Relativity.CustomPages.ConnectionHelper.Helper().GetInstanceSettingBundle();
@@ -865,74 +843,3 @@ workspaceDBContext = MockRepository.GenerateStrictMock<IDBContext>();
 ```
 
 For more information about unit testing, see googletest .
-
-On this page
-
-- Basic concepts for Relativity API Helpers
-
-- Reference the Relativity.API.dll in your projects
-
-- Connect to the Services API
-
-- Obtain a database context
-
-- Obtain user context information
-
-- Obtain workspace ID
-
-- Obtain the artifact GUID
-
-- Work with the Secret Store
-
-- ISecretStore interface
-
-- Secret class
-
-- Secret path
-
-- Secret store example
-
-- Work with instance settings
-
-- InstanceSettingsBundle interface
-
-- Instance settings example
-
-- Use logging
-
-- Build friendly URLs for custom pages
-
-- Use Relativity API Helpers for unit testing
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

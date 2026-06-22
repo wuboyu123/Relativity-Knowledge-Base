@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:30:05+00:00
 sha256: 8dd67e0dd826627536367fac588e6c944b3afb3e4fb0003163b5ae6e77694818
 ---
 
-Troubleshooting the Import API Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Troubleshooting the Import API
 
 # Troubleshooting the Import API
 
@@ -189,66 +171,3 @@ Processing sub-batch of size 900. 0 of 1000 in the original batch processed
 To resolve this warning, increase the MassImportSqlTimeout value in the Instance setting table. This value applies only to batches of files imported using the Import API. You also may want to confirm if you have enabled batch resize and experienced timeout error. You can lower the batch size limits by 100 and retry the import.
 
 For more information, see Instance settings' descriptions on the Relativity Server 2025 Documentation site.
-
-On this page
-
-- Troubleshooting the Import API
-
-- BadImageImportFormatException error
-
-- Extracted text file causes error during import
-
-- Missing child object
-
-- Missing file
-
-- Missing file path
-
-- Missing file specified for a document
-
-- Missing text file
-
-- File already exists
-
-- Unexpected import behavior
-
-- Unexpected import behavior with choices
-
-- Reference to a nonexistent ArtifactID
-
-- SQL exceptions occur when importing many fields
-
-- Warning message thrown when processing batches
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

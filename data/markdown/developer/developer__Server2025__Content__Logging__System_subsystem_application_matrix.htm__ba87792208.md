@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:29:40+00:00
 sha256: 689ab7c0b0f8ba54c0f1b0e2f7c34e3934f4a87a370fa69c6ba02c546d5907b2
 ---
 
-System-subsystem-application matrix for logging Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+System-subsystem-application matrix for logging
 
 # Logging system-subsystem-application matrix
 
@@ -153,46 +135,3 @@ ed0e23f9-da60-4298-af9a-ae6a9b6a9319 Processing
 f807ac5a-6f0c-4ef3-9c7d-db2bae51a5f4 Search Terms Report
 
 Custom Relativity applications can also use logging and be identified by GUID.
-
-On this page
-
-- Logging system-subsystem-application matrix
-
-- Relativity systems
-
-- Subsystems
-
-- Relativity applications
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

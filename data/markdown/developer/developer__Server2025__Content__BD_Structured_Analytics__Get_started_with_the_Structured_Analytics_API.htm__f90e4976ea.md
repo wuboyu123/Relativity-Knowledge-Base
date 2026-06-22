@@ -6,23 +6,7 @@ fetched_at: 2026-06-22T06:22:30+00:00
 sha256: 615ba2d2f829a1e6d187065913fdfccde495f0ce0bc7ac9486ab6357f942e233
 ---
 
-Structured Analytics Job Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Structured Analytics Job Manager (.NET)
 
 # Structured Analytics Job Manager (.NET)
 
@@ -872,76 +856,3 @@ public void CancelCopyToLegacySample()
 
 }
 ```
-
-On this page
-
-- Structured Analytics Job Manager (.NET)
-
-- Fundamentals for the Structured Analytics Job Manager API
-
-- Structured analytics overview
-
-- API namespaces
-
-- Guidelines for the Structured Analytics Job Manager API
-
-- Custom code implementation
-
-- Code samples
-
-- Relativity environment setup
-
-- Generate result fields before running an analysis
-
-- Retrieve valid operations for a structured analytics set
-
-- Run an analysis of a structured analytics set
-
-- Cancel an analysis
-
-- Check the status of an analysis
-
-- Retry errors in an analysis
-
-- Retrieve analysis errors for a structured analytics set
-
-- Retrieve document errors for an analysis
-
-- Work with legacy document fields
-
-- Copy to legacy document fields
-
-- Cancel copy to legacy fields
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

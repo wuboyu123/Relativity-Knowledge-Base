@@ -6,23 +6,7 @@ fetched_at: 2026-06-22T06:26:23+00:00
 sha256: a6dafee393f467d817c1b6234225270d5e905d99d1c0ea5b7a02166ab3d8d72b
 ---
 
-Folder Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Folder Manager (REST)
 
 # Folder Manager (REST)
 
@@ -1862,64 +1846,3 @@ Copy
 
 }
 ```
-
-On this page
-
-- Folder Manager (REST)
-
-- Client code sample
-
-- HTTP headers and status codes
-
-- Create a folder
-
-- Update a folder
-
-- Delete unused folders
-
-- Query for folders
-
-- Helper methods
-
-- Retrieve workspace root Folder
-
-- Retrieve subfolders
-
-- Retrieve expanded Folder nodes
-
-- Get folder access status
-
-- Move folders
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:25:08+00:00
 sha256: 6cd6eadb91e1a1a925888cf0abf9c8fac2644cdcc0e84cd44e672a8190ffc660
 ---
 
-Login Profile Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Login Profile Manager (.NET)
 
 # Login Profile Manager (.NET)
 
@@ -327,8 +309,6 @@ using (Relativity.Identity.{versionNumber}.Services.ILoginProfileManager loginPr
 
 LoginProfile profile = await loginProfileManager.GetLoginProfileAsync(1012311);
 
-
-
 if(profile.OpenIDConnectMethods.SingleOrDefault(x => x.ProviderName.Equals("My OIDC Provider")) == null)
 
 {
@@ -345,54 +325,9 @@ Subject = "0e58f970-2113-4a6e-8655-82c10e6d9412"
 
 profile.OpenIDConnectMethods.Add(oidcMethod);
 
-
-
 loginProfileManager.UpdateLoginProfileAsync(1012311, profile);
 
 }
 
 }
 ```
-
-On this page
-
-- Login Profile Manager (.NET)
-
-- Fundamentals for the Login Profile Manager API
-
-- Guidelines for the Login Profile Manager API
-
-- Read a user login profile and create a login method
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

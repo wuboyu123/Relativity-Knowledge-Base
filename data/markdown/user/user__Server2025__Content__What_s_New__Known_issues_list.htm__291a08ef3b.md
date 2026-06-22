@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:10:47+00:00
 sha256: 0f316d9345c2e28ceda6cc3efdff93401ca9864d4957205f0068ebd372d7c3b1
 ---
 
-Known issues Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://help.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024 Server 2023
-
-☰
+Known issues
 
 # Known issues
 
@@ -76,11 +58,7 @@ Date added Defect # Feature Description Identified in version Version resolved
 
 2026-05-20 REL-1304134 Data Grid > Text Migration When a Data Grid text migration job is running on a Long Text field, any concurrent OCR set writing to that same field will have its output overwritten by the original SQL value. The affected field value may then propagate downstream to dtSearch indexes, Search Terms Reports, and dependent workflows Server 2024
 
-Server 2025
-
 2026-05-04 REL-1274507 Review > Mass Operations Audit logs incorrectly record a "Set" action when a Mass Edit operation includes documents across folders with different permission levels. Documents where the user has view-only access are not modified, but still generate audit entries, creating inconsistency between audit logs and actual system changes. Server 2024 Patch 2
-
-Server 2025
 
 2026-03-13 REL-1209342 Core > Relativity Forms In Relativity Server, the Copy from Previous button in the coding layout may disappear after refreshing the browser while viewing a document. The button should remain visible but disabled; however, it is removed from the UI instead.
 
@@ -91,8 +69,6 @@ Server 2024 Patch 2 Server 2024 Patch 3
 2025-11-19 REL-1220278 List The Pivot Profile dropdown displays correctly when creating the first Pivot but may appear blank when creating a second Pivot in the same session. Server 2024 Patch 2
 
 Server 2025 Server 2024 Patch 2
-
-Server 2025
 
 2025-10-17 REL-1175213 Core After refreshing the browser while on the coding layout, the “Copy from Previous” button may temporarily disappear instead of remaining visible in a disabled state. The button reappears only after manually reloading the page or navigating away and back. Server 2024 Patch 1
 
@@ -128,8 +104,6 @@ Server 2023
 
 Server 2024 Patch 2 Server 2024 Patch 2
 
-Server 2025
-
 2025-02-04 REL-1050313 Processing In Server 2023, there's a bug where file errors can get stuck in "Resolving" status after error retry jobs complete. When this happens, customers are unable to retry these errors, support teams have to manually fix the issue through running SQL scripts in the SOP. Server 2023
 
 Server 2024 Server 2026
@@ -141,8 +115,6 @@ Server 2024 Server 2026
 Server 2024 Server 2023 Patch 3
 
 Server 2024 Patch 1
-
-Server 2025
 
 2024-11-21 REL-975559 Authentication When adding a 'Default Password Provider' Login Method in Chromium-based browsers, the 'Days' field nested under the 'Maximum Password Days' field is sometimes auto-populated with the user's email address that is saved in the browser password manager. Attempting to save the form with an email address in the 'Days' field results in an error. Because the 'Days' field is hidden by default behind the default toggled-off 'Maximum Password Days' field, it is not easily apparent that the save error is caused by the invalid value in the hidden 'Days' field. To mitigate this issue, users can enable incognito mode in their browser or toggle on the 'Maximum Password Days' field and clear the email address from the 'Days' field. Server 2022, Server 2023, Server 2024
 
@@ -157,8 +129,6 @@ Server 2024 Server 2026
 2024-09-04 REL-932589 Structured Analytics Transform set start button is not available in certain scenarios. To resolve the issue please refer to this article: Transform Sets Start Button Not Visible Server 2023 Patch 1
 
 2024-08-19 REL-988748 Processing Set Layout On Processing Set Layout, clicking on the "File Errors" link redirects users to the "Document Errors" tab instead of the intended destination, the "Files" tab. To resolve the issue, see the Community site article, Server 2023 - File errors link re-directs to document errors tab instead of files tab . Server 2023 Server 2023 Patch 3
-
-Server 2024
 
 2024-07-29 REL-973287 ADS When errors are encountered when importing application files to the Application Library, attempting to export the error file using the 'Export Error File' link on the conflict resolution modal does not not work. Server 2022, Server 2023, Server 2024
 
@@ -177,8 +147,6 @@ Server 2024
 2024-05-13 REL-947156 Relativity Forms Long text fields with values that end with an ellipsis cannot be edited (Read Only) in Relativity Forms. Server 2022
 
 Server 2023
-
-Server 2024
 
 Server 2024 Patch 3
 
@@ -351,92 +319,3 @@ Server 2022 Not Planned
 2021-01-07 REL-509917 Discovery OneNote 2003 documents can't be processed on workers with Office 2016 installed as Microsoft did not make their software backwards compatible with that version. Server 2022 Not Planned
 
 - Known issues
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-- Install Relativity
-
-- Pre-Installation
-
-- Licensing
-
-- Authentication
-
-- Post-Installation verification test
-
-- More >
-
-- Upgrade
-
-- Upgrade considerations
-
-- Relativity upgrade
-
-- More
-
-- Infrastructure
-
-- Servers
-
-- Agents
-
-- Resource pools
-
-- Resource files
-
-- More >
-
-- Capabilities
-
-- Analytics
-
-- Processing
-
-- More >
-
-- Resources
-
-- Relativity A-Z
-
-- PDF Downloads
-
-- Getting started
-
-- Documentation archives
-
-- Version support policy
-
-- Relativity Learning
-
-- Contact us
-
-- 1-312-263-1177
-
-- 231 South LaSalle Street 20th Floor Chicago, IL 60604
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

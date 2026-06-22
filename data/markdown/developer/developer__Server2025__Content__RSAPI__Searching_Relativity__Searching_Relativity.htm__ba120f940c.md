@@ -6,23 +6,7 @@ fetched_at: 2026-06-22T06:33:16+00:00
 sha256: 08aceab981a753fb78e8c3e52fd7657595f99d54d064f3e88e38e324672e1a74
 ---
 
-Search Relativity Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Search Relativity
 
 As part of the Relativity Services API (RSAPI) Deprecation, content on this page referring to the RSAPI and the Patient Tracker application is in the process of being deprecated and will no longer be supported. For more information and alternative APIs, see RSAPI deprecation process .
 
@@ -245,56 +229,3 @@ The Query() method is subject to the following constraints:
 - Search criteria are only applied against Fields of the object type being returned. For example, when you search for Documents, you can only query on Fields that are associated with the Document object type. You can't query against Fields on Dynamic Objects.
 
 - The list of available comparison operators is limited and varies by Field type. This list will be expanded in future releases.
-
-On this page
-
-- Search Relativity
-
-- Use of Query objects
-
-- Available Conditions for Querying
-
-- Supported data grid query operators
-
-- System types supported by the Query() method
-
-- NotCondition
-
-- Paging
-
-- Paging support for system objects
-
-- Constraints on the Query() method
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:24:05+00:00
 sha256: 362adc677fee044fada1091512eccc887c59c04330ff7976693dacf2bc447fbe
 ---
 
-Application Install (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Application Install (.NET)
 
 # Application Install (.NET)
 
@@ -75,8 +57,6 @@ View sample code Copy
 6
 7
 Client.SamplesLibrary.Helper.IHelper helper;
-
-
 
 // Create a proxy
 
@@ -144,11 +124,7 @@ public async Task InstallApplication(IApplicationInstallManager applicationInsta
 
         };
 
-
-
         InstallApplicationResponse response = await applicationInstallManager.InstallApplicationAsync(ADMIN_WORKSPACE_ID, artifactID, request);
-
-
 
         if (response.Results.Count == workspaces.Count)
 
@@ -238,11 +214,7 @@ public async Task InstallApplication(IApplicationInstallManager applicationInsta
 
         };
 
-
-
         InstallApplicationResponse response = await applicationInstallManager.InstallApplicationAsync(ADMIN_WORKSPACE_ID, applicationGuid, request);
-
-
 
         if (response.Results.Count == workspaces.Count)
 
@@ -332,11 +304,7 @@ public async Task InstallApplication(IApplicationInstallManager applicationInsta
 
         };
 
-
-
         InstallApplicationResponse response = await applicationInstallManager.InstallApplicationAsync(ADMIN_WORKSPACE_ID, artifactID, request, includeActions);
-
-
 
         if (response.Results.Count == workspaces.Count)
 
@@ -426,11 +394,7 @@ public async Task InstallApplication(IApplicationInstallManager applicationInsta
 
         };
 
-
-
         InstallApplicationResponse response = await applicationInstallManager.InstallApplicationAsync(ADMIN_WORKSPACE_ID, applicationGuid, request, includeActions);
-
-
 
         if (response.Results.Count == workspaces.Count)
 
@@ -518,11 +482,7 @@ public async Task InstallApplicationAll(IApplicationInstallManager applicationIn
 
         };
 
-
-
         InstallApplicationResponse response = await applicationInstallManager.InstallApplicationAllAsync(ADMIN_WORKSPACE_ID, artifactID, request);
-
-
 
         if (response.Results.Count > 0)
 
@@ -594,11 +554,7 @@ public async Task InstallApplicationAll(IApplicationInstallManager applicationIn
 
         };
 
-
-
         InstallApplicationResponse response = await applicationInstallManager.InstallApplicationAllAsync(ADMIN_WORKSPACE_ID, applicationGuid, request);
-
-
 
         if (response.Results.Count > 0)
 
@@ -670,11 +626,7 @@ public async Task InstallApplicationAll(IApplicationInstallManager applicationIn
 
         };
 
-
-
         InstallApplicationResponse response = await applicationInstallManager.InstallApplicationAllAsync(ADMIN_WORKSPACE_ID, artifactID, request, includeActions);
-
-
 
         if (response.Results.Count > 0)
 
@@ -746,11 +698,7 @@ public async Task InstallApplicationAll(IApplicationInstallManager applicationIn
 
         };
 
-
-
         InstallApplicationResponse response = await applicationInstallManager.InstallApplicationAllAsync(ADMIN_WORKSPACE_ID, applicationGuid, request, includeActions);
-
-
 
         if (response.Results.Count > 0)
 
@@ -1960,29 +1908,21 @@ public async Task<List<int>> FindAllWorkspacesWithFailedInstallationsAsync(IAppl
 
         });
 
-
-
         List<int> workspaceIDs = new List<int>();
 
         const int pageSize = 50;
 
         int currentStart = 1;
 
-
-
         // Query for failed installations in 50 item pages.
 
         ApplicationInstallSearchResponse response;
-
-
 
         do
 
         {
 
             response = await applicationInstallManager.SearchAsync(ADMIN_WORKSPACE_ID, queryOptions, currentStart, pageSize, true);
-
-
 
             // Add workspaces to the list.
 
@@ -1992,15 +1932,11 @@ public async Task<List<int>> FindAllWorkspacesWithFailedInstallationsAsync(IAppl
 
             Console.WriteLine(info);
 
-
-
             // Query for the next page.
 
             currentStart = response.CurrentStartIndex + pageSize;
 
         } while (response.NextPage != null && response.NextPage.IsAvailable);
-
-
 
         return workspaceIDs;
 
@@ -2096,29 +2032,21 @@ public async Task<List<int>> FindAllWorkspacesWithFailedInstallationsAsync(IAppl
 
         });
 
-
-
         List<int> workspaceIDs = new List<int>();
 
         const int pageSize = 50;
 
         int currentStart = 1;
 
-
-
         // Query for failed installations in 50 item pages.
 
         ApplicationInstallSearchResponse response;
-
-
 
         do
 
         {
 
             response = await applicationInstallManager.SearchApplicationAsync(ADMIN_WORKSPACE_ID, applicationID, queryOptions, currentStart, pageSize, true);
-
-
 
             // Add workspaces to the list.
 
@@ -2128,15 +2056,11 @@ public async Task<List<int>> FindAllWorkspacesWithFailedInstallationsAsync(IAppl
 
             Console.WriteLine(info);
 
-
-
             // Query for the next page.
 
             currentStart = response.CurrentStartIndex + pageSize;
 
         } while (response.NextPage != null && response.NextPage.IsAvailable);
-
-
 
         return workspaceIDs;
 
@@ -2282,29 +2206,21 @@ public async Task<List<int>> FindWorkspacesWhereNotInstalledAsync(IApplicationIn
 
         });
 
-
-
         List<int> workspaceIDs = new List<int>();
 
         const int pageSize = 50;
 
         int currentStart = 1;
 
-
-
         // Query for available workspaces in 50 item pages.
 
         ApplicationInstallSearchResponse response;
-
-
 
         do
 
         {
 
             response = await applicationInstallManager.GetAvailableWorkspacesAsync(ADMIN_WORKSPACE_ID, applicationID, queryOptions, currentStart, pageSize, true);
-
-
 
             // Add workspaces to the list.
 
@@ -2314,15 +2230,11 @@ public async Task<List<int>> FindWorkspacesWhereNotInstalledAsync(IApplicationIn
 
             Console.WriteLine(info);
 
-
-
             // Query for the next page.
 
             currentStart = response.CurrentStartIndex + pageSize;
 
         } while (response.NextPage != null && response.NextPage.IsAvailable);
-
-
 
         return workspaceIDs;
 
@@ -2456,8 +2368,6 @@ public async Task WaitUntilUpdateCompletes(ILibraryApplicationManager libraryApp
 
         Console.WriteLine($@"Waiting for installation to reach a terminal state...");
 
-
-
         // The following function will poll for the installation status until the installation reaches a terminal state.
 
         InstallStatusCode status = PollForTerminalStatus(async () => await libraryApplicationManager.GetLibraryInstallStatusAsync(ADMIN_WORKSPACE_ID, artifactID)).Result;
@@ -2477,8 +2387,6 @@ public async Task WaitUntilUpdateCompletes(ILibraryApplicationManager libraryApp
     }
 
 }
-
-
 
 public async Task<int> UpdateLibraryApplication(ILibraryApplicationManager libraryApplicationManager, string rapFilePathPath)
 
@@ -2508,8 +2416,6 @@ public async Task<int> UpdateLibraryApplication(ILibraryApplicationManager libra
 
             };
 
-
-
             response = await libraryApplicationManager.UpdateAsync(ADMIN_WORKSPACE_ID, new KeplerStream(stream), request);
 
             string info = string.Format($"The file located at {rapFilePathPath} was successfully uploaded to the application library.");
@@ -2517,8 +2423,6 @@ public async Task<int> UpdateLibraryApplication(ILibraryApplicationManager libra
             Console.WriteLine(info);
 
         }
-
-
 
         return response.ApplicationIdentifier.ArtifactID;
 
@@ -2538,8 +2442,6 @@ public async Task<int> UpdateLibraryApplication(ILibraryApplicationManager libra
 
 }
 
-
-
 public async Task<InstallStatusCode> PollForTerminalStatus(Func<Task<GetInstallStatusResponse>> func)
 
 {
@@ -2553,8 +2455,6 @@ public async Task<InstallStatusCode> PollForTerminalStatus(Func<Task<GetInstallS
     bool continuePolling = true;
 
     watch.Start();
-
-
 
     do
 
@@ -2570,11 +2470,7 @@ public async Task<InstallStatusCode> PollForTerminalStatus(Func<Task<GetInstallS
 
         }
 
-
-
         result = await func.Invoke();
-
-
 
         switch (result.InstallStatus.Code)
 
@@ -2588,8 +2484,6 @@ public async Task<InstallStatusCode> PollForTerminalStatus(Func<Task<GetInstallS
 
                 break;
 
-
-
             default:
 
                 continuePolling = false;
@@ -2597,8 +2491,6 @@ public async Task<InstallStatusCode> PollForTerminalStatus(Func<Task<GetInstallS
                 break;
 
         }
-
-
 
         if (continuePolling)
 
@@ -2608,11 +2500,7 @@ public async Task<InstallStatusCode> PollForTerminalStatus(Func<Task<GetInstallS
 
         }
 
-
-
     } while (continuePolling);
-
-
 
     watch.Stop();
 
@@ -2703,8 +2591,6 @@ public async Task<InstallApplicationResponse> InstallApplicationIntoAllWorkspace
 
     InstallApplicationResponse response = new InstallApplicationResponse();
 
-
-
     try
 
     {
@@ -2719,11 +2605,7 @@ public async Task<InstallApplicationResponse> InstallApplicationIntoAllWorkspace
 
         };
 
-
-
         response = await applicationInstallManager.InstallApplicationAllAsync(ADMIN_WORKSPACE_ID, artifactID, request);
-
-
 
         if (response.Results.Count > 0)
 
@@ -2757,13 +2639,9 @@ public async Task<InstallApplicationResponse> InstallApplicationIntoAllWorkspace
 
     }
 
-
-
     return response;
 
 }
-
-
 
 public async Task PollForTerminalStatuses(Func<Task<GetAllInstallStatusResponse>> func)
 
@@ -2779,8 +2657,6 @@ public async Task PollForTerminalStatuses(Func<Task<GetAllInstallStatusResponse>
 
     watch.Start();
 
-
-
     do
 
     {
@@ -2795,11 +2671,7 @@ public async Task PollForTerminalStatuses(Func<Task<GetAllInstallStatusResponse>
 
         }
 
-
-
         response = await func.Invoke();
-
-
 
         if (response.Results.Any(x => x.InstallStatus.Code == InstallStatusCode.Pending || x.InstallStatus.Code == InstallStatusCode.InProgress))
 
@@ -2819,8 +2691,6 @@ public async Task PollForTerminalStatuses(Func<Task<GetAllInstallStatusResponse>
 
         }
 
-
-
         if (continuePolling)
 
         {
@@ -2829,11 +2699,7 @@ public async Task PollForTerminalStatuses(Func<Task<GetAllInstallStatusResponse>
 
         }
 
-
-
     } while (continuePolling);
-
-
 
     watch.Stop();
 
@@ -2869,80 +2735,3 @@ InvalidOperationException "Unknown value for InstallOutcome ..." If the system i
 NotFoundException "The object does not exist or you do not have permission to access it." As the exception message states, one or more of the objects requested (i.e. a specified workspace, a specified application, a specified application installation ID, a specified validation result ID, etc.) does not exist.
 
 PermissionDeniedException "One or more of the objects requested do not exist or you do not have permission to access them." As the exception message states, either the objects requested (i.e. a specified workspace, a specified application, a specified application installation ID, a specified validation result ID, etc.) do not exist, or the user does not have sufficient permissions to perform the action. The most basic permissions that all users must have include the ViewAdminRepository
-
-On this page
-
-- Application Install (.NET)
-
-- Guidelines for the Application Install API
-
-- Admin-level context
-
-- Actions and pagination
-
-- Permissions
-
-- Sample use cases
-
-- Create a proxy
-
-- Install an application library to specific workspaces
-
-- Install an application library to all workspaces
-
-- Retrieve the installation status of an application
-
-- Retrieve the number of workspaces with an outdated application
-
-- Cancel pending application installations
-
-- Retrieve installation details for an application
-
-- Generate an installation report
-
-- Cancel pending application installations
-
-- Retrieve installation status by workspace
-
-- Supported Condition Fields
-
-- Query for application installations by identifier
-
-- Validate new artifact names
-
-- Query for application installations with additional fields
-
-- Workflow-Based code samples
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

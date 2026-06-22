@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:42+00:00
 sha256: 966524b5b1efc98123e4d996af32a0ca6520d52d77e1e4634774a9a1a774b917
 ---
 
-Advanced functionality for event handlers Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Advanced functionality for event handlers
 
 # Advanced functionality for event handlers
 
@@ -78,8 +60,6 @@ ChoiceFieldValue choiceFieldValue = (ChoiceFieldValue)ActiveArtifact.Fields[fiel
 
 ChoiceCollection myListOfDesiredChoices = new ChoiceCollection();
 
-
-
 //The ChoiceCollection is now cleared.
 
 choiceFieldValue.Choices = myListOfDesiredChoices;
@@ -119,8 +99,6 @@ ChoiceFieldValue choiceFieldValue = (ChoiceFieldValue)ActiveArtifact.Fields[fiel
 
 ChoiceCollection myListOfDesiredChoices = new ChoiceCollection();
 
-
-
 //Because you can't directly remove a Choice, create a new collection that
 
 //contains the desired Choice instances but excludes the Choice
@@ -140,8 +118,6 @@ foreach (Choice c in choiceFieldValue.Choices)
      }
 
 }
-
-
 
 //Set the Choices property to the modified collection.
 
@@ -175,15 +151,11 @@ ChoiceFieldValue choiceFieldValue = (ChoiceFieldValue)ActiveArtifact.Fields[fiel
 
 ChoiceCollection myListOfDesiredChoices = choiceFieldValue.Choices;
 
-
-
 //The ArtifactID parameter is used to specify which choice to set, not the name parameter.
 
 //You don't need to set the name parameter to the actual name of the choice, but it must be unique to the collection.
 
 myListOfDesiredChoices.Add(new Choice(choiceArtifactID, choiceArtifactID.ToString()));
-
-
 
 //Set the Choices property to the modified collection.
 
@@ -265,13 +237,9 @@ Copy
 
 [assembly: AssemblyCompany("ACME Inc.")]
 
-
-
 [assembly: AssemblyProduct("TestAgent")]
 
 [assembly: AssemblyCopyright("Copyright ©  2012")]
-
-
 
 [assembly: AssemblyTrademark("")]
 
@@ -281,46 +249,3 @@ Copy
 The Relativity web interface displays fields containing the source information that you specified for your assemblies.
 
 You can't specify a value for the Application field in your source code. Relativity sets the value of this field when you add an assembly through the Resource Files tab. See Resource files on the Relativity Server 2025 Documentation site.
-
-On this page
-
-- Advanced functionality for event handlers
-
-- Work with Choice field types
-
-- Sample code for Choice fields
-
-- Add assembly source information
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

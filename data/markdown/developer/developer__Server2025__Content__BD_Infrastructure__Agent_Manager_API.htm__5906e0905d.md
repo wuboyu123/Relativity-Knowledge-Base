@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:24:31+00:00
 sha256: e0fe0c636dceb3d7bf80b7ca95119be067e5c1a09cdbe21670752c3d7a057410
 ---
 
-Agent Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Agent Manager (.NET)
 
 # Agent Manager (.NET)
 
@@ -165,19 +147,13 @@ public async Task AgentRestart(Relativity.Services.Interfaces.Agent.IAgentManage
 
     Relativity.Services.Interfaces.Agent.Models.AgentResponse agentResponse = await manager.ReadAsync(-1, agentArtifactID);
 
-
-
     if (!agentResponse.Enabled)
 
     {
 
         Relativity.Services.Interfaces.Agent.Models.AgentRequest enabledAgentRequest = new AgentRequest(agentResponse);
 
-
-
         enabledAgentRequest.Enabled = true;
-
-
 
         await manager.UpdateAsync(-1, agentArtifactID, enabledAgentRequest);
 
@@ -1044,80 +1020,3 @@ When a validation check fails, the response varies depending on the reason for t
 - LastPerEnvironment - the last instance of the agent type in the environment is being disabled or deleted.
 
 For more information, see the AgentInstanceLimit enumeration in the Relativity.Services.Interfaces.Agent.Models namespace in the Class library reference .
-
-On this page
-
-- Agent Manager (.NET)
-
-- Fundamentals for managing agents
-
-- Methods
-
-- Classes and enumerations
-
-- Guidelines for the Agent Manager service
-
-- Admin-level context
-
-- Validation and compatibility checks
-
-- Sample workflow for adding agents
-
-- Monitor enabled agents
-
-- Retrieve a list of agent types
-
-- Retrieve a list of agent servers
-
-- Retrieve servers compatible with a specific agent type
-
-- Create an agent
-
-- Retrieve metadata for an agent
-
-- Update the properties of an agent
-
-- Delete an agent
-
-- Validate a create, update, or delete operation
-
-- Validate a create operation
-
-- Validate an update operation
-
-- Validate a delete operation
-
-- Failed validation responses
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

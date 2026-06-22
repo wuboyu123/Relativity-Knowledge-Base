@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:27:22+00:00
 sha256: 1e035ff3beb738b090103d2f93a1bd2f3b87f141a9419634137972a102280fd6
 ---
 
-Processing Custodian Manager Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Processing Custodian Manager
 
 # Processing Custodian Manager
 
@@ -195,46 +177,3 @@ using (IProcessingCustodianManager proxy = _servicesMgr.CreateProxy<IProcessingC
 
 }
 ```
-
-On this page
-
-- Processing Custodian Manager
-
-- Create a processing custodian
-
-- Read a processing custodian
-
-- Update a processing custodian
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

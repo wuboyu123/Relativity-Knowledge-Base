@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:21+00:00
 sha256: a68263a0010d48da02f429847e105506ebc2f6be22df86598d6f6bae72aade67
 ---
 
-Advanced functionality for custom pages Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Advanced functionality for custom pages
 
 # Advanced functionality for custom pages
 
@@ -112,46 +94,3 @@ Copy
 ```
 
 - Values set via your web.config will automatically deploy with your Custom Page after each upgrade, and do not require further manual intervention.
-
-On this page
-
-- Advanced functionality for custom pages
-
-- Custom authentication
-
-- Manually enable Forms or Windows Authentication in IIS
-
-- Enable Forms or Windows Authentication via your custom page's web.config
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:24:02+00:00
 sha256: c45da7bf45b57680ba2c5c7b0212bd91a8ac904eafc5ec9e405e33c50de33ae2
 ---
 
-Document Viewer Services (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Document Viewer Services (REST)
 
 # Document Viewer Services (REST)
 
@@ -669,50 +651,3 @@ View a sample JSON request Copy
 ```
 
 The JSON responses for converting File fields contain the same fields as those returned for document conversion. See View sample JSON responses .
-
-On this page
-
-- Document Viewer Services (REST)
-
-- Guidelines for using the Document Viewer Services
-
-- URLs
-
-- Client code samples
-
-- Convert documents
-
-- Convert files contained in File fields on RDOs
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

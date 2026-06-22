@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:29:38+00:00
 sha256: 6f6fb3559397883f2b638d87ccbd82f09da942e4f3e7ca0dea064372ba4d62d4
 ---
 
-Troubleshoot Relativity using logging Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Troubleshoot Relativity using logging
 
 # Troubleshoot Relativity using logging
 
@@ -181,58 +163,3 @@ Copy
 1
 EXEC [EDDSLogging].[eddsdbo].[DeleteRule] @RuleID = 2
 ```
-
-On this page
-
-- Troubleshoot Relativity using logging
-
-- Set up a logging rule
-
-- Order
-
-- Machine name
-
-- System
-
-- Subsystem
-
-- Application
-
-- LoggingLevel
-
-- Rule sinks
-
-- Troubleshooting example
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

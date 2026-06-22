@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:29:16+00:00
 sha256: e811cf51b1c154a096faca2775c02f1f88b4e90555c9325e078498da3edcafce
 ---
 
-Relativity Server SDK and API Packages Changes Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Relativity Server SDK and API Packages Changes
 
 # Relativity Server SDK and API Packages Changes
 
@@ -74,13 +56,9 @@ While using the dedicated Server SDKs hosted in Artifactory is recommended for S
 
 - Starting with Server 2023 Release, SDK packages will be published to new Server-specific, public Artifactory NuGet and NPM feeds
 
-- relativitypackageseastus
-
 - nuget
 
 - npm
-
-- relativitypackageswesteurope
 
 - nuget
 
@@ -203,50 +181,3 @@ You are not prevented from recompiling a Relativity Server custom application ag
 I am using 3rd party libraries in my custom Relativity Server solution, and I am seeing missing package errors, what do I do?
 
 Clear your local nuget caches using the Windows terminal with command dotnet nuget locals all --clear . Remove, or comment-out, the clear element from the nuget.config file, save it, and try to rebuild again. Your 3rd party packages should then be found, but be careful not to restore RelativityOne packages coming from nuget.org. Only use Relativity Server packages from the Relativity Server Artifactory Feed. The restore order must be Relativity Server packages first, followed by any others.
-
-On this page
-
-- Relativity Server SDK and API Packages Changes
-
-- Server SDK Support Policy
-
-- Updating your application to use packages from Artifactory
-
-- Custom applications that only target Relativity Server
-
-- Custom applications that target both Relativity Server and RelativityOne (multi-targeting)
-
-- FAQ
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:15+00:00
 sha256: a49731bd4da0accc945d1449f6cc38dd624b2c857441cf205742865bbb221992
 ---
 
-Troubleshooting Kepler services Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Troubleshooting Kepler services
 
 # Troubleshooting Kepler services
 
@@ -147,60 +129,3 @@ Copy
 ```
 
 For more information, see ServiceAudience attribute .
-
-On this page
-
-- Troubleshooting Kepler services
-
-- Assembly doesn't contain service module
-
-- Deleted applications
-
-- GET endpoint fails
-
-- Invalid RoutePrefix attribute causes 404 error
-
-- Invalid WebService attribute causes 500 error
-
-- Missing or no endpoints on a service
-
-- Multiple modules error
-
-- Multiple service implementations error
-
-- Namespace doesn't exist error message
-
-- ServiceAudience error
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

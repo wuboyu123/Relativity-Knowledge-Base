@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:29:41+00:00
 sha256: 6e974ed36211a6f21ee27e572d7e119d079a9843c10578e2f5581f32e57591b8
 ---
 
-Infrastructure considerations for logging Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Infrastructure considerations for logging
 
 # Infrastructure considerations for logging
 
@@ -57,46 +39,3 @@ When you configure an alternative SQL Server database sink for logging (other th
 ## Moving EDDSLogging database
 
 Relativity logging relies on the EDDSLogging database for centralized configuration storage. It also uses it the database as the default sink. In a distributed database environment, EDDSLogging must be hosted on the primary database server (the server that hosts the EDDS database). If you move the EDDS database to a different database server, you must also move the EDDSLogging database to the same server.
-
-On this page
-
-- Infrastructure considerations for logging
-
-- File sink
-
-- Storing database passwords
-
-- Moving EDDSLogging database
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

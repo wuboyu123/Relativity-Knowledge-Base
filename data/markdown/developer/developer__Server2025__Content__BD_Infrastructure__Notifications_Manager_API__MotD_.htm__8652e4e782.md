@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:23:33+00:00
 sha256: 2230cac295f660af096c5099652724e716e5e8e068fa6ca1d3c5f987a0aaa3d1
 ---
 
-Notifications Manager (MotD) - (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Notifications Manager (MotD) - (.NET)
 
 # Notifications Manager (MotD) - (.NET)
 
@@ -129,8 +111,6 @@ public async Task<bool> ReadMotdAsync(IHelper helper)
 
     }
 
-
-
     return success;
 
 }
@@ -204,8 +184,6 @@ public async Task<bool> UpdateMotdAsync(IHelper helper)
 
     }
 
-
-
     return success;
 
 }
@@ -271,8 +249,6 @@ public async Task<bool> DismissMotdAsync(IHelper helper, int userId)
         }
 
     }
-
-
 
     return success;
 
@@ -346,8 +322,6 @@ public async Task<bool> HasDismissedMotdAsync(IHelper helper, int userId)
 
     }
 
-
-
     return success;
 
 }
@@ -418,62 +392,7 @@ public async Task<bool> IsTextOnlyMotdAsync(IHelper helper)
 
     }
 
-
-
     return success;
 
 }
 ```
-
-On this page
-
-- Notifications Manager (MotD) - (.NET)
-
-- Fundamentals for the Notifications Manager API
-
-- Methods
-
-- Classes
-
-- Read the MotD
-
-- Update the MotD
-
-- Dismiss the MotD
-
-- Has Dismissed the MotD
-
-- Display the MotD
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -2,29 +2,11 @@
 title: "Dependency Injection"
 url: https://platform.relativity.com/Server2025/Content/Kepler_framework/Dependency_injection.htm
 collection: developer
-fetched_at: 2026-06-22T06:31:12+00:00
+fetched_at: 2026-06-22T06:31:13+00:00
 sha256: 8f6af7f32409f2f0ebf40b9fe1a1a29bd1c12c2d4201f21222193d136d4fc4ff
 ---
 
-Dependency Injection Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Dependency Injection
 
 # Dependency Injection
 
@@ -237,46 +219,3 @@ public ExampleService(ILog logger, IHelper helper)
 
 }
 ```
-
-On this page
-
-- Dependency Injection
-
-- Dependency injection in the Kepler
-
-- Assemblies without a Kepler service
-
-- Dependency injection through ADS
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

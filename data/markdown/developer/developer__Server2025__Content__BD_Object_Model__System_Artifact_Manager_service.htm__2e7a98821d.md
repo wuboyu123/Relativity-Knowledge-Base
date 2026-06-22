@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:28:20+00:00
 sha256: c546ebe6bf3874a1953c9fa292f80715f556617468c13da10e4e6c176cad47d4
 ---
 
-System Artifact Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+System Artifact Manager (REST)
 
 # System Artifact Manager (REST)
 
@@ -90,8 +72,6 @@ using (HttpClient client = new HttpClient())
 
     int artifactID;
 
-
-
     string url = $"/Relativity.Rest/api/relativity-object-model/{versionNumber}/workspaces/{workspaceID}/system-artifacts/{identifier}/artifact-id";
 
     using (HttpResponseMessage response = await client.GetAsync(url))
@@ -134,48 +114,3 @@ Copy
 1
 { 1003663 }
 ```
-
-On this page
-
-- System Artifact Manager (REST)
-
-- Guidelines for the System Artifact Manager service
-
-- URLs
-
-- Client code sample
-
-- Read system artifact ID
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

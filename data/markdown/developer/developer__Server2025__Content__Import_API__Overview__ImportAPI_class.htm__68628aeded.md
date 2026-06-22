@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:26:35+00:00
 sha256: 31da350997dadae8f3774c8a9c0a95857b4ec1456b7a7f1196da63c7b6b2cef7
 ---
 
-ImportAPI class Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+ImportAPI class
 
 # ImportAPI class
 
@@ -58,11 +40,7 @@ Copy
 
 using kCura.Relativity.ImportAPI;
 
-
-
 ImportAPI _importAPI = null;
-
-
 
 try {
 
@@ -112,11 +90,7 @@ Copy
 
 using kCura.Relativity.ImportAPI;
 
-
-
 ImportAPI _importAPI = null;
-
-
 
 try {
 
@@ -148,8 +122,6 @@ Copy
 6
 
 IEnumerable<Workspace> workspaces = _importAPI.Workspaces();
-
-
 
 foreach(Workspace ws in workspaces) {
 
@@ -183,8 +155,6 @@ const int myWorkspaceId = 1015024;
 
 IEnumerable<ProductionSet> productionSets = _importAPI.GetProductionSets(myWorkspaceId);
 
-
-
 foreach(ProductionSet production in productionSets) {
 
      Console.WriteLine("Production: {0} ID: {1}", production.Name, production.ArtifactID);
@@ -215,8 +185,6 @@ const int documentArtifactType = 10;
 const int myWorkspaceId = 1015024;
 
 IEnumerable<Field> fields = _importAPI.GetWorkspaceFields(myWorkspaceId, documentArtifactType);
-
-
 
 foreach(Field field in fields) {
 
@@ -252,8 +220,6 @@ const int myWorkspaceId = 1015024;
 IEnumerable<ProductionSet> productionSets = _importAPI.GetProductionSets(myWorkspaceId);
 
 ProductionSet destinationProductionSet = productionSets.Single(p => p.Name.Equals("My Destination Production Set"));
-
-
 
 ImageImportBulkArtifactJob productionJob = _importAPI.NewProductionImportJob(destinationProductionSet.ArtifactID)
 ```
@@ -296,66 +262,5 @@ IEnumerable<ArtifactType> artifactTypes = _importAPI.GetUploadableArtifactTypes(
 
 ArtifactType desiredArtifactType = artifactTypes.Single(a => a.Name.Equals("My Custom Object Type"));
 
-
-
 ImportBulkArtifactJob objectImportJob = _importAPI.NewObjectImportJob(desiredArtifactType.ID);
 ```
-
-On this page
-
-- ImportAPI class
-
-- Instantiate the ImportAPI class
-
-- Use methods on the ImportAPI class
-
-- Workspaces() method
-
-- GetProductionSets() method
-
-- GetWorkspaceFields() method
-
-- NewImageImportJob() method
-
-- NewNativeDocumentImportJob() method
-
-- NewProductionImportJob() method
-
-- GetFileUploadMode() method
-
-- NewObjectImportJob() method
-
-- GetUploadableArtifactTypes() method
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

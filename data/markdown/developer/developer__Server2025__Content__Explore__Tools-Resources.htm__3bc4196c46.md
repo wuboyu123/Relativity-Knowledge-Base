@@ -6,23 +6,7 @@ fetched_at: 2026-06-22T06:22:01+00:00
 sha256: 760eea88cc550732ab50447602caf939e1045185d333b19e1c4a0653ff083a77
 ---
 
-Developer Tools and Resources Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Developer Tools and Resources
 
 # Developer Tools and Resources
 
@@ -63,48 +47,3 @@ These external sites provide additional information that may be helpful to Relat
 - Relativity Server SDK/API packages : download .NET packages from Relativity's Server SDK/API collection to write your own .NET code to access the Relativity HTTP APIs.
 
 - Documentation archives - includes links to previous versions of the Relativity Developers site for working with other versions of Relativity.
-
-On this page
-
-- Developer Tools and Resources
-
-- Developer Support
-
-- Developer Toolkit
-
-- Other Tools and utilities
-
-- Sites
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

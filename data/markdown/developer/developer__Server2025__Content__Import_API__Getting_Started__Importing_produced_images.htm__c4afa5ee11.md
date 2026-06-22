@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:29:53+00:00
 sha256: a8470a8588fb0d927d7279edcf5fe591dfe3b99fe95d96c1161da6a14cb0ceb6
 ---
 
-Import produced images Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Import produced images
 
 # Import produced images
 
@@ -99,25 +81,17 @@ static void ImportProduction()
 
      String productionSetName = "TestProduction";
 
-
-
      String relativityUserName = "<your Relativity username>";
 
      String relativityPassword = "<your password>";
 
      String relativityWebAPIUrl = "http://localhost/Relativitywebapi/";
 
-
-
      ImportAPI iapi = new ImportAPI(relativityUserName, relativityPassword, relativityWebAPIUrl);
-
-
 
      //Pass the ArtifactID of a workspace to retrieve a collection of production sets.
 
      var productionList = iapi.GetProductionSets(workspaceArtifactID);
-
-
 
      //Select a production. You add the production sets to this production.
 
@@ -125,15 +99,11 @@ static void ImportProduction()
 
      var importJob = iapi.NewProductionImportJob(desiredProduction.ArtifactID);
 
-
-
      importJob.OnMessage += ImportJobOnMessage;
 
      importJob.OnComplete += ImportJobOnComplete;
 
      importJob.OnFatalException += ImportJobOnFatalException;
-
-
 
      //Specify the ArtifactID of the document identifier field, such as a control number.
 
@@ -141,23 +111,17 @@ static void ImportProduction()
 
      importJob.Settings.AutoNumberImages = false;
 
-
-
      // You can use the Bates number as an identifier for an image.
 
      importJob.Settings.BatesNumberField = "Bates";
 
      importJob.Settings.CaseArtifactId = workspaceArtifactID;
 
-
-
      // Use this code for grouping images associated with a document.
 
      importJob.Settings.DocumentIdentifierField = "Doc";
 
      importJob.Settings.ExtractedTextFieldContainsFilePath = false;
-
-
 
      // Indicates file path for an image.
 
@@ -167,15 +131,9 @@ static void ImportProduction()
 
      importJob.Settings.OverwriteMode = OverwriteModeEnum.Overlay;
 
-
-
      importJob.SourceData.SourceData = GetProductionDataTable();
 
-
-
      Console.WriteLine("Executing import...");
-
-
 
      importJob.Execute();
 
@@ -213,8 +171,6 @@ static void ImportJobOnMessage(Status status)
 
 }
 
-
-
 static void ImportJobOnFatalException(JobReport jobReport)
 
 {
@@ -222,8 +178,6 @@ static void ImportJobOnFatalException(JobReport jobReport)
      Console.WriteLine("Fatal Error: {0}", jobReport.FatalException);
 
 }
-
-
 
 static void ImportJobOnComplete(JobReport jobReport)
 
@@ -269,8 +223,6 @@ public static DataTable GetProductionDataTable()
 
      DataTable table = new DataTable();
 
-
-
      // Column names don't need to correspond to field names.
 
      table.Columns.Add("Bates");
@@ -278,8 +230,6 @@ public static DataTable GetProductionDataTable()
      table.Columns.Add("Doc", typeof(string));
 
      table.Columns.Add("FileLoc", typeof(string));
-
-
 
      //Group three images under A_1 document.
 
@@ -289,15 +239,11 @@ public static DataTable GetProductionDataTable()
 
      table.Rows.Add("A_3", "A_1", "C:\\VOL01\\IMAGES\\IMG001\\Test000003.tif");
 
-
-
      //Group two images under B_1 document.
 
      table.Rows.Add("B_1", "B_1", "C:\\VOL01\\IMAGES\\IMG001\\SDF000001.tif");
 
      table.Rows.Add("B_2", "B_1", "C:\\VOL01\\IMAGES\\IMG001\\SDF000002.tif");
-
-
 
      return table;
 
@@ -309,48 +255,3 @@ The value of Bates field for the first image in a set must be identical to the v
 ## Upload custom assemblies
 
 In the Relativity, upload any custom assemblies for your application and the Import API assemblies as resource files. You must manually add the Import API assemblies in order for your custom application to function properly. For more information, see Resource files on the Relativity Documentation site.
-
-On this page
-
-- Import produced images
-
-- Create a production import job
-
-- Write messages and errors
-
-- Create a DataTable object for a production
-
-- Upload custom assemblies
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

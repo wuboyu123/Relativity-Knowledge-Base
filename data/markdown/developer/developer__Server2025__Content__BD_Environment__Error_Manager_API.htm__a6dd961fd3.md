@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:23:07+00:00
 sha256: 577bcf37326956ff32226101744a556f4cbdb7dfed4659af2351c24256d455f2
 ---
 
-Error Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Error Manager (.NET)
 
 # Error Manager (.NET)
 
@@ -97,11 +79,7 @@ using Relativity.Environment.{versionNumber}.Error;
 
 using Relativity.Environment.{versionNumber}.Error.Models;
 
-
-
 Client.SamplesLibrary.Helper.IHelper helper;
-
-
 
 // Create a proxy
 
@@ -184,15 +162,11 @@ using System.Net.Http;
 
 using Newtonsoft.Json;
 
-
-
 private HttpClient GetHttpClient()
 
 {
 
     HttpClient httpClient = new HttpClient();
-
-
 
     httpClient.BaseAddress = new Uri("https://localhost/");
 
@@ -202,17 +176,11 @@ private HttpClient GetHttpClient()
 
         Convert.ToBase64String(Encoding.GetEncoding("ISO-8859-1").GetBytes("test@test.com:SomePassword")));
 
-
-
     return httpClient;
 
 }
 
-
-
 const string errorManagerEndpoint = "Relativity.Rest/api/relativity-environment/{versionNumber}/workspaces/-1/errors";
-
-
 
 var payloadObject = new
 
@@ -246,66 +214,11 @@ var payloadObject = new
 
 };
 
-
-
 StringContent payload = new StringContent(JsonConvert.SerializeObject(payloadObject), Encoding.UTF8, "application/json");
 
 HttpResponseMessage response = await GetHttpClient().PostAsync(errorManagerEndpoint, payload);
-
-
 
 string responseMessage = await response.Content.ReadAsStringAsync();
 
 int artifactID = Convert.ToInt32(responseMessage);
 ```
-
-On this page
-
-- Error Manager (.NET)
-
-- Guidelines for Error Manager API
-
-- Fundamentals for using Error Manager
-
-- Key concepts or other explanatory information
-
-- Guidelines or best practices
-
-- Create an error log
-
-- Create an error log using service manager (recommended)
-
-- Create an error log using an HTTP client
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

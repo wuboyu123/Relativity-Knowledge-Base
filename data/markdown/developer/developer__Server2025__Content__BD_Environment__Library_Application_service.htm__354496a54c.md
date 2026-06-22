@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:23:54+00:00
 sha256: 070cb07789029f564ab058d7d96e7dfb660eb3b624722518f704812f0a59aea5
 ---
 
-Library Application (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Library Application (REST)
 
 # Library Application (REST)
 
@@ -1158,8 +1140,6 @@ View JSON for a sample request Copy
 
         "RefreshCustomPages":false,
 
-
-
     }
 
 }
@@ -2063,72 +2043,3 @@ View JSON sample response Copy
 
 }
 ```
-
-On this page
-
-- Library Application (REST)
-
-- Guidelines for the Library Application service
-
-- URLs
-
-- Client code sample
-
-- Create a library application
-
-- Read a library application
-
-- Read all library applications
-
-- Retrieve a library application as a RAP file
-
-- Update a library application
-
-- Delete a library application
-
-- Retrieve the installation status of an application
-
-- Retry installing an application
-
-- Cancel an application installation
-
-- Upload a RAP or XML file
-
-- Download a RAP or XML file
-
-- Delete a RAP file
-
-- Retrieve hosting status of an application
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

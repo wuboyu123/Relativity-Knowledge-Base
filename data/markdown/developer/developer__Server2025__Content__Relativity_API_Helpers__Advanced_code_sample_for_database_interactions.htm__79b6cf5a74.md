@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:46+00:00
 sha256: c006646918c8f998a3354d93626ff6309d5597eccb3f50e3654677c2a593d72a
 ---
 
-Advanced code sample for database interactions Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Advanced code sample for database interactions
 
 # Code sample for database interactions
 
@@ -129,13 +111,9 @@ using System.Data.SqlClient;
 
 using Relativity.API;
 
-
-
 namespace Relativity.Samples.Core
 
 {
-
-
 
      public static class JobQueries
 
@@ -153,27 +131,19 @@ namespace Relativity.Samples.Core
 
                     WHERE [WorkspaceArtifactID] = @WorkspaceArtifactID AND [InstanceArtifactID] = @InstanceArtifactID";
 
-
-
                SqlParameter workspaceArtifactIDParam = new SqlParameter("@WorkspaceArtifactID", SqlDbType.Int);
 
                workspaceArtifactIDParam.Value = workspaceArtifactID;
 
-
-
                SqlParameter instanceArtifactIDParam = new SqlParameter("@InstanceArtifactID", SqlDbType.Int);
 
                instanceArtifactIDParam.Value = artifactID;
-
-
 
                retVal = (dbContext.ExecuteSqlStatementAsScalar<Int32>(sql, new SqlParameter[] { workspaceArtifactIDParam, instanceArtifactIDParam }) > 0);
 
                return retVal;
 
           }
-
-
 
           public static void InsertJob(IDBContext dbContext, Int32 workspaceArtifactID, Int32 artifactID)
 
@@ -191,19 +161,13 @@ namespace Relativity.Samples.Core
 
                     + " END";
 
-
-
                SqlParameter workspaceArtifactIDParam = new SqlParameter("@WorkspaceArtifactID", SqlDbType.Int);
 
                workspaceArtifactIDParam.Value = workspaceArtifactID;
 
-
-
                SqlParameter instanceArtifactIDParam = new SqlParameter("@InstanceArtifactID", SqlDbType.Int);
 
                instanceArtifactIDParam.Value = artifactID;
-
-
 
                dbContext.BeginTransaction();
 
@@ -241,8 +205,6 @@ namespace Relativity.Samples.Core
 
                          + " END";
 
-
-
                          dbContext.BeginTransaction();
 
                          try {
@@ -267,40 +229,3 @@ namespace Relativity.Samples.Core
 
 }
 ```
-
-On this page
-
-- Code sample for database interactions
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

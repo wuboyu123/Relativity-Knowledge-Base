@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:23:02+00:00
 sha256: cb848f6ecd27808b9c953510e3cfe40cb46e42838b911dea2ddf736d477c1126
 ---
 
-Tab Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Tab Manager (REST)
 
 # Tab Manager (REST)
 
@@ -307,13 +289,9 @@ public async Task<int?> CreateTabExample()
 
         client.BaseAddress = new Uri("https://localhost/");
 
-
-
         var tabName = "SomeNewTab";
 
         var order = 100;
-
-
 
         string inputJSON = $"{{\"tab\":{{ \"Name\": \"{tabName}\", \"Order\":  \"{order}\", \"LinkType\": 3, \"IsVisible\": true, \"Parent\": {{\"Value\": {{\"ArtifactID\": 1003663 }} }} }} }}";
 
@@ -328,8 +306,6 @@ public async Task<int?> CreateTabExample()
         result = JsonConvert.DeserializeObject<int>(content);
 
     }
-
-
 
     return result;
 
@@ -2129,68 +2105,3 @@ View a sample JSON response Copy
 
 ]
 ```
-
-On this page
-
-- Tab Manager (REST)
-
-- Guidelines for the Tab Manager service
-
-- URLs
-
-- JSON payloads for create and update operations
-
-- IconIdentifier field
-
-- Client code sample
-
-- Create a tab
-
-- Retrieve tab metadata
-
-- Update a tab
-
-- Delete a tab
-
-- Retrieve object types for a tab
-
-- Retrieve eligible parent tabs
-
-- Retrieve workspace-level metadata for admin and system tabs
-
-- Retrieve tab orders
-
-- Retrieve all tabs for navigation
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

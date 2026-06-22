@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:24:55+00:00
 sha256: 7765a7c0dd375f2592e1e0640a339d966814b59bcf84ed02f52b1afc2a908c87
 ---
 
-Lesson 3 - Create a RESTful API Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Lesson 3 - Create a RESTful API
 
 # Lesson 3 - Create a RESTful API
 
@@ -118,8 +100,6 @@ The projects are used as follows:
 13
 using Relativity.Kepler.Services;
 
-
-
 namespace WikipediaKepler.Interfaces.WikipediaManagement
 
 {
@@ -207,8 +187,6 @@ using Relativity.Kepler.Services;
 
 using WikipediaKepler.Interfaces.WikipediaManagement.v1.Models;
 
-
-
 namespace WikipediaKepler.Interfaces.WikipediaManagement.v1
 
 {
@@ -256,8 +234,6 @@ namespace WikipediaKepler.Interfaces.WikipediaManagement.v1
         [Route("workspace/{workspaceID:int}")]
 
         Task<WikipediaServiceModel> GetWorkspaceNameAsync(int workspaceID);
-
-
 
         /// <summary>
 
@@ -556,11 +532,7 @@ public async Task<List<WikipediaServiceModel>> QueryWorkspaceByNameAsync(string 
 
     };
 
-
-
     models.Add(unrealWorkspace);
-
-
 
     // Validate queryString and throw a ValidationException (HttpStatusCode 400) if the string does not meet the validation requirements.
 
@@ -573,8 +545,6 @@ public async Task<List<WikipediaServiceModel>> QueryWorkspaceByNameAsync(string 
         throw new ValidationException($"{nameof(queryString)} cannot be empty or greater than 50 characters.");
 
     }
-
-
 
     try
 
@@ -615,8 +585,6 @@ public async Task<List<WikipediaServiceModel>> QueryWorkspaceByNameAsync(string 
                 }
 
             }, (record, cancel) => Task.FromResult(record.GetInt32(0))).ConfigureAwait(false);
-
-
 
         // Create a Kepler service proxy to interact with other Kepler services.
 
@@ -678,15 +646,11 @@ public async Task<List<WikipediaServiceModel>> QueryWorkspaceByNameAsync(string 
 
         _logger.LogWarning(exception, "An exception occurred during query for workspace(s) containing {QueryString}.", queryString);
 
-
-
         // Throwing a user defined exception with a 404 status code.
 
         throw new WikipediaServiceException($"An exception occurred during query for workspace(s) containing {queryString}.");
 
     }
-
-
 
     return models;
 
@@ -997,8 +961,6 @@ Copy
 private IRestService _restService;
 
 private const int _CATEGORY_TITLE_INDEX = 9;
-
-
 
 // Note: IHelper and ILog are dependency injected automatically into the constructor every time the service is called.
 
@@ -1385,8 +1347,6 @@ Task<Pageable<PageForCategoryResponseModel>> GetPagesForCategoryAsync(string cat
 21
 using System.Collections.Generic;
 
-
-
 namespace WikipediaKepler.Interfaces.WikipediaManagement.v1.Models
 
 {
@@ -1410,8 +1370,6 @@ namespace WikipediaKepler.Interfaces.WikipediaManagement.v1.Models
         /// </summary>
 
         public List<T> Results { get; set; }
-
-
 
         /// <summary>
 
@@ -1457,8 +1415,6 @@ using System.Linq;
 using System.Text;
 
 using System.Threading.Tasks;
-
-
 
 namespace WikipediaKepler.Interfaces.WikipediaManagement.v1.Models
 
@@ -1534,8 +1490,6 @@ public async Task<Pageable<PageForCategoryResponseModel>> GetPagesForCategoryAsy
     }
 
     string next = result.Continue?.CmContinue ?? string.Empty;
-
-
 
     return new Pageable<PageForCategoryResponseModel>{ Results = pages, Next = next};
 
@@ -1628,8 +1582,6 @@ This method requires a model used to return a standalone Page. Add the PageRespo
 25
 using System.Collections.Generic;
 
-
-
 namespace WikipediaKepler.Interfaces.WikipediaManagement.v1.Models
 
 {
@@ -1652,8 +1604,6 @@ namespace WikipediaKepler.Interfaces.WikipediaManagement.v1.Models
 
         public string Title { get; set; }
 
-
-
         /// <summary>
 
         /// Url property.
@@ -1661,8 +1611,6 @@ namespace WikipediaKepler.Interfaces.WikipediaManagement.v1.Models
         /// </summary>
 
         public string Url { get; set; }
-
-
 
         /// <summary>
 
@@ -1730,8 +1678,6 @@ public async Task<PageResponseModel> GetPageByNameAsync(string pageName)
         throw new NotFoundException(errorMsg);
 
     }
-
-
 
     List<CategoryResponseModel> categories = page.Categories.Select(item => new CategoryResponseModel { Title = item.Title.Substring(_CATEGORY_TITLE_INDEX) }).ToList();
 
@@ -2014,8 +1960,6 @@ namespace WikipediaKepler.Interfaces.WikipediaManagement.v1
 
         Task<List<CategoryResponseModel>> GetCategoriesByPrefixAsync(string prefix);
 
-
-
         /// <summary>
 
         /// Get a list of pages under the provided Category in Wikipedia.
@@ -2048,8 +1992,6 @@ namespace WikipediaKepler.Interfaces.WikipediaManagement.v1
 
         Task<Pageable<PageForCategoryResponseModel>> GetPagesForCategoryAsync(string categoryName, int pageSize = 10, string continueFrom = "-");
 
-
-
         /// <summary>
 
         /// Returns an existing page in Wikipedia.
@@ -2077,8 +2019,6 @@ namespace WikipediaKepler.Interfaces.WikipediaManagement.v1
         [Route("pages/{pageName}")]
 
         Task<PageResponseModel> GetPageByNameAsync(string pageName);
-
-
 
         /// <summary>
 
@@ -2265,8 +2205,6 @@ using System.Net;
 
 using System.Text;
 
-
-
 namespace WikipediaKepler.Services.WikipediaManagement.v1
 
 {
@@ -2283,8 +2221,6 @@ namespace WikipediaKepler.Services.WikipediaManagement.v1
 
         private const int _CATEGORY_TITLE_INDEX = 9;
 
-
-
         // Note: IHelper and ILog are dependency injected into the constructor every time the service is called.
 
         public WikipediaService(IHelper helper, ILog logger, IRestService restService)
@@ -2300,8 +2236,6 @@ namespace WikipediaKepler.Services.WikipediaManagement.v1
             _restService = restService;
 
         }
-
-
 
         public async Task<List<CategoryResponseModel>> GetCategoriesByPrefixAsync(string prefix)
 
@@ -2335,8 +2269,6 @@ namespace WikipediaKepler.Services.WikipediaManagement.v1
 
         }
 
-
-
         public async Task<Pageable<PageForCategoryResponseModel>> GetPagesForCategoryAsync(string categoryName, int pageSize = 10, string continueFrom = "-")
 
         {
@@ -2361,13 +2293,9 @@ namespace WikipediaKepler.Services.WikipediaManagement.v1
 
             string next = result.Continue?.CmContinue ?? string.Empty;
 
-
-
             return new Pageable<PageForCategoryResponseModel> { Results = pages, Next = next };
 
         }
-
-
 
         public async Task<PageResponseModel> GetPageByNameAsync(string pageName)
 
@@ -2393,8 +2321,6 @@ namespace WikipediaKepler.Services.WikipediaManagement.v1
 
             }
 
-
-
             List<CategoryResponseModel> categories = page.Categories.Select(item => new CategoryResponseModel { Title = item.Title.Substring(_CATEGORY_TITLE_INDEX) }).ToList();
 
             return new PageResponseModel
@@ -2410,8 +2336,6 @@ namespace WikipediaKepler.Services.WikipediaManagement.v1
             };
 
         }
-
-
 
         public async Task<IKeplerStream> GetPageTextAsync(string pageName)
 
@@ -2446,8 +2370,6 @@ namespace WikipediaKepler.Services.WikipediaManagement.v1
             };
 
         }
-
-
 
         /// <summary>
 
@@ -2793,8 +2715,6 @@ The following code illustrates a basic unit test for the GetCategoriesByPrefixAs
 ...
 
 private readonly Random _rnd = new Random();
-
-
 
 [Test]
 
@@ -3263,64 +3183,3 @@ Sample 4 - REST Call
 ```
 
 - Try out other API calls with your Kepler service.
-
-On this page
-
-- Lesson 3 - Create a RESTful API
-
-- Before you begin
-
-- Step 1 - Create an empty Kepler service
-
-- Step 2 - Deploy to Relativity
-
-- Step 3 - Test the deployed service
-
-- Step 4 - Remote debugging
-
-- Verify the remote debugger is running
-
-- Remotely debug your code
-
-- Step 5 - Update the service
-
-- Step 6 - Implement methods on an interface
-
-- Step 7 - Logging
-
-- Step 8 - Write a unit test
-
-- Step 9 - Deploy and verify
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

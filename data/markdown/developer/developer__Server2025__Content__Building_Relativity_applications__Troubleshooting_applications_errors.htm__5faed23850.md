@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:30:57+00:00
 sha256: 6084a6301836fa2256b3aa9e376067d6260b6976854b194745715293119e7b4a
 ---
 
-Troubleshoot application errors Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Troubleshoot application errors
 
 # Troubleshoot application errors
 
@@ -260,50 +242,3 @@ SET ApplicationGuid = # ApplicationGuid #
 
 WHERE AssemblyArtifactID = # AssemblyArtifactID #
 ```
-
-On this page
-
-- Troubleshoot application errors
-
-- View application errors
-
-- Stack traces for install event handler failures
-
-- Rerun RunOnce install event handlers
-
-- Can't export due to unassigned event handlers or agents
-
-- Can’t find assembly for event handler on an object type
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

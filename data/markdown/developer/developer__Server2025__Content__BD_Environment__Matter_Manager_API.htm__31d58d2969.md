@@ -2,29 +2,11 @@
 title: "Matter Manager (.NET)"
 url: https://platform.relativity.com/Server2025/Content/BD_Environment/Matter_Manager_API.htm
 collection: developer
-fetched_at: 2026-06-22T06:23:27+00:00
+fetched_at: 2026-06-22T06:23:28+00:00
 sha256: 4a8ab250ff5e41b6a3b7abed7eade317c37d371319a1246162edc3d641c339ec
 ---
 
-Matter Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Matter Manager (.NET)
 
 # Matter Manager (.NET)
 
@@ -212,8 +194,6 @@ public static async Task CreateAsync()
 
     int statusId = 1016892;
 
-
-
     MatterRequest request = new MatterRequest
 
     {
@@ -231,8 +211,6 @@ public static async Task CreateAsync()
         Status = new Securable<ObjectIdentifier>(new ObjectIdentifier { ArtifactID = statusId })
 
     };
-
-
 
     using (Relativity.Environment.V1.Matter.IMatterManager matterManager = serviceFactory.CreateProxy<Relativity.Environment.V1.Matter.IMatterManager>())
 
@@ -293,8 +271,6 @@ public static async Task ReadAsync()
 {
 
     int matterArtifactId = 1016911;
-
-
 
     using (Relativity.Environment.V1.Matter.IMatterManager matterManager = serviceFactory.CreateProxy<Relativity.Environment.V1.Matter.IMatterManager>())
 
@@ -370,8 +346,6 @@ public static async Task UpdateAsync()
 
     int statusId = 1016892;
 
-
-
     MatterRequest request = new MatterRequest
 
     {
@@ -389,8 +363,6 @@ public static async Task UpdateAsync()
         Status = new Securable<ObjectIdentifier>(new ObjectIdentifier { ArtifactID = statusId })
 
     };
-
-
 
     using (Relativity.Environment.V1.Matter.IMatterManager matterManager = serviceFactory.CreateProxy<Relativity.Environment.V1.Matter.IMatterManager>())
 
@@ -446,8 +418,6 @@ public static async Task DeleteAsync()
 
     int matterArtifactId = 1016911;
 
-
-
     using (Relativity.Environment.V1.Matter.IMatterManager matterManager = serviceFactory.CreateProxy<Relativity.Environment.V1.Matter.IMatterManager>())
 
     {
@@ -472,52 +442,3 @@ public static async Task DeleteAsync()
 
 }
 ```
-
-On this page
-
-- Matter Manager (.NET)
-
-- Retrieve a list of available clients
-
-- Retrieve a list of matter statuses
-
-- Create a matter
-
-- Retrieve metadata for a matter
-
-- Update a matter
-
-- Delete a matter
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

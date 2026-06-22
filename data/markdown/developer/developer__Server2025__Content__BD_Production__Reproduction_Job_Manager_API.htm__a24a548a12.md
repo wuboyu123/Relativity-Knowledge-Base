@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:27:51+00:00
 sha256: f29faa89a0eda32c45c15c49548f2446ce7630fbf128381dcc8e1b3b54a5f1ab
 ---
 
-Re-production Job Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Re-production Job Manager (.NET)
 
 # Re-production Job Manager (.NET)
 
@@ -764,25 +746,17 @@ public partial class Example
 
         int workspaceId = 12345;            // Workspace Re-productions exist in
 
-
-
         var userEmail = "user@test.com";    // User's login
 
         var password = "abc123456!";        // User's password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
         ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IReproductionJobManager reproductionJobManager = serviceFactory.CreateProxy<IReproductionJobManager>())
 
@@ -819,8 +793,6 @@ public partial class Example
         }
 
     }
-
-
 
 }
 ```
@@ -898,25 +870,17 @@ public partial class Example
 
         int reproductionJobId = 123;        // Re-production JobID
 
-
-
         var userEmail = "user@test.com";    // User's login
 
         var password = "abc123456!";        // User's password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
         ServiceFactorySettings settings = new ServiceFactorySettings(new Uri(relativityRestUri), usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IReproductionJobManager reproductionJobManager = serviceFactory.CreateProxy<IReproductionJobManager>())
 
@@ -928,8 +892,6 @@ public partial class Example
 
                 ReproductionStatusResult reproductionStatusResult = await reproductionJobManager.GetReproductionStatusByReproductionJobIDAsync(workspaceId, reproductionJobId);
 
-
-
                 Console.WriteLine(reproductionStatusResult.ReproductionStatus);
 
                 Console.WriteLine(reproductionStatusResult.Errors);
@@ -937,8 +899,6 @@ public partial class Example
                 Console.WriteLine(reproductionStatusResult.Warnings);
 
                 Console.WriteLine(reproductionStatusResult.Messages);
-
-
 
                 foreach (ProductionStatusResult result in reproductionStatusResult.ProductionStatusResults)
 
@@ -978,48 +938,3 @@ public partial class Example
 
 }
 ```
-
-On this page
-
-- Re-production Job Manager (.NET)
-
-- Fundamentals for the Re-production Manager API
-
-- Create a re-production job
-
-- Retrieve re-production job IDs
-
-- Retrieve the status for a re-production job
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:29:54+00:00
 sha256: 26b1891495bfd71e003c48ce5cba4fe8bca9cd7337f79c14b3d58c53b6c6ec2c
 ---
 
-Import documents with native files Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Import documents with native files
 
 # Import documents with native files
 
@@ -92,23 +74,15 @@ static void ImportDocument()
 
      Int32 identifyFieldArtifactID = 1003667;
 
-
-
      String relativityUserName = "jane.doe@relativity.com";
 
      String relativityPassword = "<your password>";
 
      String relativityWebAPIUrl = "http://localhost/Relativitywebapi/";
 
-
-
      ImportAPI iapi = new ImportAPI(relativityUserName, relativityPassword, relativityWebAPIUrl);
 
-
-
      var importJob = iapi.NewNativeDocumentImportJob();
-
-
 
      importJob.OnMessage += ImportJobOnMessage;
 
@@ -120,13 +94,9 @@ static void ImportDocument()
 
      importJob.Settings.ExtractedTextFieldContainsFilePath = false;
 
-
-
      // Indicates file path for the native file.
 
      importJob.Settings.NativeFilePathSourceFieldName = "Native File";
-
-
 
      // Indicates the column containing the ID of the parent document.
 
@@ -146,21 +116,13 @@ static void ImportDocument()
 
      importJob.Settings.OverwriteMode = OverwriteModeEnum.Append;
 
-
-
      // Specify the ArtifactID of the document identifier field, such as a control number.
 
      importJob.Settings.IdentityFieldId = identifyFieldArtifactID;
 
-
-
      importJob.SourceData.SourceData = GetDocumentDataTable().CreateDataReader();
 
-
-
      Console.WriteLine("Executing import...");
-
-
 
      importJob.Execute();
 
@@ -200,8 +162,6 @@ static void ImportJobOnMessage(Status status)
 
 }
 
-
-
 static void ImportJobOnFatalException(JobReport jobReport)
 
 {
@@ -209,8 +169,6 @@ static void ImportJobOnFatalException(JobReport jobReport)
      Console.WriteLine("Fatal Error: {0}", jobReport.FatalException);
 
 }
-
-
 
 static void ImportJobOnComplete(JobReport jobReport)
 
@@ -249,8 +207,6 @@ public static DataTable GetDocumentDataTable()
 
      DataTable table = new DataTable();
 
-
-
      // The document identifer column name must match the field name in the workspace.
 
      table.Columns.Add("Doc ID Beg", typeof(string));
@@ -263,8 +219,6 @@ public static DataTable GetDocumentDataTable()
 
      table.Rows.Add("text", "C:\\text.txt", "video");
 
-
-
      return table;
 
 }
@@ -273,48 +227,3 @@ public static DataTable GetDocumentDataTable()
 ## Upload custom assemblies
 
 In the Relativity, upload any custom assemblies for your application and the Import API assemblies as resource files. You must manually add the Import API assemblies in order for your custom application to function properly. For more information, see Resource files on the Relativity Documentation site.
-
-On this page
-
-- Import documents with native files
-
-- Create a document import job
-
-- Write messages and errors
-
-- Create a DataTable object for a document import job
-
-- Upload custom assemblies
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:32:15+00:00
 sha256: a6fa93d0a771bfa0567113a7bb64dff386d105e13e6a6df8b20719da83d8e14e
 ---
 
-Create a new Relativity Script Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Create a new Relativity Script
 
 # Create a new Relativity Script
 
@@ -67,44 +49,3 @@ To create a new script in a single a workspace, perform the following steps:
 The script will now be available under the Scripts tab. To run the script from the Scripts tab, click the Run link next to the script name.
 
 The script information is populated by the properties entered within the body of the XML. See Script properties for more details.
-
-On this page
-
-- Create a new Relativity Script
-
-- Relativity Script Library
-
-- Workspace scripts
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

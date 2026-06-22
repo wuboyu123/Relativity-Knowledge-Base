@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:23:22+00:00
 sha256: a64f1263f78087b6fd0f222b4e394fd61ab33606771d168ce80f78134405bd47
 ---
 
-Batch Sets Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Batch Sets Manager (REST)
 
 # Batch Sets Manager (REST)
 
@@ -114,8 +96,6 @@ public async Task<BatchSet> ReadBatchSetViaREST(int workspaceID, int batchSetID)
 
         client.DefaultRequestHeaders.Add("X-Kepler-Version", "2.0");
 
-
-
         var url = $"http://localhost/Relativity.REST/api/relativity-review/v1/workspaces/{workspaceID}/batch-sets/{batchSetID}";
 
         var response = await client.GetAsync(url);
@@ -127,8 +107,6 @@ public async Task<BatchSet> ReadBatchSetViaREST(int workspaceID, int batchSetID)
         result = JsonConvert.DeserializeObject<BatchSet>(content);
 
     }
-
-
 
     return result;
 
@@ -699,70 +677,3 @@ Copy
 1
 500
 ```
-
-On this page
-
-- Batch Sets Manager (REST)
-
-- Guidelines for the Batch Sets Manager service
-
-- URLs
-
-- Client code sample
-
-- Create a batch set
-
-- Request field descriptions
-
-- Sample JSON request
-
-- Response field descriptions
-
-- Sample JSON response
-
-- Read a batch set
-
-- Sample JSON response
-
-- Update a batch set
-
-- Sample JSON request
-
-- Delete a batch set
-
-- Create batches
-
-- Purge batches
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,23 +6,7 @@ fetched_at: 2026-06-22T06:33:24+00:00
 sha256: 8a0e109ca7c86653030a09d52d02a32c04e846abfb57693652ef17500131cc5d
 ---
 
-Additional resources Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Additional resources
 
 # Additional resources
 
@@ -47,44 +31,3 @@ Whether you're an experienced Relativity partner, a third-party software develop
 ## Other Resources
 
 - Documentation archives - includes links to previous versions of the Relativity Developers site for working with other versions of the platform.
-
-On this page
-
-- Additional resources
-
-- Developer Support
-
-- Other Resources
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

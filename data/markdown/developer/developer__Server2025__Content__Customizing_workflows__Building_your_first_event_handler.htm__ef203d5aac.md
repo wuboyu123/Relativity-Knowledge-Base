@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:24:48+00:00
 sha256: a6f94cc6e8cfc8f73f5654fbe94ec3d473177bb18a1f3956838a1958197a518a
 ---
 
-Build your first event handler Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Build your first event handler
 
 # Build your first event handler
 
@@ -270,46 +252,3 @@ System.IO.FileNotFoundException: Could not load file or assembly 'Relativity.Obj
 - Add Relativity.ObjectManager.dll as a Resource File, associated with your application.
 
 - Go to the Relativity Application view of your application, and click Push to Library .
-
-On this page
-
-- Build your first event handler
-
-- Before you begin
-
-- Build an event handler
-
-- Troubleshooting errors with RelativityLogs
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

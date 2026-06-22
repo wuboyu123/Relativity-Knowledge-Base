@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:54+00:00
 sha256: ea5576be6e9864b3ea50774cb63995ec62f6437a82b286833876ab29725e60a6
 ---
 
-Load pipeline Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Load pipeline
 
 # Load pipeline
 
@@ -162,15 +144,11 @@ Copy
 
     var eventHandlers = {};
 
-
-
     eventHandlers[eventNames.EVENT_HANDLERS_REGISTERED] = function() {
 
         console.log("Inside EVENT_HANDLERS_REGISTERED event handler");
 
     };
-
-
 
     return eventHandlers;
 
@@ -235,8 +213,6 @@ Copy
 
     var eventHandlers = {};
 
-
-
     eventHandlers[eventNames.REPLACE_READ] = function(
 
         workspaceId,
@@ -252,8 +228,6 @@ Copy
         return convenienceApi.promiseFactory.resolve({ modelData: data });
 
     };
-
-
 
     return eventHandlers;
 
@@ -342,8 +316,6 @@ Copy
 
     var eventHandlers = {};
 
-
-
     eventHandlers[eventNames.REPLACE_READ] = function(
 
         workspaceId,
@@ -358,8 +330,6 @@ Copy
 
         var readDataPromise;
 
-
-
         function someApiCall(workspaceId, artifactId) {
 
             return convenienceApi.promiseFactory.resolve({
@@ -369,8 +339,6 @@ Copy
             });
 
         }
-
-
 
         if (isViewMode) {
 
@@ -405,8 +373,6 @@ Copy
         return readDataPromise;
 
     };
-
-
 
     return eventHandlers;
 
@@ -459,8 +425,6 @@ Copy
 
      var eventHandlers = {};
 
-
-
      eventHandlers[eventNames.REPLACE_GET_NEW_OBJECT_INSTANCE] = function() {
 
           console.log("Inside REPLACE_GET_NEW_OBJECT_INSTANCE event handler");
@@ -470,8 +434,6 @@ Copy
           return newObjectData;
 
      };
-
-
 
      return eventHandlers;
 
@@ -512,8 +474,6 @@ Copy
 
     var eventHandlers = {};
 
-
-
     eventHandlers[eventNames.TRANSFORM_LAYOUT] = function(layoutData) {
 
         console.log("Inside TRANSFORM_LAYOUT event handler");
@@ -521,8 +481,6 @@ Copy
         console.log(JSON.stringify(layoutData));
 
     };
-
-
 
     return eventHandlers;
 
@@ -572,8 +530,6 @@ Copy
 
     var eventHandlers = {};
 
-
-
     eventHandlers[eventNames.HYDRATE_LAYOUT] = function(layoutData, objectInstanceData) {
 
         console.log("Inside HYDRATE_LAYOUT event handler");
@@ -583,8 +539,6 @@ Copy
         console.log(JSON.stringify(objectInstanceData));
 
     };
-
-
 
     return eventHandlers;
 
@@ -636,15 +590,11 @@ Copy
 
     var eventHandlers = {};
 
-
-
     eventHandlers[eventNames.HYDRATE_LAYOUT_COMPLETE] = function() {
 
         console.log("Inside HYDRATE_LAYOUT_COMPLETE event handler");
 
     };
-
-
 
     return eventHandlers;
 
@@ -896,8 +846,6 @@ eventHandlers[eventName.OVERRIDE_PICKER_DATASOURCE] = function(fields) {
 
                 const dataProvider = convenienceApi.itemListDataProviderFactory.create("object", dataProviderOptions);
 
-
-
                 field.pickerDataSource = {
 
                     customItemListDataProvider: dataProvider
@@ -1035,8 +983,6 @@ eventHandlers[eventName.OVERRIDE_PICKER_DATASOURCE] = function(fields) {
 
 }
 
-
-
 function getItemListMetadataForMyField(workspaceId, objectTypeId, viewArtifactId) {
 
     return makeApiCall() // This assumes makeApiCall() is defined somewhere else, and returns data in the correct form
@@ -1144,8 +1090,6 @@ Copy
 
     var eventHandlers = {};
 
-
-
     eventHandlers[eventNames.REPLACE_FILE_ACTIONS] = function(fileFields) {
 
         var fileField = !!fileFields && !!fileFields.length && fileFields[0];
@@ -1159,8 +1103,6 @@ Copy
         }
 
     };
-
-
 
     return eventHandlers;
 
@@ -1600,8 +1542,6 @@ Copy
 
     var eventHandlers = {};
 
-
-
     eventHandlers[eventNames.REPLACE_OBTAIN_ADDITIONAL_DATA] = function(
 
         fieldsRequiringAdditionalData,
@@ -1617,8 +1557,6 @@ Copy
         // If we return this value without modifying it, the default behavior will be maintained.
 
         var additionalDataFactories = convenienceApi.additionalData.getDefaultFactoriesForAdditionalData(workspaceId, fieldsRequiringAdditionalData);
-
-
 
         // Override just the factory for the field we're interested in
 
@@ -1640,13 +1578,9 @@ Copy
 
         };
 
-
-
         return additionalDataFactories;
 
     };
-
-
 
     return eventHandlers;
 
@@ -1873,15 +1807,11 @@ Copy
 
     var eventHandlers = {};
 
-
-
     eventHandlers[eventNames.POST_OBTAIN_ADDITIONAL_DATA] = function() {
 
         console.log("Inside POST_OBTAIN_ADDITIONAL_DATA event handler");
 
     };
-
-
 
     return eventHandlers;
 
@@ -1932,19 +1862,11 @@ Copy
 
     var eventHandlers = {};
 
-
-
-
-
     eventHandlers[eventNames.CREATE_ACTION_BAR] = function() {
 
         console.log("Inside CREATE_ACTION_BAR event handler");
 
         convenienceApi.actionBar.createDefaultActionBar(); // create default action bar
-
-
-
-
 
         var button = document.createElement("button");
 
@@ -1959,10 +1881,6 @@ Copy
         });
 
     };
-
-
-
-
 
     return eventHandlers;
 
@@ -2016,27 +1934,15 @@ Copy
 
     var eventHandlers = {};
 
-
-
-
-
     eventHandlers[eventNames.UPDATE_ACTION_BAR] = function() {
 
         console.log("Inside UPDATE_ACTION_BAR event handler");
-
-
-
-
 
         var button = document.getElementById("testButton"); // update the text of the extra button added in CREATE_ACTION_BAR
 
         button.textContent = "Updated Button";
 
     };
-
-
-
-
 
     return eventHandlers;
 
@@ -2100,17 +2006,9 @@ Copy
 
     var eventHandlers = {};
 
-
-
-
-
     eventHandlers[eventNames.CREATE_CONSOLE] = function() {
 
         console.log( "Inside CREATE_CONSOLE event handler" );
-
-
-
-
 
         var button = document.createElement("button"); // add a button to the console
 
@@ -2125,10 +2023,6 @@ Copy
         });
 
     };
-
-
-
-
 
     return eventHandlers;
 
@@ -2182,27 +2076,15 @@ Copy
 
     var eventHandlers = {};
 
-
-
-
-
     eventHandlers[eventNames.UPDATE_CONSOLE] = function() {
 
         console.log( "Inside UPDATE_CONSOLE event handler" );
-
-
-
-
 
         var button = document.getElementById("testConsoleButton"); // update the text of the extra button added in CREATE_CONSOLE
 
         button.textContent = "Updated Button";
 
     };
-
-
-
-
 
     return eventHandlers;
 
@@ -2250,15 +2132,11 @@ Copy
 
     var eventHandlers = {};
 
-
-
     eventHandlers[eventNames.PAGE_LOAD_COMPLETE] = function() {
 
         console.log("Inside PAGE_LOAD_COMPLETE event handler");
 
     };
-
-
 
     return eventHandlers;
 
@@ -2273,78 +2151,3 @@ Copy
 1
 function()
 ```
-
-On this page
-
-- Load pipeline
-
-- Load pipeline workflow
-
-- Load pipeline event handlers
-
-- Ambient variables
-
-- eventHandlersRegistered
-
-- replaceRead
-
-- replaceGetNewObjectInstance
-
-- transformLayout
-
-- hydrateLayout
-
-- hydrateLayoutComplete
-
-- overridePickerDataSource
-
-- Examples
-
-- replaceFileActions
-
-- replaceObtainAdditionalData
-
-- postObtainAdditionalData
-
-- createActionBar
-
-- updateActionBar
-
-- CreateConsole
-
-- updateConsole
-
-- pageLoadComplete
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

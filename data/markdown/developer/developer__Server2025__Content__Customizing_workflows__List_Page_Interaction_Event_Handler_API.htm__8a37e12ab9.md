@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:24:28+00:00
 sha256: aee776eed654ff5cad60f45f5ea72e103d56d58c47338ddb8188750fef2065c4
 ---
 
-List Page Interaction Event Handler API Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+List Page Interaction Event Handler API
 
 # List Page Interaction Event Handler API
 
@@ -2919,8 +2901,6 @@ define(function() {
 
         });
 
-
-
         function viewChange(data) {
 
             // Next, display it when view changes.
@@ -3253,8 +3233,6 @@ define(function () {
 
     "use strict";
 
-
-
     function testHandler(api) {
 
         var _api = api, _widgetId, _viewIdToShow = 1188142,
@@ -3297,15 +3275,11 @@ define(function () {
 
         var reviewQueues, viewId;
 
-
-
         function initWidget(widgetManager) {
 
             var scope = widgetManager.scope;
 
             scope.noData = true;
-
-
 
             function checkAndSetErrorFromServer(data) {
 
@@ -3334,8 +3308,6 @@ define(function () {
                 return hasError;
 
             }
-
-
 
             // Called by EventHandler, triggers watcher
 
@@ -3387,23 +3359,17 @@ define(function () {
 
                 scope.resultSet = data.Results || [];
 
-
-
                 widgetManager.hideLoading();
 
             };
 
         }
 
-
-
         function viewChange(activeView) {
 
             widgetViewChanged(activeView);
 
         }
-
-
 
         function widgetViewChanged(activeView) {
 
@@ -3420,8 +3386,6 @@ define(function () {
             }
 
         }
-
-
 
         function getData() {
 
@@ -3445,8 +3409,6 @@ define(function () {
 
         }
 
-
-
         function getDataSource(parameters) {
 
             return {
@@ -3464,8 +3426,6 @@ define(function () {
             }
 
         }
-
-
 
         function outboundTransformer() {
 
@@ -3491,8 +3451,6 @@ define(function () {
 
                         folderCondition;
 
-
-
                     if (typeof payload.filter.getFullTree === "function") {
 
                         treeNames = payload.filter.getTreeNames();
@@ -3503,15 +3461,11 @@ define(function () {
 
                     }
 
-
-
                     filters = filterTree ? filterTree.getAllOperands() : [];
 
                     // WARNING: find() method doesn't supproted by IE11. Used only for testing purposes in chrome
 
                     folderCondition = filters.find(function (row) { return !!row && row.field === "Folder Id"; });
-
-
 
                     return _api.promise.when({
 
@@ -3569,8 +3523,6 @@ define(function () {
 
         }
 
-
-
         return {
 
             viewChange: viewChange
@@ -3578,8 +3530,6 @@ define(function () {
         };
 
     }
-
-
 
     return testHandler;
 
@@ -3734,92 +3684,3 @@ dataSource: {
 
 }
 ```
-
-On this page
-
-- List Page Interaction Event Handler API
-
-- JavaScript structure for event handlers
-
-- Summary of JavaScript APIs
-
-- Initializer API
-
-- Event-specific APIs
-
-- General APIs
-
-- Initializer API details
-
-- Event-specific API details
-
-- Page Navigation API
-
-- New Item Button API
-
-- Cell Formatter API
-
-- Data Source Override API
-
-- View API
-
-- Widget Menu Customization API
-
-- General APIs details
-
-- Initialization information
-
-- startup info object
-
-- Promise API
-
-- Events API
-
-- Kepler Provider API
-
-- Common Utilities API
-
-- Modal API
-
-- Toolbar API
-
-- CustomWidget API
-
-- Additional information about dataSource objects
-
-- dataSource.inboundTransformer
-
-- dataSource.outboundTransformer
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

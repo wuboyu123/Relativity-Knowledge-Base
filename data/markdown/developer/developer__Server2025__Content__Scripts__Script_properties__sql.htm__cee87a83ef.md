@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:32:41+00:00
 sha256: fa87252a5f0592a1a685271301b677660a2ad90e89c0b63f837c83e59953da00
 ---
 
-sql Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+sql
 
 # sql
 
@@ -161,52 +143,3 @@ declare @field_value varchar(100) = '#field_value#'
 
 if (@field_value = 'Yes') ..
 ```
-
-On this page
-
-- sql
-
--
-
-- Hierarchy
-
-- Syntax
-
-- Attributes
-
-- Input
-
-- Example
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

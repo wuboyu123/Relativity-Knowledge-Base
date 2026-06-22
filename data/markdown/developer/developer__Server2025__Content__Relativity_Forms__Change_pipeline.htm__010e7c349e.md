@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:56+00:00
 sha256: 5595f74c60a17fd1dc203346aa1d1e6c85d7d9885d2aaa16c1478c16c1835524
 ---
 
-Change pipeline Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Change pipeline
 
 # Change pipeline
 
@@ -98,15 +80,11 @@ Copy
 
      var eventHandlers = {};
 
-
-
      eventHandlers[eventNames.PAGE_INTERACTION] = function() {
 
          console.log( "Inside PAGE_INTERACTION event handler" );
 
     };
-
-
 
      return eventHandlers;
 
@@ -189,15 +167,11 @@ Copy
 
      var eventHandlers = {};
 
-
-
      eventHandlers[eventNames.VALIDATION] = function() {
 
          console.log( "Inside VALIDATION event handler" );
 
     };
-
-
 
      return eventHandlers;
 
@@ -315,15 +289,11 @@ function validationHandler(modelData, event, currentValidationState) {
 
       var isValid = (someIntegerFieldValue % 2 === 0);
 
-
-
       if (!isValid) {
 
           var errorMessage =  "Integer field value " + someIntegerFieldValue.toString() +  " must be even." ;
 
           var validationError = convenienceApi.validation.getFailedFieldObject(someIntegerFieldId, errorMessage);
-
-
 
           // This validation error created by the event handler is applied
 
@@ -337,50 +307,3 @@ function validationHandler(modelData, event, currentValidationState) {
 
  }
 ```
-
-On this page
-
-- Change pipeline
-
-- Change pipeline workflow
-
-- Change pipeline event handlers
-
-- Ambient variables
-
-- pageInteraction
-
-- validation
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

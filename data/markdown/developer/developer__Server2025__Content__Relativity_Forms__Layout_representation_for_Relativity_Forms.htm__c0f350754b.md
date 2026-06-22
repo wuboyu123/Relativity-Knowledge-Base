@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:32:07+00:00
 sha256: a10afbfe5fc8c4239cb6fa67aaa92f4719c3ba1dbbda06b491dec7feef84e3f4
 ---
 
-Layout representation for Relativity forms Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Layout representation for Relativity forms
 
 # Layout representation for Relativity forms
 
@@ -557,8 +539,6 @@ Copy
 
   let customValue = null;
 
-
-
   modalOpenerConfig.preventDefaultRefocus = true; // Prevent the default focus action
 
   const handleValue = function(action) {
@@ -592,8 +572,6 @@ Copy
     }
 
   };
-
-
 
   return convenienceApi.modalService.openSingleListPickerModal(modalModel).then(handleValue);
 
@@ -735,60 +713,3 @@ Wrapping
 Boolean
 
 Determines if the column values should be able to wrap lines.
-
-On this page
-
-- Layout representation for Relativity forms
-
-- Layout structure overview
-
-- Summary of Layout components
-
-- JSON data contracts
-
-- Group
-
-- Category
-
-- Field
-
-- CustomText
-
-- ItemList
-
-- View
-
-- ViewField
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

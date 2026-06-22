@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:24:10+00:00
 sha256: 9e8e322f42b031dd73c769b6c9b4e6936a9cf73635ef862fc8bef445254a4951
 ---
 
-Field Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Field Manager (REST)
 
 # Field Manager (REST)
 
@@ -310,8 +292,6 @@ public async Task<int?> CreateFixedLengthField(")"{
 
         client.BaseAddress = new Uri(""https://localhost/");
 
-
-
         int workspaceId = 1018486;
 
         string fieldName ="Field Name"int objectTypeArtifactId= 1035231;
@@ -333,8 +313,6 @@ public async Task<int?> CreateFixedLengthField(")"{
         int order = 150;
 
         string shortcutKey ="PageDown"";
-
-
 
         string inputJSON = $""{\n\t\"fieldRequest\":{\n\t    \"Name\": {{fieldName}},\n\t\t\"ObjectType\": {\n\t            \"ArtifactID\": {{objectTypeArtifactId}},\n\t            \"ArtifactTypeID\": {{objectTypeArtifactTypeId}},\n\t            \"Name\": {{objectTypeName}}\n\t    },\n\t    \"Length\": {{length}},\n\t    \"Source\": \"\",\n\t    \"IsRequired\": false,\n\t    \"IncludeInTextIndex\": false,\n\t    \"HasUnicode\": false,\n\t    \"AllowHtml\": false,\n\t    \"OpenToAssociations\": false,\n\t    \"PropagateTo\": [],\n\t    \"IsLinked\": false,\n\t    \"FilterType\": \"None\",\n\t    \"AllowSortTally\": false,\n\t    \"Width\": null, \n\t    \"AllowGroupBy\": false,\n\t    \"AllowPivot\": false,\n\t    \"Wrapping\": false,\n\t    \"IsRelational\": true,\n\t\t\"FriendlyName\": {{friendlyName}},\n\t\t\"ImportBehavior\": \"None\",\n\t\t\"PaneIcon\": {\n\t\t\t\"FileName\": {{imageFilename}},\n\t\t\t\"ImageBase64\": {{imageBase64}}\n\t\t},\n\t\t\"Order\": {{order}},\n\t\t\"RelationalView\":{\n\t    \t\"Value\":{\n\t    \t\t\"ArtifactID\": {{objectViewArtifactID}},\n\t    \t\t\"Guids\": {{guids}}\n\t    \t}\n\t    },\n\t    \"Shortcut\":{\n\t       \"ModifierKeys\": [],\n\t       \"MainKey\": \"\",\n\t},\n\t     \"RelativityApplications\": [],\n\t    \"Keywords\": \"\",\n        \"Notes\": \"\"\n\t}\n}"";
 
@@ -714,8 +692,6 @@ Copy
 
       "PropagateTo":[
 
-
-
       ],
 
       "IsLinked":false,
@@ -777,8 +753,6 @@ Copy
       },
 
       "RelativityApplications":[
-
-
 
       ],
 
@@ -1391,8 +1365,6 @@ View the JSON response for a basic metadata request Copy
 
       "ModifierKeys": [
 
-
-
       ],
 
       "MainKey": ""
@@ -1404,8 +1376,6 @@ View the JSON response for a basic metadata request Copy
       "HasSecuredItems":false,
 
       "ViewableItems":[
-
-
 
       ]
 
@@ -1423,8 +1393,6 @@ View the JSON response for a basic metadata request Copy
 
       "Guids":[
 
-
-
       ]
 
    },
@@ -1436,8 +1404,6 @@ View the JSON response for a basic metadata request Copy
       "ArtifactID":1023652,
 
       "Guids":[
-
-
 
       ]
 
@@ -1454,8 +1420,6 @@ View the JSON response for a basic metadata request Copy
    "ArtifactID":1043204,
 
    "Guids":[
-
-
 
    ]
 
@@ -1682,8 +1646,6 @@ View the JSON response for an extended metadata request Copy
 
       "ModifierKeys": [
 
-
-
       ],
 
       "MainKey": ""
@@ -1695,8 +1657,6 @@ View the JSON response for an extended metadata request Copy
       "HasSecuredItems":false,
 
       "ViewableItems":[
-
-
 
       ]
 
@@ -1714,8 +1674,6 @@ View the JSON response for an extended metadata request Copy
 
       "Guids":[
 
-
-
       ]
 
    },
@@ -1727,8 +1685,6 @@ View the JSON response for an extended metadata request Copy
       "ArtifactID":1023652,
 
       "Guids":[
-
-
 
       ]
 
@@ -1802,8 +1758,6 @@ View the JSON response for an extended metadata request Copy
 
          "Reason":[
 
-
-
          ]
 
       },
@@ -1820,8 +1774,6 @@ View the JSON response for an extended metadata request Copy
 
          "Reason":[
 
-
-
          ]
 
       }
@@ -1833,8 +1785,6 @@ View the JSON response for an extended metadata request Copy
    "ArtifactID":1043204,
 
    "Guids":[
-
-
 
    ]
 
@@ -2091,8 +2041,6 @@ Copy
         "Shortcut": {
 
            "ModifierKeys": [
-
-
 
            ],
 
@@ -2465,8 +2413,6 @@ Copy
         "Shortcut": {
 
            "ModifierKeys": [
-
-
 
            ],
 
@@ -4599,86 +4545,3 @@ Copy
 
 ]
 ```
-
-On this page
-
-- Field Manager (REST)
-
-- Guidelines for the Field Manager service
-
-- URLs
-
-- Supported field types
-
-- Helper endpoints
-
-- Relational fields
-
-- Overlay behavior
-
-- Filter types
-
-- Source property
-
-- Formatting fields
-
-- Client code sample
-
-- Postman sample file
-
-- Create a field
-
-- Read a field
-
-- Update a field
-
-- Delete a field
-
-- Retrieve available object types
-
-- Retrieve available views for an object type
-
-- Retrieve available fields for propagation
-
-- Retrieve object types for a single object field
-
-- Retrieve object types for a multiple object field
-
-- Retrieve keyboard shortcuts
-
-- Retrieve valid keys
-
-- Retrieve the order of relational field icons
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

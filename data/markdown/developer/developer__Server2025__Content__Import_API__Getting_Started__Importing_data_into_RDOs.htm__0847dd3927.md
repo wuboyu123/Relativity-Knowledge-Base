@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:29:50+00:00
 sha256: 66bbfde2db201cc39e5db5f53adceefccd3e7bad351ece863289de842a45aea0
 ---
 
-Import data into RDOs Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Import data into RDOs
 
 # Import data into RDOs
 
@@ -89,31 +71,21 @@ static void ImportObject()
 
      String artifactTypeName = "TestObject";
 
-
-
      String relativityUserName = "<your Relativity username>";
 
      String relativityPassword = "<your password>";
 
      String relativityWebAPIUrl = "http://localhost/Relativitywebapi/";
 
-
-
      ImportAPI iapi = new ImportAPI(relativityUserName, relativityPassword, relativityWebAPIUrl);
-
-
 
      // Pass the ArtifactID of the workspace. You add your RDOs to this workspace.
 
      var artifactTypeList = iapi.GetUploadableArtifactTypes(workspaceArtifactID);
 
-
-
       // Use this code to choose type of object that you want to add.
 
      var desiredArtifactType = artifactTypeList.Single(at => at.Name.Equals(artifactTypeName));
-
-
 
      var importJob = iapi.NewObjectImportJob(desiredArtifactType.ID);
 
@@ -121,19 +93,13 @@ static void ImportObject()
 
      importJob.OnFatalException += ImportJobOnFatalException;
 
-
-
      // Use this setting for Name field of the object.
 
      importJob.Settings.SelectedIdentifierFieldName="Name";
 
-
-
      // Specifies the ArtifactID of a document identifier field, such as a control number.
 
      importJob.Settings.IdentityFieldId = identityFieldArtifactID;
-
-
 
      importJob.Settings.CaseArtifactId = workspaceArtifactID;
 
@@ -141,11 +107,7 @@ static void ImportObject()
 
      importJob.SourceData.SourceData = GetObjectDataTable().CreateDataReader();
 
-
-
      Console.WriteLine("Executing import...");
-
-
 
      importJob.Execute();
 
@@ -183,8 +145,6 @@ static void ImportJobOnMessage(Status status)
 
 }
 
-
-
 static void ImportJobOnFatalException(JobReport jobReport)
 
 {
@@ -192,8 +152,6 @@ static void ImportJobOnFatalException(JobReport jobReport)
      Console.WriteLine("Fatal Error: {0}", jobReport.FatalException);
 
 }
-
-
 
 static void ImportJobOnComplete(JobReport jobReport)
 
@@ -231,15 +189,11 @@ public static DataTable GetObjectDataTable()
 
      DataTable table = new DataTable();
 
-
-
      // Column names must match the object field name in the workspace.
 
      table.Columns.Add("Name", typeof(string));
 
      table.Rows.Add("TestObject");
-
-
 
      return table;
 
@@ -249,48 +203,3 @@ public static DataTable GetObjectDataTable()
 ## Upload custom assemblies
 
 In the Relativity, upload any custom assemblies for your application and the Import API assemblies as resource files. You must manually add the Import API assemblies in order for your custom application to function properly. For more information, see Resource files on the Relativity Documentation site.
-
-On this page
-
-- Import data into RDOs
-
-- Create an RDO import job
-
-- Write messages and errors
-
-- Create a DataTable object
-
-- Upload custom assemblies
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

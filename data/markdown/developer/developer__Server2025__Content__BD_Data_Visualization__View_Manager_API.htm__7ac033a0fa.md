@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:23:30+00:00
 sha256: 052c1d869f7d971a44dce0121990bb6dbe05b64cefe14148d7f3e4a928e31eb0
 ---
 
-View Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+View Manager (.NET)
 
 # View Manager (.NET)
 
@@ -299,8 +281,6 @@ public async Task<bool> CreateAsync(IHelper helper)
 
         }
 
-
-
         return success;
 
     }
@@ -438,8 +418,6 @@ public async Task<bool> UpdateAsync(IHelper helper, int viewToUpdateArtifactID)
             ViewResponse view = await proxy.ReadAsync(this.SampleWorkspace_ID, viewToUpdateArtifactID);
 
             ViewRequest viewRequest = new ViewRequest(view); //create request based on response
-
-
 
             //update fields in request
 
@@ -721,54 +699,3 @@ public async Task<bool> GetObjectTypesAsync(IHelper helper)
 
 }
 ```
-
-On this page
-
-- View Manager (.NET)
-
-- Fundamentals for the View Manager API
-
-- Create a view in a workspace
-
-- Retrieve information about a view
-
-- Update the properties of a view
-
-- Retrieve the access status of a user
-
-- Retrieve users for view ownership
-
-- Retrieve a list of object types in the workspace
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

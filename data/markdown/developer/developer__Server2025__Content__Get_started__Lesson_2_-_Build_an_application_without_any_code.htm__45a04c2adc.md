@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:24:53+00:00
 sha256: 226dd4547c8bb5923146874eaaf947999f2c25260d5b9653e43593ab568bee8f
 ---
 
-Lesson 2 - Build an application without any code Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Lesson 2 - Build an application without any code
 
 # Lesson 2 - Build an application without any code
 
@@ -649,64 +631,3 @@ They are unique to each workspace.
 - Try out the features of your application in the new workspace.
 
 Your application is ready for use.
-
-On this page
-
-- Lesson 2 - Build an application without any code
-
-- Step 1 - Create a new workspace through the Relativity UI
-
-- Step 2 - Create an application in the workspace
-
-- Step 3 - Create object types for your application
-
-- Step 4 - Create fields for the application
-
-- Step 5 - Update layouts to include fields for the application
-
-- Step 6 - Update views to include fields for the application
-
-- Step 7 - Set up tabs for the application
-
-- Step 8 - Add sample data through the Relativity UI
-
-- Step 9 - Create a dashboard
-
-- Step 10 - Finalize and export application
-
-- Step 11 - Install the application in a workspace
-
-- Step 12 - Verify that the application built
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

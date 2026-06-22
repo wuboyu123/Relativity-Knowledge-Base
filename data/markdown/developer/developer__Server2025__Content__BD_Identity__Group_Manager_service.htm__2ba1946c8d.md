@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:26:28+00:00
 sha256: 31243d12dd88e08c3575941b7411d2a38390b978fae224790860133de8e6ef3a
 ---
 
-Group Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Group Manager (REST)
 
 # Group Manager (REST)
 
@@ -184,21 +166,15 @@ private HttpClient GetHttpClient()
 
     HttpClient httpClient = new HttpClient();
 
-
-
     httpClient.BaseAddress = new Uri("https://localhost/");
 
     httpClient.DefaultRequestHeaders.Add("X-CSRF-Header", "-");
 
     httpClient.DefaultRequestHeaders.Add("Authorization", "Basic " + Convert.ToBase64String(Encoding.GetEncoding("ISO-8859-1").GetBytes("test.user@mydomain.com:Password")));
 
-
-
     return httpClient;
 
 }
-
-
 
 public async Task<List<int>> GetEligibleClientIDs()
 
@@ -230,13 +206,9 @@ public async Task<List<int>> GetEligibleClientIDs()
 
     };
 
-
-
     string payloadString = JsonConvert.SerializeObject(payload);
 
     var content = new StringContent(payloadString, Encoding.UTF8, "application/json");
-
-
 
     HttpClient httpClient = GetHttpClient();
 
@@ -244,11 +216,7 @@ public async Task<List<int>> GetEligibleClientIDs()
 
     string resultString = await response.Content.ReadAsStringAsync();
 
-
-
     var clientIDs = new List<int>();
-
-
 
     dynamic result = JObject.Parse(resultString) as JObject;
 
@@ -262,13 +230,9 @@ public async Task<List<int>> GetEligibleClientIDs()
 
     }
 
-
-
     return clientIDs;
 
 }
-
-
 
 public async Task<int> Create(int clientID)
 
@@ -302,13 +266,9 @@ public async Task<int> Create(int clientID)
 
     };
 
-
-
     string payloadString = JsonConvert.SerializeObject(payload);
 
     var content = new StringContent(payloadString, Encoding.UTF8, "application/json");
-
-
 
     HttpClient httpClient = GetHttpClient();
 
@@ -316,13 +276,9 @@ public async Task<int> Create(int clientID)
 
     string resultString = await message.Content.ReadAsStringAsync();
 
-
-
     dynamic result = JObject.Parse(resultString) as JObject;
 
     int artifactID = result.ArtifactID;
-
-
 
     return artifactID;
 
@@ -2000,74 +1956,3 @@ View a sample JSON response Copy
 
 ]
 ```
-
-On this page
-
-- Group Manager (REST)
-
-- Guidelines for the Group Manager service
-
-- URLs
-
-- Client code sample
-
-- Create a group
-
-- Retrieve a group
-
-- Update a group
-
-- Delete a group
-
-- Add users to a group
-
-- Remove users from a group
-
-- Helper methods for users and clients
-
-- Query for clients to associate with a group
-
-- Query for users to add to a group
-
-- Query for group members
-
-- Query groups assigned to a user
-
-- Mass operations on groups
-
-- Add multiple users to multiple groups
-
-- Remove multiple users from multiple groups
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

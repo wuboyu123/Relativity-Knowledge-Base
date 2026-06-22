@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:24:07+00:00
 sha256: 8a1ff74a47ced5acc9dbfac6282cd9508364163d27b8438f219c0ae82c929c35
 ---
 
-Choice Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Choice Manager (.NET)
 
 # Choice Manager (.NET)
 
@@ -155,13 +137,9 @@ public async Task CreateSingleChoiceAsync()
 
         int fieldID = 1104632;
 
-
-
         // use helper method to get list of available colors
 
         List<Color> colors = await choiceManager.GetColorsListAsync(workspaceID);
-
-
 
         ChoiceRequest choiceRequest = new ChoiceRequest()
 
@@ -239,8 +217,6 @@ public async Task CreateMultipleChoicesAsync()
 
         int fieldID = 1104635;
 
-
-
         // This request creates four fields with the following hierarchy:
 
         //  + Important
@@ -291,8 +267,6 @@ public async Task CreateMultipleChoicesAsync()
 
         };
 
-
-
         MassCreateChoiceResponse choices = await choiceManager.CreateAsync(workspaceID, massCreateRequest);
 
     }
@@ -321,8 +295,6 @@ using (IChoiceManager choiceManager = _serviceFactory.CreateProxy<IChoiceManager
     int workspaceID = 1022092;
 
     int choiceID = 1104636;
-
-
 
     ChoiceResponse choiceResponse = await choiceManager.ReadAsync(workspaceID, choiceID);
 
@@ -379,21 +351,15 @@ public async Task UpdateSingleChoiceAsync()
 
         int choiceID = 1104640;
 
-
-
         // retrieve available parents
 
         ObjectIdentifier fieldIdentifier = new ObjectIdentifier() {ArtifactID = fieldID};
 
         List<DisplayableObjectIdentifier> availableParents = await choiceManager.AvailableParentsListAsync(workspaceID, fieldIdentifier);
 
-
-
         // Get existing choice information
 
         ChoiceResponse choiceResponse = await choiceManager.ReadAsync(workspaceID, choiceID);
-
-
 
         // Move choice under different parent choice
 
@@ -410,8 +376,6 @@ public async Task UpdateSingleChoiceAsync()
             Parent =  availableParents.FirstOrDefault(parent => parent.Name == "Important")
 
         };
-
-
 
         await choiceManager.UpdateAsync(workspaceID, choiceID, choiceRequest);
 
@@ -470,19 +434,13 @@ public async Task UpdateSingleChoiceWithVersionCheckAsync()
 
         int choiceID = 1104642;
 
-
-
         // retrieve available parents
 
         List<DisplayableObjectIdentifier> availableParents = await choiceManager.AvailableParentsListAsync(workspaceID, choiceID);
 
-
-
         // Get existing choice information
 
         ChoiceResponse choiceResponse = await choiceManager.ReadAsync(workspaceID, choiceID);
-
-
 
         // Move choice under different parent choice
 
@@ -500,8 +458,6 @@ public async Task UpdateSingleChoiceWithVersionCheckAsync()
 
         };
 
-
-
         // Version token is generated from the last-modified-on time stamp.
 
         // If the choice object has been modified since we performed
@@ -509,8 +465,6 @@ public async Task UpdateSingleChoiceWithVersionCheckAsync()
         // the read this updated will fail.
 
         string versionToken = choiceResponse.LastModifiedOn.Ticks.ToString(CultureInfo.InvariantCulture);
-
-
 
         await choiceManager.UpdateAsync(workspaceID, choiceID, choiceRequest, versionToken);
 
@@ -573,15 +527,11 @@ public async Task UpdateMultipleChoicesAsync()
 
         int choiceID2 = 1104641;
 
-
-
         // Get existing choice information
 
         ChoiceResponse choice1 = await choiceManager.ReadAsync(workspaceID, choiceID1);
 
         ChoiceResponse choice2 = await choiceManager.ReadAsync(workspaceID, choiceID2);
-
-
 
         MassUpdateChoiceRequest[] massUpdateRequest = new MassUpdateChoiceRequest[]
 
@@ -599,8 +549,6 @@ public async Task UpdateMultipleChoicesAsync()
 
             },
 
-
-
             new MassUpdateChoiceRequest()
 
             {
@@ -614,8 +562,6 @@ public async Task UpdateMultipleChoicesAsync()
             }
 
         };
-
-
 
         MassActionChoiceResponse response = await choiceManager.UpdateAsync(workspaceID, massUpdateRequest);
 
@@ -652,8 +598,6 @@ public async Task DeleteChoiceAsync()
         int workspaceID = 1022092;
 
         int choiceID = 1104642;
-
-
 
         await choiceManager.DeleteAsync(workspaceID, choiceID);
 
@@ -698,8 +642,6 @@ public async Task DeleteMultipleChoicesAsync()
 
         int workspaceID = 1022092;
 
-
-
         MassDeleteChoiceRequest massDelete = new MassDeleteChoiceRequest()
 
         {
@@ -717,8 +659,6 @@ public async Task DeleteMultipleChoicesAsync()
             }
 
         };
-
-
 
         await choiceManager.DeleteAsync(workspaceID, massDelete);
 
@@ -788,8 +728,6 @@ public async Task SortChoicesAsync()
 
     // + Privileged
 
-
-
     using (IChoiceManager choiceManager = _serviceFactory.CreateProxy<IChoiceManager>())
 
     {
@@ -797,8 +735,6 @@ public async Task SortChoicesAsync()
         int workspaceID = 1022092;
 
         int choiceID = 1104635;
-
-
 
         MassActionChoiceResponse sortResponse = await choiceManager.SortAsync(workspaceID, choiceID, sortType: SortDirection.Ascending);
 
@@ -877,8 +813,6 @@ public async Task MoveChoiceListAsync()
 
     // + Important
 
-
-
     using (IChoiceManager choiceManager = _serviceFactory.CreateProxy<IChoiceManager>())
 
     {
@@ -886,8 +820,6 @@ public async Task MoveChoiceListAsync()
         int workspaceID = 1022092;
 
         int fieldID = 1104635;
-
-
 
         ObjectIdentifier[] choicesToMove = new ObjectIdentifier[]
 
@@ -900,8 +832,6 @@ public async Task MoveChoiceListAsync()
             new ObjectIdentifier() {ArtifactID = 1104652}, // Choice "C"
 
         };
-
-
 
         MassActionChoiceResponse sortResponse = await choiceManager.MoveAsync(workspaceID, fieldID, choicesToMove, ChoiceMoveType.Beginning);
 
@@ -966,8 +896,6 @@ public async Task MoveChoiceListAsync()
 
     // + C
 
-
-
     using (IChoiceManager choiceManager = _serviceFactory.CreateProxy<IChoiceManager>())
 
     {
@@ -978,8 +906,6 @@ public async Task MoveChoiceListAsync()
 
         ObjectIdentifier choiceIdentifier = new ObjectIdentifier() {ArtifactID = 1104650 }; // Choice "A"
 
-
-
         ObjectIdentifier[] choicesToMove = new ObjectIdentifier[]
 
         {
@@ -989,8 +915,6 @@ public async Task MoveChoiceListAsync()
             new ObjectIdentifier() {ArtifactID = 1104652}, // Choice "C"
 
         };
-
-
 
         MassActionChoiceResponse sortResponse = await choiceManager.MoveAsync(workspaceID, fieldID, choicesToMove, choiceIdentifier);
 
@@ -1010,70 +934,3 @@ You can retrieve a list of available parents as follows:
 ## Retrieve a list of available colors
 
 Use the GetColorsListAsync() method to retrieve a list of colors that can be assigned to choices. See the code sample for Create a single choice .
-
-On this page
-
-- Choice Manager (.NET)
-
-- Fundamentals for the Choice Manager API
-
-- Guidelines for the Choice Manager API
-
-- Create a single choice
-
-- Mass create choices
-
-- Read a choice
-
-- Update a choice without a version check
-
-- Update a choice with a version check
-
-- Update multiple choices
-
-- Delete a choice
-
-- Delete multiple choices
-
-- Sort choices
-
-- Move choices to start or end of list
-
-- Move choices after a specific choice in a list
-
-- Retrieve a list of available parents
-
-- Retrieve a list of available colors
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

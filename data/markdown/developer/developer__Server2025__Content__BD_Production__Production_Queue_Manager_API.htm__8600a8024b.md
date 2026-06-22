@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:27:47+00:00
 sha256: dfde2104b8e47a0ced08797b29c81d929250c71a6a29750cc7a9a3d8570f004c
 ---
 
-Production Queue Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Production Queue Manager (.NET)
 
 # Production Queue Manager (.NET)
 
@@ -151,11 +133,7 @@ public partial class Example
 
         var password = "abc123456!"; // User password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
@@ -166,8 +144,6 @@ public partial class Example
             usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionQueueManager productionQueueManager = serviceFactory.CreateProxy<IProductionQueueManager>())
 
@@ -188,8 +164,6 @@ public partial class Example
                 };
 
                 CancelJobResult result = await productionQueueManager.CancelJobAsync(jobRef);
-
-
 
                 // Do something, like display results
 
@@ -319,17 +293,11 @@ public partial class Example
 
         string databaseToken = "1e51ae24-bbcb-4b61-aafb-1f91859d9891"; // GUID representing the collection of selected production jobs for the mass operation
 
-
-
         var userEmail = "user@test.com"; // User login
 
         var password = "abc123456!"; // User password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
@@ -340,8 +308,6 @@ public partial class Example
             usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionQueueManager productionQueueManager = serviceFactory.CreateProxy<IProductionQueueManager>())
 
@@ -354,8 +320,6 @@ public partial class Example
                 MassProductionQueueResult result =
 
                     await productionQueueManager.MassCancelAsync(databaseToken);
-
-
 
                 // Do something, like display information about result of the mass operation.
 
@@ -518,11 +482,7 @@ public partial class Example
 
         var password = "abc123456!"; // User password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
@@ -533,8 +493,6 @@ public partial class Example
             usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionQueueManager productionQueueManager = serviceFactory.CreateProxy<IProductionQueueManager>())
 
@@ -573,8 +531,6 @@ public partial class Example
                 MassCancelResult result =
 
                     await productionQueueManager.MassCancelProductionJobsAsync(productionJobRefs);
-
-
 
                 // Do something, like display results
 
@@ -903,17 +859,11 @@ public partial class Example
 
         string databaseToken = "1e51ae24-bbcb-4b61-aafb-1f91859d9891"; // GUID representing the collection of selected production jobs for the mass operation
 
-
-
         var userEmail = "user@test.com"; // User login
 
         var password = "abc123456!"; // User password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
@@ -924,8 +874,6 @@ public partial class Example
             usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionQueueManager productionQueueManager = serviceFactory.CreateProxy<IProductionQueueManager>())
 
@@ -938,8 +886,6 @@ public partial class Example
                 MassProductionQueueResult result =
 
                     await productionQueueManager.MassRetryAsync(databaseToken);
-
-
 
                 // Do something, like display information about result of the mass operation.
 
@@ -1102,11 +1048,7 @@ public partial class Example
 
         var password = "abc123456!"; // User password
 
-
-
         var relativityRestUri = "http://localhost/relativity.rest/api";
-
-
 
         var usernamePasswordCredentials = new UsernamePasswordCredentials(userEmail, password);
 
@@ -1117,8 +1059,6 @@ public partial class Example
             usernamePasswordCredentials);
 
         ServiceFactory serviceFactory = new ServiceFactory(settings);
-
-
 
         using (IProductionQueueManager productionQueueManager = serviceFactory.CreateProxy<IProductionQueueManager>())
 
@@ -1157,8 +1097,6 @@ public partial class Example
                 MassRetryResult result =
 
                     await productionQueueManager.RetryProductionJobsAsync(productionJobRefs);
-
-
 
                 // Do something, like display results
 
@@ -1228,54 +1166,3 @@ public partial class Example
 
 }
 ```
-
-On this page
-
-- Production Queue Manager (.NET)
-
-- Fundamentals for the Production Queue Manager API
-
-- Cancel a production job
-
-- Cancel production jobs by mass operation token
-
-- Cancel production jobs by ID
-
-- Set the priority on production jobs
-
-- Retry production jobs by mass operation token
-
-- Retry production jobs by ID
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

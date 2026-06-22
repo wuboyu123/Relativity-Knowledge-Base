@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:26:12+00:00
 sha256: b8bdfbec39f5d8b5c94b5ff76a6c0be65f9494aa725efded2291f95cda8f50e3
 ---
 
-Federated Instance Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Federated Instance Manager (REST)
 
 # Federated Instance Manager (REST)
 
@@ -249,56 +231,3 @@ Copy
 The request body is empty.
 
 When the federated instance is successfully deleted, the response returns the status code of 200. It returns 400 if the instance does not exist. For more information, see HTTP status codes in Relativity REST APIs .
-
-On this page
-
-- Federated Instance Manager (REST)
-
-- Guidelines for the Federated Instance Manager service
-
-- URLs
-
-- Required permissions
-
-- Create a federated instance
-
-- Retrieve a single federated instance
-
-- Retrieve all federated instances
-
-- Update a federated instance
-
-- Delete a federated instance
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:23:19+00:00
 sha256: d0c809f68f5417b0dcbecc83e389c8a3ac334553fa60ba12266b1427799e7f75
 ---
 
-Batches Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Batches Manager (REST)
 
 # Batches Manager (REST)
 
@@ -114,8 +96,6 @@ public async Task<Batch> ReadBatchViaREST(int workspaceID, int batchID)
 
         client.DefaultRequestHeaders.Add("X-Kepler-Version", "2.0");
 
-
-
         var url = $"http://localhost/Relativity.REST/api/relativity-review/v1/workspaces/{workspaceID}/batches/{batchID}";
 
         var response = await client.GetAsync(url);
@@ -127,8 +107,6 @@ public async Task<Batch> ReadBatchViaREST(int workspaceID, int batchID)
         result = JsonConvert.DeserializeObject<Batch>(content);
 
     }
-
-
 
     return result;
 
@@ -255,52 +233,3 @@ This endpoint fails if you attempt to check in a batch with a status other than 
 The body of the request is empty.
 
 When the batch is successfully checked in, the response returns the status code of 200.
-
-On this page
-
-- Batches Manager (REST)
-
-- Guidelines for the Batches Manager service
-
-- URLs
-
-- Client code sample
-
-- Read a batch
-
-- Check out a batch
-
-- Check in a batch
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

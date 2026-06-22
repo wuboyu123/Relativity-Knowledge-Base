@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:23:21+00:00
 sha256: c0237ae63498c89489f11a28fcf4894ec501bf13a99f5805f49b96d3bf7c80f5
 ---
 
-Batch Sets Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Batch Sets Manager (.NET)
 
 # Batch Sets Manager (.NET)
 
@@ -125,8 +107,6 @@ public async Task<BatchSet> CreateBatchSet(int workspaceID, string batchSetName,
 
     var serviceFactory = new ServiceFactory(settings);
 
-
-
     BatchSet createdBatchSet;
 
     var parameters = new BatchSet()
@@ -149,8 +129,6 @@ public async Task<BatchSet> CreateBatchSet(int workspaceID, string batchSetName,
 
     };
 
-
-
     using (var batchSetsManager = serviceFactory.CreateProxy<IBatchSetsManager>())
 
     {
@@ -158,8 +136,6 @@ public async Task<BatchSet> CreateBatchSet(int workspaceID, string batchSetName,
         createdBatchSet = await batchSetsManager.CreateAsync(workspaceID, parameters);
 
     }
-
-
 
     return createdBatchSet;
 
@@ -207,11 +183,7 @@ public async Task<BatchSet> ReadBatchSet(int workspaceID, int batchSetID)
 
     var serviceFactory = new ServiceFactory(settings);
 
-
-
     BatchSet batchSet;
-
-
 
     using (var batchSetsManager = serviceFactory.CreateProxy<IBatchSetsManager>())
 
@@ -220,8 +192,6 @@ public async Task<BatchSet> ReadBatchSet(int workspaceID, int batchSetID)
         batchSet = await batchSetsManager.ReadAsync(workspaceID, batchSetID);
 
     }
-
-
 
     return batchSet;
 
@@ -271,11 +241,7 @@ public async Task<BatchSet> UpdateBatchSet(int workspaceID, int batchSetID, stri
 
     var serviceFactory = new ServiceFactory(settings);
 
-
-
     BatchSet updatedBatchSet;
-
-
 
     using (var batchSetsManager = serviceFactory.CreateProxy<IBatchSetsManager>())
 
@@ -288,8 +254,6 @@ public async Task<BatchSet> UpdateBatchSet(int workspaceID, int batchSetID, stri
         updatedBatchSet = await batchSetsManager.UpdateAsync(workspaceID, existingSet);
 
     }
-
-
 
     return updatedBatchSet;
 
@@ -330,8 +294,6 @@ public async Task DeleteBatchSet(int workspaceID, int batchSetID)
     var settings = new ServiceFactorySettings(restUri, credentials);
 
     var serviceFactory = new ServiceFactory(settings);
-
-
 
     using (var batchSetsManager = serviceFactory.CreateProxy<IBatchSetsManager>())
 
@@ -385,11 +347,7 @@ public async Task<int> CreateBatches(int workspaceID, int batchSetID)
 
     var serviceFactory = new ServiceFactory(settings);
 
-
-
     int batchCount;
-
-
 
     using (var batchSetsManager = serviceFactory.CreateProxy<IBatchSetsManager>())
 
@@ -398,8 +356,6 @@ public async Task<int> CreateBatches(int workspaceID, int batchSetID)
         batchCount = await batchSetsManager.CreateBatchesAsync(workspaceID, batchSetID);
 
     }
-
-
 
     return batchCount;
 
@@ -447,11 +403,7 @@ public async Task<int> PurgeBatches(int workspaceID, int batchSetID)
 
     var serviceFactory = new ServiceFactory(settings);
 
-
-
     int batchCount;
-
-
 
     using (var batchSetsManager = serviceFactory.CreateProxy<IBatchSetsManager>())
 
@@ -461,64 +413,7 @@ public async Task<int> PurgeBatches(int workspaceID, int batchSetID)
 
     }
 
-
-
     return batchCount;
 
 }
 ```
-
-On this page
-
-- Batch Sets Manager (.NET)
-
-- Fundamentals for the Batch Sets Manager API
-
-- Methods
-
-- Classes and enumerations
-
-- Create a batch set
-
-- Read a batch set
-
-- Update a batch set
-
-- Delete a batch set
-
-- Create batches in a batch set
-
-- Remove batches from a batch set
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

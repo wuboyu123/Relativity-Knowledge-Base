@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:25:49+00:00
 sha256: 5c942f0a8590920de4f54c7eb9f359fd3f1fb4ffeb19ccd639b716b0cb606ad6
 ---
 
-Client Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Client Manager (REST)
 
 # Client Manager (REST)
 
@@ -168,21 +150,15 @@ private HttpClient GetHttpClient()
 
     HttpClient httpClient = new HttpClient();
 
-
-
     httpClient.BaseAddress = new Uri("https://localhost/");
 
     httpClient.DefaultRequestHeaders.Add("X-CSRF-Header", "-");
 
     httpClient.DefaultRequestHeaders.Add("Authorization", "Basic " + Convert.ToBase64String(Encoding.GetEncoding("ISO-8859-1").GetBytes("test@test.com:SomePassword")));
 
-
-
     return httpClient;
 
 }
-
-
 
 public async Task<List<int>> GetEligibleStatuses()
 
@@ -190,19 +166,13 @@ public async Task<List<int>> GetEligibleStatuses()
 
     string url = "/Relativity.rest/api/relativity-identity/v1/workspaces/-1/clients/eligible-statuses";
 
-
-
     HttpClient httpClient = GetHttpClient();
 
     HttpResponseMessage response = await httpClient.GetAsync(url);
 
     string resultString = await response.Content.ReadAsStringAsync();
 
-
-
     var statusIDs = new List<int>();
-
-
 
     dynamic result = JObject.Parse(resultString) as JObject;
 
@@ -216,13 +186,9 @@ public async Task<List<int>> GetEligibleStatuses()
 
     }
 
-
-
     return statusIDs;
 
 }
-
-
 
 public async Task<int> Create(int statusID)
 
@@ -258,13 +224,9 @@ public async Task<int> Create(int statusID)
 
     };
 
-
-
     string payloadString = JsonConvert.SerializeObject(payload);
 
     var content = new StringContent(payloadString, Encoding.UTF8, "application/json");
-
-
 
     HttpClient httpClient = GetHttpClient();
 
@@ -272,13 +234,9 @@ public async Task<int> Create(int statusID)
 
     string resultString = await response.Content.ReadAsStringAsync();
 
-
-
     dynamic result = JObject.Parse(resultString) as JObject;
 
     int artifactID = result.ArtifactID;
-
-
 
     return artifactID;
 
@@ -1376,74 +1334,3 @@ Copy
 The request body is empty.
 
 When the client domain is successfully activated, the response returns the status code of 200.
-
-On this page
-
-- Client Manager (REST)
-
-- Guidelines for the Client Manager service
-
-- URLs
-
-- Postman sample file
-
-- Client code sample
-
-- Create a client
-
-- Retrieve a client
-
-- Update a client
-
-- Delete a client
-
-- Helper endpoints for CRUD operations
-
-- Retrieve associated groups
-
-- Retrieve associated matters
-
-- Retrieve associated users
-
-- Retrieve available statuses
-
-- Endpoints for client domain activation keys
-
-- Create client domain activation key
-
-- Submit a client domain activation key
-
-- Retry activating a client domain
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

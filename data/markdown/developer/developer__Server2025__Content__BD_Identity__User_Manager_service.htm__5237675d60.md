@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:28:29+00:00
 sha256: 2f2eb4792ccadbbb0e3b0763798e0b460aa64282523d4cf334b9092839bd562a
 ---
 
-User Manager service Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+User Manager service
 
 # User Manager (REST)
 
@@ -112,8 +94,6 @@ public async Task<UserResponse> CreateUserAsync()
         client.DefaultRequestHeaders.Add("X-Kepler-Version", "2.0");
 
         client.BaseAddress = new Uri("http://localhost/");
-
-
 
         string inputJSON = "{\"UserRequest\":{\"AllowSettingsChange\": true,\"Client\": {\"Secured\": false,\"Value\": {\"ArtifactID\": 1015644}},\"DefaultFilterVisibility\": true,\"DocumentViewerProperties\": {\"AllowDocumentSkipPreferenceChange\": true,\"AllowDocumentViewerChange\": true,\"AllowKeyboardShortcuts\": true,\"DefaultSelectedFileType\": \"Default\",\"DocumentViewer\": \"Default\",\"SkipDefaultPreference\": true},\"DisableOnDate\": null,\"EmailAddress\": \"test222@relativity.com\",\"EmailPreference\": \"Default\",\"FirstName\": \"First Name\",\"ItemListPageLength\": 50,\"LastName\": \"Last Name\",\"RelativityAccess\": true,\"SavedSearchDefaultsToPublic\": true,\"TrustedIPs\": \"\",\"Type\": {\"ArtifactID\": 663},\"Keywords\": \"\",\"Notes\": \"\"}}";
 
@@ -501,8 +481,6 @@ View a sample JSON response Copy
 
          "Guids":[
 
-
-
          ]
 
       }
@@ -551,8 +529,6 @@ View a sample JSON response Copy
 
       "Guids":[
 
-
-
       ]
 
    },
@@ -571,8 +547,6 @@ View a sample JSON response Copy
 
       "Guids":[
 
-
-
       ]
 
    },
@@ -585,8 +559,6 @@ View a sample JSON response Copy
 
       "Guids":[
 
-
-
       ]
 
    },
@@ -597,13 +569,9 @@ View a sample JSON response Copy
 
       "Unsupported":[
 
-
-
       ],
 
       "ReadOnly":[
-
-
 
       ]
 
@@ -623,8 +591,6 @@ View a sample JSON response Copy
 
          "Reason":[
 
-
-
          ]
 
       },
@@ -641,8 +607,6 @@ View a sample JSON response Copy
 
          "Reason":[
 
-
-
          ]
 
       }
@@ -652,8 +616,6 @@ View a sample JSON response Copy
    "ArtifactID":1018403,
 
    "Guids":[
-
-
 
    ]
 
@@ -762,8 +724,6 @@ View a sample JSON response Copy
 
          "Guids":[
 
-
-
          ]
 
       }
@@ -812,8 +772,6 @@ View a sample JSON response Copy
 
       "Guids":[
 
-
-
       ]
 
    },
@@ -832,8 +790,6 @@ View a sample JSON response Copy
 
       "Guids":[
 
-
-
       ]
 
    },
@@ -846,8 +802,6 @@ View a sample JSON response Copy
 
       "Guids":[
 
-
-
       ]
 
    },
@@ -856,15 +810,11 @@ View a sample JSON response Copy
 
    "Actions":[
 
-
-
    ],
 
    "ArtifactID":1017952,
 
    "Guids":[
-
-
 
    ]
 
@@ -944,8 +894,6 @@ View a sample JSON response Copy
 {
 
    "Actions":[
-
-
 
    ],
 
@@ -1174,8 +1122,6 @@ View a sample JSON response Copy
 
          "Guids":[
 
-
-
          ]
 
       }
@@ -1224,8 +1170,6 @@ View a sample JSON response Copy
 
       "Guids":[
 
-
-
       ]
 
    },
@@ -1244,8 +1188,6 @@ View a sample JSON response Copy
 
       "Guids":[
 
-
-
       ]
 
    },
@@ -1258,8 +1200,6 @@ View a sample JSON response Copy
 
       "Guids":[
 
-
-
       ]
 
    },
@@ -1268,15 +1208,11 @@ View a sample JSON response Copy
 
    "Actions":[
 
-
-
    ],
 
    "ArtifactID":1017952,
 
    "Guids":[
-
-
 
    ]
 
@@ -1592,8 +1528,6 @@ View a sample JSON response Copy
 
       "Guids":[
 
-
-
       ]
 
    },
@@ -1605,8 +1539,6 @@ View a sample JSON response Copy
       "ArtifactID":672,
 
       "Guids":[
-
-
 
       ]
 
@@ -1809,8 +1741,6 @@ View a sample JSON response Copy
 
          "Values":[
 
-
-
          ]
 
       },
@@ -1820,8 +1750,6 @@ View a sample JSON response Copy
          "ArtifactID":1015028,
 
          "Values":[
-
-
 
          ]
 
@@ -1833,8 +1761,6 @@ View a sample JSON response Copy
 
          "Values":[
 
-
-
          ]
 
       },
@@ -1844,8 +1770,6 @@ View a sample JSON response Copy
          "ArtifactID":1015030,
 
          "Values":[
-
-
 
          ]
 
@@ -1857,8 +1781,6 @@ View a sample JSON response Copy
 
          "Values":[
 
-
-
          ]
 
       },
@@ -1869,8 +1791,6 @@ View a sample JSON response Copy
 
          "Values":[
 
-
-
          ]
 
       }
@@ -1878,8 +1798,6 @@ View a sample JSON response Copy
    ],
 
    "IDWindow":[
-
-
 
    ],
 
@@ -1895,8 +1813,6 @@ View a sample JSON response Copy
 
       "Guids":[
 
-
-
       ],
 
       "ArtifactTypeID":3
@@ -1905,13 +1821,9 @@ View a sample JSON response Copy
 
    "RankWindow":[
 
-
-
    ],
 
    "Fields":[
-
-
 
    ]
 
@@ -2394,74 +2306,3 @@ View a sample JSON response Copy
 
 }
 ```
-
-On this page
-
-- User Manager (REST)
-
-- Guidelines for the User Manager service
-
-- URLs
-
-- Client code sample
-
-- Create a user
-
-- Retrieve metadata for a user
-
-- Retrieve settings for the current user
-
-- Update properties for a user
-
-- Update settings for the current user
-
-- Delete a user
-
-- Helper endpoints for querying on users
-
-- Retrieve available types for users
-
-- Query for groups to associate with users
-
-- Retrieve information about the current user
-
-- Retrieve all users in a workspace
-
-- Retrieve active users in a workspace
-
-- Retrieve users in workspace with Relativity access
-
-- Query for users in a workspace
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

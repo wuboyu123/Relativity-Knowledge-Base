@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:23:13+00:00
 sha256: 8ad7293d3594be8ca32d4e0524bdf7ccecdfe8c8bd93960ec8b5839edae0eeff
 ---
 
-Imaging (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Imaging (.NET)
 
 # Imaging (.NET)
 
@@ -345,8 +327,6 @@ public async Task CreateNativeImagingProfileAsync(Interfaces.V1.IImagingProfileM
 
         },
 
-
-
         BasicOptions = new BasicImagingEngineOptions()
 
         {
@@ -362,8 +342,6 @@ public async Task CreateNativeImagingProfileAsync(Interfaces.V1.IImagingProfileM
             MaximumImageWidth = null
 
         },
-
-
 
         Name = "Native Imaging Profile",
 
@@ -399,8 +377,6 @@ public async Task CreateNativeImagingProfileAsync(Interfaces.V1.IImagingProfileM
 
         },
 
-
-
         HtmlOptions = new HtmlOptions()
 
         {
@@ -408,8 +384,6 @@ public async Task CreateNativeImagingProfileAsync(Interfaces.V1.IImagingProfileM
             RemoveNonBreakingSpaceCodes = true
 
         },
-
-
 
         PresentationOptions = new PresentationOptions()
 
@@ -420,8 +394,6 @@ public async Task CreateNativeImagingProfileAsync(Interfaces.V1.IImagingProfileM
             SlideOrientation = SlideOrientation.OriginalSetting
 
         },
-
-
 
         SpreadsheetOptions = new SpreadsheetOptions()
 
@@ -499,17 +471,11 @@ public async Task CreateNativeImagingProfileAsync(Interfaces.V1.IImagingProfileM
 
             },
 
-
-
             PageOrientation = PageOrientation.OriginalSetting,
-
-
 
             ShowTrackChanges = true
 
         }
-
-
 
     };
 
@@ -567,8 +533,6 @@ public async Task<Interfaces.V1.Models.ImagingProfile> ImagingProfileReadAsync(I
 {
 
     Interfaces.V1.Models.ImagingProfile imagingProfile;
-
-
 
     try
 
@@ -746,8 +710,6 @@ public async Task<int> ImagingProfileUpdateAsync(Interfaces.V1.IImagingProfileMa
 
         },
 
-
-
         Name = "Imaging Profile Update",
 
         Keywords = "",
@@ -800,8 +762,6 @@ public async Task<int> ImagingProfileUpdateAsync(Interfaces.V1.IImagingProfileMa
 
         },
 
-
-
         HtmlOptions = new HtmlOptions()
 
         {
@@ -809,8 +769,6 @@ public async Task<int> ImagingProfileUpdateAsync(Interfaces.V1.IImagingProfileMa
             RemoveNonBreakingSpaceCodes = true
 
         },
-
-
 
         PresentationOptions = new PresentationOptions()
 
@@ -821,8 +779,6 @@ public async Task<int> ImagingProfileUpdateAsync(Interfaces.V1.IImagingProfileMa
             SlideOrientation = SlideOrientation.OriginalSetting
 
         },
-
-
 
         SpreadsheetOptions = new SpreadsheetOptions()
 
@@ -900,11 +856,7 @@ public async Task<int> ImagingProfileUpdateAsync(Interfaces.V1.IImagingProfileMa
 
             },
 
-
-
             PageOrientation = PageOrientation.OriginalSetting,
-
-
 
             ShowTrackChanges = true
 
@@ -913,8 +865,6 @@ public async Task<int> ImagingProfileUpdateAsync(Interfaces.V1.IImagingProfileMa
         ImagingMethod = ImagingMethod.Native
 
     };
-
-
 
     try
 
@@ -1439,8 +1389,6 @@ public async Task<Interfaces.V1.Models.NativeType> ReadAsyncNativeType(Interface
 
     Interfaces.V1.Models.NativeType nativeType;
 
-
-
     try
 
     {
@@ -1523,8 +1471,6 @@ public async Task<int> ApplicationFieldCodeCreateAsync(Interfaces.V1.IApplicatio
 
     };
 
-
-
     try
 
     {
@@ -1580,8 +1526,6 @@ public async Task<Interfaces.V1.Models.ApplicationFieldCode> ApplicationFieldCod
 {
 
     Interfaces.V1.Models.ApplicationFieldCode applicationFieldCode;
-
-
 
     try
 
@@ -2294,58 +2238,3 @@ public async Task<int> RetrieveMassImagingMaxJobSize(Interfaces.V1.IImagingEnvir
 
 }
 ```
-
-On this page
-
-- Imaging (.NET)
-
-- Imaging API fundamentals
-
-- SDK for Imaging API
-
-- Imaging Profile Manager
-
-- Imaging Set Manager
-
-- Native Type Manager
-
-- Application Field Code Manager
-
-- Imaging Job Manager
-
-- Document Status Manager
-
-- Imaging Environment Manager
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

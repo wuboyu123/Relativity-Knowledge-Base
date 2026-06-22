@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:28:57+00:00
 sha256: a981639f3df94fdd91940e0b8fe06bab9a449b201ef5e62adf1a4371b7f5f333
 ---
 
-Pre Cascade Delete event handlers Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Pre Cascade Delete event handlers
 
 # Pre Cascade Delete event handlers
 
@@ -125,8 +107,6 @@ using System.Text;
 
 using kCura.EventHandler;
 
-
-
 namespace CustomEventHandler
 
 {
@@ -146,8 +126,6 @@ namespace CustomEventHandler
                     Message = ""
 
                };
-
-
 
                try {
 
@@ -191,8 +169,6 @@ namespace CustomEventHandler
 
                // Commit is unused (never gets called) in a Pre Cascade Delete event.
 
-
-
           }
 
           public override void Rollback()
@@ -200,8 +176,6 @@ namespace CustomEventHandler
           {
 
                // Code executes when an error occurs in the process.
-
-
 
                // If you're retrieving information that requires a rollback in Execute() method, then handle this operation here. Otherwise, leave this method blank.
 
@@ -211,44 +185,3 @@ namespace CustomEventHandler
 
 }
 ```
-
-On this page
-
-- Pre Cascade Delete event handlers
-
-- Guidelines for Pre Cascade Delete event handlers
-
-- Code sample for a Pre Cascade Delete event handler
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

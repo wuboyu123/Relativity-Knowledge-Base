@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:26:09+00:00
 sha256: a3a4be7c00bc32f7bd091152021d1cea659dc75a837d99b3fc73a2a341bfd522
 ---
 
-Export (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Export (REST)
 
 # Export (REST)
 
@@ -81,8 +63,6 @@ public async Task<IKeplerStream> ExportApplication(int applicationID, int worksp
 
         client.BaseAddress = new Uri(hostUrl);
 
-
-
         string url = $"/Relativity.REST/API/relativity-application/v1/workspaces/{workspaceID}/applications/{applicationID}/rapfile";
 
         System.Net.Http.HttpResponseMessage httpResponse = await client.GetAsync(url);
@@ -94,8 +74,6 @@ public async Task<IKeplerStream> ExportApplication(int applicationID, int worksp
         response = JsonConvert.DeserializeObject<IKeplerStream>(content);
 
     }
-
-
 
     return response;
 
@@ -137,46 +115,3 @@ https://<host>/Relativity.REST/API/relativity-application/v1/workspaces/{workspa
 ```
 
 The raw JSON response will not be human-readable.
-
-On this page
-
-- Export (REST)
-
-- Client code sample
-
-- ExportAsync
-
-- ExportSchemaAsync
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

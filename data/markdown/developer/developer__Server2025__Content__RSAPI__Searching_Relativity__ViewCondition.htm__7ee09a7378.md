@@ -6,23 +6,7 @@ fetched_at: 2026-06-22T06:33:28+00:00
 sha256: e2a2a00a94c158d0f84a0991a29b98c5f44ef76e8420ceb225f25f77482865de
 ---
 
-ViewCondition Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+ViewCondition
 
 As part of the Relativity Services API (RSAPI) Deprecation, content on this page referring to the RSAPI and the Patient Tracker application is in the process of being deprecated and will no longer be supported. For more information and alternative APIs, see RSAPI deprecation process .
 
@@ -275,31 +259,17 @@ public class A
 
           //STEP 1: Create a Query to describe the search you want to run.
 
-
-
           DTOs.Query<DTOs.Document> query = new DTOs.Query<DTOs.Document>();
-
-
 
           //STEP 2: Set Condition. For this example, Relativity contains a view with an ArtifactID of 1003689.
 
-
-
           query.Condition = new ViewCondition(1003689);
-
-
 
           //STEP 3: Set the SelectedFields directive to retrieve the fields defined by the view.
 
-
-
           query.Fields = DTOs.FieldValue.SelectedFields;
 
-
-
           //STEP 4: Perform the query.
-
-
 
           DTOs.ResultSet<DTOs.Document> docResults = proxy.Repositories.Document.Query(query);
 
@@ -307,46 +277,3 @@ public class A
 
 }
 ```
-
-On this page
-
-- ViewCondition
-
-- Supported objects for ViewCondition
-
-- SelectedFields directive
-
-- Search with a ViewCondition
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

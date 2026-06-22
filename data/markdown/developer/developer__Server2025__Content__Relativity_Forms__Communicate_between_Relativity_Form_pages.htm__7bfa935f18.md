@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:32:08+00:00
 sha256: 1f2c4e72156f3a199a8dea5fa87f997e3128b707cfbdef5f71b353acdac26f21
 ---
 
-Communicate between Relativity Form pages Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Communicate between Relativity Form pages
 
 # Communicate between Relativity Form pages
 
@@ -85,27 +67,15 @@ Copy
 22
 (function(eventNames, convenienceApi) {
 
-
-
        var eventHandlers = {};
 
-
-
        eventHandlers[eventNames.SOME_EVENT_NAME] = function() {
-
-
-
-
 
             function eventHandlerFactory(popupControlApi, eventNames, convenienceApi) {
 
                  // ... etc -- this will ONLY have access to the convenienceApi in the popup, and NOT the parent
 
             }
-
-
-
-
 
             var popupControlApi = convenienceApi.relativityFormsPopup.openAdd({
 
@@ -120,8 +90,6 @@ Copy
             });
 
        }
-
-
 
        return eventHandlers;
 
@@ -166,25 +134,13 @@ Copy
 31
 (function(openerEventNames, openerConvenienceApi) {
 
-
-
        var eventHandlers = {};
 
-
-
        eventHandlers[openerEventNames.SOME_EVENT_NAME] = function() {
-
-
-
-
 
             function eventHandlerFactory(popupControlApi, popupEventNames, popupConvenienceApi) {
 
                  // ... etc
-
-
-
-
 
                  // event handlers produced by this function will have access to anything
 
@@ -192,19 +148,11 @@ Copy
 
                  // convenienceApi, via "openerConvenienceApi"
 
-
-
-
-
                  // the event handlers produced by this function have access to the popup's
 
                  // convenienceApi via "popupConvenienceApi"
 
             }
-
-
-
-
 
             var popupControlApi = convenienceApi.relativityFormsPopup.openAdd({
 
@@ -219,8 +167,6 @@ Copy
             });
 
        }
-
-
 
        return eventHandlers;
 
@@ -361,27 +307,13 @@ Copy
 119
 (function(openerEventNames, openerConvenienceApi) {
 
-
-
-
-
        var eventHandlers = {};
-
-
 
        eventHandlers[openerEventNames.CREATE_CONSOLE] = function() {
 
                  // "this" context here is viewModel information about the opener Relativity Forms app
 
-
-
-
-
                  var consoleApi = openerConvenienceApi.console;
-
-
-
-
 
                  var workspaceId =  this .workspaceId;
 
@@ -389,15 +321,7 @@ Copy
 
                  var artifactTypeId =  // type id of RDOs which are child to this instance of the opener's type
 
-
-
-
-
                  var obj = { popupControlApi: ( void 0) };
-
-
-
-
 
                  var openButton = consoleApi.generate.button({
 
@@ -411,21 +335,7 @@ Copy
 
                  });
 
-
-
-
-
-
-
-
-
-
-
-
-
                  function eventHandlerFactory(popupControlApi, popupEventNames, popupConvenienceApi) {
-
-
 
                       var popupEventHandlers = {};
 
@@ -439,10 +349,6 @@ Copy
 
                                 // the popup
 
-
-
-
-
                                 // here, openerConvenienceApi would be used to update the opener's form
 
                                 // as appropriate, given the "ArtifactID" from the relativityObjectRef passed
@@ -451,15 +357,11 @@ Copy
 
                                 // updated in the opener layout. (omitted to keep this sample clean)
 
-
-
                                 if (popupControlApi.isPopupSafeAndLive()) {
 
                                      // Deactivating Popup exitDialog...
 
                                      this .exitDialog.deactivate();
-
-
 
                                      // Closing Popup...
 
@@ -467,39 +369,17 @@ Copy
 
                                 }
 
-
-
-
-
                                 return relativityObjectRef;
 
                            }  // end of the POPUP's postSave event handler
-
-
 
                       return popupEventHandlers;
 
                  }  // end of eventHandlerFactory
 
-
-
-
-
-
-
-
-
-
-
-
-
                  function openButtonClickHandler() {
 
                       closeButtonClickHandler();  // keep it clean!
-
-
-
-
 
                       popupControlApi = openerConvenienceApi.relativityFormsPopup.openAdd({
 
@@ -513,25 +393,13 @@ Copy
 
                       });
 
-
-
-
-
                       obj.popupControlApi = popupControlApi;
 
                  }  // end of the open button click handler
 
-
-
-
-
                  function closeButtonClickHandler() {
 
                       if (!!obj.popupControlApi) {
-
-
-
-
 
                            // NOTE: because the code context/scope here is the opener Relativity Forms app / window
 
@@ -543,10 +411,6 @@ Copy
 
                            //       allow the navigation away (popup window close)
 
-
-
-
-
                            obj.popupControlApi.closePopup();
 
                            obj.popupControlApi = ( void 0);
@@ -555,27 +419,9 @@ Copy
 
                  }  // end of the close button click handler
 
-
-
-
-
-
-
-
-
                  openButton.onclick = openButtonClickHandler;
 
                  closeButton.onclick = closeButtonClickHandler;
-
-
-
-
-
-
-
-
-
-
 
                  var section = consoleApi.generate.section({}, [
 
@@ -585,10 +431,6 @@ Copy
 
                  ]);
 
-
-
-
-
                  consoleApi.containersPromise.then(function(containers) {
 
                       containers.rootElement.appendChild(section);
@@ -597,46 +439,3 @@ Copy
 
        }  // end of opener's CREATE_CONSOLE event handler
 ```
-
-On this page
-
-- Communicate between Relativity Form pages
-
-- Guidelines for adding event handlers to a pop-up window
-
-- Write code to add event handlers to a pop-up window
-
-- Example
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

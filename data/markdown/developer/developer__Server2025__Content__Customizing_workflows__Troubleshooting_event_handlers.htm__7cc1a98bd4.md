@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:43+00:00
 sha256: 167d00707da858ffba5e70afaf42c887cf17c23a3530c95575a1924cc302109b
 ---
 
-Troubleshoot event handlers Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Troubleshoot event handlers
 
 # Troubleshoot event handlers
 
@@ -55,40 +37,3 @@ The Remote Debugging Monitor displays a message containing the name of the serve
 - On the Relativity server, check the status of the Remote Debugging Monitor in Visual Studio. It should indicate that you are connected.
 
 - After you finish debugging, delete the the .pdb files from the Resource Files tab in Relativity.
-
-On this page
-
-- Troubleshoot event handlers
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

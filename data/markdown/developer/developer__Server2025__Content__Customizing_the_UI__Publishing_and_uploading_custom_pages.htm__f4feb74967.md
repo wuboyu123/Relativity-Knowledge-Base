@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:20+00:00
 sha256: 782e8cb13bf70bd7823d635d876abc49c2c23df4742ce6ee022199358e2e64ab
 ---
 
-Publish and upload custom pages Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Publish and upload custom pages
 
 # Publish and upload custom pages
 
@@ -85,46 +67,3 @@ The application details view in a workspace no longer lists a "Custom Page" sect
 If you add a folder name to the path, verify that folder contains the default page that you want displayed for users in the Relativity UI.
 
 - Readiness Url - this field contains the relativity path to the custom page's readiness endpoint. For more information on this field, see Basic concepts for custom pages .
-
-On this page
-
-- Publish and upload custom pages
-
-- Publish your custom page project
-
-- Upload a custom page file to Relativity
-
-- Custom page layout fields
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

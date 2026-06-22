@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:29:07+00:00
 sha256: 398d6e609bb8448dad2b6eb01ffc3d3edca5460131796f8bad851d1a777e49d2
 ---
 
-Basic REST API concepts Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Basic REST API concepts
 
 # REST API overview
 
@@ -93,46 +75,3 @@ The best pagination size varies depending on your situation. In general, we reco
 - Use queries to filter data – You can filter a list of resources by performing a query, which is a request that uses the POST method and contains conditions in a JSON representation. After the REST API returns the search result resource, you can page through the list of resources returned in it. You can’t use a query string to filter a collection of resources. See Query for resources .
 
 - Provide required headers – You must include authentication credentials and an empty CSRF header in every request that you make to the REST API. See HTTP headers .
-
-On this page
-
-- REST API overview
-
-- REST API features
-
-- RESTful concepts
-
-- Unique implementation details
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

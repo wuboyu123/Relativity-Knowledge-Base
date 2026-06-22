@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:27:58+00:00
 sha256: 6a0b1a97382437e3f743333ada31ab3ce4b2289f406a84d85b6bcb47b997639a
 ---
 
-Resource Server / Resource Pool (.NET / REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Resource Server / Resource Pool (.NET / REST)
 
 # Resource Server / Resource Pool (.NET / REST)
 
@@ -111,48 +93,3 @@ Web:AD Authentication Relativity.Infrastructure.{versionNumber}.WebWindowsAuthSe
 Worker Manager Server Relativity.Infrastructure.{versionNumber}.WorkerManagerServer.IWorkerManagerServerManager
 
 Worker Relativity.Infrastructure.{versionNumber}.WorkerServer.IWorkerServerManager
-
-On this page
-
-- Resource Server / Resource Pool (.NET / REST)
-
-- Resource Server / Resource Pool fundamentals
-
-- Overview
-
-- REST guidelines
-
-- Server types
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

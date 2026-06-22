@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:32:04+00:00
 sha256: cc69c1a69e8cef850b4d500d93065e148e8dcc6473dea8907511c97614cfcc1c
 ---
 
-Item list event handlers Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Item list event handlers
 
 # Item list event handlers
 
@@ -352,10 +334,6 @@ Copy
 
      var eventHandlers = [];
 
-
-
-
-
      eventHandlers[eventNames.ITEM_LIST_RELOADED] = function(data) {
 
           console.log("Inside ITEM_LIST_RELOADED event handler");
@@ -399,10 +377,6 @@ Copy
           buttonToDisable.disabled = !data.TotalCount; // disable button when there are is at least one result in the item list.
 
      };
-
-
-
-
 
      return eventHandlers;
 
@@ -465,8 +439,6 @@ eventHandlers[eventNames.ITEM_LIST_MODIFY_COLUMNS] = function(columnsApi, view) 
      // Check for a specific a specific item list in the layout
 
      if (view.ObjectTypeID !== convenienceApi.constants.ARTIFACT_TYPE.USER) { return ; }
-
-
 
      columnsApi.setColumnTitle("Preview Security", "Preview User Security");
 
@@ -577,8 +549,6 @@ eventHandlers[eventNames.ITEM_LIST_MODIFY_COLUMNS] = function(columnsApi, view) 
 
     if (view.Name !== "Hyperlinks") { return ; }
 
-
-
     function cellContentFormatter(content, rowDataItem) {
 
         // content: "Google"
@@ -595,15 +565,9 @@ eventHandlers[eventNames.ITEM_LIST_MODIFY_COLUMNS] = function(columnsApi, view) 
 
     }
 
-
-
     columnsApi.setCustomFormatter("LinkName", cellContentFormatter);
 
 };
-
-
-
-
 
 /**
 
@@ -621,8 +585,6 @@ eventHandlers[eventNames.ITEM_LIST_MODIFY_COLUMNS] = function(columnsApi, view) 
 
     if (view.Name !== "Full Names") { return ; }
 
-
-
     function cellContentFormatter(content, rowDataItem) {
 
         // content: "Salt"
@@ -632,8 +594,6 @@ eventHandlers[eventNames.ITEM_LIST_MODIFY_COLUMNS] = function(columnsApi, view) 
         return rowDataItem["FirstName"] + " " + rowDataItem["LastName"];
 
     }
-
-
 
     columnsApi.setCustomFormatter("FirstName", cellContentFormatter);
 
@@ -719,15 +679,11 @@ eventHandlers[eventNames.ITEM_LIST_MODIFY_COLUMNS] = function(columnsApi, view) 
 
     if (view.Name !== "First Names") { return ; }
 
-
-
     function clickAction(rowDataItem) {    // onClick function is called with the row data item
 
         alert(rowDataItem["LastName"]);
 
     }
-
-
 
     columnsApi.setLinkFormatter("FirstName", {
 
@@ -787,8 +743,6 @@ eventHandlers[eventNames.ITEM_LIST_MODIFY_COLUMNS] = function(columnsApi, view) 
     // Check for a specific a specific item list in the layout
 
     if (view.Name !== "Names") {  return ; }
-
-
 
     columnsApi.removeColumn("FirstName");
 
@@ -1123,8 +1077,6 @@ eventHandlers[eventNames.ITEM_LIST_MODIFY_ACTIONS] = function(itemListActionsApi
 
       const USERS_LIST_ID =  "usersList" ;
 
-
-
       // Checks whether an action should be added to particular list.
 
       if (view.ObjectTypeID === convenienceApi.constants.ARTIFACT_TYPE.USER) {
@@ -1138,8 +1090,6 @@ eventHandlers[eventNames.ITEM_LIST_MODIFY_ACTIONS] = function(itemListActionsApi
           return itemListActionsApi.checkRulesAndPermissions();
 
       }
-
-
 
       return void 0;
 
@@ -1216,8 +1166,6 @@ eventHandlers[eventNames.ITEM_LIST_MODIFY_ACTIONS] = function(itemListActionsApi
         });
 
     }
-
-
 
     return void 0;
 
@@ -1311,66 +1259,3 @@ Unlink
 Boolean
 
 Set to true to make the Unlink button visible, or false to hide it.
-
-On this page
-
-- Item list event handlers
-
--
-
-- Summary of item list event handlers
-
-- Summary of item list event handler APIs and objects
-
-- Item List Event Handlers
-
-- itemListModifyActions
-
-- itemListModifyColumns
-
-- itemListReloaded
-
-- Item list APIs and Related Objects
-
-- columnsApi
-
-- Item List Action button object
-
-- itemListActionsApi
-
-- View object
-
-- Visibility Rule class
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:25:44+00:00
 sha256: ea5c545af2b3dd95bdeccd802f2f54d7a4c029d1facff27d19b78332cb2b0645
 ---
 
-Choice Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Choice Manager (REST)
 
 # Choice Manager (REST)
 
@@ -126,8 +108,6 @@ public async Task<int> CreateChoiceRestAsync()
 
 {
 
-
-
     int choiceID = 0;
 
     using (Relativity.ObjectModel.V1.Choice.IChoiceManager choiceManager = _serviceFactory.CreateProxy<Relativity.ObjectModel.V1.Choice.IChoiceManager>())
@@ -144,8 +124,6 @@ public async Task<int> CreateChoiceRestAsync()
 
         client.BaseAddress = new Uri("http://localhost/");
 
-
-
         string inputJSON = @"{""choiceRequest"":{""Field"":{""ArtifactID"":1104632,""Guids"":[]},""Name"":""Relevant"",""Color"":3,""Order"":100}}";
 
         string url = "/Relativity.rest/api/relativity-object-model/{versionNumber}/workspaces/1022092/choices";
@@ -159,8 +137,6 @@ public async Task<int> CreateChoiceRestAsync()
         choiceID = Int32.Parse(content);
 
     }
-
-
 
     return choiceID;
 
@@ -1592,78 +1568,3 @@ View a sample JSON response Copy
 
 ]
 ```
-
-On this page
-
-- Choice Manager (REST)
-
-- Guidelines for the Choice Manager service
-
-- URLs
-
-- Postman sample file
-
-- Client code sample
-
-- Create a single choice
-
-- Mass create choices
-
-- Read a choice
-
-- Update a choice without a version check
-
-- Update a choice with a version check
-
-- Mass update choices
-
-- Delete a choice
-
-- Mass delete choices
-
-- Sort choices
-
-- Move choices to the beginning or end of a list
-
-- Move choices after a specific choice in a list
-
-- Retrieve a list of available parents
-
-- Retrieve a list of parents for a choice
-
-- Retrieve a list of parents for a field
-
-- Retrieve a list of available colors
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

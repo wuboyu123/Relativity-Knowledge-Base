@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:24:20+00:00
 sha256: a5adce44c2b75a9715c03e3e07b1845eefa7e867a61450530d1054119b85ecdd
 ---
 
-Processing Filter Manager Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Processing Filter Manager
 
 # Processing Filter Manager
 
@@ -884,78 +866,3 @@ using (var localStream = new MemoryStream()) {
 
 }        }
 ```
-
-On this page
-
-- Processing Filter Manager
-
-- Fundamentals for the Processing Filter Manager API
-
-- Methods
-
-- Classes and enumerations
-
-- Guidelines for the Processing Filter Manager API
-
-- Access rights
-
-- Helper methods
-
-- Filter expressions
-
-- Create a processing filter
-
-- Apply a processing filter
-
-- Update a processing filter
-
-- Delete a processing filter
-
-- Retrieve discovered documents
-
-- Retrieve discovered document IDs
-
-- Retrieve the list of discovered files from invariant as a CSV
-
-- Retrieve filtered data
-
-- Retrieve processing filters
-
-- Retrieve processing filters for a data source
-
-- Pivot on discovered documents
-
-- Download a csv listing of discovered files
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

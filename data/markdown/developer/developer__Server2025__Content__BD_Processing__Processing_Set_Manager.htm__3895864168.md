@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:27:35+00:00
 sha256: 39f943343dd9c729ecbc83e135d757b01fa05d71c816c30a03866258445b0afd
 ---
 
-Processing Set Manager Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Processing Set Manager
 
 # Processing Set Manager
 
@@ -322,50 +304,3 @@ using (IProcessingSetManager proxy = _servicesMgr.CreateProxy<IProcessingSetMana
 
 }
 ```
-
-On this page
-
-- Processing Set Manager
-
-- Create a processing set
-
-- Read a processing set
-
-- Update a processing set
-
-- Retrieve a list of processing sets and related aggregate information
-
-- Retrieve processing set summary data
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

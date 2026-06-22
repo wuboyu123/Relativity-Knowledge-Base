@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:25:46+00:00
 sha256: 58c0fd8035fd43e3c959916d1f3b2e44efeff59a26898a7e30b2cdba7bf40cf9
 ---
 
-Client Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Client Manager (.NET)
 
 # Client Manager (.NET)
 
@@ -984,80 +966,3 @@ public bool ActivateClientDomain(IHelper helper) {
 
 }
 ```
-
-On this page
-
-- Client Manager (.NET)
-
-- Fundamentals for the Client Manager API
-
-- Methods
-
-- Classes
-
-- Guidelines for the Client Manager API
-
-- Create a client proxy
-
-- Retrieve values from Task objects
-
-- Use response data from read operations
-
-- Create a client
-
-- Retrieve a client
-
-- Update a client
-
-- Delete a client
-
-- Helper methods for CRUD operations
-
-- Retrieve associated groups
-
-- Retrieve associated matters
-
-- Retrieve associated users
-
-- Retrieve available statuses
-
-- Methods for client domain activation keys
-
-- Create client domain activation key
-
-- Submit a client domain activation key
-
-- Retry activating a client domain
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

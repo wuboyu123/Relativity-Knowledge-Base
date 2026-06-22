@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:28+00:00
 sha256: f5b71766c513c674edb876f0d9e6d3530b7df093c8d9e33109da0835168662a7
 ---
 
-Develop object type event handlers Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Develop object type event handlers
 
 # Develop object type event handlers
 
@@ -69,40 +51,3 @@ The following notes pertain to Relativity Forms' impact on event handlers, for m
 **** Pre Load event handlers are implemented during reads within Object Manager API, which Relativity Forms uses by default for reads. If your object is customized via Relativity Forms, but is not implementing replaceRead or is using Object Manager API for the read, Pre Load event handlers will continue to work for view and edit modes. However, as no read is necessary for creating new objects, Relativity Forms will not fire Pre Load event handlers when rendering a Layout for a new object. Additionally, script contained in Response.Message will not be executed by Relativity Forms, as the only supported mechanism for running script in Relativity Forms is via Page Interaction event handler. To pre-populate values when rendering a form for new objects in Relativity Forms, implement replaceGetNewObjectInstance. Any other script which would normally be executed by displaying the Message property of the Pre Load event handler's response should be moved into a Page Interaction event handler, when using Relativity Forms.
 
 ***** These event handlers are implemented during or following saves (creations and updates) within Object Manager API, which Relativity Forms uses by default for saves. If your object is using Relativity Forms, but is not implementing replaceSave or is using Object Manager API for the save, these event handlers will continue to work.
-
-On this page
-
-- Develop object type event handlers
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

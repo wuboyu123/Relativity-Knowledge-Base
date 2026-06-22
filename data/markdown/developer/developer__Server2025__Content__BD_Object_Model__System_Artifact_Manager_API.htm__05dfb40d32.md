@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:28:18+00:00
 sha256: 1fcbeb70d268ad6e54ac36362b1627f7968e89f862feb2f152c55c2126458ee8
 ---
 
-System Artifact Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+System Artifact Manager (.NET)
 
 # System Artifact Manager (.NET)
 
@@ -99,8 +81,6 @@ public async Task ReadSystemArtifactID()
 
         int systemArtifactID = await systemArtifactManager.ReadArtifactIDAsync(workspaceID, artifactIdentifier);
 
-
-
         // Use Tab Manager API to create a top-level parent tab in the workspace.
 
         using (ITabManager tabManager = _serviceFactory.CreateProxy<ITabManager>())
@@ -137,44 +117,3 @@ public async Task ReadSystemArtifactID()
 
 }
 ```
-
-On this page
-
-- System Artifact Manager (.NET)
-
-- System Artifact Manager API fundamentals
-
-- Retrieve the Artifact ID of a system artifact
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:22:59+00:00
 sha256: f7645edf6176bf5b247497449db3e7302e4eb43ba1e0fc6e8751724d40a05fc8
 ---
 
-Instance Setting Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Instance Setting Manager (REST)
 
 # Instance Setting Manager (REST)
 
@@ -168,21 +150,15 @@ private HttpClient GetHttpClient()
 
     HttpClient httpClient = new HttpClient();
 
-
-
     httpClient.BaseAddress = new Uri("https://localhost/");
 
     httpClient.DefaultRequestHeaders.Add("X-CSRF-Header", "-");
 
     httpClient.DefaultRequestHeaders.Add("Authorization", "Basic " + Convert.ToBase64String(Encoding.GetEncoding("ISO-8859-1").GetBytes("test@test.com:SomePassword")));
 
-
-
     return httpClient;
 
 }
-
-
 
 public async Task<int> Create()
 
@@ -218,19 +194,13 @@ public async Task<int> Create()
 
     }}";
 
-
-
     var content = new StringContent(payload, Encoding.UTF8, "application/json");
-
-
 
     HttpClient httpClient = GetHttpClient();
 
     HttpResponseMessage response = await httpClient.PostAsync(url, content);
 
     string result = await response.Content.ReadAsStringAsync();
-
-
 
     if (response.StatusCode != HttpStatusCode.OK)
 
@@ -240,13 +210,9 @@ public async Task<int> Create()
 
     }
 
-
-
     int artifactID = int.Parse(result);
 
     _logger.LogDebug($"REST call was successful. Created Instance Setting with artifact ID {artifactID}.");
-
-
 
     return artifactID;
 
@@ -470,8 +436,6 @@ View the JSON response for a read operation Copy
 
       "Guids":[
 
-
-
       ]
 
    },
@@ -486,8 +450,6 @@ View the JSON response for a read operation Copy
 
       "Guids":[
 
-
-
       ]
 
    },
@@ -497,8 +459,6 @@ View the JSON response for a read operation Copy
    "ArtifactID":1023057,
 
    "Guids":[
-
-
 
    ]
 
@@ -605,56 +565,3 @@ To use this endpoint, the caller must have the following:
 The request body is empty.
 
 When the instance setting is successfully deleted, the response returns the status code of 200.
-
-On this page
-
-- Instance Setting Manager (REST)
-
-- Guidelines for the Instance Setting Manager service
-
-- URLs
-
-- Postman sample file
-
-- Client code sample
-
-- Create an instance setting
-
-- Read an instance setting
-
-- Update an instance setting
-
-- Delete an instance setting
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

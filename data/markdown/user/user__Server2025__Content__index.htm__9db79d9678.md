@@ -6,19 +6,7 @@ fetched_at: 2026-06-22T06:01:41+00:00
 sha256: 9282cac415fe7b606264db60b8a586fa05ab90f63e127495621fffc8878afa06
 ---
 
-Relativity Server 2025 e-Discovery User Documentation Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://help.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
+Relativity Server 2025 e-Discovery User Documentation
 
 # Browse by topic
 
@@ -149,67 +137,3 @@ Learn More
 Explore the power of the platform and view our developer documentation.
 
 Learn More
-
-IncludedTopics
-
-Sitemap
-
-- Install Relativity
-
-- Pre-Installation
-
-- Licensing
-
-- Authentication
-
-- Post-Installation verification test
-
-- More >
-
-- Upgrade
-
-- Upgrade considerations
-
-- Relativity upgrade
-
-- More
-
-- Infrastructure
-
-- Servers
-
-- Agents
-
-- Resource pools
-
-- Resource files
-
-- More >
-
-- Capabilities
-
-- Analytics
-
-- Processing
-
-- More >
-
-- Resources
-
-- Relativity A-Z
-
-- PDF Downloads
-
-- Getting started
-
-- Documentation archives
-
-- Version support policy
-
-- Relativity Learning
-
-- Contact us
-
-- 1-312-263-1177
-
-- 231 South LaSalle Street 20th Floor Chicago, IL 60604

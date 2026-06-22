@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:32:02+00:00
 sha256: a3cacaf531080504b14d538c009085057ee6b1f89f1cf1b5131a7e25328cc4b2
 ---
 
-this Binding Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+this Binding
 
 # this Binding
 
@@ -199,46 +181,3 @@ workspaceId
 number
 
 The workspace identifier of the view-model. Available in all Edit, View, and Add modes.
-
-On this page
-
-- this Binding
-
--
-
-- Methods
-
-- Properties
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

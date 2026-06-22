@@ -6,23 +6,7 @@ fetched_at: 2026-06-22T06:33:26+00:00
 sha256: 0bad112e037fbe95b8e62088ac0ebb72928487f2d9e84b82a2e1994f8939a77c
 ---
 
-dtSearchCondition and CASearchCondition Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+dtSearchCondition and CASearchCondition
 
 As part of the Relativity Services API (RSAPI) Deprecation, content on this page referring to the RSAPI and the Patient Tracker application is in the process of being deprecated and will no longer be supported. For more information and alternative APIs, see RSAPI deprecation process .
 
@@ -81,21 +65,15 @@ Copy
 
 /// <returns>Artifact of the SearchIndex.</returns>
 
-
-
 private static Artifact FindSearchIndex(IRSAPIClient proxy, string indexType, string indexName)
 
 {
 
      Artifact artifact = null;
 
-
-
      Query query = new Query();
 
      query.ArtifactTypeID = (int)ArtifactType.SearchIndex;
-
-
 
      query.Condition = new CompositeCondition(
 
@@ -103,15 +81,11 @@ private static Artifact FindSearchIndex(IRSAPIClient proxy, string indexType, st
 
           new TextCondition("Name", TextConditionEnum.EqualTo, indexName));
 
-
-
      try
 
      {
 
           QueryResult result = proxy.Query(proxy.APIOptions, query);
-
-
 
           if (result.Success)
 
@@ -180,8 +154,6 @@ public static bool Query_And_Execute_dtSearch(IRSAPIClient proxy)
 
      Artifact searchArtifact = FindSearchIndex(proxy, "dtSearch", "My dtSearch");
 
-
-
      // STEP 2: Execute the search.
 
      if (searchArtifact != null)
@@ -192,19 +164,13 @@ public static bool Query_And_Execute_dtSearch(IRSAPIClient proxy)
 
           dtSearch(proxy, searchArtifact.ArtifactID, "money w/5 enron", false, false, String.Empty);
 
-
-
           // Search for "money" within 5 words of "enron" and sort by rank.
 
           dtSearch(proxy, searchArtifact.ArtifactID, "money w/5 enron", true, false, String.Empty);
 
-
-
           // Search for "house" and enable stemming.
 
           dtSearch(proxy, searchArtifact.ArtifactID, "house", false, true, String.Empty);
-
-
 
           // Search for "house" and set fuzzieness level to 3.
 
@@ -284,8 +250,6 @@ Copy
 
 /// <param name="fuzzinessLevel">The FuzzinessLevel of the dtSearch. Valid values are 0-10 or String.Empty.</param>
 
-
-
 public static void dtSearch(IRSAPIClient proxy, int searchIndexArtifactID, string searchTerms, bool sortByRank, bool enableStemming, string fuzzinessLevel)
 
 {
@@ -293,8 +257,6 @@ public static void dtSearch(IRSAPIClient proxy, int searchIndexArtifactID, strin
      Query query = new Query();
 
      query.ArtifactTypeID = (int)ArtifactType.Document;
-
-
 
      dtSearchCondition searchCondition = new dtSearchCondition(searchIndexArtifactID, searchTerms);
 
@@ -306,15 +268,11 @@ public static void dtSearch(IRSAPIClient proxy, int searchIndexArtifactID, strin
 
      query.Condition = searchCondition;
 
-
-
      try
 
      {
 
           QueryResult result = proxy.Query(proxy.APIOptions, query);
-
-
 
           if (result.Success)
 
@@ -409,39 +367,27 @@ public static bool Query_And_Execute_CASearch(IRSAPIClient proxy)
 
      Artifact searchArtifact = FindSearchIndex(proxy, "Analytics", "My CA Search");
 
-
-
      // STEP 2: Execute the search:
 
      if (searchArtifact != null)
 
      {
 
-
-
           // Search for "money" within 5 words of "enron."
 
           CASearch(proxy, searchArtifact.ArtifactID, "money w/5 enron", String.Empty, false, String.Empty, String.Empty, false, 0);
-
-
 
           // Search for "money" within 5 words of "enron" and sort by rank.
 
           CASearch(proxy, searchArtifact.ArtifactID, "money w/5 enron", String.Empty, true, String.Empty, String.Empty, false, 0);
 
-
-
           // Search for "house" and set fuzzieness level to 3.
 
           CASearch(proxy, searchArtifact.ArtifactID, "house", String.Empty, false, "3", String.Empty, false, 0);
 
-
-
           // Search for documents that are like documents with ArtifactID 1037198.
 
           CASearch(proxy, searchArtifact.ArtifactID, "", String.Empty, false, String.Empty, String.Empty, true, 1037198);
-
-
 
           // Search for concept of "Just thought I'd say hello" and a minimum concept rank of 60%.
 
@@ -533,8 +479,6 @@ Copy
 
 /// <param name="documentArtifactID">The DocumentArtifactID of a document to be used when IsSimilarDocQuery is true.</param>
 
-
-
 public static void CASearch(IRSAPIClient proxy, int searchIndexArtifactID, string searchTerms, string concepts, bool sortByRank, string fuzzinessLevel, string minimumConceptRank, bool isSimilarDocQuery, int documentArtifactID)
 
 {
@@ -542,8 +486,6 @@ public static void CASearch(IRSAPIClient proxy, int searchIndexArtifactID, strin
      Query query = new Query();
 
      query.ArtifactTypeID = (int)ArtifactType.Document;
-
-
 
      CASearchCondition searchCondition = new CASearchCondition(searchIndexArtifactID, searchTerms);
 
@@ -561,15 +503,11 @@ public static void CASearch(IRSAPIClient proxy, int searchIndexArtifactID, strin
 
      query.Condition = searchCondition;
 
-
-
      try
 
      {
 
           QueryResult result = proxy.Query(proxy.APIOptions, query);
-
-
 
           if (result.Success)
 
@@ -605,46 +543,3 @@ public static void CASearch(IRSAPIClient proxy, int searchIndexArtifactID, strin
 
 }
 ```
-
-On this page
-
-- dtSearchCondition and CASearchCondition
-
-- Query for a search index
-
-- Query for a dtSearch index and execute searches
-
-- Query for an Analytics index and execute searches
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

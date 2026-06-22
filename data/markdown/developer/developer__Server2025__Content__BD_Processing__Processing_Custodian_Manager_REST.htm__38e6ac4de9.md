@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:27:23+00:00
 sha256: 26410989875fcba301c9e69463f8ccce67802f614c43927260246c86676393e6
 ---
 
-Processing Custodian Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Processing Custodian Manager (REST)
 
 # Processing Custodian Manager (REST)
 
@@ -284,46 +266,3 @@ Copy
 - CustodianType : indicates whether the custodian is an individual or an entity. It must be set to "Person" for an individual, or "Other" for a corporation, data location, or other construct. See Entity object on the Relativity Documentation site.
 
 The response returns the Artifact ID of the custodian that was created or updated, such as the integer 1060372.
-
-On this page
-
-- Processing Custodian Manager (REST)
-
-- Create a processing custodian
-
-- Read a processing custodian
-
-- Update a processing custodian
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:28:07+00:00
 sha256: 489bb34bd4acf5c15b7f1cfa52e37946ca320f7beb01f86a331fe4d15650fcfa
 ---
 
-Search Provider (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Search Provider (.NET)
 
 # Search Provider (.NET)
 
@@ -237,54 +219,3 @@ public async Task<List<Dependency>> GetDependencyListAsync(int workspaceId, int 
 
 }
 ```
-
-On this page
-
-- Search Provider (.NET)
-
-- Fundamentals for managing search providers
-
-- Methods
-
-- Create a search provider
-
-- Update a search provider
-
-- Retrieve search provider metadata
-
-- Delete a search provider
-
-- Retrieve a list of dependencies
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

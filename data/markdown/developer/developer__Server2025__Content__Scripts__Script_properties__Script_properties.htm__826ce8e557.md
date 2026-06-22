@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:32:19+00:00
 sha256: 3bd3bcde2316516c77dfba6e65470b2881b48319dc82c0e55213a034e90c73d4
 ---
 
-Script properties Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Script properties
 
 # Script properties
 
@@ -149,40 +131,3 @@ displaytype attribute controls how the object renders inside the Relativity scri
 typeartifactguid attribute specifies the object type's Artifact GUID.
 
 rdoviewartifactguid attribute specifies the view's Artifact GUID.
-
-On this page
-
-- Script properties
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

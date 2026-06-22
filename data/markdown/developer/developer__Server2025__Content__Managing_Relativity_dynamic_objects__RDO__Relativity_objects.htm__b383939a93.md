@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:29:22+00:00
 sha256: d5a2e5ea552f4090e1ef668c3fafdba0c3ddb7dfd0aa3c75ff8388c653023fb3
 ---
 
-Relativity Objects Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Relativity Objects
 
 # Relativity Objects
 
@@ -65,46 +47,3 @@ Using objects in your workspace helps keep items organized in your doc set.
 ## Programmatically using Relativity objects and RDOs
 
 You can also create and use objects programmatically with the Services API. For information about programmatically working with objects, see Object Type Manager (.NET) Object Type Manager (.NET) Object Type Manager (.NET) .
-
-On this page
-
-- Relativity Objects
-
-- System objects
-
-- Relativity Dynamic Objects (RDOs)
-
-- Programmatically using Relativity objects and RDOs
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,23 +6,7 @@ fetched_at: 2026-06-22T06:26:44+00:00
 sha256: 1b45efce3712b8b5c995c55d1785723cdd5166ebe6b6a9e2c393db4be640b1a4
 ---
 
-Logging Configuration Manager services Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Logging Configuration Manager services
 
 # Logging Configuration Manager services
 
@@ -744,64 +728,3 @@ Copy
 ```
 
 The response returns a status code of 200 when the service successfully creates a sink.
-
-On this page
-
-- Logging Configuration Manager services
-
-- Client code sample
-
-- Logging Configuration Manager
-
-- Retrieve configurations
-
-- Create or update a configuration
-
-- Delete a configuration
-
-- Logging Rule Manager
-
-- Retrieve rules
-
-- Create or update a rule
-
-- Delete a rule
-
-- Logging Sink Manager
-
-- Retrieve sinks
-
-- Create sinks
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

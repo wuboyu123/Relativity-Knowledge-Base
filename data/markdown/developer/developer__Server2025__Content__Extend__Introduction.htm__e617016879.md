@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:22:11+00:00
 sha256: 4ec39a2cf492c791613d33083a90dc7235dd7461bf8f21825e4a621833b14a4f
 ---
 
-Introduction to Relativity extensions Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Introduction to Relativity extensions
 
 # Extending Relativity
 
@@ -71,46 +53,3 @@ Deployment Runs on Relativity’s platform, inside Relativity’s ecosystem and 
 Observability and troubleshooting Access to logs through the Log Extractor tool. Access to any observability tools that you use.
 
 Maintainability Code must be kept updated multiple times each year as Relativity’s implementation continues to evolve Domain driven; stable abstractions allow integrations to remain unchanged for years at a time.
-
-On this page
-
-- Extending Relativity
-
-- Extensibility Points
-
-- User Interface Customization APIs
-
-- Extending Relativity vs. Integrating with Relativity
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:24:58+00:00
 sha256: 888d86b4fccf0b1740fb1505c160d34420e849f34793b29d0d42ea89999d024d
 ---
 
-Lesson 5 - Build a cron job Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Lesson 5 - Build a cron job
 
 # Lesson 5 - Build a cron job
 
@@ -2416,56 +2398,3 @@ The following screen shot illustrates an article reference.
 - If your setup from Lesson 5 - Build a cron job is in place, press F5 . You should see the following results:
 
 - Step through the job.Execute() code by pressing F10. The program adds article references to the Birds category as the agent did on the when running live on the instance. See the following sample output:
-
-On this page
-
-- Lesson 5 - Build a cron job
-
-- Before you begin
-
-- Step 1 - Create a basic agent
-
-- Step 2 - Upload the agent to an application
-
-- Step 3 - Add the agent to a Relativity instance
-
-- Step 4 - Remotely debug an agent
-
-- Step 5 - Update the agent functionality
-
-- Step 6 - Write a unit test
-
-- Step 7 - Verify that the agent runs
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

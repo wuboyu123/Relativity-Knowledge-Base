@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:30:30+00:00
 sha256: ca42feea82292f1032a07fe8f5e9daa6b193ff4760dcfd4d156b4f42d999142c
 ---
 
-Processing API services for REST (v0) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Processing API services for REST (v0)
 
 # Processing API services for REST (v0)
 
@@ -87,15 +69,11 @@ HttpClient httpClient = new HttpClient();
 
 httpClient.BaseAddress = new Uri("http://localhost/");
 
-
-
 //Set the required headers.
 
 httpClient.DefaultRequestHeaders.Add("X-CSRF-Header", "-");
 
 httpClient.DefaultRequestHeaders.Add("Authorization", "Basic bXkudXNlckBrY3VyYS5jb206Q250VGNoVGhzMTIzNCE=");
-
-
 
 //Call the operation that you want to run.
 
@@ -110,8 +88,6 @@ HttpResponseMessage response = httpClient.PostAsync(url, content).Result;
 string result = response.Content.ReadAsStringAsync().Result;
 
 bool success = HttpStatusCode.Ok == response.StatusCode;
-
-
 
 //Parse the result with Json.NET.
 
@@ -1918,86 +1894,3 @@ Copy
 The response returns the status code of 200 when the job is submitted successfully. However, this return value doesn't indicate that the job has been canceled. Multiple factors influence when a worker picks up a cancel job and how long the job takes to execute. For example, the amount of data and system state can affect this outcome.
 
 The submission of cancel job returns successfully when the job associated with a processing set has already been canceled.
-
-On this page
-
-- Processing API services for REST (v0)
-
-- Client code sample
-
-- Custodians
-
-- Create or update a custodian
-
-- Read a custodian
-
-- Processing Profile
-
-- Getting Started With Processing Profile Guids
-
-- Create a Processing Profile
-
-- Query a Processing Profile
-
-- Update a Processing Profile
-
-- Delete a Processing Profile
-
-- Processing data sources
-
-- Create or update a data source
-
-- Read a data source
-
-- Validate deletion of a data source
-
-- Processing sets
-
-- Create or update a processing set
-
-- Read a processing set
-
-- Retrieve aggregate information for processing sets
-
-- Retrieve summary data for processing sets
-
-- Inventory jobs
-
-- Discovery jobs
-
-- Publishing jobs
-
-- Cancel jobs
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

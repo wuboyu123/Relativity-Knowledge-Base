@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:14:29+00:00
 sha256: 4021909bffa01ebf742a231b7601314fac96775f329dd95f021865a802da423a
 ---
 
-Reporting and monitoring using Audit Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://help.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Reporting and monitoring using Audit
 
 # Reporting and monitoring using Audit
 
@@ -144,8 +126,6 @@ You can only perform this workflow from the instance Audit tab.
 
 - Login - Failed
 
-- Logout
-
 - Click Apply .
 
 Once you create this view, you or your security team can filter on the Login - Failed action for more insight into what caused the login failure.
@@ -177,104 +157,3 @@ You can only perform this workflow from the instance Audit tab.
 You can also add a condition to filter on the Object Name field for a specific component of Relativity. Selecting the Object Name field gives you a free text search back. You can specify a specific string or set of string along with the is like operator to filter for errors for a specific component.
 
 You can also save these filters in a View to regularly monitor for specific errors occurring in Relativity.
-
-On this page
-
-- Reporting and monitoring using Audit
-
-- Identifying Relativity scripts and long-running queries
-
-- Identifying incorrect coding and performing a mass revert
-
-- Tracking user access and identifying potential breaches
-
-- Aggregating the number of errors over time
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-- Install Relativity
-
-- Pre-Installation
-
-- Licensing
-
-- Authentication
-
-- Post-Installation verification test
-
-- More >
-
-- Upgrade
-
-- Upgrade considerations
-
-- Relativity upgrade
-
-- More
-
-- Infrastructure
-
-- Servers
-
-- Agents
-
-- Resource pools
-
-- Resource files
-
-- More >
-
-- Capabilities
-
-- Analytics
-
-- Processing
-
-- More >
-
-- Resources
-
-- Relativity A-Z
-
-- PDF Downloads
-
-- Getting started
-
-- Documentation archives
-
-- Version support policy
-
-- Relativity Learning
-
-- Contact us
-
-- 1-312-263-1177
-
-- 231 South LaSalle Street 20th Floor Chicago, IL 60604
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

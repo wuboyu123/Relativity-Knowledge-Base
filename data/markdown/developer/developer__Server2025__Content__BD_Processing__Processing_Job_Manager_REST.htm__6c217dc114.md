@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:27:33+00:00
 sha256: f3845419c8dbc07722b24f0a5c5309f2e60fd5953437395b8fbc5de01e14fae1
 ---
 
-Processing Job Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Processing Job Manager (REST)
 
 # Processing Job Manager (REST)
 
@@ -183,50 +165,3 @@ Copy
 1
 <host>/Relativity.Rest/API/relativity-processing/v1/workspaces/{your workspace id}/processing-jobs/{your processing set Artifact ID}/cancel
 ```
-
-On this page
-
-- Processing Job Manager (REST)
-
-- Client code sample
-
-- Submit a discovery job
-
-- Submit a inventory job
-
-- Submit a publish job
-
-- Cancel job
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

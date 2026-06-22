@@ -6,23 +6,7 @@ fetched_at: 2026-06-22T06:33:12+00:00
 sha256: 375397639147276cbabeb2fd5527050512d50724a0167d17af78c18fc49c6475
 ---
 
-Build applications Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Build applications
 
 # Build applications
 
@@ -87,44 +71,3 @@ The main components of a Relativity application generally include event handlers
 - Perform other operations.
 
 In addition, your application should reference the Relativity.Kepler NuGet package which provides an abstraction layer and creates proxies to various extendable parts of the platform. From there, you can reference specialized NuGet packages that define specific API layers that Kepler services, such as Relativity.ObjectManager and Relativity.Services.Interfaces.
-
-On this page
-
-- Build applications
-
-- Use the ADS
-
-- Writing custom code for applications
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

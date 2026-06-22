@@ -6,23 +6,7 @@ fetched_at: 2026-06-22T06:33:15+00:00
 sha256: f728cac04293a8bf11928d12edabd6e13a604c0c2930b1def4664030c3ad7ed8
 ---
 
-SavedSearchCondition Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+SavedSearchCondition
 
 # SavedSearchCondition
 
@@ -52,46 +36,3 @@ You can query for the ArtifactID of a Saved Search. After the ArtifactID is retu
 ## Query for a Document with a SavedSearchCondition
 
 You can use the SavedSearchCondition to query for a Document with a saved search ID. A SavedSearchCondition can't be combined with any other Condition types.
-
-On this page
-
-- SavedSearchCondition
-
-- SelectedFields directive
-
-- Query for the ArtifactID of a Saved Search
-
-- Query for a Document with a SavedSearchCondition
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

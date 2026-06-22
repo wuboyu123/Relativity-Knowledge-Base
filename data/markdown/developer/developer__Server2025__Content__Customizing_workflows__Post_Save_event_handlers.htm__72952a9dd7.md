@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:28:56+00:00
 sha256: e73a347c467ec55d1c30b80f4639dc790ca0973e08de7611eaece3264adc0764
 ---
 
-Post Save event handlers Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Post Save event handlers
 
 # Post Save event handlers
 
@@ -165,8 +147,6 @@ using System.Data;
 
 using System.Data.SqlClient;
 
-
-
 namespace ExampleEventHandlers
 
 {
@@ -189,11 +169,7 @@ namespace ExampleEventHandlers
 
     {
 
-
-
         private readonly Guid RELEVANT_FIELD_GUID = new Guid("5702F31B-48AC-4E2A-9000-A48B3E3ABDBF");
-
-
 
         public override kCura.EventHandler.Response Execute()
 
@@ -211,8 +187,6 @@ namespace ExampleEventHandlers
 
             };
 
-
-
             try
 
             {
@@ -223,8 +197,6 @@ namespace ExampleEventHandlers
 
                 kCura.EventHandler.ChoiceCollection fieldValue = (kCura.EventHandler.ChoiceCollection)relevantField.Value?.Value;
 
-
-
                 if (fieldValue != null)
 
                 {
@@ -234,8 +206,6 @@ namespace ExampleEventHandlers
                     const string choiceName = "Relevant";
 
                     kCura.EventHandler.Choice choice = fieldValue[choiceName];
-
-
 
                     // If the field value is set to the "Relevant" choice
 
@@ -273,8 +243,6 @@ namespace ExampleEventHandlers
 
         }
 
-
-
         /// <summary>
 
         /// Ensure that you always have access to the fields in the ActiveArtifact.Fields collection even if they aren't on the current layout.
@@ -299,8 +267,6 @@ namespace ExampleEventHandlers
 
         }
 
-
-
         /// <summary>
 
         /// Inserts the RDO identifier into a table in the EDDS database if it doesn't already exist.
@@ -316,8 +282,6 @@ namespace ExampleEventHandlers
         private void AddToSqlTable(Relativity.API.IDBContext dbContext, int workspaceArtifactID, int artifactID)
 
         {
-
-
 
             String sql = "IF NOT EXISTS(SELECT TOP 1 * FROM [MySQLTable] WHERE [WorkspaceArtifactID] = @workspaceArtifactID AND [ArtifactID] = @artifactID)"
 
@@ -341,50 +305,7 @@ namespace ExampleEventHandlers
 
         }
 
-
-
     }
 
 }
 ```
-
-On this page
-
-- Post Save event handlers
-
-- Guidelines for Post Save event handlers
-
-- Code sample for a Post Save event handler
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

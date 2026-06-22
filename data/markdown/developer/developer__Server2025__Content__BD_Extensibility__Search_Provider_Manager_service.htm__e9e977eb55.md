@@ -6,23 +6,7 @@ fetched_at: 2026-06-22T06:33:19+00:00
 sha256: 5c22100eaf266ba1b921fadd954eebbfbd561bfcf513bb20b005c56b3d6d0dcc
 ---
 
-Legacy Search Provider Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Legacy Search Provider Manager (REST)
 
 # Legacy Search Provider Manager (REST)
 
@@ -161,8 +145,6 @@ public List<Relativity.Services.Search.SearchProvider> GetActiveHtmlSearchProvid
             searchProviders = resultSet.SearchProviders;
 
         }
-
-
 
         return searchProviders;
 
@@ -469,44 +451,3 @@ View a JSON response for the retrieval of a SearchProvider Copy
 
 }
 ```
-
-On this page
-
-- Legacy Search Provider Manager (REST)
-
-- Client code sample
-
-- Read a SearchProvider
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

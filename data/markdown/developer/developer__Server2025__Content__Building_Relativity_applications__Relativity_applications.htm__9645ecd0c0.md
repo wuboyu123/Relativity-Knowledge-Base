@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:25:04+00:00
 sha256: 0d91df5e91c036bbb920c4cf97d982755a63ed1d861b999b549ac0263d82879d
 ---
 
-Relativity Application Framework Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Relativity Application Framework
 
 # Relativity Application Framework
 
@@ -79,44 +61,3 @@ When you finish development, compile your source code so that you can add this n
 - Upload your assemblies - you must upload your compiled assembles with your custom code to Relativity UI in order to associate them with an application. If you created object type event handlers, you can associate them with RDOs and documents. If you created application event handlers, associate them with applications. You can upload assemblies for event handlers and agents through the Resources tab in Relativity. Custom pages are added through the Custom Pages tab within your development workspace. See Resource files on the Relativity Documentation site.
 
 - Export your application - when all of the customizations to your application are complete, you can then export the application for installation to other workspaces and instances. The export process packages all your customizations into a single file so you can easily transfer and install it in other Relativity instances. If you want to add changes or modify your application, update the original version that resides in your development workspace, and then export it when you are finished. Relativity automatically increments the version on export if the application is unlocked or the application schema has been modified. After you obtain the new package, you can then upgrade other workspaces with the new version. See Exporting applications on the Relativity Documentation site.
-
-On this page
-
-- Relativity Application Framework
-
-- Use cases for extending Relativity
-
-- Sample workflow for building applications
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

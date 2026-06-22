@@ -6,27 +6,7 @@ fetched_at: 2026-06-22T06:21:39+00:00
 sha256: 55fef4665ed5de5bede56b6706bf6ddf645c36f5ce07d8356ef19b67d55dab80
 ---
 
-Relativity Server 2025 Developer Documentation Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
+Relativity Server 2025 Developer Documentation
 
 explore
 
@@ -43,17 +23,3 @@ Build custom applications that run on the Relativity platform, for example to mo
 Looking for Developer Documentation for RelativityOne?
 
 RelativityOne Developer Documentation
-
-IncludedTopics
-
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

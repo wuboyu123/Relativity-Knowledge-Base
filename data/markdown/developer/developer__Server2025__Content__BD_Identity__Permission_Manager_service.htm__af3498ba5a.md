@@ -2,29 +2,11 @@
 title: "Permission Manager (REST)"
 url: https://platform.relativity.com/Server2025/Content/BD_Identity/Permission_Manager_service.htm
 collection: developer
-fetched_at: 2026-06-22T06:27:16+00:00
+fetched_at: 2026-06-22T06:27:17+00:00
 sha256: e042e86fae19d067a7c0a14efcb08d36e23d100ee541cd24a81d18f202ab2d8e
 ---
 
-Permission Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Permission Manager (REST)
 
 # Permission Manager (REST)
 
@@ -62,23 +44,17 @@ Copy
 21
 //Set up the REST client.
 
-
-
 HttpClient httpClient = new HttpClient();
 
 httpClient.BaseAddress = new Uri("http://localhost/");
 
 //Set the required headers.
 
-
-
 httpClient.DefaultRequestHeaders.Add("X-CSRF-Header", "-");
 
 httpClient.DefaultRequestHeaders.Add("Authorization", "Basic c2FtcGxlYWRtaW5AcmVsYXRpdml0eS5yZXN0OlMwbTNwQHNzdzByZA==");
 
 //Call get groups with admin permissions.
-
-
 
 string url = "/Relativity.REST/api/Relativity.Services.Permission.IPermissionModule/Permission%20Manager/GetAdminGroupSelectorAsync";
 
@@ -91,8 +67,6 @@ string result = response.Content.ReadAsStringAsync().Result;
 bool success = HttpStatusCode.Created == response.StatusCode;
 
 //Parse the result with Json.NET.
-
-
 
 JObject resultObject = JObject.Parse(result);
 ```
@@ -162,8 +136,6 @@ Sample JSON response Copy
 {
 
   "DisabledGroups": [
-
-
 
     {
 
@@ -326,8 +298,6 @@ Sample JSON response Copy
 {
 
   "DisabledGroups": [
-
-
 
     {
 
@@ -493,8 +463,6 @@ Sample JSON response Copy
 {
 
   "DisabledGroups": [
-
-
 
     {
 
@@ -16123,8 +16091,6 @@ Copy
 
     },
 
-
-
     "PermissionType": {
 
       "ID": 1
@@ -16140,8 +16106,6 @@ Copy
       "ID": 10
 
     },
-
-
 
     "PermissionType": {
 
@@ -16159,8 +16123,6 @@ Copy
 
     },
 
-
-
     "PermissionType": {
 
       "ID": 3
@@ -16176,8 +16138,6 @@ Copy
       "ID": 10
 
     },
-
-
 
     "PermissionType": {
 
@@ -17097,8 +17057,6 @@ Copy
 17
 {
 
-
-
   "workspaceArtifactID": 13772405,
 
   "permissions": [
@@ -17110,8 +17068,6 @@ Copy
       "ID": 10
 
     },
-
-
 
     "PermissionType": {
 
@@ -17274,8 +17230,6 @@ Copy
   "workspaceArtifactID": 13772405,
 
   "permissionValues": [
-
-
 
     {
 
@@ -17479,100 +17433,3 @@ Copy
 ```
 
 The response does not contain any data. Success or failure are indicated by the HTTP status code. For more information, see HTTP status codes .
-
-On this page
-
-- Permission Manager (REST)
-
-- Client code sample
-
-- Get admin groups
-
-- Get workspace groups
-
-- Get item groups
-
-- Add and remove admin groups
-
-- Add and remove workspace groups
-
-- Add and remove item groups
-
-- Get admin permissions
-
-- Get workspace permissions
-
-- Get item permissions
-
-- Set admin permissions
-
-- Set workspace permissions
-
-- Get item-level security
-
-- GetItemLevelSecurityAsync
-
-- GetItemLevelSecurityListAsync
-
-- Set item-level security
-
-- Set item permissions
-
-- Get admin group users
-
-- Get workspace group users
-
-- Get item group users
-
-- Query permissions
-
-- Read a single permission
-
-- Get selected permissions for current user
-
-- GetPermissionSelectedAsync
-
-- GetPermissionSelectedListAsync
-
-- Get selected permissions for a group
-
-- Set selected permissions for a group
-
-- Create a custom permission
-
-- Update a custom permission
-
-- Delete a custom permission
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

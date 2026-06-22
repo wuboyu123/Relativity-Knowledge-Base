@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:30:02+00:00
 sha256: fdf08b2e1b11bb14ab606747411f0ab7b0f50707bf24d4aeb290c9112b4be426
 ---
 
-Work with data grid Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Work with data grid
 
 # Work with data grid
 
@@ -156,52 +138,3 @@ When updating data grid-enabled document fields, note the following:
 - The oldValue and newValue stored with the Data Grid-enabled field audit details are truncated if they exceed 1,000,000 characters, same as the fields stored in the SQL database.
 
 - If you update both SQL and Data Grid fields, and the SQL portion of the update fails, in most cases the change to Data Grid is successfully committed and an audit record is created, while the SQL fields remains unchanged.
-
-On this page
-
-- Work with data grid
-
-- Bulk load with Import API
-
-- Work with document text data
-
-- Supported data grid query operators
-
-- Services API query samples
-
-- REST API query samples
-
-- Special considerations for updating Data Grid fields
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:22:58+00:00
 sha256: a3a8a60ea0009b25f59d75c0c70c8f03cd6ca8408f886d3084f333385012daf4
 ---
 
-Instance Setting Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Instance Setting Manager (.NET)
 
 # Instance Setting Manager (.NET)
 
@@ -113,8 +95,6 @@ public async Task<bool> Create(Relativity.Environment.V1.InstanceSetting.IInstan
 
     bool success = false;
 
-
-
     try
 
     {
@@ -126,8 +106,6 @@ public async Task<bool> Create(Relativity.Environment.V1.InstanceSetting.IInstan
         request.Value = "Sample Text Value";
 
         request.InitialValue = "Sample Text Initial Value";
-
-
 
         int artifactID = await instanceSettingManagerProxy.CreateAsync(request);
 
@@ -152,8 +130,6 @@ public async Task<bool> Create(Relativity.Environment.V1.InstanceSetting.IInstan
         throw;
 
     }
-
-
 
     return success;
 
@@ -204,8 +180,6 @@ public async Task<bool> Read(Relativity.Environment.V1.InstanceSetting.IInstance
 
     bool success = false;
 
-
-
     try
 
     {
@@ -233,8 +207,6 @@ public async Task<bool> Read(Relativity.Environment.V1.InstanceSetting.IInstance
         throw;
 
     }
-
-
 
     return success;
 
@@ -284,8 +256,6 @@ public async Task<bool> Update(Relativity.Environment.V1.InstanceSetting.IInstan
 
     bool success = false;
 
-
-
     try
 
     {
@@ -297,8 +267,6 @@ public async Task<bool> Update(Relativity.Environment.V1.InstanceSetting.IInstan
         request.Value = "Modified Text Value";
 
         request.ArtifactID = artifactID;
-
-
 
         await instanceSettingManager.UpdateAsync(request);
 
@@ -315,8 +283,6 @@ public async Task<bool> Update(Relativity.Environment.V1.InstanceSetting.IInstan
         _logger.LogError(ex, "Exception while updating Instance Setting");
 
     }
-
-
 
     return success;
 
@@ -364,8 +330,6 @@ public async Task<bool> Delete(Relativity.Environment.V1.InstanceSetting.IInstan
 
     bool success = false;
 
-
-
     try
 
     {
@@ -387,8 +351,6 @@ public async Task<bool> Delete(Relativity.Environment.V1.InstanceSetting.IInstan
         throw;
 
     }
-
-
 
     return success;
 
@@ -441,52 +403,3 @@ private static InstanceSettingRequest GetRequestTemplate(string name, string sec
 
 }
 ```
-
-On this page
-
-- Instance Setting Manager (.NET)
-
-- Fundamentals for the Instance Settings Manager API
-
-- Create an instance setting
-
-- Read an instance setting
-
-- Update an instance setting
-
-- Delete an instance setting
-
-- Helper method in code samples
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

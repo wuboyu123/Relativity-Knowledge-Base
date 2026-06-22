@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:28:59+00:00
 sha256: c41b4db1c52493b108651c7752cffaf3af8b0a90c774781f6298e6dcb9ee9e81
 ---
 
-Pre Delete event handlers Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Pre Delete event handlers
 
 # Pre Delete event handlers
 
@@ -137,8 +119,6 @@ Copy
 68
 using System;
 
-
-
 namespace ExampleEventHandlers
 
 {
@@ -157,11 +137,7 @@ namespace ExampleEventHandlers
 
     {
 
-
-
         private const String DELETE_OLD_ENTRIES_QUERY = "DELETE FROM [MySQLTable] WHERE [WorkspaceArtifactID] = @workspaceArtifactID AND [InstanceArtifactID] = @instanceArtifactID";
-
-
 
         /// <summary>
 
@@ -180,8 +156,6 @@ namespace ExampleEventHandlers
             //Do nothing
 
         }
-
-
 
         /// <summary>
 
@@ -211,8 +185,6 @@ namespace ExampleEventHandlers
 
             };
 
-
-
             System.Data.SqlClient.SqlParameter workspaceArtifactIDParam = new System.Data.SqlClient.SqlParameter("@workspaceArtifactID", System.Data.SqlDbType.Int);
 
             workspaceArtifactIDParam.Value = this.Helper.GetActiveCaseID();
@@ -221,17 +193,11 @@ namespace ExampleEventHandlers
 
             instanceArtifactIDParam.Value = this.ActiveArtifact.ArtifactID;
 
-
-
             this.Helper.GetDBContext(-1).ExecuteNonQuerySQLStatement(DELETE_OLD_ENTRIES_QUERY, new System.Data.SqlClient.SqlParameter[] { workspaceArtifactIDParam, instanceArtifactIDParam });
-
-
 
             return eventResponse;
 
         }
-
-
 
         /// <summary>
 
@@ -246,8 +212,6 @@ namespace ExampleEventHandlers
             get { return null; }
 
         }
-
-
 
         /// <summary>
 
@@ -271,44 +235,3 @@ namespace ExampleEventHandlers
 
 }
 ```
-
-On this page
-
-- Pre Delete event handlers
-
-- Guidelines for Pre Delete event handlers
-
-- Code sample for a Pre Delete event handler
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

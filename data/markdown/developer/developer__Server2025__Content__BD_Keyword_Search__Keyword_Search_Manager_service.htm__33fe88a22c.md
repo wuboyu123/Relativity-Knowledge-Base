@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:24:26+00:00
 sha256: dda47273fff5b84f5a5c2b1d5ead06a986341da5b3fccc38f66741aef9421ed8
 ---
 
-Keyword Search Manager (REST) for saved searches Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Keyword Search Manager (REST) for saved searches
 
 # Keyword Search Manager (REST) for saved searches
 
@@ -64,23 +46,17 @@ Copy
 21
 //Set up the client.
 
-
-
 HttpClient httpClient = new HttpClient();
 
 httpClient.BaseAddress = new Uri("http://localhost/");
 
 //Set the required headers.
 
-
-
 httpClient.DefaultRequestHeaders.Add("X-CSRF-Header", "-");
 
 httpClient.DefaultRequestHeaders.Add("Authorization", "Basic c2FtcGxlYWRtaW5AcmVsYXRpdml0eS5yZXN0OlMwbTNwQHNzdzByZA==");
 
 //Call Create for a SavedSearch.
-
-
 
 string url = "Relativity.REST/api/Relativity.Services.Search.ISearchModule/Keyword%20Search%20Manager/Create";
 
@@ -93,8 +69,6 @@ string result = response.Content.ReadAsStringAsync().Result;
 bool success = HttpStatusCode.Created == response.StatusCode;
 
 //Parse the result with Json.NET.
-
-
 
 JObject resultObject = JObject.Parse(result);
 ```
@@ -3289,74 +3263,3 @@ Copy
 
 }
 ```
-
-On this page
-
-- Keyword Search Manager (REST) for saved searches
-
-- Client code sample
-
-- Create
-
-- Search condition criteria
-
-- Read
-
-- Update
-
-- Delete
-
-- Query
-
-- Move
-
-- Copy
-
-- Helper operations
-
-- GetEmailToLinkUrlAsync
-
-- GetFieldsForCriteriaConditionAsync
-
-- GetFieldsForObjectCriteriaCollectionAsync
-
-- GetFieldsForSearchResultViewAsync
-
-- GetSearchIncludesAsync
-
-- GetSearchOwnersAsync
-
-- GetAccessStatusAsync
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

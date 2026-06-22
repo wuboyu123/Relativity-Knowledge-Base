@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:23:40+00:00
 sha256: 409b843a6f27383a307876da6c8d84d69d5ca02a1acb7bd26cdd7b4c19594175
 ---
 
-Resource File (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Resource File (.NET)
 
 # Resource File (.NET)
 
@@ -65,8 +47,6 @@ Create a proxy using CreateProxy() Copy
 6
 7
 Client.SamplesLibrary.Helper.IHelper helper;
-
-
 
 // Create a proxy
 
@@ -130,8 +110,6 @@ public async Task CreateAsync(ResourceFileRequest resourceFileRequest, string fi
     };
 
     KeplerStream keplerStream = new KeplerStream(memoryStream);
-
-
 
     try
 
@@ -210,8 +188,6 @@ public async Task CreateAsync(string fileName, string fileContent)
 
     };
 
-
-
     MemoryStream memoryStream = new MemoryStream(Encoding.UTF8.GetBytes(fileContent))
 
     {
@@ -219,8 +195,6 @@ public async Task CreateAsync(string fileName, string fileContent)
         Position = 0
 
     };
-
-
 
     using (KeplerStream keplerStream = new KeplerStream(memoryStream))
 
@@ -231,8 +205,6 @@ public async Task CreateAsync(string fileName, string fileContent)
         uploadContentsResponse = await ResourceFileManager.UploadContentsAsync(keplerStream, fileName);
 
     }
-
-
 
     //Create ResourceFile with uploaded contents
 
@@ -371,8 +343,6 @@ public async Task UpdateMetadataAsync(int resourceFileID, string keywords, strin
 
     readResponse.Notes = notes;
 
-
-
     try
 
     {
@@ -434,11 +404,7 @@ public async Task UpdateContentsAsync(int resourceFileID, string  fileContent)
 
     };
 
-
-
     KeplerStream keplerStream = new KeplerStream(memoryStream);
-
-
 
     try
 
@@ -517,8 +483,6 @@ public async Task UpdateMetadataAndContentsAsync(string fileName, string fileCon
 
     request.Notes = notes;
 
-
-
     MemoryStream memoryStream = new MemoryStream(Encoding.UTF8.GetBytes(fileContent))
 
     {
@@ -528,8 +492,6 @@ public async Task UpdateMetadataAndContentsAsync(string fileName, string fileCon
     };
 
     KeplerStream stream = new KeplerStream(memoryStream);
-
-
 
     try
 
@@ -592,13 +554,9 @@ public async Task UpdateContentsWithKeyAsync(int resourceFileID, string fileCont
 
     ContentsResponse uploadContentsResponse = null;
 
-
-
     ResourceFileResponse readResponse =
 
         await ResourceFileManager.ReadAsync(resourceFileID);
-
-
 
     MemoryStream memoryStream = new MemoryStream(Encoding.ASCII.GetBytes(fileContent))
 
@@ -607,8 +565,6 @@ public async Task UpdateContentsWithKeyAsync(int resourceFileID, string fileCont
         Position = 0
 
     };
-
-
 
     using (KeplerStream keplerStream = new KeplerStream(memoryStream))
 
@@ -619,8 +575,6 @@ public async Task UpdateContentsWithKeyAsync(int resourceFileID, string fileCont
         uploadContentsResponse = await ResourceFileManager.UploadContentsAsync(keplerStream, readResponse.FileName);
 
     }
-
-
 
     try
 
@@ -693,8 +647,6 @@ public async Task UpdateMetadataAndContentsWithKeyAsync(string fileName, string 
 
     ContentsResponse uploadContentsResponse = null;
 
-
-
     ResourceFileRequest request = new ResourceFileRequest
 
     {
@@ -709,13 +661,9 @@ public async Task UpdateMetadataAndContentsWithKeyAsync(string fileName, string 
 
     };
 
-
-
     request.Keywords = keywords;
 
     request.Notes = notes;
-
-
 
     MemoryStream memoryStream = new MemoryStream(Encoding.ASCII.GetBytes(fileContent))
 
@@ -724,8 +672,6 @@ public async Task UpdateMetadataAndContentsWithKeyAsync(string fileName, string 
         Position = 0
 
     };
-
-
 
     using (KeplerStream keplerStream = new KeplerStream(memoryStream))
 
@@ -736,8 +682,6 @@ public async Task UpdateMetadataAndContentsWithKeyAsync(string fileName, string 
         uploadContentsResponse = await ResourceFileManager.UploadContentsAsync(keplerStream, fileName);
 
     }
-
-
 
     try
 
@@ -792,13 +736,9 @@ public async Task UpdateMetadataWithKeyAsync(int resourceFileID, string keywords
 
         await ResourceFileManager.ReadAsync(resourceFileID);
 
-
-
     readResponse.Keywords = keywords;
 
     readResponse.Notes = notes;
-
-
 
     try
 
@@ -1031,13 +971,9 @@ public async Task UpsertAsync_keplerStream(ObjectIdentifier applicationIdentifie
 
     string FileContents = "File content goes here ..";
 
-
-
     Stream stream = new MemoryStream(Encoding.ASCII.GetBytes(FileContents));
 
     KeplerStream keplerStream = new KeplerStream(stream);
-
-
 
     try
 
@@ -1098,11 +1034,7 @@ public async Task UpsertAsync_ContentsKey(ObjectIdentifier applicationIdentifier
 
     string FileContents = "File content goes here ..";
 
-
-
     Guid ContentsKey = await UploadContentsAsync(FileContents);
-
-
 
     async Task<Guid> UploadContentsAsync(string fileContents)
 
@@ -1121,8 +1053,6 @@ public async Task UpsertAsync_ContentsKey(ObjectIdentifier applicationIdentifier
         }
 
     }
-
-
 
     try
 
@@ -1241,15 +1171,11 @@ public async Task  PushResourceFilesAsync()
 
     };
 
-
-
     List<string> resourceFilePaths = resourceFileNames
 
         .Select(x => TestContext.CurrentContext.TestDirectory + @"\Environment\V1\ResourceFile\PushResourceFiles\" + x)
 
         .ToList();
-
-
 
     // The underlying implementation uses Upsert.  The following should create 3 new files.
 
@@ -1257,82 +1183,3 @@ public async Task  PushResourceFilesAsync()
 
 }
 ```
-
-On this page
-
-- Resource File (.NET)
-
-- Guidelines for the Resource File API
-
-- Admin-level context
-
-- Sample use cases
-
-- Endpoints
-
-- CreateAsync
-
-- Permissions
-
-- ReadAsync
-
-- Permissions
-
-- UpdateAsync
-
-- Permissions
-
-- DeleteAsync
-
-- Permissions
-
-- DownloadContentsAsync
-
-- Permissions
-
-- UploadContentsAsync
-
-- Permissions
-
-- UpsertAsync
-
-- Permissions
-
-- GetEligibleApplicationsAsync
-
-- Permissions
-
-- PushResourceFiles
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

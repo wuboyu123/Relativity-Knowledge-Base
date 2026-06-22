@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:27:13+00:00
 sha256: c411074a8d4e5e24ff13182ee853b5439aad68e67c471ea5a91d79358ce1f654
 ---
 
-Object Type Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Object Type Manager (REST)
 
 # Object Type Manager (REST)
 
@@ -167,15 +149,11 @@ public static async Task<ObjectTypeResponse> Create()
 
         client.BaseAddress = new Uri("https://localhost/");
 
-
-
         int workspaceId = 1017660;
 
         int parentObjectArtifactId = 1035231;
 
         int applicationId = 1042129;
-
-
 
         string inputJSON = $"{{\"ObjectTypeRequest\": {{\"ParentObjectType\": {{\"Value\": {{\"ArtifactID\": \"{parentObjectArtifactId}\"}}}},\"RelativityApplications\": [{{\"ArtifactID\": \"{applicationId}\"}}],\"Name\": \"Object Test 1\",\"CopyInstancesOnCaseCreation\": false,\"CopyInstancesOnParentCopy\": false,\"EnableSnapshotAuditingOnDelete\": true,\"PersistentListsEnabled\": false,\"PivotEnabled\": true,\"SamplingEnabled\": false,\"Keywords\": \"\",\"Notes\": \"\"}}}}";
 
@@ -190,8 +168,6 @@ public static async Task<ObjectTypeResponse> Create()
         result = JsonConvert.DeserializeObject<ObjectTypeResponse>(content);
 
     }
-
-
 
     return result;
 
@@ -1233,60 +1209,3 @@ View a sample JSON response Copy
 
 ]
 ```
-
-On this page
-
-- Object Type Manager (REST)
-
-- Guidelines for the Object Type Manager service
-
-- URLs
-
-- Postman sample files
-
-- Client code sample
-
-- CRUD operations for object types
-
-- Create an object type
-
-- Read an object type
-
-- Update an object type
-
-- Delete an object type
-
-- Retrieve a parent object types
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

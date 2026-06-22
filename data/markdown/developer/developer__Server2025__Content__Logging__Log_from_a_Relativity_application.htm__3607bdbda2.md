@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:29:35+00:00
 sha256: b7b488ccdfa71a20317386925852c612faec349612899d917b5181afa10c24d8
 ---
 
-Log from a Relativity application Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Log from a Relativity application
 
 # Log from a Relativity application
 
@@ -64,8 +46,6 @@ Copy
 9
 10
 public interface IAPILog {
-
-
 
     void LogVerbose(string messageTemplate, params object[] propertyValues);
 
@@ -747,8 +727,6 @@ namespace MySampleNamespace
 
 }
 
-
-
 //Sample Logging Code
 
 MyObject testObject = new MyObject()
@@ -761,19 +739,13 @@ MyObject testObject = new MyObject()
 
 };
 
-
-
 //To get a destructured object put the @ symbol before the name of your message param name: {@...}
 
 Relativity.Logging.Log.Logger.LogDebug("Testing MyObject destructured - {@DeserializedMyObject}", testObject);
 
-
-
 //If you do not put the @ symbol the object will be outputted as if you did testObject.ToString()
 
 Relativity.Logging.Log.Logger.LogDebug("Testing MyObject not destructured - {NonDeserializedMyObject}", testObject);
-
-
 
 //Destructuring simple data types results in a non JSON serialized output, just like if
 
@@ -817,50 +789,3 @@ Message: Testing myString destructured - "My Test String"
 - Log any direct SQL access.
 
 - Pay attention to the logging levels and don’t overuse logging. Logging can have a significant impact on your disk, database, processor, and network resources.
-
-On this page
-
-- Log from a Relativity application
-
-- Before you begin
-
-- IAPILog interface
-
-- Add loggers using API helpers
-
-- Add custom metadata to loggers
-
-- Best practices
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

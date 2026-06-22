@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:32:12+00:00
 sha256: 36d6ae655ea473268a46b0e4a1591c04be0487e06e1deff72ddee3e9759349f3
 ---
 
-Add a custom item list to a layout Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Add a custom item list to a layout
 
 # Add a custom item list to a layout
 
@@ -73,11 +55,7 @@ View example Copy
 24
 (function(eventNames, convenienceApi) {
 
-
-
                     const eventHandlers = {};
-
-
 
                     eventHandlers[eventNames.TRANSFORM_LAYOUT] = function(layoutData) {
 
@@ -111,11 +89,7 @@ View example Copy
 
                     };
 
-
-
                     return eventHandlers;
-
-
 
                 })(eventNames, convenienceApi);
 ```
@@ -177,13 +151,9 @@ View example Copy
 40
 (function(eventNames, convenienceApi) {
 
-
-
                     const eventHandlers = {};
 
                     const HISTORY_ITEM_LIST_NAME = "History";
-
-
 
                     eventHandlers[eventNames.TRANSFORM_LAYOUT] = function(layoutData) {
 
@@ -217,8 +187,6 @@ View example Copy
 
                     };
 
-
-
                     eventHandlers[eventNames.ITEM_LIST_MODIFY_ACTIONS] = function(itemListActionsApi, itemListView) {
 
                     if (itemListView.Name === HISTORY_ITEM_LIST_NAME) {
@@ -226,8 +194,6 @@ View example Copy
                     // Override default item list action bar buttons to show no buttons
 
                     itemListActionsApi.initialize();
-
-
 
                     // Override item list data source
 
@@ -247,11 +213,7 @@ View example Copy
 
                     };
 
-
-
                     return eventHandlers;
-
-
 
                 })(eventNames, convenienceApi);
 ```
@@ -340,13 +302,9 @@ View example Copy
 75
 (function(eventNames, convenienceApi) {
 
-
-
                     const eventHandlers = {};
 
                     const HISTORY_ITEM_LIST_NAME = "History";
-
-
 
                     eventHandlers[eventNames.TRANSFORM_LAYOUT] = function(layoutData) {
 
@@ -380,8 +338,6 @@ View example Copy
 
                     };
 
-
-
                     eventHandlers[eventNames.ITEM_LIST_MODIFY_ACTIONS] = function(itemListActionsApi, itemListView) {
 
                     const self = this;
@@ -391,8 +347,6 @@ View example Copy
                     // Override default item list action bar buttons to show no buttons
 
                     itemListActionsApi.initialize();
-
-
 
                     // Override item list data source
 
@@ -428,8 +382,6 @@ View example Copy
 
                     };
 
-
-
                     const auditApiFieldToColumnNameMap = new Map();
 
                     auditApiFieldToColumnNameMap.set("User Name", "Modified By");
@@ -460,8 +412,6 @@ View example Copy
 
                     });
 
-
-
                     rows.push(row);
 
                     });
@@ -483,8 +433,6 @@ View example Copy
                     };
 
                     return eventHandlers;
-
-
 
                 })(eventNames, convenienceApi);
 ```
@@ -578,13 +526,9 @@ View example Copy
 76
 (function(eventNames, convenienceApi) {
 
-
-
                     const eventHandlers = {};
 
                     const HISTORY_ITEM_LIST_NAME = "History";
-
-
 
                     eventHandlers[eventNames.TRANSFORM_LAYOUT] = function(layoutData) {
 
@@ -620,8 +564,6 @@ View example Copy
 
                     };
 
-
-
                     eventHandlers[eventNames.ITEM_LIST_MODIFY_ACTIONS] = function(itemListActionsApi, itemListView) {
 
                     const self = this;
@@ -631,8 +573,6 @@ View example Copy
                     // Override default item list action bar buttons to show no buttons
 
                     itemListActionsApi.initialize();
-
-
 
                     // Override item list data source
 
@@ -668,8 +608,6 @@ View example Copy
 
                     };
 
-
-
                     const auditApiFieldToColumnNameMap = new Map();
 
                     auditApiFieldToColumnNameMap.set("User Name", "Modified By");
@@ -700,8 +638,6 @@ View example Copy
 
                     });
 
-
-
                     rows.push(row);
 
                     });
@@ -723,8 +659,6 @@ View example Copy
                     };
 
                     return eventHandlers;
-
-
 
                 })(eventNames, convenienceApi);
 ```
@@ -843,13 +777,9 @@ View example Copy
 
                     (function (eventNames, convenienceApi) {
 
-
-
                     const eventHandlers = {};
 
                     const HISTORY_ITEM_LIST_NAME = "History";
-
-
 
                     eventHandlers[eventNames.TRANSFORM_LAYOUT] = function (layoutData) {
 
@@ -885,8 +815,6 @@ View example Copy
 
                     };
 
-
-
                     eventHandlers[eventNames.ITEM_LIST_MODIFY_ACTIONS] = function (itemListActionsApi, itemListView) {
 
                     const self = this;
@@ -896,8 +824,6 @@ View example Copy
                     // Override default item list action bar buttons to show no buttons
 
                     itemListActionsApi.initialize();
-
-
 
                     // Override item list data source
 
@@ -911,8 +837,6 @@ View example Copy
 
                     itemlistToAuditApiSortMap.set("desc", 1);
 
-
-
                     // translate item list column -> Audit Api field
 
                     const itemListColumnToAuditApiFieldMap = new Map();
@@ -921,8 +845,6 @@ View example Copy
 
                     itemListColumnToAuditApiFieldMap.set("Modified On", "Timestamp");
 
-
-
                     // translate Audit Api field -> item list column
 
                     const auditApiFieldToItemListColumnMap = new Map();
@@ -930,8 +852,6 @@ View example Copy
                     auditApiFieldToItemListColumnMap.set("User Name", "Modified By");
 
                     auditApiFieldToItemListColumnMap.set("Timestamp", "Modified On");
-
-
 
                     const requestSorts = request.sorts.map(function (itemListSort) {
 
@@ -948,8 +868,6 @@ View example Copy
                     };
 
                     });
-
-
 
                     const auditApiUrl = convenienceApi.relativityHttpClient.makeRelativityRestRelativeUrl("/API/Relativity.Objects.Audits/workspaces/" + self.workspaceId + "/audits/queryslim");
 
@@ -1007,8 +925,6 @@ View example Copy
 
                     });
 
-
-
                     rows.push(row);
 
                     });
@@ -1030,8 +946,6 @@ View example Copy
                     };
 
                     return eventHandlers;
-
-
 
                 })(eventNames, convenienceApi);
 ```
@@ -1154,13 +1068,9 @@ View example Copy
 101
 (function(eventNames, convenienceApi) {
 
-
-
                     const eventHandlers = {};
 
                     const HISTORY_ITEM_LIST_NAME = "History";
-
-
 
                     eventHandlers[eventNames.TRANSFORM_LAYOUT] = function(layoutData) {
 
@@ -1208,8 +1118,6 @@ View example Copy
 
                     };
 
-
-
                     eventHandlers[eventNames.ITEM_LIST_MODIFY_ACTIONS] = function(itemListActionsApi, itemListView) {
 
                     if (itemListView.Name === HISTORY_ITEM_LIST_NAME) {
@@ -1217,8 +1125,6 @@ View example Copy
                     // Override default item list action bar buttons to show no buttons
 
                     itemListActionsApi.initialize();
-
-
 
                     // Override item list data source
 
@@ -1242,8 +1148,6 @@ View example Copy
 
                     ];
 
-
-
                     // Filter the data based on what's in the request object.
 
                     let filterFunction = function(itemListRow) {return true};
@@ -1251,8 +1155,6 @@ View example Copy
                     let beforeDate;
 
                     let afterDate;
-
-
 
                     // Check if there's a filter and a condition with it. If so, create the filter function.
 
@@ -1324,13 +1226,9 @@ View example Copy
 
                     }
 
-
-
                     // Filter the data based on the filter function defined above.
 
                     const filteredData = exampleData.filter(filterFunction);
-
-
 
                     // Return the filtered data.
 
@@ -1349,8 +1247,6 @@ View example Copy
                     };
 
                     return eventHandlers;
-
-
 
                 })(eventNames, convenienceApi);
 ```
@@ -1421,13 +1317,9 @@ View example Copy
 55
 (function(eventNames, convenienceApi) {
 
-
-
                     const eventHandlers = {};
 
                     const HISTORY_ITEM_LIST_NAME = "History";
-
-
 
                     eventHandlers[eventNames.TRANSFORM_LAYOUT] = function(layoutData) {
 
@@ -1461,8 +1353,6 @@ View example Copy
 
                     };
 
-
-
                     eventHandlers[eventNames.ITEM_LIST_MODIFY_ACTIONS] = function(itemListActionsApi, itemListView) {
 
                     if (itemListView.Name === HISTORY_ITEM_LIST_NAME) {
@@ -1470,8 +1360,6 @@ View example Copy
                     // Override default item list action bar buttons to show no buttons.
 
                     itemListActionsApi.initialize();
-
-
 
                     // Add an item list action bar button.
 
@@ -1525,8 +1413,6 @@ View example Copy
 
                     return eventHandlers;
 
-
-
                 })(eventNames, convenienceApi);
 ```
 
@@ -1574,11 +1460,7 @@ View example Copy
 31
 (function(eventNames, convenienceApi) {
 
-
-
                     const eventHandlers = {};
-
-
 
                     eventHandlers[eventNames.TRANSFORM_LAYOUT] = function(layoutData) {
 
@@ -1626,11 +1508,7 @@ View example Copy
 
                     };
 
-
-
                     return eventHandlers;
-
-
 
                 })(eventNames, convenienceApi);
 ```
@@ -1719,13 +1597,9 @@ View example Copy
 67
 (function(eventNames, convenienceApi) {
 
-
-
                     const eventHandlers = {};
 
                     const HISTORY_ITEM_LIST_NAME = "History";
-
-
 
                     eventHandlers[eventNames.TRANSFORM_LAYOUT] = function(layoutData) {
 
@@ -1773,8 +1647,6 @@ View example Copy
 
                     };
 
-
-
                     eventHandlers[eventNames.ITEM_LIST_MODIFY_ACTIONS] = function(itemListActionsApi, itemListView) {
 
                     const self = this;
@@ -1785,8 +1657,6 @@ View example Copy
 
                     itemListActionsApi.initialize();
 
-
-
                     // Add an item list action bar button to refresh the item list
 
                     const customAction = itemListActionsApi.addAction(convenienceApi.constants.ACTION_TYPES.NEW);
@@ -1796,8 +1666,6 @@ View example Copy
                     customAction.action = function() {
 
                     const historyItemListFieldId = self.fieldNameToFieldIdMap.get(HISTORY_ITEM_LIST_NAME);
-
-
 
                     convenienceApi.fieldHelper.getHtmlElement(historyItemListFieldId).then(function(itemListElement) {
 
@@ -1810,8 +1678,6 @@ View example Copy
                     });
 
                     }
-
-
 
                     // Override item list data source
 
@@ -1829,8 +1695,6 @@ View example Copy
 
                     ];
 
-
-
                     return {
 
                     TotalCount: exampleData.length,
@@ -1847,66 +1711,9 @@ View example Copy
 
                     return eventHandlers;
 
-
-
                 })(eventNames, convenienceApi);
 ```
 
 Notice the HeaderName values of the FieldCollection array were changed in the transformLayout event handler to match the example data in the itemListModifyActions event handler. It may be helpful to note that the most critical aspect of the above code sample is where the Refresh button is defined in the itemListModifyActions event handler. This code defines an action for the button that dispatches a reloadItemListData event.
 
 It creates a row with the current date and time to put in the item list. That way, the Modified On time will update every time the item list refreshes.
-
-On this page
-
-- Add a custom item list to a layout
-
-- Adding a new item list & view information
-
-- Overriding default action bar buttons
-
-- Calling an API to get Item list data
-
-- Modifying the view to add field type information
-
-- Turning on sorting
-
-- Enable filtering
-
-- Add custom action buttons
-
-- Custom views
-
-- Refreshing the item list
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:29:44+00:00
 sha256: e137a3b11f1e195013cc02fb65fbecbb4f5a998c090a3275e31f19700fa01448
 ---
 
-Relativity REST API architecture Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Relativity REST API architecture
 
 # Relativity REST API architecture
 
@@ -33,40 +15,3 @@ Using RESTful architectural conventions, the REST API provides you with the abil
 The REST API uses named pipes to communicate with the Services API. This communication method offers a fast, in-memory service connection designed to minimize latency in calls made between the two services. Since the system uses named pipes on a localhost, the REST and the Services endpoints must be located on the same machine. Relativity has made significant performance improvements to Services API ensuring that a fast and efficient connection exists between the services. The following diagram illustrates the interconnections between the REST and Services APIs.
 
 In addition, the REST API requires a connection to the Relativity (EDDS) database, which it uses only to load configuration data.
-
-On this page
-
-- Relativity REST API architecture
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:30:56+00:00
 sha256: f86ace47c3c8ac7336d3d09ab6a9087ed16f51ffc44ccba26975c01ea1991c55
 ---
 
-Advanced functionality for the application framework Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Advanced functionality for the application framework
 
 # Advanced functionality for the application framework
 
@@ -171,54 +153,3 @@ The following application components are not deleted by the upgrade process:
 - Dashboards
 
 You can also manually delete DLL resource files from the Resource Files tab in Developer Mode without having to unlink your objects from all workspaces.
-
-On this page
-
-- Advanced functionality for the application framework
-
-- Hosted and schema component
-
-- Schema version
-
-- Application schema versions
-
-- Upgrades and schema versions
-
-- Tab behavior during installations and upgrades
-
-- Object type event handler behavior during upgrades
-
-- Application resource file purge
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

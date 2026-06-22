@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:23:10+00:00
 sha256: f9ee14033b9781252149b31a475c9b2225d752149652b371e956c71577e6c6d2
 ---
 
-Object Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Object Manager (.NET)
 
 # Object Manager (.NET)
 
@@ -417,35 +399,23 @@ View sample code Copy
 34
 //Creates and initializes a ServiceFactory instance.
 
-
-
 public void InitializeServiceFactory()
 
 {
 
     String restServerAddress = "http://localhost/relativity.rest/api";
 
-
-
     Uri keplerUri = new Uri(restServerAddress);
-
-
 
     Relativity.Services.ServiceProxy.ServiceFactorySettings settings = new Relativity.Services.ServiceProxy.ServiceFactorySettings(
 
        keplerUri, new Relativity.Services.ServiceProxy.UsernamePasswordCredentials("ExampleUsername.com", "ExamplePassword1!"));
 
-
-
     _serviceFactory = new Relativity.Services.ServiceProxy.ServiceFactory(settings);
 
 }
 
-
-
 //Creates an IObjectManager instance through the ServiceFactory instance.
-
-
 
 public async Task PerformWorkWithObjectManager()
 
@@ -461,11 +431,7 @@ public async Task PerformWorkWithObjectManager()
 
 }
 
-
-
 //Creates an IObjectManager instance through the Relativity API Helpers.
-
-
 
 public async Task PerformWorkWithConnectionHelperObjectManager()
 
@@ -621,11 +587,7 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.FieldValuePair
 
             };
 
-
-
             Relativity.ObjectManager.{versionNumber}.Models.ReadResult result = await objectManager.ReadAsync(workspaceId, readRequest);
-
-
 
             return result.Object[fieldName];
 
@@ -640,8 +602,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.FieldValuePair
         }
 
     }
-
-
 
     return null;
 
@@ -725,8 +685,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.CreateResult> 
 
             createRequest.FieldValues = fieldValuePairs;
 
-
-
             var callingContext = new Relativity.ObjectManager.{versionNumber}.Models.CallingContext //this sets up a calling context to provide any additional information eventhandlers may need
 
             {
@@ -737,8 +695,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.CreateResult> 
 
             };
 
-
-
             var createOptions = new Relativity.ObjectManager.{versionNumber}.Models.OperationOptions
 
             {
@@ -746,8 +702,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.CreateResult> 
                 CallingContext = callingContext
 
             };
-
-
 
             return await objectManager.CreateAsync(workspaceID, createRequest, createOptions);
 
@@ -762,8 +716,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.CreateResult> 
         }
 
     }
-
-
 
     return null;
 
@@ -835,8 +787,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.MassCreateResu
 
             massCreateRequest.ValueLists = fieldValues;
 
-
-
             return await objectManager.CreateAsync(workspaceID, massCreateRequest);
 
         }
@@ -850,8 +800,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.MassCreateResu
         }
 
     }
-
-
 
     return null;
 
@@ -929,8 +877,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.ReadResult> Re
 
             };
 
-
-
             return await objectManager.ReadAsync(workspaceID, readRequest);
 
         }
@@ -944,8 +890,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.ReadResult> Re
         }
 
     }
-
-
 
     return null;
 
@@ -1034,8 +978,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.UpdateResult> 
 
             };
 
-
-
             var updateRequest = new Relativity.ObjectManager.{versionNumber}.Models.UpdateRequest
 
             {
@@ -1045,8 +987,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.UpdateResult> 
                 FieldValues = new List<Relativity.ObjectManager.{versionNumber}.Models.FieldRefValuePair> { fieldValuePair }
 
             };
-
-
 
             return await objectManager.UpdateAsync(workspaceID, updateRequest);
 
@@ -1061,8 +1001,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.UpdateResult> 
         }
 
     }
-
-
 
     return null;
 
@@ -1141,8 +1079,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.UpdateResult> 
 
             };
 
-
-
             var updateRequest = new Relativity.ObjectManager.{versionNumber}.Models.UpdateRequest
 
             {
@@ -1152,8 +1088,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.UpdateResult> 
                 FieldValues = new List<Relativity.ObjectManager.{versionNumber}.Models.FieldRefValuePair> { fieldValuePair }
 
             };
-
-
 
             return await objectManager.UpdateAsync(workspaceID, updateRequest);
 
@@ -1168,8 +1102,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.UpdateResult> 
         }
 
     }
-
-
 
     return null;
 
@@ -1240,8 +1172,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.UpdateResult> 
 
             };
 
-
-
             var updateRequest = new Relativity.ObjectManager.{versionNumber}.Models.UpdateRequest
 
             {
@@ -1260,8 +1190,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.UpdateResult> 
 
             };
 
-
-
             return await objectManager.UpdateAsync(workspaceID, updateRequest, updateOptions);
 
         }
@@ -1275,8 +1203,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.UpdateResult> 
         }
 
     }
-
-
 
     return null;
 
@@ -1348,8 +1274,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.UpdateResult> 
 
     Guid kGuidForExtractedTextField = new Guid("58D35076-1B1D-43B4-BFF4-D6C089DE51B2");
 
-
-
     using (IObjectManager objectManager = helper.GetServicesManager().CreateProxy<IObjectManager>(ExecutionIdentity.CurrentUser))
 
     {
@@ -1362,8 +1286,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.UpdateResult> 
 
         };
 
-
-
         var extractedTextFieldRef = new Relativity.ObjectManager.{versionNumber}.Models.FieldRef
 
         {
@@ -1371,8 +1293,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.UpdateResult> 
             Guid = kGuidForExtractedTextField
 
         };
-
-
 
         var updateRequest = new Relativity.ObjectManager.{versionNumber}.Models.UpdateLongTextFromStreamRequest
 
@@ -1383,8 +1303,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.UpdateResult> 
             Field = extractedTextFieldRef
 
         };
-
-
 
         try
 
@@ -1402,11 +1320,7 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.UpdateResult> 
 
                     streamWriter.Flush();
 
-
-
                     memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
-
-
 
                     using (var keplerStream = new Relativity.Kepler.Transport.KeplerStream(memoryStream))
 
@@ -1431,8 +1345,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.UpdateResult> 
         }
 
     }
-
-
 
     return null;
 
@@ -1521,8 +1433,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.MassUpdateResu
 
             updateOptions.UpdateBehavior = behavior;
 
-
-
             return await objectManager.UpdateAsync(workspaceID, updateRequest, updateOptions);
 
         }
@@ -1536,8 +1446,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.MassUpdateResu
         }
 
     }
-
-
 
     return null;
 
@@ -1604,8 +1512,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.MassUpdateResu
 
             updateOptions.UpdateBehavior = behavior;
 
-
-
             return await objectManager.UpdateAsync(workspaceID, updateRequest, updateOptions);
 
         }
@@ -1619,8 +1525,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.MassUpdateResu
         }
 
     }
-
-
 
     return null;
 
@@ -1682,15 +1586,11 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.MassUpdateResu
 
             updateRequest.ObjectValues = objectRefValuesPairs;
 
-
-
             var updateOptions = new Relativity.ObjectManager.{versionNumber}.Models.MassUpdateOptions();
 
             // The default behavior is replace.
 
             updateOptions.UpdateBehavior = behavior;
-
-
 
             return await objectManager.UpdateAsync(workspaceID, updateRequest, updateOptions);
 
@@ -1705,8 +1605,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.MassUpdateResu
         }
 
     }
-
-
 
     return null;
 
@@ -1780,8 +1678,6 @@ public async Task<List<Relativity.Shared.{versionNumber}.Models.Dependency>> Get
 
             };
 
-
-
             return await objectManager.GetDependencyListAsync(workspaceID, dependencyRequest);
 
         }
@@ -1793,8 +1689,6 @@ public async Task<List<Relativity.Shared.{versionNumber}.Models.Dependency>> Get
             _logger.LogError(exception, "Dependencies for the Relativity Object could not be retrieved.");
 
         }
-
-
 
         return null;
 
@@ -1867,8 +1761,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.DeleteResult> 
             _logger.LogError(exception, "The Relativity Object could not be deleted.");
 
         }
-
-
 
         return null;
 
@@ -1943,8 +1835,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.MassDeleteResu
 
         }
 
-
-
         return null;
 
     }
@@ -2007,8 +1897,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.MassDeleteResu
             _logger.LogError(exception, "The Relativity Object could not be deleted.");
 
         }
-
-
 
         return null;
 
@@ -2177,8 +2065,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.QueryResult> Q
 
         };
 
-
-
         using (IObjectManager objectManager = helper.GetServicesManager().CreateProxy<IObjectManager>(ExecutionIdentity.CurrentUser))
 
         {
@@ -2196,8 +2082,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.QueryResult> Q
         _logger.LogError(ex, "Error: ObjectManager.QueryAsync was not successful");
 
     }
-
-
 
     return null;
 
@@ -2310,8 +2194,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.QueryResultSli
 
         };
 
-
-
         using (IObjectManager objectManager = helper.GetServicesManager().CreateProxy<IObjectManager>(ExecutionIdentity.System))
 
         {
@@ -2329,8 +2211,6 @@ public async Task<Relativity.ObjectManager.{versionNumber}.Models.QueryResultSli
         _logger.LogError(ex, "Error: ObjectManager.QueryAsync was not successful");
 
     }
-
-
 
     return null;
 
@@ -2883,8 +2763,6 @@ using System.Net;
 
 using System.Text;
 
-
-
 namespace Relativity.Sample
 
 {
@@ -2897,19 +2775,13 @@ namespace Relativity.Sample
 
         private const string _SHIBBOLETH = "#KCURA99DF2F0FEB88420388879F1282A55760#";
 
-
-
         // Set the URL for the Relativity instance.
 
         private static Uri relativityUrl = new Uri("https://relativity.mycompany.com");
 
-
-
         // Set the ID of the Workspace.
 
         private static int workspaceID = 1234567;
-
-
 
         // Provide an Object Manager query.
 
@@ -2933,19 +2805,13 @@ namespace Relativity.Sample
 
         };
 
-
-
         // Count of the number of documents to return per call to RetrieveNextResultsBlock() method.
 
         private static int blockSize = 1000;
 
-
-
         // Provide credentials. Production environments should use a secure credential type.
 
         private static Credentials credentials = new UsernamePasswordCredentials("me@mycompany.com", "Password goes here");
-
-
 
         static void Main(string[] args)
 
@@ -2957,11 +2823,7 @@ namespace Relativity.Sample
 
                 // Get an instance of the Object Manager.
 
-
-
                 IObjectManager objectManager;
-
-
 
                 try
 
@@ -2981,11 +2843,7 @@ namespace Relativity.Sample
 
                 }
 
-
-
                 // Initialize Export API using the properties set above.
-
-
 
                 Guid runID;
 
@@ -2995,8 +2853,6 @@ namespace Relativity.Sample
 
                 int[] longTextIds;
 
-
-
                 try
 
                 {
@@ -3005,11 +2861,7 @@ namespace Relativity.Sample
 
                         objectManager.InitializeExportAsync(workspaceID, queryRequest, 0).Result;
 
-
-
                     // Save infomation about this "run".
-
-
 
                     runID = exportInitializationResults.RunID;
 
@@ -3017,15 +2869,9 @@ namespace Relativity.Sample
 
                     fieldData = exportInitializationResults.FieldData;
 
-
-
                     // Find indexes of all long text fields.
 
-
-
                     List<int> longTextIdList = new List<int>();
-
-
 
                     for (int i = 0; i < exportInitializationResults.FieldData.Count; i++)
 
@@ -3041,8 +2887,6 @@ namespace Relativity.Sample
 
                     }
 
-
-
                     longTextIds = longTextIdList.ToArray();
 
                 }
@@ -3057,23 +2901,15 @@ namespace Relativity.Sample
 
                 }
 
-
-
                 Console.WriteLine("RunId " + runID + " will return " + recordCount + " documents");
 
                 Console.WriteLine();
 
-
-
                 // Get blocks of documents until none are left.
-
-
 
                 RelativityObjectSlim[] currentBlock = null;
 
                 bool done = false;
-
-
 
                 while (!done)
 
@@ -3097,8 +2933,6 @@ namespace Relativity.Sample
 
                     }
 
-
-
                     if (currentBlock == null || !currentBlock.Any())
 
                     {
@@ -3109,17 +2943,11 @@ namespace Relativity.Sample
 
                     }
 
-
-
                     Console.WriteLine("Got block of " + currentBlock.Count() + " documents");
 
                     Console.WriteLine();
 
-
-
                     // Print out the fields for each document.
-
-
 
                     foreach (RelativityObjectSlim ros in currentBlock)
 
@@ -3131,11 +2959,7 @@ namespace Relativity.Sample
 
                             Console.WriteLine(fieldData[i].Name + ": " + ros.Values[i]);
 
-
-
                             // Check to determine if the long text field needs to be streamed.
-
-
 
                             if (longTextIds.Contains(i))
 
@@ -3149,11 +2973,7 @@ namespace Relativity.Sample
 
                                     Console.WriteLine();
 
-
-
                                     RelativityObjectRef documentObjectRef = new RelativityObjectRef { ArtifactID = ros.ArtifactID };
-
-
 
                                     using (IKeplerStream keplerStream = objectManager.StreamLongTextAsync(workspaceID, documentObjectRef, queryRequest.Fields.ElementAt(i)).Result)
 
@@ -3166,8 +2986,6 @@ namespace Relativity.Sample
                                             StreamReader reader = new StreamReader(realStream, Encoding.Unicode);
 
                                             String line;
-
-
 
                                             while ((line = reader.ReadLine()) != null)
 
@@ -3189,21 +3007,15 @@ namespace Relativity.Sample
 
                         }
 
-
-
                         Console.WriteLine();
 
                     }
-
-
 
                     Console.WriteLine("Block complete");
 
                     Console.WriteLine();
 
                 }
-
-
 
                 Console.WriteLine("All blocks complete");
 
@@ -3223,8 +3035,6 @@ namespace Relativity.Sample
 
         }
 
-
-
         private static ServiceFactory GetKeplerServiceFactory(Uri relativityUrl, Credentials credentials)
 
         {
@@ -3232,8 +3042,6 @@ namespace Relativity.Sample
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
             ServicePointManager.DefaultConnectionLimit = 128;
-
-
 
             Uri restUri = new Uri(relativityUrl, "Relativity.REST/api");
 
@@ -3255,104 +3063,3 @@ namespace Relativity.Sample
 ### Export API Helper library
 
 You can use the Export API in multiple threads to achieve high throughput. To simplify this process, a helper library is available. It also functions as an example illustrating how to run your own concurrent implementation. For more information, see relativitydev/export-api-helper on GitHub.
-
-On this page
-
-- Object Manager (.NET)
-
-- Fundamentals for the Object Manager service
-
-- Guidelines for using the Object Manager service
-
-- Use tokens with long text fields
-
-- IObjectManager instance
-
-- Supported field types
-
-- Propagation
-
-- Event handlers
-
-- Indexers on the RelativityObject class
-
-- Create an RDO and its specified fields
-
-- Mass create RDOs
-
-- Retrieve field values for a Document object or RDO
-
-- Update field values on a Document object or RDO
-
-- Update field values on a single object
-
-- Update field values on a multiple object
-
-- Update a long text field using an input stream in .NET
-
-- Mass update Document objects or RDOs
-
-- Mass update operation using query conditions
-
-- Mass update operation using identifiers
-
-- Mass update operation using objects
-
-- Retrieve a list of object dependencies
-
-- Delete a Document object or RDO
-
-- Mass delete Document objects or RDOs
-
-- Mass delete operation using query conditions
-
-- Mass delete operation using identifiers
-
-- Query for Relativity objects
-
-- Export API
-
-- Export API workflow
-
-- Set up an export job
-
-- Retrieve objects
-
-- Stream text
-
-- Export API code sample
-
-- Export API Helper library
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

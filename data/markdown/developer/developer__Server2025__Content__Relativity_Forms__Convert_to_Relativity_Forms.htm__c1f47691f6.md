@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:31:50+00:00
 sha256: 155b505bbd7b7a7db215104b8e7c000695b8ac363534a6abc1bb3411478da163
 ---
 
-Sample: Converting a Classic Form to a Relativity Form Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Sample: Converting a Classic Form to a Relativity Form
 
 # Sample: Converting a Classic Form to a Relativity Form
 
@@ -118,8 +100,6 @@ using System.Collections.Generic;
 
 using kCura.EventHandler;
 
-
-
 namespace ConsoleEventHandler {
 
   [kCura.EventHandler.CustomAttributes.Description("Basic Console EventHandler")]
@@ -136,8 +116,6 @@ namespace ConsoleEventHandler {
 
     private const String MESSAGE = "Display Info console button clicked";
 
-
-
     public override kCura.EventHandler.Console GetConsole(PageEvent pageEvent) {
 
       // Create a console with a title
@@ -148,13 +126,9 @@ namespace ConsoleEventHandler {
 
       };
 
-
-
       // Initialize button
 
       kCura.EventHandler.ConsoleButton getInfoButton = new kCura.EventHandler.ConsoleButton();
-
-
 
       getInfoButton.Name = BUTTON_NAME;
 
@@ -164,19 +138,13 @@ namespace ConsoleEventHandler {
 
       getInfoButton.OnClickEvent = $ "window.alert('{MESSAGE}')";
 
-
-
       // Add button to the console
 
       returnConsole.Items.Add((getInfoButton));
 
-
-
       return returnConsole;
 
     }
-
-
 
     public override void OnButtonClick(kCura.EventHandler.ConsoleButton consoleButton) {}
 
@@ -267,8 +235,6 @@ using System;
 
 using kCura.EventHandler;
 
-
-
 namespace PageInteractionEventHandler {
 
   [kCura.EventHandler.CustomAttributes.Description("Page Interaction EventHandler")]
@@ -279,8 +245,6 @@ namespace PageInteractionEventHandler {
 
     public override Response PopulateScriptBlocks() {
 
-
-
       //Create a response object with default values
 
       kCura.EventHandler.Response retVal = new kCura.EventHandler.Response();
@@ -288,8 +252,6 @@ namespace PageInteractionEventHandler {
       retVal.Success = true;
 
       retVal.Message = string.Empty;
-
-
 
       // Creating a common function that be used elsewhere in the page
 
@@ -308,8 +270,6 @@ namespace PageInteractionEventHandler {
         Key = "changeFunc", Script = changeFunction
 
       });
-
-
 
       // 'Main' block of the page interaction event handler
 
@@ -405,15 +365,11 @@ forms event handler (JS)
 
   var eventHandlers = {};
 
-
-
   ////////////////////////////////////////////////////////////////////
 
   //////////////////// EVENT HANDLER FORM CODE ///////////////////////
 
   ////////////////////////////////////////////////////////////////////
-
-
 
   return eventHandlers;
 
@@ -454,8 +410,6 @@ reference to the JavaScript file
 using System;
 
 using kCura.EventHandler;
-
-
 
 namespace PageInteractionEventHandler {
 
@@ -573,21 +527,13 @@ common console workflows
 
   var eventHandlers = {};
 
-
-
-
-
   /////////////////////////////////////////
 
   /* Console Event Handler Code Follows: */
 
   /////////////////////////////////////////
 
-
-
   var MESSAGE = "Display Info console button clicked";
-
-
 
   function createAlert() {
 
@@ -595,15 +541,11 @@ common console workflows
 
   };
 
-
-
   eventHandlers[eventNames.CREATE_CONSOLE] = function() {
 
     var BUTTON_DISPLAY_TEXT = "Display Info";
 
     var CONSOLE_TITLE = "Demo Console";
-
-
 
     // Construct the html element that is needed for the console title
 
@@ -612,8 +554,6 @@ common console workflows
       innerText: CONSOLE_TITLE
 
     });
-
-
 
     // Construct the html element that is needed for the console title
 
@@ -639,8 +579,6 @@ common console workflows
 
       ]);
 
-
-
     // retrieve the console html element and append the title and section elements.
 
     return convenienceApi.console.containersPromise.then(function(containers) {
@@ -656,8 +594,6 @@ common console workflows
     });
 
   }
-
-
 
   return eventHandlers;
 
@@ -729,23 +665,17 @@ lifecycle hooks
 
   var eventHandlers = {};
 
-
-
   //
 
   // Console Event Handler Code
 
   //
 
-
-
   //////////////////////////////////////////////////
 
   /* Page Interaction Event Handler Code Follows: */
 
   //////////////////////////////////////////////////
-
-
 
   // Sets the hidden field to show/hide on initial load
 
@@ -762,8 +692,6 @@ lifecycle hooks
     });
 
   };
-
-
 
   // Modifies the hidden field to show/hide during page interactions
 
@@ -801,8 +729,6 @@ lifecycle hooks
 
   };
 
-
-
   return eventHandlers;
 
 }(eventNames, convenienceApi));
@@ -819,50 +745,3 @@ Complete the following steps to update the Relativity Assets for the new event h
 - Enable the object type to use Relativity Forms. (For more information, see Creating and editing Relativity Objects )
 
 Once you have applied your changes, you should see your form rendered using Relativity Forms:
-
-On this page
-
-- Sample: Converting a Classic Form to a Relativity Form
-
-- Setting up the classic form
-
-- Migrating to Relativity Forms
-
-- Converting the console event handler
-
-- Converting the page interaction event handler
-
-- Updating Relativity assets
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

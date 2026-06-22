@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:30:37+00:00
 sha256: fb74c22ce88c7422d3e9e756bfc024c6681afc90404ae54c3998e073e6ebf831
 ---
 
-Processing Filter Manager (REST v0) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Processing Filter Manager (REST v0)
 
 # Processing Filter Manager (REST v0)
 
@@ -88,15 +70,11 @@ HttpClient httpClient = new HttpClient();
 
 httpClient.BaseAddress = new Uri("http://localhost/");
 
-
-
 //Set the required headers.
 
 httpClient.DefaultRequestHeaders.Add("X-CSRF-Header", "-");
 
 httpClient.DefaultRequestHeaders.Add("Authorization", "Basic bXkudXNlckBrY3VyYS5jb206Q250VGNoVGhzMTIzNCE=");
-
-
 
 //Call the operation that you want to run.
 
@@ -111,8 +89,6 @@ HttpResponseMessage response = httpClient.PostAsync(url, content).Result;
 string result = response.Content.ReadAsStringAsync().Result;
 
 bool success = HttpStatusCode.Ok == response.StatusCode;
-
-
 
 //Parse the result with Json.NET.
 
@@ -338,8 +314,6 @@ Copy
         "Priority": 100
 
     }
-
-
 
 }
 ```
@@ -585,7 +559,6 @@ Copy
     "Errors": []
 
 }</p>
-
 
 ```
 
@@ -3273,70 +3246,3 @@ View the JSON response for a request with PivotOn fields populated Copy
 
 ]
 ```
-
-On this page
-
-- Processing Filter Manager (REST v0)
-
-- Client code sample
-
-- Guidelines for the Processing Filter Manager service
-
-- Access rights
-
-- Helper endpoints
-
-- Filter expressions
-
-- Create a processing filter
-
-- Apply a processing filter
-
-- Update a processing filter
-
-- Delete a processing filter
-
-- Retrieve document metadata
-
-- Retrieve discovered documents
-
-- Retrieve filtered data
-
-- Retrieve processing filters
-
-- Retrieve processing filters for a data source
-
-- Pivot on discovered documents
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

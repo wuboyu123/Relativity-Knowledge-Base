@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:24:36+00:00
 sha256: 37955e863fb9b2e8d5d0a6133f79a58474fa454b9a4e6dfd604b32dd157f74c9
 ---
 
-File Field Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+File Field Manager (REST)
 
 # File Field Manager (REST)
 
@@ -119,8 +101,6 @@ public static async Task DownloadAndSaveFileHttpExample()
         int relativityObjectID = 104211;
 
         int fieldArtifactID = 1042124;
-
-
 
         string url = $"/Relativity.Rest/api/relativity-object-model/{versionNumber}/workspaces/{workspaceID}/files/download";
 
@@ -300,50 +280,3 @@ Copy
 ```
 
 The response is a bit stream representing the file that you are downloading.
-
-On this page
-
-- File Field Manager (REST)
-
-- Guidelines for the File Field Manager service
-
-- Postman sample file
-
-- Client code sample
-
-- Uploading files to file fields
-
-- Downloading files from file fields
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

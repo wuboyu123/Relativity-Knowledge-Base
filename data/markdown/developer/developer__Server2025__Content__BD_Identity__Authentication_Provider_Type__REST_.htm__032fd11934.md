@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:25:37+00:00
 sha256: e172fcea5ec4b60c61437e2fc42337c216b1e70bdcbe8b0c39fa8eb0284472c5
 ---
 
-Authentication provider type (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Authentication provider type (REST)
 
 # Authentication provider type (REST)
 
@@ -211,50 +193,3 @@ Copy
 ```
 
 The response contains a status code of 200 when the update succeeds and 400 when it fails.
-
-On this page
-
-- Authentication provider type (REST)
-
-- Guidelines for the Authentication Provider Type service
-
-- URLS
-
-- Retrieve an authentication provider type
-
-- Read all authentication provider types
-
-- Update an authentication provider type
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

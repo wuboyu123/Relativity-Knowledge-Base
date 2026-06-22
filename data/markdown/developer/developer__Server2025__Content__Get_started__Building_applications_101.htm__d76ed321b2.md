@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:21:54+00:00
 sha256: 94f54b2196e8e2c568f8664429ee3bf072fdccf959ede312e4ea49dcda0983c2
 ---
 
-Advanced Tutorials Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Advanced Tutorials
 
 # Advanced tutorials
 
@@ -65,48 +47,3 @@ You can generally complete the tutorial in about 12 hours after your accounts ha
 ## Considerations
 
 - Custom Applications in the Repository workspace are prohibited
-
-On this page
-
-- Advanced tutorials
-
-- Audience for this tutorial
-
-- How to complete the tutorial
-
-- Estimated completion time
-
-- Considerations
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:27:26+00:00
 sha256: 336bc236e061947eecff014dd157957f6dc4369789b7e9afdee28879b91c9790
 ---
 
-Processing Data Source Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Processing Data Source Manager (REST)
 
 # Processing Data Source Manager (REST)
 
@@ -201,50 +183,3 @@ Copy
 1
 <host>/Relativity.Rest/API/relativity-processing/v1/workspaces/{your workspace id}/data-sources/source-location-paths
 ```
-
-On this page
-
-- Processing Data Source Manager (REST)
-
-- Create a processing data source
-
-- Read a processing data source
-
-- Update a processing data source
-
-- Validate a processing data source for deletion
-
-- Retrieve processing source location paths
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

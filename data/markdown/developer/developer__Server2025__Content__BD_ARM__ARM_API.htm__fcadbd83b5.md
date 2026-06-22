@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:25:26+00:00
 sha256: 46039dff9057dd2afd010daa28107eaf7f78362ae5e84c4954e802f2c55c38a0
 ---
 
-ARM (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+ARM (.NET)
 
 # ARM (.NET)
 
@@ -189,50 +171,3 @@ public async Task ProcessARMJob(int jobId) {
 
 }
 ```
-
-On this page
-
-- ARM (.NET)
-
-- Fundamentals for the ARM API
-
-- Sample use cases
-
-- Create
-
-- Run
-
-- Read
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

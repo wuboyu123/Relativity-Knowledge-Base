@@ -213,20 +213,57 @@ def strip_boilerplate(text: str) -> str:
         "Settings",
         "Logout",
         "Feedback",
+        "placeholder",
+        "Account Settings Logout",
+        "Coveo Search Page",
+        "Version:",
+        "RelativityOne",
+        "Server 2025",
+        "Server 2024",
+        ">>",
+        "☰",
+        "â˜°",
         "Name (optional): Email (optional): Message:",
         "Name (Optional): Email (Optional): Message (Required):",
     }
+    truncate_at = {
+        "On this page",
+        "Why was this not helpful?",
+        "Name (optional):",
+        "Name (Optional):",
+        "IncludedTopics",
+    }
     kept: list[str] = []
-    for line in lines:
+    for idx, line in enumerate(lines):
+        if " Skip To Main Content" in line:
+            line = line.split(" Skip To Main Content", 1)[0].rstrip()
+
         compact = re.sub(r"\s+", " ", line).strip()
-        if compact in drop_exact:
+        compact_unbulleted = compact[2:].strip() if compact.startswith("- ") else compact
+        compact_plain = compact_unbulleted.lstrip("#").strip()
+        remaining = "\n".join(lines[idx:])
+        if compact_plain in truncate_at:
+            break
+        if compact_plain.startswith("For more information on using the Feedback form"):
+            break
+        if compact_plain == "Install Relativity" and "231 South LaSalle Street" in remaining:
+            break
+        if compact_plain == "Additional Resources" and "Privacy and Cookies" in remaining:
+            break
+        if compact_plain in drop_exact:
             continue
-        if compact.startswith("https://relativity") and "coveo.com/rest/search" in compact:
+        if compact_plain.startswith("Version: RelativityOne"):
             continue
-        if compact.startswith("xx") and len(compact) > 20:
+        if re.fullmatch(r"relativity[a-z0-9]{8,}", compact_plain):
+            continue
+        if compact_plain.endswith("/CoveoSearch.htm") or compact_plain.endswith("\\CoveoSearch.htm"):
+            continue
+        if compact_plain.startswith("https://relativity") and "coveo.com/rest/search" in compact_plain:
+            continue
+        if compact_plain.startswith("xx") and len(compact_plain) > 20:
             continue
         kept.append(line)
-    return "\n".join(kept)
+    return re.sub(r"\n{3,}", "\n\n", "\n".join(kept)).strip()
 
 
 def normalize_url(url: str) -> str:

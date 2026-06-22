@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:26:26+00:00
 sha256: f98eb83ed846a3954d8deefc9a048f481bf6977386c0934c0071a4fb86857e86
 ---
 
-Group Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Group Manager (.NET)
 
 # Group Manager (.NET)
 
@@ -164,8 +146,6 @@ Copy
 21
 int clientArtifactID = 1015644;
 
-
-
 using (IGroupManager mgr = new ServiceFactory(settings).CreateProxy<IGroupManager>())
 
 {
@@ -196,11 +176,7 @@ using (IGroupManager mgr = new ServiceFactory(settings).CreateProxy<IGroupManage
 
     };
 
-
-
     GroupResponse response = await mgr.CreateAsync(request);
-
-
 
     Console.WriteLine($"Created group with ArtifactID {response.ArtifactID}");
 ```
@@ -220,15 +196,11 @@ Copy
 8
 int groupArtifactID = 1029453;
 
-
-
 using (IGroupManager mgr = new ServiceFactory(settings).CreateProxy<IGroupManager>())
 
 {
 
     GroupResponse response = await mgr.ReadAsync(groupArtifactID);
-
-
 
     Console.WriteLine($"Read group with ArtifactID {response.ArtifactID}");
 
@@ -269,8 +241,6 @@ int groupArtifactID = 1029453;
 
 int clientArtifactID = 1015644;
 
-
-
 using (IGroupManager mgr = new ServiceFactory(settings).CreateProxy<IGroupManager>())
 
 {
@@ -301,11 +271,7 @@ using (IGroupManager mgr = new ServiceFactory(settings).CreateProxy<IGroupManage
 
     };
 
-
-
     GroupResponse response = await mgr.UpdateAsync(groupArtifactID, request);
-
-
 
     Console.WriteLine($"Updated group with ArtifactID {response.ArtifactID}");
 
@@ -327,15 +293,11 @@ Copy
 8
 int groupArtifactID = 1029455;
 
-
-
 using (IGroupManager mgr = new ServiceFactory(settings).CreateProxy<IGroupManager>())
 
 {
 
     await mgr.DeleteAsync(groupArtifactID);
-
-
 
     Console.WriteLine($"Delete group with ArtifactID {groupArtifactID}");
 
@@ -371,8 +333,6 @@ Copy
 20
 int groupArtifactID = 1029453;
 
-
-
 using (IGroupManager mgr = new ServiceFactory(settings).CreateProxy<IGroupManager>())
 
 {
@@ -395,15 +355,9 @@ using (IGroupManager mgr = new ServiceFactory(settings).CreateProxy<IGroupManage
 
     };
 
-
-
     QueryResultSlim result = await mgr.QueryMembersAsync(request, 1, 1000, groupArtifactID);
 
-
-
     string emailAddress = result.Objects[0].Values[1].ToString();
-
-
 
     Console.WriteLine($"Queried user with email address {emailAddress}");
 
@@ -437,8 +391,6 @@ int groupArtifactID = 1029453;
 
 int userArtifactID = 1029457;
 
-
-
 using (IGroupManager mgr = new ServiceFactory(settings).CreateProxy<IGroupManager>())
 
 {
@@ -451,11 +403,7 @@ using (IGroupManager mgr = new ServiceFactory(settings).CreateProxy<IGroupManage
 
     };
 
-
-
     await mgr.AddMembersAsync(groupArtifactID, objIdentifier);
-
-
 
     Console.WriteLine($"Added user with ArtifactID {userArtifactID}");
 
@@ -485,8 +433,6 @@ int groupArtifactID = 1029453;
 
 int userArtifactID = 1029457;
 
-
-
 using (IGroupManager mgr = new ServiceFactory(settings).CreateProxy<IGroupManager>())
 
 {
@@ -499,11 +445,7 @@ using (IGroupManager mgr = new ServiceFactory(settings).CreateProxy<IGroupManage
 
     };
 
-
-
     await mgr.RemoveMembersAsync(groupArtifactID, objIdentifier);
-
-
 
     Console.WriteLine($"Removed user with ArtifactID {userArtifactID}");
 
@@ -551,8 +493,6 @@ using (IGroupManager mgr = new ServiceFactory(settings).CreateProxy<IGroupManage
 
     QueryResultSlim result = await mgr.QueryEligibleClients(request, 1, 1000);
 
-
-
     for (int i = 0; i < result.ResultCount; i++)
 
     {
@@ -587,8 +527,6 @@ Copy
 14
 15
 int groupArtifactID = 1029453;
-
-
 
 using (IGroupManager mgr = new ServiceFactory(settings).CreateProxy<IGroupManager>())
 
@@ -652,8 +590,6 @@ using (IGroupManager mgr = new ServiceFactory(settings).CreateProxy<IGroupManage
 
     QueryResultSlim result = await mgr.QueryMembersAsync(request, 1, 1000, groupArtifactID);
 
-
-
     for (int i = 0; i < result.ResultCount; i++)
 
     {
@@ -695,8 +631,6 @@ int groupArtifactID = 1029453;
 
 int userArtifactID = 1029457;
 
-
-
 using (IGroupManager mgr = new ServiceFactory(settings).CreateProxy<IGroupManager>())
 
 {
@@ -709,8 +643,6 @@ using (IGroupManager mgr = new ServiceFactory(settings).CreateProxy<IGroupManage
 
     };
 
-
-
     List<ObjectIdentifier> users = new List<ObjectIdentifier>()
 
     {
@@ -718,8 +650,6 @@ using (IGroupManager mgr = new ServiceFactory(settings).CreateProxy<IGroupManage
         new ObjectIdentifier() { ArtifactID = userArtifactID }
 
     };
-
-
 
     List<MassOperationResult> result = await mgr.MassAddUsersToGroupsAsync(users, groups);
 
@@ -784,8 +714,6 @@ public static async Task MassRemoveUsersFromGroups()
 
     };
 
-
-
     using (IGroupManager mgr = ServiceFactory.CreateProxy<IGroupManager>())
 
     {
@@ -818,74 +746,3 @@ public static async Task MassRemoveUsersFromGroups()
 
 }
 ```
-
-On this page
-
-- Group Manager (.NET)
-
-- Fundamentals for the Group Manager API
-
-- Methods
-
-- Classes
-
-- Create a group
-
-- Retrieve a group
-
-- Update a group
-
-- Delete a group
-
-- Query for group members
-
-- Add users to a group
-
-- Remove users from a group
-
-- Helper methods for users and clients
-
-- Query for clients to associate with a group
-
-- Query for users to add to a group
-
-- Query for groups assigned to a user
-
-- Mass operations on groups
-
-- Add multiple users to multiple groups
-
-- Remove multiple users from multiple groups
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:24:42+00:00
 sha256: 17203885bcc2676502318a71dbcefce61097774a6071b532c596af9827e32b6c
 ---
 
-Storing and using external API credentials Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Storing and using external API credentials
 
 # Storing and using external API credentials
 
@@ -402,58 +384,3 @@ Build the project and replace the existing Resource File with the new version.
 Return to the Relativity company added at the beginning of the tutorial. If you attempt to update the address information using incomplete or inaccurate information an error will occur and the save will not be completed:
 
 After adding the proper floor number the API considers this address valid and the save action succeeds:
-
-On this page
-
-- Storing and using external API credentials
-
-- Before you begin
-
-- Create the Relativity Dynamic Object (RDO)
-
-- Build the extensibility point
-
-- Store the credential
-
-- Using Secret Store
-
-- Using encrypted Instance Settings
-
-- Fetch the API authentication information
-
-- Call the API with authentication
-
-- Test the validator
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

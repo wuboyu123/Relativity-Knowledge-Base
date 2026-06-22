@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:27:11+00:00
 sha256: cbe8c0303738309b0108bea0edbe1931b9bbadf815365d25d3234814c5e6f738
 ---
 
-Object Type Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Object Type Manager (.NET)
 
 # Object Type Manager (.NET)
 
@@ -162,8 +144,6 @@ public static async Task Create_Async()
 
     int applicationId = 1042129;
 
-
-
     ObjectTypeRequest request = new ObjectTypeRequest
 
     {
@@ -205,8 +185,6 @@ public static async Task Create_Async()
         }
 
     };
-
-
 
     using (IObjectTypeManager objectTypeManager = serviceFactory.CreateProxy<IObjectTypeManager>())
 
@@ -386,8 +364,6 @@ public static async Task Update_Async()
 
     int objectTypeArtifactId = 1042142;
 
-
-
     ObjectTypeRequest request = new ObjectTypeRequest
 
     {
@@ -429,8 +405,6 @@ public static async Task Update_Async()
         }
 
     };
-
-
 
     using (IObjectTypeManager objectTypeManager = serviceFactory.CreateProxy<IObjectTypeManager>())
 
@@ -496,8 +470,6 @@ public static async Task Delete_Async()
     int workspaceId = 1017660;
 
     int objectTypeArtifactId = 1042142;
-
-
 
     using (IObjectTypeManager objectTypeManager = serviceFactory.CreateProxy<IObjectTypeManager>())
 
@@ -570,8 +542,6 @@ public static async Task GetAvailableParentObjectTypes_Async()
 
     int workspaceId = 1017660;
 
-
-
     using (IObjectTypeManager objectTypeManager = serviceFactory.CreateProxy<IObjectTypeManager>())
 
     {
@@ -606,54 +576,3 @@ public static async Task GetAvailableParentObjectTypes_Async()
 
 }
 ```
-
-On this page
-
-- Object Type Manager (.NET)
-
-- Fundamentals for managing object types
-
-- CRUD operations for object types
-
-- Create an object type
-
-- Read an object type
-
-- Update an object type
-
-- Delete an object type
-
-- Retrieve parent object types
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

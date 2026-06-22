@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:23:05+00:00
 sha256: f89cd8402381d283922fd3563f2d354ba58b1119ffc004ead6ca64e00af947c4
 ---
 
-Script Manager (REST) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Script Manager (REST)
 
 # Script Manager (REST)
 
@@ -134,8 +116,6 @@ public async Task<int> CreateScriptAsync()
 
 {
 
-
-
     int scriptID = 0;
 
     using (Relativity.Extensibility.{versionNumber}.Scripts.IScriptManager scriptManager = serviceFactory.CreateProxy<Relativity.Extensibility.{versionNumber}.Scripts.IScriptManager>())
@@ -152,8 +132,6 @@ public async Task<int> CreateScriptAsync()
 
         client.BaseAddress = new Uri("http://<host name>/");
 
-
-
         string inputJSON = @"{""ScriptRequest"":{""ScriptBody"":""<script><name>My script Name</name><description>About my script</description><category></category><input> <constant id=\""count\"" name=\""Rows\"" type=\""number\"" /></input><display type =\""itemlist\""/><action returns =\""table\""><![CDATA[ SELECT TOP(CAST(#count# AS INT)) * FROM [eddsdbo].[Artifact] ]]></action></script>"",""RelativityApplications"": []}}";
 
         string url = "/Relativity.rest/api/relativity-extensibility/{versionNumber}/workspaces/-1/scripts";
@@ -167,8 +145,6 @@ public async Task<int> CreateScriptAsync()
         scriptID = Int32.Parse(content);
 
     }
-
-
 
     return scriptID;
 
@@ -1220,11 +1196,7 @@ Copy
 
 "'-1","8","62","1","False","9/29/2014 3:32:47 PM","9/29/2014 3:32:47 PM","9","9","Admin Mode","62","","Admin Workspace - to be used for admin permissions only","False",
 
-
-
 ...
-
-
 
 "359","4","62","1","True","1/1/2007 12:00:00 AM","8/5/2008 12:38:34 AM","9","9","WorkspacesOnPicker","62","","","False",
 ```
@@ -1294,76 +1266,3 @@ The request body is empty.
 There is no response body.
 
 After you call this endpoint, the script results are no longer available for query or export.
-
-On this page
-
-- Script Manager (REST)
-
-- Postman sample file
-
-- Guidelines for the Script Manager service
-
-- URLs
-
-- Client code sample
-
-- Create a script
-
-- Read a script
-
-- Update a script
-
-- Delete a script
-
-- Import a script
-
-- Get script parameters
-
-- Preview a script body and input values
-
-- Run script jobs and reports
-
-- Enqueue run job
-
-- Read run job
-
-- Query action job results
-
-- Export action results
-
-- Export script report
-
-- Clean up run job
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

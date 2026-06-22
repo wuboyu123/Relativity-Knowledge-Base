@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:24:11+00:00
 sha256: 33ada5de9c3760695ce268ea6b49b91d19d3ef2fd2df8ee4ca1e28b665d5adb0
 ---
 
-Field Manager (.NET) Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Field Manager (.NET)
 
 # Field Manager (.NET)
 
@@ -549,8 +531,6 @@ public static async Task CreateFixedLength_Async()
 
     int objectViewArtifactId = 1018362;
 
-
-
     FixedLengthFieldRequest request = new FixedLengthFieldRequest
 
     {
@@ -618,8 +598,6 @@ public static async Task CreateFixedLength_Async()
         Notes = "Notes"
 
     };
-
-
 
     using (Relativity.ObjectModel.V1.Field fieldManager = serviceFactory.CreateProxy<Relativity.ObjectModel.V1.Field>())
 
@@ -714,8 +692,6 @@ public static async Task CreateMultipleChoiceField_Async()
 
     int relativityApplicationArtifactId2 = 1283746;
 
-
-
     MultipleChoiceFieldRequest request = new MultipleChoiceFieldRequest
 
     {
@@ -761,8 +737,6 @@ public static async Task CreateMultipleChoiceField_Async()
         Notes = "Notes"
 
     };
-
-
 
     using (Relativity.ObjectModel.V1.Field fieldManager = serviceFactory.CreateProxy<Relativity.ObjectModel.V1.Field>())
 
@@ -866,8 +840,6 @@ public static async Task CreateSingleObjectField_Async()
 
     int propagateField2 = 1023748;
 
-
-
     SingleObjectFieldRequest request = new SingleObjectFieldRequest
 
     {
@@ -919,8 +891,6 @@ public static async Task CreateSingleObjectField_Async()
         Notes = "Notes"
 
     };
-
-
 
     using (Relativity.ObjectModel.V1.Field fieldManager = serviceFactory.CreateProxy<Relativity.ObjectModel.V1.Field>())
 
@@ -1006,8 +976,6 @@ public static async Task CreateDateField_Async()
 
     int documentArtifactTypeId = 10;
 
-
-
     DateFieldRequest request = new DateFieldRequest
 
     {
@@ -1023,8 +991,6 @@ public static async Task CreateDateField_Async()
         Formatting = Formatting.Date,
 
         OpenToAssociations = false,
-
-
 
         IsLinked = false,
 
@@ -1047,8 +1013,6 @@ public static async Task CreateDateField_Async()
         Notes = "Notes"
 
     };
-
-
 
     using (Relativity.ObjectModel.V1.Field fieldManager = serviceFactory.CreateProxy<Relativity.ObjectModel.V1.Field>())
 
@@ -1121,8 +1085,6 @@ public static async Task Read_Async()
     int workspaceID = 1018486;
 
     int fieldArtifactID = 1039509;
-
-
 
     using (Relativity.ObjectModel.V1.Field.IFieldManager fieldManager = serviceFactory.CreateProxy<Relativity.ObjectModel.V1.Field.IFieldManager>())
 
@@ -1772,8 +1734,6 @@ public static async Task UpdateFixedLength_Async()
 
     int fieldId = 1523633;
 
-
-
     FixedLengthFieldRequest request = new FixedLengthFieldRequest
 
     {
@@ -1843,8 +1803,6 @@ public static async Task UpdateFixedLength_Async()
         Notes = "Updated Notes"
 
     };
-
-
 
     using (Relativity.ObjectModel.V1.Field.IFieldManager fieldManager = serviceFactory.CreateProxy<Relativity.ObjectModel.V1.Field.IFieldManager>())
 
@@ -1936,8 +1894,6 @@ public static async Task UpdateMultipleChoiceField_Async()
 
     int fieldId = 1523633;
 
-
-
     MultipleChoiceFieldRequest request = new MultipleChoiceFieldRequest
 
     {
@@ -1983,8 +1939,6 @@ public static async Task UpdateMultipleChoiceField_Async()
         Notes = "Updated Notes"
 
     };
-
-
 
     using (Relativity.ObjectModel.V1.Field.IFieldManager fieldManager = serviceFactory.CreateProxy<Relativity.ObjectModel.V1.Field.IFieldManager>())
 
@@ -2077,8 +2031,6 @@ public static async Task UpdateSingleObjectField_Async()
 
     int fieldId = 1523633;
 
-
-
     SingleObjectFieldRequest request = new SingleObjectFieldRequest
 
     {
@@ -2120,8 +2072,6 @@ public static async Task UpdateSingleObjectField_Async()
         Notes = "Updated Notes"
 
     };
-
-
 
     using (Relativity.ObjectModel.V1.Field.IFieldManager fieldManager = serviceFactory.CreateProxy<Relativity.ObjectModel.V1.Field.IFieldManager>())
 
@@ -2204,8 +2154,6 @@ public static async Task UpdateDateField_Async()
 
     int fieldId = 1523633;
 
-
-
     DateFieldRequest request = new DateFieldRequest
 
     {
@@ -2221,8 +2169,6 @@ public static async Task UpdateDateField_Async()
         Formatting = Formatting.DateTime,
 
         OpenToAssociations = false,
-
-
 
         IsLinked = false,
 
@@ -2245,8 +2191,6 @@ public static async Task UpdateDateField_Async()
         Notes = "Updated Notes"
 
     };
-
-
 
     using (Relativity.ObjectModel.V1.Field.IFieldManager fieldManager = serviceFactory.CreateProxy<Relativity.ObjectModel.V1.Field.IFieldManager>())
 
@@ -2307,8 +2251,6 @@ public static async Task Delete_Async()
 
     int fieldId = 1039269;
 
-
-
     using (Relativity.ObjectModel.V1.Field.IFieldManager fieldManager = serviceFactory.CreateProxy<Relativity.ObjectModel.V1.Field.IFieldManager>())
 
     {
@@ -2367,8 +2309,6 @@ public static async Task GetAvailableObjectTypes_Async()
 {
 
     int workspaceID = 1018486;
-
-
 
     using (Relativity.ObjectModel.V1.Field.IFieldManager fieldManager = serviceFactory.CreateProxy<Relativity.ObjectModel.V1.Field.IFieldManager>())
 
@@ -2444,8 +2384,6 @@ public static async Task GetAvailableObjectTypeViews_Async()
 
     DisplayableObjectTypeIdentifier objectType = new DisplayableObjectTypeIdentifier { ArtifactID = 1425337 };
 
-
-
     using (Relativity.ObjectModel.V1.Field.IFieldManager fieldManager = serviceFactory.CreateProxy<Relativity.ObjectModel.V1.Field.IFieldManager>())
 
     {
@@ -2516,8 +2454,6 @@ public static async Task GetAvailablePropagateToFields_Async()
 {
 
     int workspaceID = 1018486;
-
-
 
     using (Relativity.ObjectModel.V1.Field.IFieldManager fieldManager = serviceFactory.CreateProxy<Relativity.ObjectModel.V1.Field.IFieldManager>())
 
@@ -2593,8 +2529,6 @@ public static async Task GetAvailableSingleAssociativeObjectTypes_Async()
 
     DisplayableObjectTypeIdentifier objectType = new DisplayableObjectTypeIdentifier { ArtifactID = 1523463 };
 
-
-
     using (Relativity.ObjectModel.V1.Field.IFieldManager fieldManager = serviceFactory.CreateProxy<Relativity.ObjectModel.V1.Field.IFieldManager>())
 
     {
@@ -2669,8 +2603,6 @@ public static async Task GetAvailableMultiAssociativeObjectTypes_Async()
 
     DisplayableObjectTypeIdentifier objectType = new DisplayableObjectTypeIdentifier { ArtifactID = 1425337 };
 
-
-
     using (Relativity.ObjectModel.V1.Field.IFieldManager fieldManager = serviceFactory.CreateProxy<Relativity.ObjectModel.V1.Field.IFieldManager>())
 
     {
@@ -2742,8 +2674,6 @@ public static async Task GetAvailableKeyboardShortcuts_Async()
 
     int workspaceID = 1018486;
 
-
-
     using (Relativity.ObjectModel.V1.Field.IFieldManager fieldManager = serviceFactory.CreateProxy<Relativity.ObjectModel.V1.Field.IFieldManager>())
 
     {
@@ -2814,8 +2744,6 @@ public static async Task GetValidKeys_Async()
 {
 
     int workspaceID = 1018486;
-
-
 
     using (Relativity.ObjectModel.V1.Field.IFieldManager fieldManager = serviceFactory.CreateProxy<Relativity.ObjectModel.V1.Field.IFieldManager>())
 
@@ -2891,8 +2819,6 @@ public static async Task GetRelationalFieldOrder_Async()
 
     int workspaceID = 1018486;
 
-
-
     using (Relativity.ObjectModel.V1.Field.IFieldManager fieldManager = serviceFactory.CreateProxy<Relativity.ObjectModel.V1.Field.IFieldManager>())
 
     {
@@ -2929,82 +2855,3 @@ public static async Task GetRelationalFieldOrder_Async()
 
 }
 ```
-
-On this page
-
-- Field Manager (.NET)
-
-- Fundamentals for Field Manager API
-
-- Guidelines for the Field Manager API
-
-- Supported field types
-
-- Helper methods
-
-- Relational fields
-
-- Overlay behavior
-
-- Filter types
-
-- Source property
-
-- Formatting fields
-
-- Create a field
-
-- Read a field
-
-- Update a field
-
-- Delete a field
-
-- Retrieve available object types
-
-- Retrieve available views for an object type
-
-- Retrieve available fields for propagation
-
-- Retrieve object types for a single object field
-
-- Retrieve object types for a multiple object field
-
-- Retrieve keyboard shortcuts
-
-- Retrieve valid keys
-
-- Retrieve the order of relational field icons
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

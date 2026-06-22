@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:25:39+00:00
 sha256: 58a549cde6b5f4595d0af7b666a0222b1c2b21b4d2f8c32a57b349b3454e947f
 ---
 
-Review Business Domain Landing Page Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Review Business Domain Landing Page
 
 # Review
 
@@ -79,44 +61,3 @@ v1.2.0
 Lowest Version Highest Version
 
 Server 2023 Server 2024
-
-On this page
-
-- Review
-
-- Current Review API content
-
-- Version History
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

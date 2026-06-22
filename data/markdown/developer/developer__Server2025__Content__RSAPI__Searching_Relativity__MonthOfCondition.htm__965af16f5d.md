@@ -6,23 +6,7 @@ fetched_at: 2026-06-22T06:33:30+00:00
 sha256: f16642c61e61ca0a3f3aded4a7c721d7c1226bc5baedd30aea61e5c96bde7880
 ---
 
-MonthOfCondition Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+MonthOfCondition
 
 As part of the Relativity Services API (RSAPI) Deprecation, content on this page referring to the RSAPI and the Patient Tracker application is in the process of being deprecated and will no longer be supported. For more information and alternative APIs, see RSAPI deprecation process .
 
@@ -200,40 +184,3 @@ public bool Query_MonthOfCondition_In_Document_DateTimeField(Client.SamplesLibra
 
 }
 ```
-
-On this page
-
-- MonthOfCondition
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use

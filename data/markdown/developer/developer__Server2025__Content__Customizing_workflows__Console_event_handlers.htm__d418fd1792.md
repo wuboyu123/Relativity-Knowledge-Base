@@ -6,25 +6,7 @@ fetched_at: 2026-06-22T06:28:52+00:00
 sha256: c42da20e283fae8f678bc5cb32b419e2738efbc7eb071fe88a34375d77c02a3b
 ---
 
-Console event handlers Skip To Main Content Account Settings Logout
-
-- placeholder
-
-Account Settings Logout
-
-relativitynd5u5rpx
-
-
-https://platform.relativity.com/Server2025/Content/CoveoSearch.htm
-
-
-Coveo Search Page
-
->>
-
-Version: RelativityOne Server 2025 Server 2024
-
-☰
+Console event handlers
 
 # Console event handlers
 
@@ -165,8 +147,6 @@ using System;
 
 using System.Collections.Generic;
 
-
-
 namespace ExampleEventHandlers
 
 {
@@ -189,11 +169,7 @@ namespace ExampleEventHandlers
 
         private readonly Guid NAME_FIELD_GUID = new Guid("716DDBA3-405B-48B8-AE9F-695511F7C4BB");
 
-
-
         private const String CONSOLE_TITLE = "Example Console";
-
-
 
         private const String BUTTON_ONE_NAME = "_button1";
 
@@ -201,15 +177,11 @@ namespace ExampleEventHandlers
 
         private const String BUTTON_ONE_TOOL_TIP = "Performs an action pertaining to this RDO.";
 
-
-
         private const String BUTTON_TWO_BUTTON_NAME = "_button2";
 
         private const String BUTTON_TWO_DISPLAY_TEXT = "Button Two";
 
         private const String BUTTON_TWO_TOOL_TIP = "Launches pop-up window.";
-
-
 
         public override kCura.EventHandler.Console GetConsole(kCura.EventHandler.ConsoleEventHandler.PageEvent pageEvent)
 
@@ -222,8 +194,6 @@ namespace ExampleEventHandlers
             returnConsole.Items = new List<kCura.EventHandler.IConsoleItem>();
 
             returnConsole.Title = CONSOLE_TITLE;
-
-
 
             // Construct button to raise post backs.
 
@@ -239,8 +209,6 @@ namespace ExampleEventHandlers
 
             buttonOne.RaisesPostBack = true;
 
-
-
             // Construct button to open a new window.
 
             kCura.EventHandler.ConsoleButton buttonTwo = new kCura.EventHandler.ConsoleButton();
@@ -255,15 +223,11 @@ namespace ExampleEventHandlers
 
             buttonTwo.Enabled = true;
 
-
-
             // Get the name of the artifact.
 
             kCura.EventHandler.Field nameField = ActiveArtifact.Fields[NAME_FIELD_GUID.ToString()];
 
             string rdoName = nameField.Value.Value.ToString();
-
-
 
             // Create the JavaScript for the button and set the button property.
 
@@ -273,21 +237,15 @@ namespace ExampleEventHandlers
 
             buttonTwo.OnClickEvent = windowOpenJavaScript;
 
-
-
             // Add the buttons to the console.
 
             returnConsole.Items.Add(buttonOne);
 
             returnConsole.Items.Add(buttonTwo);
 
-
-
             return returnConsole;
 
         }
-
-
 
         public override void OnButtonClick(kCura.EventHandler.ConsoleButton consoleButton)
 
@@ -304,8 +262,6 @@ namespace ExampleEventHandlers
             }
 
         }
-
-
 
         /// <summary>
 
@@ -337,44 +293,3 @@ namespace ExampleEventHandlers
 
 }
 ```
-
-On this page
-
-- Console event handlers
-
-- Guidelines for Console event handlers
-
-- Code sample for a Console event handler
-
-
-Why was this not helpful?
-
-Check one that applies.
-
-I could not find the information I was looking for.
-
-The information was incorrect.
-
-The instructions are confusing or unclear.
-
-The instructions did not work.
-
-Thank you for your feedback.
-
-Want to tell us more?
-
-
-Great!
-
-Thanks for taking the time to provide feedback.
-
-
-#### Additional Resources
-
-Developer Group GitHub Release Notes NuGet
-
-- © Relativity
-
-- Privacy and Cookies
-
-- Terms of Use
