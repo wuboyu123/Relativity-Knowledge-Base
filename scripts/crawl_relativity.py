@@ -19,7 +19,6 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
-from typing import Iterable
 from urllib.error import HTTPError, URLError
 from urllib.parse import urldefrag, urljoin, urlparse
 from urllib.request import Request, urlopen
@@ -35,6 +34,14 @@ class Source:
     collection: str
     seed: str
     allowed_prefix: str
+
+
+@dataclass
+class HeadingNode:
+    level: int
+    title: str
+    content: list[str]
+    children: list["HeadingNode"]
 
 
 SOURCES = [
@@ -322,21 +329,215 @@ def reset_outputs() -> None:
             file_path.unlink()
 
 
-def chunk_text(text: str, max_chars: int = 1800, overlap: int = 220) -> Iterable[str]:
-    clean = re.sub(r"\n{3,}", "\n\n", text).strip()
-    if not clean:
-        return
-    start = 0
-    while start < len(clean):
-        end = min(start + max_chars, len(clean))
-        if end < len(clean):
-            split_at = max(clean.rfind("\n\n", start, end), clean.rfind(". ", start, end))
-            if split_at > start + max_chars // 2:
-                end = split_at + 1
-        yield clean[start:end].strip()
-        if end >= len(clean):
-            break
-        start = max(0, end - overlap)
+def slugify(value: str) -> str:
+    slug = re.sub(r"[^A-Za-z0-9]+", "-", value).strip("-").lower()
+    return slug[:80] or "section"
+
+
+def strip_front_matter(markdown: str) -> str:
+    if markdown.startswith("---\n"):
+        end = markdown.find("\n---\n", 4)
+        if end != -1:
+            return markdown[end + 5 :].strip()
+    return markdown.strip()
+
+
+def markdown_to_plain_text(markdown: str) -> str:
+    text = strip_front_matter(markdown)
+    text = re.sub(r"^#{1,6}\s+", "", text, flags=re.MULTILINE)
+    text = re.sub(r"```[a-zA-Z0-9_-]*\n", "", text)
+    text = text.replace("```", "")
+    text = re.sub(r"^\s*[-*]\s+", "", text, flags=re.MULTILINE)
+    return re.sub(r"\n{3,}", "\n\n", text).strip()
+
+
+def parse_heading_tree(markdown: str, page_title: str) -> HeadingNode:
+    root = HeadingNode(level=0, title=page_title, content=[], children=[])
+    stack = [root]
+    in_code = False
+
+    for raw_line in strip_front_matter(markdown).splitlines():
+        line = raw_line.rstrip()
+        if line.startswith("```"):
+            in_code = not in_code
+
+        heading = None if in_code else re.match(r"^(#{1,6})\s+(.+?)\s*$", line)
+        if heading:
+            level = len(heading.group(1))
+            title = heading.group(2).strip()
+            while stack and stack[-1].level >= level:
+                stack.pop()
+            node = HeadingNode(level=level, title=title, content=[], children=[])
+            stack[-1].children.append(node)
+            stack.append(node)
+            continue
+
+        # The scraper often emits a duplicate page title immediately before H1.
+        if stack[-1] is root and line.strip() == page_title and not root.content:
+            continue
+        stack[-1].content.append(line)
+
+    return root
+
+
+def render_node(node: HeadingNode, include_children: bool = True) -> str:
+    parts: list[str] = []
+    if node.level:
+        parts.append(f"{'#' * node.level} {node.title}".strip())
+    content = "\n".join(node.content).strip()
+    if content:
+        parts.append(content)
+    if include_children:
+        for child in node.children:
+            child_text = render_node(child, include_children=True)
+            if child_text:
+                parts.append(child_text)
+    return re.sub(r"\n{3,}", "\n\n", "\n\n".join(parts)).strip()
+
+
+def split_markdown_by_paragraphs(text: str, max_chars: int) -> list[str]:
+    paragraphs = [part.strip() for part in re.split(r"\n\s*\n", text) if part.strip()]
+    chunks: list[str] = []
+    current: list[str] = []
+    current_len = 0
+
+    for paragraph in paragraphs:
+        if len(paragraph) > max_chars:
+            if current:
+                chunks.append("\n\n".join(current).strip())
+                current = []
+                current_len = 0
+
+            line_chunk: list[str] = []
+            line_len = 0
+            for line in paragraph.splitlines():
+                if len(line) > max_chars:
+                    if line_chunk:
+                        chunks.append("\n".join(line_chunk).strip())
+                        line_chunk = []
+                        line_len = 0
+                    for start in range(0, len(line), max_chars):
+                        chunks.append(line[start : start + max_chars].strip())
+                    continue
+                if line_chunk and line_len + len(line) + 1 > max_chars:
+                    chunks.append("\n".join(line_chunk).strip())
+                    line_chunk = []
+                    line_len = 0
+                line_chunk.append(line)
+                line_len += len(line) + 1
+            if line_chunk:
+                chunks.append("\n".join(line_chunk).strip())
+            continue
+
+        if current and current_len + len(paragraph) + 2 > max_chars:
+            chunks.append("\n\n".join(current).strip())
+            current = []
+            current_len = 0
+        current.append(paragraph)
+        current_len += len(paragraph) + 2
+
+    if current:
+        chunks.append("\n\n".join(current).strip())
+    return chunks
+
+
+def chunk_node(node: HeadingNode, path: list[str], max_chars: int) -> list[dict]:
+    text = render_node(node, include_children=True)
+    if not text:
+        return []
+
+    if len(text) <= max_chars or not node.children:
+        parts = [text] if len(text) <= max_chars else split_markdown_by_paragraphs(text, max_chars)
+        total = len(parts)
+        return [
+            {
+                "heading_level": node.level,
+                "heading_path": path,
+                "section_title": node.title,
+                "text": part,
+                "part": idx + 1,
+                "part_count": total,
+            }
+            for idx, part in enumerate(parts)
+            if part
+        ]
+
+    chunks: list[dict] = []
+    intro = render_node(HeadingNode(node.level, node.title, node.content, []), include_children=False)
+    if intro:
+        chunks.extend(chunk_node(HeadingNode(node.level, node.title, node.content, []), path, max_chars))
+    for child in node.children:
+        chunks.extend(chunk_node(child, path + [child.title], max_chars))
+    return chunks
+
+
+def chunk_markdown_by_headings(markdown: str, page_title: str, max_chars: int = 8000) -> list[dict]:
+    root = parse_heading_tree(markdown, page_title)
+    chunks: list[dict] = []
+
+    if root.content and "\n".join(root.content).strip():
+        preface = "\n".join(root.content).strip()
+        parts = split_markdown_by_paragraphs(preface, max_chars)
+        for idx, part in enumerate(parts):
+            chunks.append(
+                {
+                    "heading_level": 0,
+                    "heading_path": [page_title],
+                    "section_title": page_title,
+                    "text": part,
+                    "part": idx + 1,
+                    "part_count": len(parts),
+                }
+            )
+
+    for child in root.children:
+        if child.level == 1 and child.children:
+            intro = render_node(HeadingNode(child.level, child.title, child.content, []), include_children=False)
+            if intro:
+                chunks.extend(chunk_node(HeadingNode(child.level, child.title, child.content, []), [child.title], max_chars))
+            for grandchild in child.children:
+                chunks.extend(chunk_node(grandchild, [child.title, grandchild.title], max_chars))
+        else:
+            chunks.extend(chunk_node(child, [child.title], max_chars))
+
+    if not chunks:
+        text = markdown_to_plain_text(markdown)
+        if text:
+            chunks.append(
+                {
+                    "heading_level": 0,
+                    "heading_path": [page_title],
+                    "section_title": page_title,
+                    "text": text,
+                    "part": 1,
+                    "part_count": 1,
+                }
+            )
+
+    bounded_chunks: list[dict] = []
+    for chunk in chunks:
+        if len(chunk["text"]) <= max_chars:
+            bounded_chunks.append(chunk)
+            continue
+
+        parts = split_markdown_by_paragraphs(chunk["text"], max_chars)
+        total = len(parts)
+        for idx, part in enumerate(parts):
+            if not part:
+                continue
+            bounded_chunks.append(
+                {
+                    **chunk,
+                    "text": part,
+                    "part": idx + 1,
+                    "part_count": total,
+                }
+            )
+
+    for index, chunk in enumerate(bounded_chunks):
+        chunk["chunk_index"] = index
+        chunk["section_slug"] = slugify(" ".join(chunk["heading_path"]))
+    return bounded_chunks
 
 
 def crawl_source(source: Source, args: argparse.Namespace, seen: set[str], stats: dict) -> None:
@@ -414,16 +615,22 @@ def crawl_source(source: Source, args: argparse.Namespace, seen: set[str], stats
         }
         append_jsonl(DATA_DIR / "jsonl" / "pages.jsonl", page_record)
 
-        for idx, chunk in enumerate(chunk_text(parser.plain_text)):
+        for chunk in chunk_markdown_by_headings(markdown, parser.title):
             append_jsonl(
                 DATA_DIR / "jsonl" / "chunks.jsonl",
                 {
-                    "chunk_id": f"{pid}::chunk-{idx:04d}",
+                    "chunk_id": f"{pid}::{chunk['section_slug']}::{chunk['chunk_index']:04d}",
                     "page_id": pid,
                     "collection": source.collection,
+                    "page_title": parser.title,
                     "title": parser.title,
+                    "section_title": chunk["section_title"],
+                    "heading_level": chunk["heading_level"],
+                    "heading_path": chunk["heading_path"],
+                    "part": chunk["part"],
+                    "part_count": chunk["part_count"],
                     "url": url,
-                    "text": chunk,
+                    "text": chunk["text"],
                 },
             )
 

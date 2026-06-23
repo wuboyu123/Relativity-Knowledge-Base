@@ -52,8 +52,16 @@ Use `data/jsonl/chunks.jsonl` as the embedding input. Each chunk keeps:
 - `chunk_id`
 - `page_id`
 - `collection`
+- `page_title`
 - `title`
+- `section_title`
+- `heading_path`
+- `heading_level`
+- `part`
+- `part_count`
 - `url`
 - `text`
+
+Chunks follow the page heading structure instead of fixed character windows. Oversized sections are split into numbered `part` records while preserving the same heading metadata.
 
 That gives enough metadata to cite the original Relativity page after retrieval.

@@ -7,7 +7,7 @@ import hashlib
 import json
 from pathlib import Path
 
-from crawl_relativity import DATA_DIR, ROOT, PageParser, append_jsonl, chunk_text, now_iso, write_text
+from crawl_relativity import DATA_DIR, ROOT, PageParser, append_jsonl, chunk_markdown_by_headings, now_iso, write_text
 
 
 PAGES_JSONL = DATA_DIR / "jsonl" / "pages.jsonl"
@@ -81,16 +81,22 @@ def rebuild() -> int:
         }
         append_jsonl(PAGES_JSONL, page_record)
 
-        for idx, chunk in enumerate(chunk_text(parser.plain_text)):
+        for chunk in chunk_markdown_by_headings(markdown, parser.title):
             append_jsonl(
                 CHUNKS_JSONL,
                 {
-                    "chunk_id": f"{page_id}::chunk-{idx:04d}",
+                    "chunk_id": f"{page_id}::{chunk['section_slug']}::{chunk['chunk_index']:04d}",
                     "page_id": page_id,
                     "collection": collection,
+                    "page_title": parser.title,
                     "title": parser.title,
+                    "section_title": chunk["section_title"],
+                    "heading_level": chunk["heading_level"],
+                    "heading_path": chunk["heading_path"],
+                    "part": chunk["part"],
+                    "part_count": chunk["part_count"],
                     "url": url,
-                    "text": chunk,
+                    "text": chunk["text"],
                 },
             )
 
